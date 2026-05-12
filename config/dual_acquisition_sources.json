@@ -1,0 +1,675 @@
+{
+  "pipeline": "cleanroom_dual_path_acquisition",
+  "poll_seconds_default": 30,
+  "raw_policy": {
+    "path": "raw/{source}/{YYYY-MM-DD}/{HHMMSS}_{stream}.payload",
+    "allowed_metadata": [
+      "timestamp_utc",
+      "source",
+      "stream",
+      "url",
+      "bytes",
+      "content_type"
+    ],
+    "rule": "Raw path preserves payload without semantic interpretation."
+  },
+  "curated_policy": {
+    "path": "curated/{source}/{YYYY-MM-DD}/{HHMMSS}_{stream}_curated.json",
+    "rule": "Curated path is secondary, used only after primary raw analysis."
+  },
+  "sources": [
+    {
+      "source": "USGS",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "USGS_ALL_HOUR",
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
+        },
+        {
+          "name": "USGS_ALL_DAY",
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+        },
+        {
+          "name": "USGS_SIGNIFICANT_MONTH",
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "USGS_ALL_DAY_CURATED",
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+        },
+        {
+          "name": "USGS_SIGNIFICANT_MONTH_CURATED",
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": ""
+    },
+    {
+      "source": "EMSC",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "EMSC_RECENT",
+          "url": "https://www.seismicportal.eu/fdsnws/event/1/query?limit=50&format=json"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "EMSC_RECENT_CURATED",
+          "url": "https://www.seismicportal.eu/fdsnws/event/1/query?limit=50&format=json"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": ""
+    },
+    {
+      "source": "IRIS",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "IRIS_EVENT_TEXT",
+          "url": "https://service.iris.edu/fdsnws/event/1/query?format=text&limit=20&starttime=2026-01-01"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "IRIS_ALT_CURATED",
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=25"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "RaspberryShake",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "RaspberryShake_ALT_RAW",
+          "url": "https://data.raspberryshake.org"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "RaspberryShake_ALT_CURATED",
+          "url": "https://stationview.raspberryshake.org"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "public_edu"
+    },
+    {
+      "source": "NOAA_SWPC",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "NOAA_SWPC_PLANETARY_K_INDEX",
+          "url": "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "NOAA_SWPC_ALERTS",
+          "url": "https://services.swpc.noaa.gov/products/alerts.json"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": ""
+    },
+    {
+      "source": "GOES",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "GOES_RAW",
+          "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-1-day.json"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "GOES_CURATED",
+          "url": "https://services.swpc.noaa.gov/products/alerts.json"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "Source retained from original registry; endpoint/API credentials or private connector required."
+    },
+    {
+      "source": "MADIS",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "MADIS_ARCHIVE_ROOT",
+          "url": "https://madis-data.ncep.noaa.gov/madisPublic1/data/archive/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "CWOP",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "CWOP_QA",
+          "url": "http://wxqa.com/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "USCRN",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "USCRN_HOURLY_INDEX",
+          "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/hourly02/2026/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "KiwiSDR",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "KiwiSDR_ALT_RAW",
+          "url": "http://kiwisdr.com/public/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "public_directory"
+    },
+    {
+      "source": "WebSDR",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "WebSDR_ALT_RAW",
+          "url": "http://websdr.ewi.utwente.nl:8901/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "public_directory"
+    },
+    {
+      "source": "ReverseBeaconNetwork",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "ReverseBeaconNetwork_ALT_RAW",
+          "url": "https://reversebeacon.net/raw_data/"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "ReverseBeaconNetwork_ALT_CURATED",
+          "url": "https://reversebeacon.net/main.php"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "public_archive"
+    },
+    {
+      "source": "HamSCI",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "HamSCI_ALT_RAW",
+          "url": "https://hamsci.org/data"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "HamSCI_ALT_CURATED",
+          "url": "https://hamsci.org/research"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "edu_research"
+    },
+    {
+      "source": "SatNOGS",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "SatNOGS_RAW",
+          "url": "https://network.satnogs.org/api/observations/"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "SatNOGS_CURATED",
+          "url": "https://db.satnogs.org/api/transmitters/"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "Source retained from original registry; endpoint/API credentials or private connector required."
+    },
+    {
+      "source": "Celestrak",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "CELESTRAK_STATIONS",
+          "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "CELESTRAK_STATIONS_CURATED",
+          "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_no_valid_endpoint"
+    },
+    {
+      "source": "eCallisto",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "eCallisto_ALT_RAW",
+          "url": "http://soleil.i4ds.ch/solarradio/data/2002-20yy_Callisto/"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "eCallisto_ALT_CURATED",
+          "url": "http://soleil.i4ds.ch/solarradio/"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "archive"
+    },
+    {
+      "source": "LOFAR",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "LOFAR_ALT_RAW",
+          "url": "https://lofar-surveys.org"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "LOFAR_ALT_CURATED",
+          "url": "https://www.astron.nl/telescopes/lofar/"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "edu_archive"
+    },
+    {
+      "source": "MurchisonWidefieldArray",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "MWA_ASVO",
+          "url": "https://asvo.mwatelescope.org/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "AllenTelescopeArray",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "SETI_ATA",
+          "url": "https://www.seti.org/ata"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "VLA",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "NRAO_ARCHIVE_QUERY",
+          "url": "https://archive.nrao.edu/archive/advquery.jsp"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "GMRT",
+      "enabled": false,
+      "poll_seconds": 30,
+      "primary_raw": [],
+      "secondary_curated": [],
+      "routing": "awaiting_endpoint",
+      "notes": "preflight_no_valid_endpoint"
+    },
+    {
+      "source": "SETILive",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "SETILive_ALT_RAW",
+          "url": "https://seti.berkeley.edu/opendata"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "SETILive_ALT_CURATED",
+          "url": "https://seti.berkeley.edu"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "edu_archive"
+    },
+    {
+      "source": "NASADeepSpaceNetwork",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "NASA_DSN_NOW",
+          "url": "https://eyes.nasa.gov/dsn/dsn.html"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "StanfordSID",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "STANFORD_SID_SOLAR_CENTER",
+          "url": "https://solar-center.stanford.edu/SID/"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "StanfordSID_ALT_CURATED",
+          "url": "https://solar-center.stanford.edu/SID/"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "MITHaystack",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "OPENMADRIGAL_ROOT",
+          "url": "https://cedar.openmadrigal.org/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "BerkeleySETI",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "BERKELEY_SETI_OPENDATA",
+          "url": "https://seti.berkeley.edu/opendata"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "OpenUniversityObservatory",
+      "enabled": false,
+      "poll_seconds": 30,
+      "primary_raw": [],
+      "secondary_curated": [],
+      "routing": "awaiting_endpoint",
+      "notes": "preflight_no_valid_endpoint"
+    },
+    {
+      "source": "SloanDigitalSkySurvey",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "SDSS_DR18",
+          "url": "https://skyserver.sdss.org/dr18"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "ZooniverseRadio",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "ZOONIVERSE_ROOT",
+          "url": "https://www.zooniverse.org/"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "GlobeAtNight",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "GLOBE_AT_NIGHT_MAP",
+          "url": "https://www.globeatnight.org/maps.php"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "OpenSky",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "OpenSky_RAW",
+          "url": "https://opensky-network.org/api/states/all"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "Source retained from original registry; endpoint/API credentials or private connector required."
+    },
+    {
+      "source": "ADSBExchange",
+      "enabled": false,
+      "poll_seconds": 30,
+      "primary_raw": [],
+      "secondary_curated": [],
+      "routing": "awaiting_endpoint",
+      "notes": "disabled_access_gated"
+    },
+    {
+      "source": "Safecast",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "Safecast_ALT_RAW",
+          "url": "https://api.safecast.org/measurements.json"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "Safecast_ALT_CURATED",
+          "url": "https://map.safecast.org"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "public_api"
+    },
+    {
+      "source": "OpenAQ",
+      "enabled": false,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "OPENAQ_LOCATIONS",
+          "url": "https://api.openaq.org/v3/locations?limit=100"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "OPENAQ_LOCATIONS_CURATED",
+          "url": "https://api.openaq.org/v3/locations?limit=100"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "disabled_access_gated"
+    },
+    {
+      "source": "Blitzortung",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "BLITZORTUNG_ROOT",
+          "url": "https://www.blitzortung.org/"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "Blitzortung_ALT_CURATED",
+          "url": "https://www.blitzortung.org"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "preflight_validated"
+    },
+    {
+      "source": "LightningMaps",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "LightningMaps_ALT_RAW",
+          "url": "https://www.lightningmaps.org"
+        }
+      ],
+      "secondary_curated": [],
+      "routing": "raw_first_then_curated",
+      "notes": "public_live"
+    },
+    {
+      "source": "NOAA_Buoys",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "NOAA_Buoys_RAW",
+          "url": "https://www.ndbc.noaa.gov/data/realtime2/46042.txt"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "NOAA_Buoys_CURATED",
+          "url": "https://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "Source retained from original registry; endpoint/API credentials or private connector required."
+    },
+    {
+      "source": "ARGO",
+      "enabled": true,
+      "poll_seconds": 30,
+      "primary_raw": [
+        {
+          "name": "ARGO_ALT_RAW",
+          "url": "ftp://ftp.ifremer.fr/ifremer/argo"
+        }
+      ],
+      "secondary_curated": [
+        {
+          "name": "ARGO_ALT_CURATED",
+          "url": "https://argo.ucsd.edu/data/"
+        }
+      ],
+      "routing": "raw_first_then_curated",
+      "notes": "ftp_archive"
+    },
+    {
+      "source": "MarineTraffic",
+      "enabled": false,
+      "poll_seconds": 30,
+      "primary_raw": [],
+      "secondary_curated": [],
+      "routing": "awaiting_endpoint",
+      "notes": "disabled_access_gated"
+    },
+    {
+      "source": "EDI_PRIVATE",
+      "enabled": false,
+      "poll_seconds": 30,
+      "primary_raw": [],
+      "secondary_curated": [],
+      "routing": "curated_only_secondary",
+      "notes": "disabled_access_gated"
+    }
+  ],
+  "original_registry_path_found": "/mnt/data/seam_core_source_extract/SEAM-Core-main/config/source_registry.json",
+  "runtime_policy": {
+    "connect_timeout_seconds": 2,
+    "read_timeout_seconds": 2,
+    "disable_after_http_codes": [
+      401,
+      403,
+      404
+    ],
+    "failure_cooldown_cycles": 5
+  }
+}

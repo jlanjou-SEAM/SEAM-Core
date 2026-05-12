@@ -1,0 +1,17 @@
+{
+  "package": "SEAM_SOURCE_DOCUMENTS",
+  "status": "documentation_bundle",
+  "documents": [
+    "README.md",
+    "docs/COLLECTOR_ADAPTER_CONTRACT.md",
+    "docs/DATA_MODEL.md",
+    "docs/FUTURE_SOURCE_ADAPTER_PLAN.md",
+    "docs/GITHUB_SYNC_OPERATION.md",
+    "docs/IMPLEMENTATION_CHECKLIST.md",
+    "docs/SEAM_RUNTIME_ARCHITECTURE.md",
+    "docs/SOURCE_REGISTRY.md",
+    "docs/STATE_COLOR_LOGIC.md",
+    "docs/TROUBLESHOOTING.md"
+  ],
+  "runtime_model": "local runtime -> git sync -> GitHub Pages"
+}

@@ -1,0 +1,35 @@
+# Runtime
+runtime/
+cache/
+logs/
+raw/
+decoded/
+analysis/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Data Dumps
+*.parquet
+*.sqlite
+*.db
+
+# Build
+dist/
+build/
+
+# Secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SEAM Recursive Inference Monitor</title>
+  <link rel="stylesheet" href="./css/core.css?v=11"/>
+</head>
+
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="kicker">SEAM Recursive Inference Monitor</div>
+        <h1>Operational Target Grid</h1>
+      </div>
+
+      <div class="ops-status">
+        <div class="live-row"><span class="live-dot"></span><span>LIVE</span></div>
+        <div id="user-time" class="time-line">--:--:--</div>
+        <div id="user-date" class="date-line">----</div>
+        <div id="refresh-countdown" class="refresh-line">refresh 00:10</div>
+      </div>
+    </header>
+
+    <main id="forecast-root" class="forecast-grid"></main>
+  </div>
+
+  <script src="./js/runtime-ui.js?v=11"></script>
+</body>
+</html>

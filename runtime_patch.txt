@@ -1,0 +1,11 @@
+# ADD FINAL STAGE TO PIPELINE
+
+"continuum_active_event_output.py"
+
+# OUTPUTS REQUIRED
+
+reports/live_event_state.json
+reports/persistent_field_tracks_current.json
+reports/forecast_cones_current.json
+reports/cross_stream_manifolds_current.json
+reports/spatial_aggregate_current.json

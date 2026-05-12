@@ -1,0 +1,534 @@
+{
+  "timestamp_utc": "2026-05-08T15:12:20.522628Z",
+  "instruction": "Review candidate hypotheses, evidence, contradictions, global modulation, and trajectories. Infer what latent reality best explains the current manifold.",
+  "candidate_hypotheses": [
+    {
+      "candidate_id": "SEAM-HYP-0005",
+      "event_id": "SEAM-HYP-0005",
+      "state": "TARGET",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Hawaii Volcanic Chain",
+      "lat": 19.2328,
+      "lon": -155.4025,
+      "realization_probability": 0.6818,
+      "probability": 0.6818,
+      "confidence": 0.6818,
+      "persistence": 0.6214,
+      "coherence": 0.6625,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "EMSC_GLOBAL",
+        "HAWAII_QUERY",
+        "USGS_25_DAY",
+        "USGS_ALL_DAY",
+        "USGS_ALL_HOUR"
+      ],
+      "observation_count": 67,
+      "notes": "persistent shallow seismic activation | region=Hawaii Volcanic Chain | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0001",
+      "event_id": "SEAM-HYP-0001",
+      "state": "TARGET",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Regional Manifold 38.95, -122.86",
+      "lat": 38.9455,
+      "lon": -122.8608,
+      "realization_probability": 0.6649,
+      "probability": 0.6649,
+      "confidence": 0.6649,
+      "persistence": 0.5863,
+      "coherence": 0.6625,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "EMSC_GLOBAL",
+        "USGS_25_DAY",
+        "USGS_ALL_DAY",
+        "USGS_ALL_HOUR"
+      ],
+      "observation_count": 72,
+      "notes": "persistent shallow seismic activation | region=Regional Manifold 38.95, -122.86 | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0003",
+      "event_id": "SEAM-HYP-0003",
+      "state": "TARGET",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Nevada Basin",
+      "lat": 35.807,
+      "lon": -118.5534,
+      "realization_probability": 0.6647,
+      "probability": 0.6647,
+      "confidence": 0.6647,
+      "persistence": 0.5859,
+      "coherence": 0.6625,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "NEVADA_QUERY",
+        "USGS_ALL_DAY",
+        "USGS_ALL_HOUR"
+      ],
+      "observation_count": 56,
+      "notes": "persistent shallow seismic activation | region=Nevada Basin | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0004",
+      "event_id": "SEAM-HYP-0004",
+      "state": "TARGET",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Regional Manifold 33.98, -116.97",
+      "lat": 33.9763,
+      "lon": -116.9669,
+      "realization_probability": 0.6327,
+      "probability": 0.6327,
+      "confidence": 0.6327,
+      "persistence": 0.5686,
+      "coherence": 0.6295,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "EMSC_GLOBAL",
+        "NEVADA_QUERY",
+        "USGS_25_DAY",
+        "USGS_ALL_DAY",
+        "USGS_ALL_HOUR"
+      ],
+      "observation_count": 47,
+      "notes": "persistent shallow seismic activation | region=Regional Manifold 33.98, -116.97 | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0006",
+      "event_id": "SEAM-HYP-0006",
+      "state": "FOLLOW",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Regional Manifold 58.84, -153.99",
+      "lat": 58.84,
+      "lon": -153.989,
+      "realization_probability": 0.4996,
+      "probability": 0.4996,
+      "confidence": 0.4996,
+      "persistence": 0.489,
+      "coherence": 0.4975,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "USGS_25_DAY",
+        "USGS_ALL_DAY",
+        "USGS_ALL_HOUR"
+      ],
+      "observation_count": 35,
+      "notes": "persistent shallow seismic activation | region=Regional Manifold 58.84, -153.99 | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0016",
+      "event_id": "SEAM-HYP-0016",
+      "state": "FOLLOW",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Nevada Basin",
+      "lat": 38.6971,
+      "lon": -117.516,
+      "realization_probability": 0.4166,
+      "probability": 0.4166,
+      "confidence": 0.4166,
+      "persistence": 0.4806,
+      "coherence": 0.3875,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "EMSC_GLOBAL",
+        "NEVADA_QUERY",
+        "USGS_25_DAY",
+        "USGS_ALL_DAY"
+      ],
+      "observation_count": 25,
+      "notes": "persistent shallow seismic activation | region=Nevada Basin | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0002",
+      "event_id": "SEAM-HYP-0002",
+      "state": "MONITOR",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Regional Manifold 31.84, -102.92",
+      "lat": 31.8371,
+      "lon": -102.9167,
+      "realization_probability": 0.3678,
+      "probability": 0.3678,
+      "confidence": 0.3678,
+      "persistence": 0.4285,
+      "coherence": 0.3545,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "USGS_ALL_DAY",
+        "USGS_ALL_HOUR"
+      ],
+      "observation_count": 22,
+      "notes": "persistent shallow seismic activation | region=Regional Manifold 31.84, -102.92 | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0011",
+      "event_id": "SEAM-HYP-0011",
+      "state": "MONITOR",
+      "hypothesis": "moderate-energy regional activation",
+      "region": "Regional Manifold -2.9, 147.81",
+      "lat": -2.9001,
+      "lon": 147.8051,
+      "realization_probability": 0.3426,
+      "probability": 0.3426,
+      "confidence": 0.3426,
+      "persistence": 0.5404,
+      "coherence": 0.2445,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "moderate-to-large seismic component",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "EMSC_GLOBAL",
+        "USGS_25_DAY",
+        "USGS_45_DAY",
+        "USGS_ALL_DAY"
+      ],
+      "observation_count": 12,
+      "notes": "moderate-energy regional activation | region=Regional Manifold -2.9, 147.81 | evidence=shallow seismic activity; moderate-to-large seismic component; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0044",
+      "event_id": "SEAM-HYP-0044",
+      "state": "MONITOR",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Regional Manifold 37.14, 29.26",
+      "lat": 37.1411,
+      "lon": 29.2556,
+      "realization_probability": 0.3,
+      "probability": 0.3,
+      "confidence": 0.3,
+      "persistence": 0.4024,
+      "coherence": 0.2775,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "EMSC_GLOBAL"
+      ],
+      "observation_count": 15,
+      "notes": "persistent shallow seismic activation | region=Regional Manifold 37.14, 29.26 | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0012",
+      "event_id": "SEAM-HYP-0012",
+      "state": "MONITOR",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Regional Manifold 18.79, -67.24",
+      "lat": 18.7912,
+      "lon": -67.2365,
+      "realization_probability": 0.2877,
+      "probability": 0.2877,
+      "confidence": 0.2877,
+      "persistence": 0.4427,
+      "coherence": 0.2335,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "EMSC_GLOBAL",
+        "USGS_25_DAY",
+        "USGS_ALL_DAY"
+      ],
+      "observation_count": 11,
+      "notes": "persistent shallow seismic activation | region=Regional Manifold 18.79, -67.24 | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0007",
+      "event_id": "SEAM-HYP-0007",
+      "state": "MONITOR",
+      "hypothesis": "persistent shallow seismic activation",
+      "region": "Regional Manifold 62.5, -149.7",
+      "lat": 62.4969,
+      "lon": -149.7002,
+      "realization_probability": 0.2708,
+      "probability": 0.2708,
+      "confidence": 0.2708,
+      "persistence": 0.3745,
+      "coherence": 0.2555,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "high local observation density",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "USGS_ALL_DAY",
+        "USGS_ALL_HOUR"
+      ],
+      "observation_count": 13,
+      "notes": "persistent shallow seismic activation | region=Regional Manifold 62.5, -149.7 | evidence=shallow seismic activity; high local observation density; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    },
+    {
+      "candidate_id": "SEAM-HYP-0019",
+      "event_id": "SEAM-HYP-0019",
+      "state": "MONITOR",
+      "hypothesis": "moderate-energy regional activation",
+      "region": "Regional Manifold -43.41, 91.7",
+      "lat": -43.412,
+      "lon": 91.7023,
+      "realization_probability": 0.2681,
+      "probability": 0.2681,
+      "confidence": 0.2681,
+      "persistence": 0.5335,
+      "coherence": 0.1455,
+      "contradiction_count": 1,
+      "contradictions": [
+        "quiet_geomagnetic_context"
+      ],
+      "evidence": [
+        "shallow seismic activity",
+        "moderate-to-large seismic component",
+        "dense solar telemetry background"
+      ],
+      "trajectory": "initializing",
+      "global_modulation": {
+        "factor": 1.0679,
+        "summary": "global_context_count=4 modulation=0.4528"
+      },
+      "domains": [
+        "seismic"
+      ],
+      "sources": [
+        "USGS_25_DAY",
+        "USGS_45_DAY",
+        "USGS_ALL_DAY"
+      ],
+      "observation_count": 3,
+      "notes": "moderate-energy regional activation | region=Regional Manifold -43.41, 91.7 | evidence=shallow seismic activity; moderate-to-large seismic component; dense solar telemetry background | contradictions=quiet_geomagnetic_context"
+    }
+  ],
+  "observation_count": 544,
+  "global_context": [
+    {
+      "timestamp_utc": "2026-05-08T15:12:19.378515Z",
+      "source": "NOAA_KP",
+      "domain": "geomagnetic",
+      "lat": null,
+      "lon": null,
+      "depth": null,
+      "signal_strength": 0.0,
+      "confidence": 0.0,
+      "semantic_tags": [
+        "global_context",
+        "geomagnetic_quiet"
+      ],
+      "raw_summary": "records=61"
+    },
+    {
+      "timestamp_utc": "2026-05-08T15:12:19.378515Z",
+      "source": "GOES_XRAY_7_DAY",
+      "domain": "solar_xray",
+      "lat": null,
+      "lon": null,
+      "depth": null,
+      "signal_strength": 20156,
+      "confidence": 1.0,
+      "semantic_tags": [
+        "global_context",
+        "solar_data_dense"
+      ],
+      "raw_summary": "records=20156"
+    },
+    {
+      "timestamp_utc": "2026-05-08T15:12:19.378515Z",
+      "source": "GOES_PROTONS_7_DAY",
+      "domain": "solar_particles",
+      "lat": null,
+      "lon": null,
+      "depth": null,
+      "signal_strength": 16120,
+      "confidence": 0.806,
+      "semantic_tags": [
+        "global_context",
+        "solar_data_dense"
+      ],
+      "raw_summary": "records=16120"
+    },
+    {
+      "timestamp_utc": "2026-05-08T15:12:19.378515Z",
+      "source": "NOAA_ALERTS",
+      "domain": "space_weather_alerts",
+      "lat": null,
+      "lon": null,
+      "depth": null,
+      "signal_strength": 101,
+      "confidence": 0.00505,
+      "semantic_tags": [
+        "global_context"
+      ],
+      "raw_summary": "records=101"
+    }
+  ],
+  "questions": [
+    "Which candidates are strengthening?",
+    "Which candidates are contradicted by the evidence?",
+    "Which latent state best explains the manifold?",
+    "What additional evidence would increase or reduce confidence?"
+  ]
+}
