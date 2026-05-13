@@ -1,24 +1,15 @@
-SEAM dashboard schema correction v1.2
-
 Install:
-1. Replace C:\CleanRoom\continuum_cross_stream_reconcile.py
-2. Replace C:\CleanRoom\js\runtime-ui.js
+1. Replace:
+   C:\CleanRoom\continuum_cross_stream_reconcile.py
 
-Then run:
-python continuum_cross_stream_reconcile.py
+2. Run:
+   python continuum_cross_stream_reconcile.py
 
-Verify:
-Get-Content data\latest.json -Head 40
+3. Publish:
+   git add -A
+   git commit -m "Correct SEAM metric mapping"
+   git push origin main
 
-Publish:
-git add -A
-git commit -m "Fix dashboard event schema mapping"
-git push origin main
-
-Expected dashboard corrections:
-- no more Unknown Region
-- real coordinates appear
-- hypothesis text appears
-- confidence maps to Likelihood
-- source convergence maps to Persistence
-- trajectory and verification status appear
+Corrections:
+- Likelihood now maps to manifold lock percentage
+- Persistence now maps to long-term track viability
