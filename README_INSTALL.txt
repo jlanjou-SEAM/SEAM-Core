@@ -1,15 +1,30 @@
+SEAM Metric Correction v1.4
+
+Authoritative mapping restored.
+
+Likelihood:
+    manifold_lock (direct from SEAM)
+
+Persistence:
+    long-term track viability
+
+Removed:
+- lock-state weighting
+- probability boosting
+- heuristic confidence blending
+- source-count scoring
+
 Install:
-1. Replace:
-   C:\CleanRoom\continuum_cross_stream_reconcile.py
+--------
+Replace:
+    C:\CleanRoom\continuum_cross_stream_reconcile.py
 
-2. Run:
-   python continuum_cross_stream_reconcile.py
+Run:
+----
+python continuum_cross_stream_reconcile.py
 
-3. Publish:
-   git add -A
-   git commit -m "Correct SEAM metric mapping"
-   git push origin main
-
-Corrections:
-- Likelihood now maps to manifold lock percentage
-- Persistence now maps to long-term track viability
+Publish:
+--------
+git add -A
+git commit -m "Restore authoritative manifold lock mapping"
+git push origin main
