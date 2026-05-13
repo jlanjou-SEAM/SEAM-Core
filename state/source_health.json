@@ -1,142 +1,149 @@
 {
-  "MITHaystack:OPENMADRIGAL_ROOT": {
-    "source": "MITHaystack",
-    "stream": "OPENMADRIGAL_ROOT",
+  "StanfordSID:StanfordSID_ALT_CURATED": {
+    "source": "StanfordSID",
+    "stream": "StanfordSID_ALT_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.517210+00:00"
-  },
-  "Safecast:Safecast_ALT_RAW": {
-    "source": "Safecast",
-    "stream": "Safecast_ALT_RAW",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.532826+00:00"
-  },
-  "Safecast:Safecast_ALT_CURATED": {
-    "source": "Safecast",
-    "stream": "Safecast_ALT_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.591042+00:00"
-  },
-  "BerkeleySETI:BERKELEY_SETI_OPENDATA": {
-    "source": "BerkeleySETI",
-    "stream": "BERKELEY_SETI_OPENDATA",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.600036+00:00"
-  },
-  "SloanDigitalSkySurvey:SDSS_DR18": {
-    "source": "SloanDigitalSkySurvey",
-    "stream": "SDSS_DR18",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.615695+00:00"
-  },
-  "ReverseBeaconNetwork:ReverseBeaconNetwork_ALT_RAW": {
-    "source": "ReverseBeaconNetwork",
-    "stream": "ReverseBeaconNetwork_ALT_RAW",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.676930+00:00"
-  },
-  "NOAA_Buoys:NOAA_Buoys_CURATED": {
-    "source": "NOAA_Buoys",
-    "stream": "NOAA_Buoys_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.755018+00:00"
-  },
-  "GlobeAtNight:GLOBE_AT_NIGHT_MAP": {
-    "source": "GlobeAtNight",
-    "stream": "GLOBE_AT_NIGHT_MAP",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.786266+00:00"
-  },
-  "NOAA_Buoys:NOAA_Buoys_RAW": {
-    "source": "NOAA_Buoys",
-    "stream": "NOAA_Buoys_RAW",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.811028+00:00"
+    "updated_utc": "2026-05-13T17:56:56.487016+00:00"
   },
   "SatNOGS:SatNOGS_RAW": {
     "source": "SatNOGS",
     "stream": "SatNOGS_RAW",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T17:54:30.827475+00:00"
+    "updated_utc": "2026-05-13T17:56:56.505163+00:00"
+  },
+  "Safecast:Safecast_ALT_CURATED": {
+    "source": "Safecast",
+    "stream": "Safecast_ALT_CURATED",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:56.583318+00:00"
+  },
+  "Safecast:Safecast_ALT_RAW": {
+    "source": "Safecast",
+    "stream": "Safecast_ALT_RAW",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:56.615851+00:00"
+  },
+  "ZooniverseRadio:ZOONIVERSE_ROOT": {
+    "source": "ZooniverseRadio",
+    "stream": "ZOONIVERSE_ROOT",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:56.631479+00:00"
+  },
+  "MITHaystack:OPENMADRIGAL_ROOT": {
+    "source": "MITHaystack",
+    "stream": "OPENMADRIGAL_ROOT",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:56.716769+00:00"
+  },
+  "SloanDigitalSkySurvey:SDSS_DR18": {
+    "source": "SloanDigitalSkySurvey",
+    "stream": "SDSS_DR18",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:56.802188+00:00"
+  },
+  "BerkeleySETI:BERKELEY_SETI_OPENDATA": {
+    "source": "BerkeleySETI",
+    "stream": "BERKELEY_SETI_OPENDATA",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:56.864693+00:00"
+  },
+  "ReverseBeaconNetwork:ReverseBeaconNetwork_ALT_RAW": {
+    "source": "ReverseBeaconNetwork",
+    "stream": "ReverseBeaconNetwork_ALT_RAW",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:56.941139+00:00"
   },
   "OpenSky:OpenSky_RAW": {
     "source": "OpenSky",
     "stream": "OpenSky_RAW",
     "ok": false,
     "reason": "HTTP 429",
-    "updated_utc": "2026-05-13T17:54:30.910886+00:00"
-  },
-  "ARGO:ARGO_ALT_CURATED": {
-    "source": "ARGO",
-    "stream": "ARGO_ALT_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T17:54:31.098381+00:00"
+    "updated_utc": "2026-05-13T17:56:57.066951+00:00"
   },
   "LightningMaps:LightningMaps_ALT_RAW": {
     "source": "LightningMaps",
     "stream": "LightningMaps_ALT_RAW",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T17:54:31.310481+00:00"
+    "updated_utc": "2026-05-13T17:56:57.352595+00:00"
+  },
+  "ARGO:ARGO_ALT_CURATED": {
+    "source": "ARGO",
+    "stream": "ARGO_ALT_CURATED",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:57.371456+00:00"
   },
   "LOFAR:LOFAR_ALT_CURATED": {
     "source": "LOFAR",
     "stream": "LOFAR_ALT_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T17:54:31.490441+00:00"
+    "updated_utc": "2026-05-13T17:56:57.483301+00:00"
   },
-  "ARGO:ARGO_ALT_RAW": {
-    "source": "ARGO",
-    "stream": "ARGO_ALT_RAW",
-    "ok": false,
-    "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T17:54:34.250338+00:00"
-  },
-  "Celestrak:CELESTRAK_STATIONS": {
-    "source": "Celestrak",
-    "stream": "CELESTRAK_STATIONS",
-    "ok": false,
-    "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T17:54:35.439955+00:00"
-  },
-  "Celestrak:CELESTRAK_STATIONS_CURATED": {
-    "source": "Celestrak",
-    "stream": "CELESTRAK_STATIONS_CURATED",
-    "ok": false,
-    "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T17:54:35.490076+00:00"
-  },
-  "Blitzortung:BLITZORTUNG_ROOT": {
-    "source": "Blitzortung",
-    "stream": "BLITZORTUNG_ROOT",
+  "LOFAR:LOFAR_ALT_RAW": {
+    "source": "LOFAR",
+    "stream": "LOFAR_ALT_RAW",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T17:54:36.311128+00:00"
+    "updated_utc": "2026-05-13T17:56:57.584080+00:00"
+  },
+  "GlobeAtNight:GLOBE_AT_NIGHT_MAP": {
+    "source": "GlobeAtNight",
+    "stream": "GLOBE_AT_NIGHT_MAP",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:58.273114+00:00"
   },
   "Blitzortung:Blitzortung_ALT_CURATED": {
     "source": "Blitzortung",
     "stream": "Blitzortung_ALT_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T17:54:37.437950+00:00"
+    "updated_utc": "2026-05-13T17:56:58.455644+00:00"
+  },
+  "Blitzortung:BLITZORTUNG_ROOT": {
+    "source": "Blitzortung",
+    "stream": "BLITZORTUNG_ROOT",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T17:56:58.848703+00:00"
+  },
+  "ARGO:ARGO_ALT_RAW": {
+    "source": "ARGO",
+    "stream": "ARGO_ALT_RAW",
+    "ok": false,
+    "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
+    "updated_utc": "2026-05-13T17:57:00.205186+00:00"
+  },
+  "Celestrak:CELESTRAK_STATIONS": {
+    "source": "Celestrak",
+    "stream": "CELESTRAK_STATIONS",
+    "ok": false,
+    "reason": "URL error: timed out",
+    "updated_utc": "2026-05-13T17:57:01.395480+00:00"
+  },
+  "Celestrak:CELESTRAK_STATIONS_CURATED": {
+    "source": "Celestrak",
+    "stream": "CELESTRAK_STATIONS_CURATED",
+    "ok": false,
+    "reason": "URL error: timed out",
+    "updated_utc": "2026-05-13T17:57:01.528214+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T17:54:40.049281+00:00"
+    "updated_utc": "2026-05-13T17:57:04.067969+00:00"
   }
 }
