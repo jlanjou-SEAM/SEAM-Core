@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang='en-US' style='height: 100%'>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset='UTF-8'>
+<title>rx.kiwisdr.com</title>
+<link rel='stylesheet' type='text/css' href='captcha.css' />
+</head>
+<body>
+<div class='id-kiwi'></div>
+<script>
+function w3_el(el_id)
+{
+   return (typeof(el_id) === 'string')? document.getElementsByClassName(el_id)[0] : el_id;
+}
+
+function w3_create_appendElement(el_parent, el_type, html)
+{
+   var el_child = document.createElement(el_type);
+   w3_el(el_child).innerHTML = html;
+	w3_el(el_parent).appendChild(el_child);
+	return el_child;
+}
+
+function play_button_click_cb()
+{
+	w3_el('id-play-button-container').style.opacity = 0;
+   w3_create_appendElement('id-kiwi', 'div',
+      '<img src="1px.tiff" width="1" height="1">');
+   var ajax = new XMLHttpRequest();
+   ajax.onreadystatechange = function() {
+      if (ajax.readyState != /* done */ 4) {
+         return false;
+      }
+      window.location.href = '/public/';
+   }
+   ajax.open('GET', '/public/', /* async */ true);
+   ajax.setRequestHeader('x-kiwi-auth', '93df9962c0e8a0dcb77ab62212a63dac684d895bfb6e23af0c24b056dec4cead');
+   ajax.send(null);
+}
+
+var isTouch = function() {
+   if (navigator.hasOwnProperty('maxTouchPoints')) {
+      return (navigator.maxTouchPoints > 0);
+   } else
+   if (navigator.hasOwnProperty('msMaxTouchPoints')) {
+      return (navigator.msMaxTouchPoints > 0);
+   } else
+   if (window.hasOwnProperty('matchMedia')) {
+      var mQ = matchMedia('(pointer: coarse)');
+      if (mQ.media === '(pointer: coarse)') {
+         return !!mQ.matches;
+      }
+   } else {
+      if (window.hasOwnProperty('orientation')) {
+         return true;
+      }
+   }
+   return false;
+}
+
+function show_overlay()
+{
+   var s = navigator.userAgent;
+	var isMobile = (s.includes('iPhone') || s.includes('iPad') || s.includes('Android') || isTouch());
+   s =
+      '<img class="id-logo" src="kiwi.jpg" width="192" height="192">' +
+      '<div class="id-play-button-container" onclick="play_button_click_cb()">' +
+         '<div class="id-play-button">' +
+            '<img src="play.png" width="150" height="150">' +
+            '<br><br>' +
+            (isMobile? 'Tap' : 'Click') +' to show KiwiSDRs' +
+         '</div>' +
+      '</div>';
+   w3_create_appendElement('id-kiwi', 'div', s);
+}
+
+document.onreadystatechange = function()
+{
+	if (document.readyState != "complete") return;
+   show_overlay();
+   
+   window.addEventListener('pageshow',
+      function (ev) {
+         if (ev.persisted ||
+            performance.getEntriesByType("navigation")[0].type === 'back_forward') {
+	         w3_el('id-play-button-container').style.opacity = 0.8;
+         }
+      }, false
+   );
+}
+</script>
+</body>
+</html>
