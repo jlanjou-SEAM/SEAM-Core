@@ -1,79 +1,23 @@
 {
-  "SloanDigitalSkySurvey:SDSS_DR18": {
-    "source": "SloanDigitalSkySurvey",
-    "stream": "SDSS_DR18",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T20:37:58.802077+00:00"
-  },
-  "OpenSky:OpenSky_RAW": {
-    "source": "OpenSky",
-    "stream": "OpenSky_RAW",
-    "ok": false,
-    "reason": "HTTP 429",
-    "updated_utc": "2026-05-13T20:37:58.989607+00:00"
-  },
-  "ARGO:ARGO_ALT_CURATED": {
-    "source": "ARGO",
-    "stream": "ARGO_ALT_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T20:37:59.217803+00:00"
-  },
-  "LightningMaps:LightningMaps_ALT_RAW": {
-    "source": "LightningMaps",
-    "stream": "LightningMaps_ALT_RAW",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T20:37:59.350046+00:00"
-  },
-  "GlobeAtNight:GLOBE_AT_NIGHT_MAP": {
-    "source": "GlobeAtNight",
-    "stream": "GLOBE_AT_NIGHT_MAP",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T20:38:00.188117+00:00"
-  },
-  "Blitzortung:BLITZORTUNG_ROOT": {
-    "source": "Blitzortung",
-    "stream": "BLITZORTUNG_ROOT",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T20:38:00.389521+00:00"
-  },
-  "ARGO:ARGO_ALT_RAW": {
-    "source": "ARGO",
-    "stream": "ARGO_ALT_RAW",
-    "ok": false,
-    "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T20:38:02.098017+00:00"
-  },
-  "Celestrak:CELESTRAK_STATIONS_CURATED": {
-    "source": "Celestrak",
-    "stream": "CELESTRAK_STATIONS_CURATED",
-    "ok": false,
-    "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T20:38:03.298454+00:00"
-  },
   "LOFAR:LOFAR_ALT_RAW": {
     "source": "LOFAR",
     "stream": "LOFAR_ALT_RAW",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T20:38:03.552250+00:00"
+    "updated_utc": "2026-05-13T20:40:47.630456+00:00"
   },
   "Safecast:Safecast_ALT_RAW": {
     "source": "Safecast",
     "stream": "Safecast_ALT_RAW",
     "ok": false,
     "reason": "The read operation timed out",
-    "updated_utc": "2026-05-13T20:38:04.521092+00:00"
+    "updated_utc": "2026-05-13T20:40:48.457027+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T20:38:05.661930+00:00"
+    "updated_utc": "2026-05-13T20:40:54.162328+00:00"
   }
 }
