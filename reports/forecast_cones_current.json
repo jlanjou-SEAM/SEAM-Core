@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T07:22:29.397086+00:00",
-  "forecast_cone_count": 289,
+  "timestamp_utc": "2026-05-13T07:23:17.318624+00:00",
+  "forecast_cone_count": 290,
   "forecast_cones": [
     {
       "cone_id": "CONE-00000",
@@ -2546,11 +2546,11 @@
       "cone_id": "CONE-00254",
       "track_id": "TRACK-00254",
       "forecast_center": {
-        "latitude": 31.661,
-        "longitude": -104.38
+        "latitude": 31.675,
+        "longitude": -104.372
       },
-      "confidence_radius_miles": 1.0,
-      "event_count": 1
+      "confidence_radius_miles": 2.1,
+      "event_count": 2
     },
     {
       "cone_id": "CONE-00255",
@@ -2880,7 +2880,7 @@
         "longitude": 140.594805
       },
       "confidence_radius_miles": 1.0,
-      "event_count": 10
+      "event_count": 11
     },
     {
       "cone_id": "CONE-00288",
@@ -2891,6 +2891,16 @@
       },
       "confidence_radius_miles": 1.0,
       "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00289",
+      "track_id": "TRACK-00289",
+      "forecast_center": {
+        "latitude": 35.356667,
+        "longitude": -118.535997
+      },
+      "confidence_radius_miles": 1.384,
+      "event_count": 2
     }
   ]
 }
