@@ -4,20 +4,27 @@
     "stream": "ARGO_ALT_RAW",
     "ok": false,
     "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T11:19:26.421531+00:00"
+    "updated_utc": "2026-05-13T11:21:18.443176+00:00"
   },
-  "Celestrak:CELESTRAK_STATIONS_CURATED": {
+  "Safecast:Safecast_ALT_RAW": {
+    "source": "Safecast",
+    "stream": "Safecast_ALT_RAW",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T11:21:19.379699+00:00"
+  },
+  "Celestrak:CELESTRAK_STATIONS": {
     "source": "Celestrak",
-    "stream": "CELESTRAK_STATIONS_CURATED",
+    "stream": "CELESTRAK_STATIONS",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T11:19:27.614207+00:00"
+    "updated_utc": "2026-05-13T11:21:19.676865+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T11:19:29.036825+00:00"
+    "updated_utc": "2026-05-13T11:21:22.334008+00:00"
   }
 }
