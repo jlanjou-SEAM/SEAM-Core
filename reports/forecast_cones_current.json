@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T07:29:13.718748+00:00",
-  "forecast_cone_count": 293,
+  "timestamp_utc": "2026-05-13T07:30:12.008169+00:00",
+  "forecast_cone_count": 294,
   "forecast_cones": [
     {
       "cone_id": "CONE-00000",
@@ -2236,11 +2236,11 @@
       "cone_id": "CONE-00223",
       "track_id": "TRACK-00223",
       "forecast_center": {
-        "latitude": 50.9897,
-        "longitude": 179.3603
+        "latitude": 51.0863,
+        "longitude": 179.2177
       },
-      "confidence_radius_miles": 1.0,
-      "event_count": 1
+      "confidence_radius_miles": 12.96,
+      "event_count": 2
     },
     {
       "cone_id": "CONE-00224",
@@ -2896,8 +2896,8 @@
       "cone_id": "CONE-00289",
       "track_id": "TRACK-00289",
       "forecast_center": {
-        "latitude": 38.8146667480469,
-        "longitude": -122.818168640137
+        "latitude": 15.6,
+        "longitude": -88.46
       },
       "confidence_radius_miles": 1.0,
       "event_count": 1
@@ -2906,6 +2906,16 @@
       "cone_id": "CONE-00290",
       "track_id": "TRACK-00290",
       "forecast_center": {
+        "latitude": 38.8146667480469,
+        "longitude": -122.818168640137
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00291",
+      "track_id": "TRACK-00291",
+      "forecast_center": {
         "latitude": 35.356667,
         "longitude": -118.535997
       },
@@ -2913,8 +2923,8 @@
       "event_count": 2
     },
     {
-      "cone_id": "CONE-00291",
-      "track_id": "TRACK-00291",
+      "cone_id": "CONE-00292",
+      "track_id": "TRACK-00292",
       "forecast_center": {
         "latitude": 1.23,
         "longitude": 126.32
@@ -2923,14 +2933,14 @@
       "event_count": 1
     },
     {
-      "cone_id": "CONE-00292",
-      "track_id": "TRACK-00292",
+      "cone_id": "CONE-00293",
+      "track_id": "TRACK-00293",
       "forecast_center": {
         "latitude": 37.085798,
         "longitude": 140.84134
       },
       "confidence_radius_miles": 1.42,
-      "event_count": 72
+      "event_count": 84
     }
   ]
 }
