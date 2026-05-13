@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T15:29:06.079151+00:00",
-  "manifold_count": 3602,
+  "timestamp_utc": "2026-05-13T15:31:35.895481+00:00",
+  "manifold_count": 3606,
   "manifolds": [
     {
       "manifold_id": "MANI-00000",
@@ -576,7 +576,7 @@
       "manifold_id": "MANI-00095",
       "event_id": "EVT-000095",
       "likelihood": 91,
-      "persistence": 15
+      "persistence": 23
     },
     {
       "manifold_id": "MANI-00096",
@@ -21449,19 +21449,19 @@
     {
       "manifold_id": "MANI-03574",
       "event_id": "EVT-003574",
-      "likelihood": 89,
+      "likelihood": 91,
       "persistence": 10
     },
     {
       "manifold_id": "MANI-03575",
       "event_id": "EVT-003575",
-      "likelihood": 76,
+      "likelihood": 89,
       "persistence": 19
     },
     {
       "manifold_id": "MANI-03576",
       "event_id": "EVT-003576",
-      "likelihood": 76,
+      "likelihood": 89,
       "persistence": 15
     },
     {
@@ -21479,7 +21479,7 @@
     {
       "manifold_id": "MANI-03579",
       "event_id": "EVT-003579",
-      "likelihood": 59,
+      "likelihood": 71,
       "persistence": 15
     },
     {
@@ -21515,7 +21515,7 @@
     {
       "manifold_id": "MANI-03585",
       "event_id": "EVT-003585",
-      "likelihood": 31,
+      "likelihood": 36,
       "persistence": 15
     },
     {
@@ -21533,19 +21533,19 @@
     {
       "manifold_id": "MANI-03588",
       "event_id": "EVT-003588",
-      "likelihood": 21,
+      "likelihood": 26,
       "persistence": 15
     },
     {
       "manifold_id": "MANI-03589",
       "event_id": "EVT-003589",
-      "likelihood": 21,
+      "likelihood": 26,
       "persistence": 15
     },
     {
       "manifold_id": "MANI-03590",
       "event_id": "EVT-003590",
-      "likelihood": 34,
+      "likelihood": 51,
       "persistence": 15
     },
     {
@@ -21593,26 +21593,50 @@
     {
       "manifold_id": "MANI-03598",
       "event_id": "EVT-003598",
-      "likelihood": 16,
+      "likelihood": 26,
       "persistence": 15
     },
     {
       "manifold_id": "MANI-03599",
       "event_id": "EVT-003599",
       "likelihood": 10,
-      "persistence": 30
+      "persistence": 42
     },
     {
       "manifold_id": "MANI-03600",
       "event_id": "EVT-003600",
       "likelihood": 13,
-      "persistence": 30
+      "persistence": 42
     },
     {
       "manifold_id": "MANI-03601",
       "event_id": "EVT-003601",
       "likelihood": 71,
-      "persistence": 30
+      "persistence": 42
+    },
+    {
+      "manifold_id": "MANI-03602",
+      "event_id": "EVT-003602",
+      "likelihood": 10,
+      "persistence": 42
+    },
+    {
+      "manifold_id": "MANI-03603",
+      "event_id": "EVT-003603",
+      "likelihood": 13,
+      "persistence": 42
+    },
+    {
+      "manifold_id": "MANI-03604",
+      "event_id": "EVT-003604",
+      "likelihood": 71,
+      "persistence": 42
+    },
+    {
+      "manifold_id": "MANI-03605",
+      "event_id": "EVT-003605",
+      "likelihood": 10,
+      "persistence": 23
     }
   ]
 }
