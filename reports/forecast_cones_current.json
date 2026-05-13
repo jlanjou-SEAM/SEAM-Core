@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T12:42:45.893459+00:00",
-  "forecast_cone_count": 730,
+  "timestamp_utc": "2026-05-13T12:45:30.645245+00:00",
+  "forecast_cone_count": 744,
   "forecast_cones": [
     {
       "cone_id": "CONE-00000",
@@ -6086,11 +6086,11 @@
       "cone_id": "CONE-00608",
       "track_id": "TRACK-00608",
       "forecast_center": {
-        "latitude": 35.663909,
-        "longitude": 139.75615
+        "latitude": 35.6617,
+        "longitude": 139.742
       },
-      "confidence_radius_miles": 2.636,
-      "event_count": 62
+      "confidence_radius_miles": 1.0,
+      "event_count": 63
     },
     {
       "cone_id": "CONE-00609",
@@ -6930,7 +6930,7 @@
         "longitude": 139.92604
       },
       "confidence_radius_miles": 1.0,
-      "event_count": 13
+      "event_count": 14
     },
     {
       "cone_id": "CONE-00693",
@@ -7066,11 +7066,11 @@
       "cone_id": "CONE-00706",
       "track_id": "TRACK-00706",
       "forecast_center": {
-        "latitude": 37.752099,
-        "longitude": 140.470826
+        "latitude": 37.85167,
+        "longitude": 140.628003
       },
-      "confidence_radius_miles": 1.0,
-      "event_count": 15
+      "confidence_radius_miles": 14.977,
+      "event_count": 19
     },
     {
       "cone_id": "CONE-00707",
@@ -7206,8 +7206,8 @@
       "cone_id": "CONE-00720",
       "track_id": "TRACK-00720",
       "forecast_center": {
-        "latitude": 55.639,
-        "longitude": -159.21
+        "latitude": 1.08,
+        "longitude": 127.58
       },
       "confidence_radius_miles": 1.0,
       "event_count": 1
@@ -7216,15 +7216,45 @@
       "cone_id": "CONE-00721",
       "track_id": "TRACK-00721",
       "forecast_center": {
-        "latitude": 41.3303,
-        "longitude": -73.834
+        "latitude": 24.5,
+        "longitude": 123.9
       },
       "confidence_radius_miles": 1.0,
-      "event_count": 3
+      "event_count": 1
     },
     {
       "cone_id": "CONE-00722",
       "track_id": "TRACK-00722",
+      "forecast_center": {
+        "latitude": 55.639,
+        "longitude": -159.21
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00723",
+      "track_id": "TRACK-00723",
+      "forecast_center": {
+        "latitude": -10.26,
+        "longitude": 119.29
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00724",
+      "track_id": "TRACK-00724",
+      "forecast_center": {
+        "latitude": 41.3303,
+        "longitude": -73.834
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 4
+    },
+    {
+      "cone_id": "CONE-00725",
+      "track_id": "TRACK-00725",
       "forecast_center": {
         "latitude": 37.288395,
         "longitude": 127.050751
@@ -7233,8 +7263,8 @@
       "event_count": 3
     },
     {
-      "cone_id": "CONE-00723",
-      "track_id": "TRACK-00723",
+      "cone_id": "CONE-00726",
+      "track_id": "TRACK-00726",
       "forecast_center": {
         "latitude": 42.812292,
         "longitude": -70.872505
@@ -7243,8 +7273,8 @@
       "event_count": 3
     },
     {
-      "cone_id": "CONE-00724",
-      "track_id": "TRACK-00724",
+      "cone_id": "CONE-00727",
+      "track_id": "TRACK-00727",
       "forecast_center": {
         "latitude": 25.0439,
         "longitude": 121.529
@@ -7253,8 +7283,8 @@
       "event_count": 3
     },
     {
-      "cone_id": "CONE-00725",
-      "track_id": "TRACK-00725",
+      "cone_id": "CONE-00728",
+      "track_id": "TRACK-00728",
       "forecast_center": {
         "latitude": 38.40362,
         "longitude": -122.81847
@@ -7263,8 +7293,8 @@
       "event_count": 3
     },
     {
-      "cone_id": "CONE-00726",
-      "track_id": "TRACK-00726",
+      "cone_id": "CONE-00729",
+      "track_id": "TRACK-00729",
       "forecast_center": {
         "latitude": 36.04108,
         "longitude": 140.226816
@@ -7273,8 +7303,8 @@
       "event_count": 3
     },
     {
-      "cone_id": "CONE-00727",
-      "track_id": "TRACK-00727",
+      "cone_id": "CONE-00730",
+      "track_id": "TRACK-00730",
       "forecast_center": {
         "latitude": 37.54562,
         "longitude": 140.398995
@@ -7283,8 +7313,8 @@
       "event_count": 3
     },
     {
-      "cone_id": "CONE-00728",
-      "track_id": "TRACK-00728",
+      "cone_id": "CONE-00731",
+      "track_id": "TRACK-00731",
       "forecast_center": {
         "latitude": 34.176201,
         "longitude": -118.35527
@@ -7293,11 +7323,121 @@
       "event_count": 3
     },
     {
-      "cone_id": "CONE-00729",
-      "track_id": "TRACK-00729",
+      "cone_id": "CONE-00732",
+      "track_id": "TRACK-00732",
       "forecast_center": {
-        "latitude": 32.315,
-        "longitude": -101.68
+        "latitude": 32.319,
+        "longitude": -101.668
+      },
+      "confidence_radius_miles": 1.8,
+      "event_count": 2
+    },
+    {
+      "cone_id": "CONE-00733",
+      "track_id": "TRACK-00733",
+      "forecast_center": {
+        "latitude": 42.10673,
+        "longitude": -71.712807
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00734",
+      "track_id": "TRACK-00734",
+      "forecast_center": {
+        "latitude": 35.745842,
+        "longitude": 139.918182
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00735",
+      "track_id": "TRACK-00735",
+      "forecast_center": {
+        "latitude": 35.263365,
+        "longitude": 139.580058
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00736",
+      "track_id": "TRACK-00736",
+      "forecast_center": {
+        "latitude": 34.477016,
+        "longitude": 136.162178
+      },
+      "confidence_radius_miles": 1.705,
+      "event_count": 2
+    },
+    {
+      "cone_id": "CONE-00737",
+      "track_id": "TRACK-00737",
+      "forecast_center": {
+        "latitude": 37.0105,
+        "longitude": 140.9253
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00738",
+      "track_id": "TRACK-00738",
+      "forecast_center": {
+        "latitude": 37.21798,
+        "longitude": 141.00097
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00739",
+      "track_id": "TRACK-00739",
+      "forecast_center": {
+        "latitude": 37.442688,
+        "longitude": -122.127655
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00740",
+      "track_id": "TRACK-00740",
+      "forecast_center": {
+        "latitude": 32.475844,
+        "longitude": 130.60662
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00741",
+      "track_id": "TRACK-00741",
+      "forecast_center": {
+        "latitude": 34.995197,
+        "longitude": 135.764331
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00742",
+      "track_id": "TRACK-00742",
+      "forecast_center": {
+        "latitude": 46.316447,
+        "longitude": 6.974947
+      },
+      "confidence_radius_miles": 1.0,
+      "event_count": 1
+    },
+    {
+      "cone_id": "CONE-00743",
+      "track_id": "TRACK-00743",
+      "forecast_center": {
+        "latitude": 37.358112,
+        "longitude": 140.367493
       },
       "confidence_radius_miles": 1.0,
       "event_count": 1
