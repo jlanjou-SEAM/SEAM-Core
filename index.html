@@ -1,68 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SEAM-Core Dashboard</title>
-
-    <link rel="stylesheet" href="./site/css/core.css">
-    <link rel="stylesheet" href="./site/css/target-state-overrides.css">
-
-    <style>
-        body {
-            margin: 0;
-            background: #0b0f14;
-            color: #d7e3f4;
-            font-family: Arial, sans-serif;
-        }
-
-        #fallback {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: rgba(0,0,0,0.7);
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            z-index: 9999;
-        }
-
-        a {
-            color: #7db7ff;
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SEAM Recursive Inference Monitor</title>
+  <link rel="stylesheet" href="./css/core.css?v=20"/>
+  <link rel="stylesheet" href="./css/target-state-overrides.css?v=20"/>
 </head>
+
 <body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="kicker">SEAM Recursive Inference Monitor</div>
+        <h1>Operational Target Grid</h1>
+      </div>
 
-<div id="fallback">
-    SEAM-Core Live Dashboard
-    <br>
-    <a href="./site/index.html">Direct Site View</a>
-</div>
+      <div class="ops-status">
+        <div class="live-row"><span class="live-dot"></span><span>LIVE</span></div>
+        <div id="user-time" class="time-line">--:--:--</div>
+        <div id="user-date" class="date-line">----</div>
+        <div id="refresh-countdown" class="refresh-line">refresh 00:10</div>
+      </div>
+    </header>
 
-<!-- Runtime container -->
-<div id="app"></div>
+    <main id="forecast-root" class="forecast-grid">
+      <div class="empty-state">Loading SEAM runtime feed…</div>
+    </main>
+  </div>
 
-<!-- Runtime scripts -->
-<script src="./site/js/runtime-ui.js"></script>
-
-<script>
-    console.log("SEAM-Core dashboard bootstrap initialized");
-
-    // Basic deployment verification
-    fetch("./site/data/latest.json?v=" + Date.now())
-        .then(r => {
-            console.log("latest.json status:", r.status);
-
-            if (!r.ok) {
-                console.error("Failed loading runtime feed");
-            }
-        })
-        .catch(err => {
-            console.error("Runtime feed error:", err);
-        });
-</script>
-
+  <script src="./js/runtime-ui.js?v=20"></script>
 </body>
 </html>

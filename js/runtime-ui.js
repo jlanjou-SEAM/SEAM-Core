@@ -3,25 +3,34 @@ let refreshRemaining = REFRESH_SECONDS;
 
 function updateClock(){
   const now = new Date();
+  const timeEl = document.getElementById("user-time");
+  const dateEl = document.getElementById("user-date");
+  const countdownEl = document.getElementById("refresh-countdown");
 
-  document.getElementById("user-time").textContent =
-    now.toLocaleTimeString([], {
-      hour:"2-digit",
-      minute:"2-digit",
-      second:"2-digit",
-      timeZoneName:"short"
-    });
+  if(timeEl){
+    timeEl.textContent =
+      now.toLocaleTimeString([], {
+        hour:"2-digit",
+        minute:"2-digit",
+        second:"2-digit",
+        timeZoneName:"short"
+      });
+  }
 
-  document.getElementById("user-date").textContent =
-    now.toLocaleDateString(undefined, {
-      weekday:"short",
-      year:"numeric",
-      month:"short",
-      day:"2-digit"
-    });
+  if(dateEl){
+    dateEl.textContent =
+      now.toLocaleDateString(undefined, {
+        weekday:"short",
+        year:"numeric",
+        month:"short",
+        day:"2-digit"
+      });
+  }
 
-  document.getElementById("refresh-countdown").textContent =
-    `refresh 00:${String(refreshRemaining).padStart(2,"0")}`;
+  if(countdownEl){
+    countdownEl.textContent =
+      `refresh 00:${String(refreshRemaining).padStart(2,"0")}`;
+  }
 
   refreshRemaining--;
 
@@ -65,6 +74,11 @@ function normalizeEvent(event){
 
 function renderEvents(events){
   const root = document.getElementById("forecast-root");
+
+  if(!root){
+    console.error("Missing required DOM node: #forecast-root");
+    return;
+  }
 
   if(!events || events.length === 0){
     root.innerHTML = `<div class="empty-state">No active SEAM target analysis available.</div>`;
@@ -162,15 +176,18 @@ function escapeHTML(value){
 
 async function loadRuntime(){
   try{
-    const response = await fetch("./latest.json?v=" + Date.now(), { cache:"no-store" });
+    const response = await fetch("./data/latest.json?v=" + Date.now(), { cache:"no-store" });
     const runtime = await response.json();
     const rawEvents = runtime.active_events || runtime.candidate_hypotheses || [];
     renderEvents(rawEvents.map(normalizeEvent));
     refreshRemaining = REFRESH_SECONDS;
   }catch(error){
     console.error("SEAM runtime fetch failed", error);
-    document.getElementById("forecast-root").innerHTML =
-      `<div class="empty-state">SEAM runtime fetch failed. Check latest.json.</div>`;
+    const root = document.getElementById("forecast-root");
+    if(root){
+      root.innerHTML =
+        `<div class="empty-state">SEAM runtime fetch failed. Check data/latest.json.</div>`;
+    }
   }
 }
 
