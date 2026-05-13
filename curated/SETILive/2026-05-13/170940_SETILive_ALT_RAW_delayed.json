@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<title>Open Data Archive - Breakthrough Listen</title>
+<base href="http://seti.berkeley.edu/opendata/" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Open Data Archive">
+<meta name="author" content="Alex Yu/Breakthrough Listen">
+
+<link rel="shortcut icon" href="static/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="static/style.min.css">
+<link rel="stylesheet" href="static/combined.min.css"/>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+            <a class="navbar-brand mr-1" href="/"><strong>Breakthrough Listen</strong> Open Data Archive</a>
+      </div>
+  </nav>
+
+  <div id="wrapper">
+    <div id="content-wrapper">
+
+      <section>
+        <div class="container">
+            
+     <!-- description -->
+     <p>Breakthrough Listen data are stored in technical formats that require specialized software to analyze,
+        and file sizes can be several gigabytes. Before downloading files from our public archive,
+        we recommend you familiarize yourself with how the data are stored. A good place to start is
+        with the educational materials provided by <a href="http://seti.berkeley.edu/listen" target="_blank">Berkeley SETI Research Center</a>.
+        You can find documentation relating to the backend api <a href = "https://github.com/ggroode/bl-opendata/blob/master/README.md"> here</a>.
+    </p>
+
+    <!-- search control -->
+    <div class="panel panel-default">
+        <div id="query-form">
+            <h4>Search</h4>
+            <input type="text" class="form-control basic-auto-complete" id="query" placeholder="Type to search...">
+            <div class="custom-control custom-checkbox">
+             <input type="checkbox" disabled = true class="custom-control-input" id="targetCentered"></input>
+             <label class="custom-control-label" for="targetCentered" >Search Around This Target</label>
+             <button onclick="saveUrl()" style="float:right">Save Query as Url</button>
+            </div>
+            <span id="input-error"></span>
+            <!-- search options -->
+            <div id="search-options-card" class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#search-options"><i class="fas fa-cog"></i> Advanced Search Options <i class="fas fa-chevron-down dropdown-marker" title="Dropdown"></i></a>
+                </div>
+                <div id="search-options" class="collapse" data-parent="#query-form">
+                    <div class="card-body">
+                         <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-2 col-narrow">
+                                    <h4><i class="fas fa-satellite-dish"></i> Telescope</h4>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="telescope-gbt" checked></input>
+                                      <label class="custom-control-label" for="telescope-gbt"><span title="Green Bank Telescope">GBT</span></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="telescope-parkes" checked></input>
+                                      <label class="custom-control-label" for="telescope-parkes">Parkes</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="telescope-apf" checked></input>
+                                      <label class="custom-control-label" for="telescope-apf"><span title="Automated Planet Finder">APF</span></label>
+                                    </div>
+                                </div>
+                                 <div class="col-sm-2 col-narrow">
+                                    <h4><i class="fas fa-file-alt"></i> File Type</h4>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="ftype-fil" checked></input>
+                                      <label class="custom-control-label" for="ftype-fil">Filterbank</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="ftype-hdf5" checked></input>
+                                      <label class="custom-control-label" for="ftype-hdf5">HDF5</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="ftype-baseband" checked></input>
+                                      <label class="custom-control-label" for="ftype-baseband">Baseband</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="ftype-fits" checked></input>
+                                      <label class="custom-control-label" for="ftype-fits">FITS</label>
+                                    </div>
+                                </div>
+                                <!-- This section below is in testing phase-->
+                                <div class="col-sm-3 col-narrow">
+                                    <h4><i class="fas fa-file-alt"></i> Data Type</h4>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="data-fine" checked></input>
+                                      <label class="custom-control-label" for="data-fine">Fine</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="data-mid" checked></input>
+                                      <label class="custom-control-label" for="data-mid">Mid</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="data-time" checked></input>
+                                      <label class="custom-control-label" for="data-time">Time</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3 col-narrow">
+                                    <h4><i class="fas fa-file-alt"></i>Quality</h4>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="quality-A" checked></input>
+                                      <label class="custom-control-label" for="quality-A">A</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="quality-B" checked></input>
+                                      <label class="custom-control-label" for="quality-B">B</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="quality-C" checked></input>
+                                      <label class="custom-control-label" for="quality-C">C</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="quality-F" checked></input>
+                                      <label class="custom-control-label" for="quality-F">F</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="quality-Ungraded" checked></input>
+                                      <label class="custom-control-label" for="quality-Ungraded">Ungraded</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3 col-narrow">
+                                    <h4><i class="fas fa-file-alt"></i> Cadence</h4>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox"  class="custom-control-input" id="cadence-on" unchecked></input>
+                                      <label class="custom-control-label" for="cadence-on">On</label>
+                                    </div>
+
+                                    <div class="custom-control custom-checkbox"id ="primaryTargetBox">
+                                     <input type="checkbox" disabled="disabled"  class="custom-control-input" id="primaryTarget" unchecked></input>
+                                      <label class="custom-control-label" for="primaryTarget">&nbsp;Primary Target</label>
+                                    </div>
+                                </div>
+                                <!-- This section above is in testing phase-->
+                                <div class="col-lg input-panel">
+                                    <h4><i class="fa fa-search-location"></i> Position (Virtual Observatory)</h4>
+                                    <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" id="pos-enable"></input>
+                                      <label class="custom-control-label" for="pos-enable">Enable</label>
+                                    </div>
+                                    <label for="pos-ra" title="J2000 System">Center Right Ascension (&deg;)</label>
+                                    <input step="0.5" type="number" id="pos-ra" value="0" data-decimals="4" min="0" max="360"/>
+                                    <label for="pos-decl" title="J2000 System">Center Declination (&deg;)</label>
+                                    <input step="0.5" type="number" id="pos-decl" value="0" data-decimals="4" min="-90" max="90" />
+
+                                    <label for="pos-rad">Radius (&deg;)</label>
+                                    <input step="0.05" type="number" id="pos-rad" value="1" data-decimals="4" min="0" max="5" />
+                                </div>
+                                <div class="col-lg input-panel">
+                                    <h4><i class="fa fa-clock"></i> Time</h4>
+                                    <label for="time-start">Start Time (<acronym title="Modified Julian Date (days since midnight, November 17, 1858)">MJD</acronym>)</label>
+                                    <input step="0.001" type="number" id="time-start" value="0" data-decimals="4" min="0" max="1000000"/>
+                                    <label for="time-end">End Time (<acronym title="Modified Julian Date (days since midnight, November 17, 1858)">MJD</acronym>)</label>
+                                    <input step="0.001" type="number" id="time-end" value="1000000" data-decimals="4" min="0" max="1000000" />
+                                </div>
+                                <div class="col-lg input-panel">
+                                    <h4><i class="fa fa-signal"></i> Center Frequency</h4>
+                                    <label for="freq-start" title="J2000 System">Min Frequency (MHz)</label>
+                                    <input step="0.5" type="number" id="freq-start" value="0" data-decimals="4" min="0" max="500000"/>
+                                    <label for="freq-end" title="J2000 System">Max Frequency (MHz)</label>
+                                    <input step="0.5" type="number" id="freq-end" value="500000" data-decimals="4" min="0" max="500000" />
+                                </div>
+                                <div class="col-lg input-panel">
+                                    <h4><i class="fa fa-file-alt"></i> Misc. Options</h4>
+                                    <label for="paper-name">Paper:</label>
+                                    <select id="paper-name" name="paper-name">
+                                      <option value="none">N/A</option>
+                                    </select>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="search-tips-card" class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#search-tips"><i class="fas fa-lightbulb"></i> Search Tips <i class="fas fa-chevron-down dropdown-marker" title="Dropdown"></i></a>
+                </div>
+                <div id="search-tips" class="collapse" data-parent="#query-form">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-3"><strong>Detailed summary:</strong> Click any row of the results table to view more detailed information about the file and target</div>
+                                <div class="col-sm-3"><strong>Length limit:</strong> All queries are limited to return at most 500 files, so please try to be specific</div>
+                                <div class="col-sm-3"><strong>Advanced options:</strong> Click &quot;Advanced Search Options&quot; for more search options, such as limiting by telescope, file type, position ,etc.</div>
+                                <div class="col-sm-3"><strong>Alternate names:</strong> To search by an alternate name for an object (e.g. Andromeda Galaxy), type in the alternate name and click the suggested <kbd>&rarr;</kbd> alias</div>
+                                <div class="col-sm-3"><strong>Exact search:</strong> Prepend the query text with <kbd>!</kbd> to match target name exactly</div>
+                                <div class="col-sm-3"><strong>Regex:</strong> Prepend the query text with <kbd>/</kbd> to match target name using regular expressions</div>
+                                <div class="col-sm-3"><strong>Wildcards:</strong> use <kbd>_</kbd> to match any single character, <kbd>%</kbd> to match any string</div>
+                                <div class="col-sm-3"><strong>Forced update:</strong> Type <kbd>Enter</kbd> in the search box at any time to force update</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results DataTable -->
+        <div id="results">
+            <table class="table table-striped table-sm" id="results-table">
+                <thead>
+                    <tr>
+                        <th title="Time in Universal Time Coordinated format (essentially Greenwich Mean Time) at the start of the observation">UTC (DD/MM/YYYY)</th>
+                        <th title="Modified Julian Date (days since midnight, November 17, 1858) at the start of the observation">MJD</th>
+                        <th title="Telescope where the data were taken (Green Bank Telescope, Automated Planet Finder, or Parkes)">Telescope</th>
+                        <th title="Name of the object observed">Target</th>
+                        <th title="Location of target on the sky – Right Ascension in degrees (J2000 system)">RA</th>
+                        <th title="Location of target on the sky – Declination in degrees (J2000 system)">Decl</th>
+                        <th title="Center frequency of the observations in MHz">Center Freq</th>
+                        <th title="Description of the contents of the data file">File Type</th>
+                        <th title="File size in megabytes">Size</th>
+                        <th title="Data Quality grade">Quality</th>
+                        <th title="Download link"><i class="fa fa-download"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0</td><td>0</td><td>GBT</td><td>Doriath</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>10</td><td>10</td><td>Parkes</td><td>Neldoreth</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- Celestial star map container -->
+        <div id="celestial-outer">
+            <div id="celestial-card" class="card">
+                <div class="card-header">
+                    <a class="card-link fake-link"><i class="fas fa-globe"></i> Interactive Sky Map</a> <span id="options-summary"></span>
+                </div>
+
+                <div id="celestial-panel" data-parent="#celestial-outer">
+                    <div class="card-body">
+                        <div class="container-fluid" id="celestial-wrapper">
+                            <div id="celestial-map">
+                            </div>
+                            <p id="celestial-credits">Powered by <a href="https://github.com/ofrohn/d3-celestial">d3-celestial</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featherlight lightbox container -->
+        <div id="fl-box"><div id="fl-box-inner"></div></div>
+    </div>
+
+    <!-- Url Generation Modal-->
+    <div id = "url-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Url:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id = "url-modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+        </div>
+      </section>
+
+      <!-- Sticky Footer -->
+      <footer class="footer">
+          <div class="container">
+              <div class="copyright text-center text-muted">
+                <span>Copyright © Breakthrough Listen / BSRC 2019</span>
+              </div>
+          </div>
+      </footer>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="static/d3.combined.min.js"></script>
+  <script src="static/combined.min.js"></script>
+
+  
+
+<script>
+    // pass API urls from Flask to Javascript
+    var BreakthroughAPI = {
+        query_api_url : "/api/query-files",
+        //query_api_url: "seti.berkeley.edu:5000/api/api-query",
+        targets_api_url : "/api/list-targets?simbad",
+        //targets_api_url: "seti.berkeley.edu:5000/api/list-targets",
+    };
+</script>
+<script src = "static/bl-data-search.js"></script>
+
+</body>
