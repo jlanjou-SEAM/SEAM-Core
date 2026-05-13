@@ -1,11 +1,23 @@
 {
-  "NOAA_Buoys:NOAA_Buoys_RAW": {
-    "source": "NOAA_Buoys",
-    "stream": "NOAA_Buoys_RAW",
+  "SloanDigitalSkySurvey:SDSS_DR18": {
+    "source": "SloanDigitalSkySurvey",
+    "stream": "SDSS_DR18",
     "ok": false,
     "reason": "URL error: [Errno 11001] getaddrinfo failed",
-    "updated_utc": "2026-05-13T09:00:21.263765+00:00"
-  }
-}62767+00:00"
+    "updated_utc": "2026-05-13T09:01:12.020662+00:00"
+  },
+  "NASADeepSpaceNetwork:NASA_DSN_NOW": {
+    "source": "NASADeepSpaceNetwork",
+    "stream": "NASA_DSN_NOW",
+    "ok": false,
+    "reason": "URL error: [Errno 11001] getaddrinfo failed",
+    "updated_utc": "2026-05-13T09:01:12.020662+00:00"
+  },
+  "ARGO:ARGO_ALT_CURATED": {
+    "source": "ARGO",
+    "stream": "ARGO_ALT_CURATED",
+    "ok": false,
+    "reason": "URL error: [Errno 11001] getaddrinfo failed",
+    "updated_utc": "2026-05-13T09:01:12.036293+00:00"
   }
 }
