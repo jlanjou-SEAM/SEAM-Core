@@ -1,28 +1,37 @@
-Continuum Dual Acquisition Runtime v1.0
+Continuum Logger v1.1
+Full Recursive SEAM Pipeline
 
-This replaces the non-executing acquisition stub.
+This rebuilt orchestrator now reflects the actual finalized architecture.
 
-What it does:
-- reads config/dual_acquisition_sources.json
-- uses the full configured source list
-- fetches primary_raw and secondary_curated endpoints
-- routes GeoJSON / FeatureCollection payloads to raw/<source>/...
-- routes all non-GeoJSON reports to curated/<source>/...
-- routes all secondary_curated endpoints to curated/<source>/...
-- writes logs/acquisition_log.jsonl
-- writes state/source_health.json
+Pipeline:
+---------
+1. Dual acquisition
+2. Decode pipeline
+3. Space-time event synthesis
+4. Spatial aggregation
+5. Cross-stream reconciliation
+6. Persistent field tracking
+7. Forecast cone generation
+8. Stage-2 recursive reconciliation
+9. Forecast correlation
+10. Final dashboard export refresh
+11. Git publish
+12. Status summary
+
+Important:
+----------
+continuum_cross_stream_reconcile.py now:
+- preserves live vs delayed lineage
+- analyzes source convergence
+- exports data/latest.json directly
 
 Install:
-1. Copy continuum_dual_acquisition_runtime.py into C:\CleanRoom
-2. Overwrite the existing file.
-3. Run:
+--------
+Replace:
+    C:\CleanRoom\Continuum_Logger_v1_0_FIXED.bat
 
-   python continuum_dual_acquisition_runtime.py
+with:
+    Continuum_Logger_v1_1.bat
 
-4. Verify:
-
-   dir raw
-   dir curated
-   Get-Content logs\acquisition_log.jsonl -Tail 20
-
-Then run the existing Continuum Logger batch again.
+Run:
+    .\Continuum_Logger_v1_1.bat
