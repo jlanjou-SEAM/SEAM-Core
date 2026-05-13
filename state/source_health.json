@@ -1,58 +1,9 @@
 {
-  "ReverseBeaconNetwork:ReverseBeaconNetwork_ALT_RAW": {
-    "source": "ReverseBeaconNetwork",
-    "stream": "ReverseBeaconNetwork_ALT_RAW",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T09:51:56.240699+00:00"
-  },
-  "ARGO:ARGO_ALT_CURATED": {
-    "source": "ARGO",
-    "stream": "ARGO_ALT_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T09:51:56.364596+00:00"
-  },
-  "LightningMaps:LightningMaps_ALT_RAW": {
-    "source": "LightningMaps",
-    "stream": "LightningMaps_ALT_RAW",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T09:51:56.624639+00:00"
-  },
-  "Blitzortung:BLITZORTUNG_ROOT": {
-    "source": "Blitzortung",
-    "stream": "BLITZORTUNG_ROOT",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T09:51:57.224033+00:00"
-  },
-  "Blitzortung:Blitzortung_ALT_CURATED": {
-    "source": "Blitzortung",
-    "stream": "Blitzortung_ALT_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T09:51:57.412235+00:00"
-  },
-  "ARGO:ARGO_ALT_RAW": {
-    "source": "ARGO",
-    "stream": "ARGO_ALT_RAW",
-    "ok": false,
-    "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T09:51:59.380620+00:00"
-  },
-  "Celestrak:CELESTRAK_STATIONS_CURATED": {
-    "source": "Celestrak",
-    "stream": "CELESTRAK_STATIONS_CURATED",
-    "ok": false,
-    "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T09:52:00.895943+00:00"
-  },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T09:52:04.180422+00:00"
+    "updated_utc": "2026-05-13T09:53:32.487440+00:00"
   }
 }
