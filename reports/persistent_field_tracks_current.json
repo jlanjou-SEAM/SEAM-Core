@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-05-13T19:05:55.146271+00:00",
+  "timestamp_utc": "2026-05-13T19:08:28.161712+00:00",
   "track_count": 1259,
   "tracks": [
     {
@@ -5596,20 +5596,25 @@
     {
       "persistent_track_id": "TRACK-00224",
       "primary_regime": "seismic",
-      "first_seen_utc": "2026-05-13T02:53:54.755000+00:00",
+      "first_seen_utc": "2026-05-13T02:53:54.032000+00:00",
       "last_seen_utc": "2026-05-13T02:53:54.755000+00:00",
       "current_latitude": 58.5,
       "current_longitude": -137.037,
-      "event_count": 1,
+      "event_count": 2,
       "velocity_vector": {
-        "delta_latitude": 0.0,
-        "delta_longitude": 0.0
+        "delta_latitude": 0.028,
+        "delta_longitude": 0.072
       },
       "forecast_position": {
-        "latitude": 58.5,
-        "longitude": -137.037
+        "latitude": 58.528,
+        "longitude": -136.965
       },
       "trajectory": [
+        {
+          "timestamp": "2026-05-13T02:53:54.032000+00:00",
+          "latitude": 58.472,
+          "longitude": -137.109
+        },
         {
           "timestamp": "2026-05-13T02:53:54.755000+00:00",
           "latitude": 58.5,
@@ -5692,11 +5697,11 @@
     {
       "persistent_track_id": "TRACK-00228",
       "primary_regime": "seismic",
-      "first_seen_utc": "2026-05-13T03:06:28.501000+00:00",
+      "first_seen_utc": "2026-05-13T03:06:28.343000+00:00",
       "last_seen_utc": "2026-05-13T03:06:29.193000+00:00",
       "current_latitude": 58.4767,
       "current_longitude": -137.0513,
-      "event_count": 2,
+      "event_count": 3,
       "velocity_vector": {
         "delta_latitude": 0.0307,
         "delta_longitude": 0.0567
@@ -5706,6 +5711,11 @@
         "longitude": -136.9946
       },
       "trajectory": [
+        {
+          "timestamp": "2026-05-13T03:06:28.343000+00:00",
+          "latitude": 58.452,
+          "longitude": -137.119
+        },
         {
           "timestamp": "2026-05-13T03:06:28.501000+00:00",
           "latitude": 58.446,
@@ -47713,21 +47723,26 @@
       "persistent_track_id": "TRACK-01258",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T19:04:27.911790+00:00",
-      "last_seen_utc": "2026-05-13T19:04:27.911790+00:00",
+      "last_seen_utc": "2026-05-13T19:06:59.160786+00:00",
       "current_latitude": 35.74169666666667,
       "current_longitude": 139.32740833333332,
-      "event_count": 1,
+      "event_count": 2,
       "velocity_vector": {
         "delta_latitude": 0.0,
         "delta_longitude": 0.0
       },
       "forecast_position": {
-        "latitude": 35.74169666666667,
-        "longitude": 139.32740833333332
+        "latitude": 35.741697,
+        "longitude": 139.327408
       },
       "trajectory": [
         {
           "timestamp": "2026-05-13T19:04:27.911790+00:00",
+          "latitude": 35.74169666666667,
+          "longitude": 139.32740833333332
+        },
+        {
+          "timestamp": "2026-05-13T19:06:59.160786+00:00",
           "latitude": 35.74169666666667,
           "longitude": 139.32740833333332
         }
