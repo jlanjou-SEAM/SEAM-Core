@@ -4,27 +4,34 @@
     "stream": "ARGO_ALT_RAW",
     "ok": false,
     "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T11:01:51.489619+00:00"
+    "updated_utc": "2026-05-13T11:03:57.210743+00:00"
   },
   "IRIS:IRIS_ALT_CURATED": {
     "source": "IRIS",
     "stream": "IRIS_ALT_CURATED",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T11:03:57.332620+00:00"
+  },
+  "Celestrak:CELESTRAK_STATIONS": {
+    "source": "Celestrak",
+    "stream": "CELESTRAK_STATIONS",
     "ok": false,
-    "reason": "The read operation timed out",
-    "updated_utc": "2026-05-13T11:01:52.287581+00:00"
+    "reason": "URL error: timed out",
+    "updated_utc": "2026-05-13T11:03:58.692362+00:00"
   },
   "Celestrak:CELESTRAK_STATIONS_CURATED": {
     "source": "Celestrak",
     "stream": "CELESTRAK_STATIONS_CURATED",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T11:01:52.805276+00:00"
+    "updated_utc": "2026-05-13T11:03:58.723694+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T11:02:03.519378+00:00"
+    "updated_utc": "2026-05-13T11:04:04.770965+00:00"
   }
 }
