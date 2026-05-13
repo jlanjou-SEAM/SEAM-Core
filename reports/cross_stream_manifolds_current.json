@@ -1,81 +1,487 @@
 {
-  "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+  "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
   "aggregate_input_count": 207,
   "manifold_count": 207,
   "manifolds": [
     {
       "manifold_id": "MANI-00000",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-28.1_-69.1",
       "aggregate_id": "AGG-00000"
     },
     {
       "manifold_id": "MANI-00001",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "4.1_97.4",
       "aggregate_id": "AGG-00001"
     },
     {
       "manifold_id": "MANI-00002",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-9.8_116.7",
       "aggregate_id": "AGG-00002"
     },
     {
       "manifold_id": "MANI-00003",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "40.3_42.2",
       "aggregate_id": "AGG-00003"
     },
     {
       "manifold_id": "MANI-00004",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.48,
-      "density": 20,
+      "lock_state": "FOLLOW",
+      "seam_phi": 0.72,
+      "density": 30,
       "event_count": 2,
       "spatial_region": "36.6_-121.2",
       "aggregate_id": "AGG-00004"
     },
     {
       "manifold_id": "MANI-00005",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "FOLLOW",
+      "seam_phi": 0.72,
+      "density": 18,
+      "event_count": 1,
+      "spatial_region": "19.3_-155.0",
+      "aggregate_id": "AGG-00005"
+    },
+    {
+      "manifold_id": "MANI-00006",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "38.1_37.7",
+      "aggregate_id": "AGG-00006"
+    },
+    {
+      "manifold_id": "MANI-00007",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "39.4_40.4",
+      "aggregate_id": "AGG-00007"
+    },
+    {
+      "manifold_id": "MANI-00008",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-39.7_176.2",
+      "aggregate_id": "AGG-00008"
+    },
+    {
+      "manifold_id": "MANI-00009",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "51.2_158.6",
+      "aggregate_id": "AGG-00009"
+    },
+    {
+      "manifold_id": "MANI-00010",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-3.9_128.9",
+      "aggregate_id": "AGG-00010"
+    },
+    {
+      "manifold_id": "MANI-00011",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-2.3_140.4",
+      "aggregate_id": "AGG-00011"
+    },
+    {
+      "manifold_id": "MANI-00012",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "39.2_27.9",
+      "aggregate_id": "AGG-00012"
+    },
+    {
+      "manifold_id": "MANI-00013",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-10.0_120.2",
+      "aggregate_id": "AGG-00013"
+    },
+    {
+      "manifold_id": "MANI-00014",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "36.5_33.3",
+      "aggregate_id": "AGG-00014"
+    },
+    {
+      "manifold_id": "MANI-00015",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "38.3_38.8",
+      "aggregate_id": "AGG-00015"
+    },
+    {
+      "manifold_id": "MANI-00016",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "40.4_34.9",
+      "aggregate_id": "AGG-00016"
+    },
+    {
+      "manifold_id": "MANI-00017",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-3.6_128.8",
+      "aggregate_id": "AGG-00017"
+    },
+    {
+      "manifold_id": "MANI-00018",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "40.7_33.0",
+      "aggregate_id": "AGG-00018"
+    },
+    {
+      "manifold_id": "MANI-00019",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "5.2_127.3",
+      "aggregate_id": "AGG-00019"
+    },
+    {
+      "manifold_id": "MANI-00020",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "14.3_-93.0",
+      "aggregate_id": "AGG-00020"
+    },
+    {
+      "manifold_id": "MANI-00021",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "38.4_39.4",
+      "aggregate_id": "AGG-00021"
+    },
+    {
+      "manifold_id": "MANI-00022",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-8.8_111.1",
+      "aggregate_id": "AGG-00022"
+    },
+    {
+      "manifold_id": "MANI-00023",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "37.1_31.8",
+      "aggregate_id": "AGG-00023"
+    },
+    {
+      "manifold_id": "MANI-00024",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "39.3_40.7",
+      "aggregate_id": "AGG-00024"
+    },
+    {
+      "manifold_id": "MANI-00025",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-32.4_-71.5",
+      "aggregate_id": "AGG-00025"
+    },
+    {
+      "manifold_id": "MANI-00026",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "FOLLOW",
+      "seam_phi": 0.6,
+      "density": 15,
+      "event_count": 1,
+      "spatial_region": "11.5_-86.7",
+      "aggregate_id": "AGG-00026"
+    },
+    {
+      "manifold_id": "MANI-00027",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "36.5_33.4",
+      "aggregate_id": "AGG-00027"
+    },
+    {
+      "manifold_id": "MANI-00028",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-5.5_105.0",
+      "aggregate_id": "AGG-00028"
+    },
+    {
+      "manifold_id": "MANI-00029",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "38.0_21.6",
+      "aggregate_id": "AGG-00029"
+    },
+    {
+      "manifold_id": "MANI-00030",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 24,
+      "event_count": 4,
+      "spatial_region": "39.2_28.2",
+      "aggregate_id": "AGG-00030"
+    },
+    {
+      "manifold_id": "MANI-00031",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-20.6_-69.2",
+      "aggregate_id": "AGG-00031"
+    },
+    {
+      "manifold_id": "MANI-00032",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "-8.2_111.6",
+      "aggregate_id": "AGG-00032"
+    },
+    {
+      "manifold_id": "MANI-00033",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 6,
+      "event_count": 1,
+      "spatial_region": "2.4_125.4",
+      "aggregate_id": "AGG-00033"
+    },
+    {
+      "manifold_id": "MANI-00034",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
@@ -84,838 +490,488 @@
       "seam_phi": 0.48,
       "density": 12,
       "event_count": 1,
-      "spatial_region": "19.3_-155.0",
-      "aggregate_id": "AGG-00005"
-    },
-    {
-      "manifold_id": "MANI-00006",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "38.1_37.7",
-      "aggregate_id": "AGG-00006"
-    },
-    {
-      "manifold_id": "MANI-00007",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "39.4_40.4",
-      "aggregate_id": "AGG-00007"
-    },
-    {
-      "manifold_id": "MANI-00008",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-39.7_176.2",
-      "aggregate_id": "AGG-00008"
-    },
-    {
-      "manifold_id": "MANI-00009",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "51.2_158.6",
-      "aggregate_id": "AGG-00009"
-    },
-    {
-      "manifold_id": "MANI-00010",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-3.9_128.9",
-      "aggregate_id": "AGG-00010"
-    },
-    {
-      "manifold_id": "MANI-00011",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-2.3_140.4",
-      "aggregate_id": "AGG-00011"
-    },
-    {
-      "manifold_id": "MANI-00012",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "39.2_27.9",
-      "aggregate_id": "AGG-00012"
-    },
-    {
-      "manifold_id": "MANI-00013",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-10.0_120.2",
-      "aggregate_id": "AGG-00013"
-    },
-    {
-      "manifold_id": "MANI-00014",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "36.5_33.3",
-      "aggregate_id": "AGG-00014"
-    },
-    {
-      "manifold_id": "MANI-00015",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "38.3_38.8",
-      "aggregate_id": "AGG-00015"
-    },
-    {
-      "manifold_id": "MANI-00016",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "40.4_34.9",
-      "aggregate_id": "AGG-00016"
-    },
-    {
-      "manifold_id": "MANI-00017",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-3.6_128.8",
-      "aggregate_id": "AGG-00017"
-    },
-    {
-      "manifold_id": "MANI-00018",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "40.7_33.0",
-      "aggregate_id": "AGG-00018"
-    },
-    {
-      "manifold_id": "MANI-00019",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "5.2_127.3",
-      "aggregate_id": "AGG-00019"
-    },
-    {
-      "manifold_id": "MANI-00020",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "14.3_-93.0",
-      "aggregate_id": "AGG-00020"
-    },
-    {
-      "manifold_id": "MANI-00021",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "38.4_39.4",
-      "aggregate_id": "AGG-00021"
-    },
-    {
-      "manifold_id": "MANI-00022",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-8.8_111.1",
-      "aggregate_id": "AGG-00022"
-    },
-    {
-      "manifold_id": "MANI-00023",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "37.1_31.8",
-      "aggregate_id": "AGG-00023"
-    },
-    {
-      "manifold_id": "MANI-00024",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "39.3_40.7",
-      "aggregate_id": "AGG-00024"
-    },
-    {
-      "manifold_id": "MANI-00025",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-32.4_-71.5",
-      "aggregate_id": "AGG-00025"
-    },
-    {
-      "manifold_id": "MANI-00026",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.4,
-      "density": 10,
-      "event_count": 1,
-      "spatial_region": "11.5_-86.7",
-      "aggregate_id": "AGG-00026"
-    },
-    {
-      "manifold_id": "MANI-00027",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "36.5_33.4",
-      "aggregate_id": "AGG-00027"
-    },
-    {
-      "manifold_id": "MANI-00028",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-5.5_105.0",
-      "aggregate_id": "AGG-00028"
-    },
-    {
-      "manifold_id": "MANI-00029",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "38.0_21.6",
-      "aggregate_id": "AGG-00029"
-    },
-    {
-      "manifold_id": "MANI-00030",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 16,
-      "event_count": 4,
-      "spatial_region": "39.2_28.2",
-      "aggregate_id": "AGG-00030"
-    },
-    {
-      "manifold_id": "MANI-00031",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-20.6_-69.2",
-      "aggregate_id": "AGG-00031"
-    },
-    {
-      "manifold_id": "MANI-00032",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "-8.2_111.6",
-      "aggregate_id": "AGG-00032"
-    },
-    {
-      "manifold_id": "MANI-00033",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
-      "spatial_region": "2.4_125.4",
-      "aggregate_id": "AGG-00033"
-    },
-    {
-      "manifold_id": "MANI-00034",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
-      "event_count": 1,
       "spatial_region": "30.4_138.4",
       "aggregate_id": "AGG-00034"
     },
     {
       "manifold_id": "MANI-00035",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "40.4_28.5",
       "aggregate_id": "AGG-00035"
     },
     {
       "manifold_id": "MANI-00036",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.5_-137.1",
       "aggregate_id": "AGG-00036"
     },
     {
       "manifold_id": "MANI-00037",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "48.2_-1.6",
       "aggregate_id": "AGG-00037"
     },
     {
       "manifold_id": "MANI-00038",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 22,
+      "seam_phi": 0.48,
+      "density": 33,
       "event_count": 4,
       "spatial_region": "31.6_-104.5",
       "aggregate_id": "AGG-00038"
     },
     {
       "manifold_id": "MANI-00039",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-30.4_-72.7",
       "aggregate_id": "AGG-00039"
     },
     {
       "manifold_id": "MANI-00040",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "38.1_38.6",
       "aggregate_id": "AGG-00040"
     },
     {
       "manifold_id": "MANI-00041",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "36.3_34.1",
       "aggregate_id": "AGG-00041"
     },
     {
       "manifold_id": "MANI-00042",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "38.0_36.3",
       "aggregate_id": "AGG-00042"
     },
     {
       "manifold_id": "MANI-00043",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "20.3_-155.3",
       "aggregate_id": "AGG-00043"
     },
     {
       "manifold_id": "MANI-00044",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "50.1_7.9",
       "aggregate_id": "AGG-00044"
     },
     {
       "manifold_id": "MANI-00045",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "45.6_2.9",
       "aggregate_id": "AGG-00045"
     },
     {
       "manifold_id": "MANI-00046",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
+      "seam_phi": 0.48,
+      "density": 12,
       "event_count": 1,
       "spatial_region": "41.7_145.9",
       "aggregate_id": "AGG-00046"
     },
     {
       "manifold_id": "MANI-00047",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 98,
+      "seam_phi": 0.48,
+      "density": 147,
       "event_count": 23,
       "spatial_region": "38.8_-122.8",
       "aggregate_id": "AGG-00047"
     },
     {
       "manifold_id": "MANI-00048",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
+      "seam_phi": 0.48,
+      "density": 12,
       "event_count": 1,
       "spatial_region": "38.8_-122.9",
       "aggregate_id": "AGG-00048"
     },
     {
       "manifold_id": "MANI-00049",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 24,
+      "seam_phi": 0.48,
+      "density": 36,
       "event_count": 5,
       "spatial_region": "38.8_-122.7",
       "aggregate_id": "AGG-00049"
     },
     {
       "manifold_id": "MANI-00050",
-      "timestamp_utc": "2026-05-13T06:46:30.457693+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
+      "seam_phi": 0.48,
+      "density": 12,
       "event_count": 1,
       "spatial_region": "61.6_-149.6",
       "aggregate_id": "AGG-00050"
     },
     {
       "manifold_id": "MANI-00051",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
+      "seam_phi": 0.48,
+      "density": 12,
       "event_count": 1,
       "spatial_region": "35.8_-121.3",
       "aggregate_id": "AGG-00051"
     },
     {
       "manifold_id": "MANI-00052",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
+      "seam_phi": 0.48,
+      "density": 12,
       "event_count": 1,
       "spatial_region": "64.9_-146.4",
       "aggregate_id": "AGG-00052"
     },
     {
       "manifold_id": "MANI-00053",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
+      "seam_phi": 0.48,
+      "density": 12,
       "event_count": 1,
       "spatial_region": "35.8_-117.6",
       "aggregate_id": "AGG-00053"
     },
     {
       "manifold_id": "MANI-00054",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.32,
-      "density": 8,
+      "seam_phi": 0.48,
+      "density": 12,
       "event_count": 1,
       "spatial_region": "31.4_-103.9",
       "aggregate_id": "AGG-00054"
     },
     {
       "manifold_id": "MANI-00055",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "51.4_158.5",
       "aggregate_id": "AGG-00055"
     },
     {
       "manifold_id": "MANI-00056",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "28.9_-98.2",
       "aggregate_id": "AGG-00056"
     },
     {
       "manifold_id": "MANI-00057",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 14,
+      "seam_phi": 0.36,
+      "density": 21,
       "event_count": 3,
       "spatial_region": "31.7_-104.4",
       "aggregate_id": "AGG-00057"
     },
     {
       "manifold_id": "MANI-00058",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "28.9_-99.1",
       "aggregate_id": "AGG-00058"
     },
     {
       "manifold_id": "MANI-00059",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "55.9_-159.9",
       "aggregate_id": "AGG-00059"
     },
     {
       "manifold_id": "MANI-00060",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "61.8_-148.9",
       "aggregate_id": "AGG-00060"
     },
     {
       "manifold_id": "MANI-00061",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 10,
+      "seam_phi": 0.36,
+      "density": 15,
       "event_count": 2,
       "spatial_region": "39.3_-119.1",
       "aggregate_id": "AGG-00061"
     },
     {
       "manifold_id": "MANI-00062",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "60.2_-142.0",
       "aggregate_id": "AGG-00062"
     },
     {
       "manifold_id": "MANI-00063",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "31.6_-104.2",
       "aggregate_id": "AGG-00063"
     },
     {
       "manifold_id": "MANI-00064",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.24,
-      "density": 6,
+      "seam_phi": 0.36,
+      "density": 9,
       "event_count": 1,
       "spatial_region": "34.1_-118.2",
       "aggregate_id": "AGG-00064"
     },
     {
       "manifold_id": "MANI-00065",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.36,
+      "density": 9,
+      "event_count": 1,
+      "spatial_region": "60.2_-152.5",
+      "aggregate_id": "AGG-00065"
+    },
+    {
+      "manifold_id": "MANI-00066",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_ENVIRONMENTAL_RADIATION_FIELD",
+      "event_types": [
+        "radiological"
+      ],
+      "lock_state": "HARD LOCK",
+      "seam_phi": 0.999,
+      "density": 75,
+      "event_count": 2,
+      "spatial_region": "46.0_14.5",
+      "aggregate_id": "AGG-00066"
+    },
+    {
+      "manifold_id": "MANI-00067",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 24,
+      "event_count": 4,
+      "spatial_region": "33.0_-115.6",
+      "aggregate_id": "AGG-00067"
+    },
+    {
+      "manifold_id": "MANI-00068",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
+      "event_label": "SEAM_LITHIC_PERTURBATION",
+      "event_types": [
+        "seismic"
+      ],
+      "lock_state": "MONITOR",
+      "seam_phi": 0.24,
+      "density": 12,
+      "event_count": 2,
+      "spatial_region": "39.3_-119.0",
+      "aggregate_id": "AGG-00068"
+    },
+    {
+      "manifold_id": "MANI-00069",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
@@ -924,1979 +980,1923 @@
       "seam_phi": 0.24,
       "density": 6,
       "event_count": 1,
-      "spatial_region": "60.2_-152.5",
-      "aggregate_id": "AGG-00065"
-    },
-    {
-      "manifold_id": "MANI-00066",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
-      "event_label": "SEAM_ENVIRONMENTAL_RADIATION_FIELD",
-      "event_types": [
-        "radiological"
-      ],
-      "lock_state": "HARD LOCK",
-      "seam_phi": 0.999,
-      "density": 50,
-      "event_count": 1,
-      "spatial_region": "46.0_14.5",
-      "aggregate_id": "AGG-00066"
-    },
-    {
-      "manifold_id": "MANI-00067",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 16,
-      "event_count": 4,
-      "spatial_region": "33.0_-115.6",
-      "aggregate_id": "AGG-00067"
-    },
-    {
-      "manifold_id": "MANI-00068",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
-      "event_count": 2,
-      "spatial_region": "39.3_-119.0",
-      "aggregate_id": "AGG-00068"
-    },
-    {
-      "manifold_id": "MANI-00069",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
-      "event_label": "SEAM_LITHIC_PERTURBATION",
-      "event_types": [
-        "seismic"
-      ],
-      "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
-      "event_count": 1,
       "spatial_region": "36.1_-89.8",
       "aggregate_id": "AGG-00069"
     },
     {
       "manifold_id": "MANI-00070",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "40.0_143.0",
       "aggregate_id": "AGG-00070"
     },
     {
       "manifold_id": "MANI-00071",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "51.0_179.4",
       "aggregate_id": "AGG-00071"
     },
     {
       "manifold_id": "MANI-00072",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.355359+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "56.0_-160.0",
       "aggregate_id": "AGG-00072"
     },
     {
       "manifold_id": "MANI-00073",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "35.6_-117.5",
       "aggregate_id": "AGG-00073"
     },
     {
       "manifold_id": "MANI-00074",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.4_-137.1",
       "aggregate_id": "AGG-00074"
     },
     {
       "manifold_id": "MANI-00075",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.5_-137.0",
       "aggregate_id": "AGG-00075"
     },
     {
       "manifold_id": "MANI-00076",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.7_-104.5",
       "aggregate_id": "AGG-00076"
     },
     {
       "manifold_id": "MANI-00077",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.4_-103.1",
       "aggregate_id": "AGG-00077"
     },
     {
       "manifold_id": "MANI-00078",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "64.0_-148.8",
       "aggregate_id": "AGG-00078"
     },
     {
       "manifold_id": "MANI-00079",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 12,
+      "seam_phi": 0.24,
+      "density": 18,
       "event_count": 3,
       "spatial_region": "35.3_-117.8",
       "aggregate_id": "AGG-00079"
     },
     {
       "manifold_id": "MANI-00080",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 16,
+      "seam_phi": 0.24,
+      "density": 24,
       "event_count": 4,
       "spatial_region": "34.0_-117.2",
       "aggregate_id": "AGG-00080"
     },
     {
       "manifold_id": "MANI-00081",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.7_-104.1",
       "aggregate_id": "AGG-00081"
     },
     {
       "manifold_id": "MANI-00082",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "39.6_-120.5",
       "aggregate_id": "AGG-00082"
     },
     {
       "manifold_id": "MANI-00083",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.9_-103.4",
       "aggregate_id": "AGG-00083"
     },
     {
       "manifold_id": "MANI-00084",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "61.6_-147.9",
       "aggregate_id": "AGG-00084"
     },
     {
       "manifold_id": "MANI-00085",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.8_-117.6",
       "aggregate_id": "AGG-00085"
     },
     {
       "manifold_id": "MANI-00086",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 16,
+      "seam_phi": 0.24,
+      "density": 24,
       "event_count": 4,
       "spatial_region": "33.0_-116.4",
       "aggregate_id": "AGG-00086"
     },
     {
       "manifold_id": "MANI-00087",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 32,
+      "seam_phi": 0.24,
+      "density": 48,
       "event_count": 8,
       "spatial_region": "33.0_-115.5",
       "aggregate_id": "AGG-00087"
     },
     {
       "manifold_id": "MANI-00088",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 48,
+      "seam_phi": 0.24,
+      "density": 72,
       "event_count": 12,
       "spatial_region": "33.5_-116.5",
       "aggregate_id": "AGG-00088"
     },
     {
       "manifold_id": "MANI-00089",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "19.3_-155.3",
       "aggregate_id": "AGG-00089"
     },
     {
       "manifold_id": "MANI-00090",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "51.1_-178.4",
       "aggregate_id": "AGG-00090"
     },
     {
       "manifold_id": "MANI-00091",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "51.3_-176.1",
       "aggregate_id": "AGG-00091"
     },
     {
       "manifold_id": "MANI-00092",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "53.3_-165.8",
       "aggregate_id": "AGG-00092"
     },
     {
       "manifold_id": "MANI-00093",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-23.7_179.9",
       "aggregate_id": "AGG-00093"
     },
     {
       "manifold_id": "MANI-00094",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "42.3_-124.3",
       "aggregate_id": "AGG-00094"
     },
     {
       "manifold_id": "MANI-00095",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "40.3_-118.1",
       "aggregate_id": "AGG-00095"
     },
     {
       "manifold_id": "MANI-00096",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "37.1_-115.3",
       "aggregate_id": "AGG-00096"
     },
     {
       "manifold_id": "MANI-00097",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.8_-150.9",
       "aggregate_id": "AGG-00097"
     },
     {
       "manifold_id": "MANI-00098",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 12,
+      "seam_phi": 0.24,
+      "density": 18,
       "event_count": 3,
       "spatial_region": "33.5_-116.7",
       "aggregate_id": "AGG-00098"
     },
     {
       "manifold_id": "MANI-00099",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 16,
+      "seam_phi": 0.24,
+      "density": 24,
       "event_count": 4,
       "spatial_region": "34.4_-118.9",
       "aggregate_id": "AGG-00099"
     },
     {
       "manifold_id": "MANI-00100",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.7_-116.7",
       "aggregate_id": "AGG-00100"
     },
     {
       "manifold_id": "MANI-00101",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "36.0_-117.4",
       "aggregate_id": "AGG-00101"
     },
     {
       "manifold_id": "MANI-00102",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "35.5_-118.5",
       "aggregate_id": "AGG-00102"
     },
     {
       "manifold_id": "MANI-00103",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "60.2_-141.1",
       "aggregate_id": "AGG-00103"
     },
     {
       "manifold_id": "MANI-00104",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "19.4_-155.3",
       "aggregate_id": "AGG-00104"
     },
     {
       "manifold_id": "MANI-00105",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-21.1_-174.5",
       "aggregate_id": "AGG-00105"
     },
     {
       "manifold_id": "MANI-00106",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 24,
+      "seam_phi": 0.24,
+      "density": 36,
       "event_count": 6,
       "spatial_region": "19.2_-155.5",
       "aggregate_id": "AGG-00106"
     },
     {
       "manifold_id": "MANI-00107",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "49.0_-122.1",
       "aggregate_id": "AGG-00107"
     },
     {
       "manifold_id": "MANI-00108",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "44.5_-112.0",
       "aggregate_id": "AGG-00108"
     },
     {
       "manifold_id": "MANI-00109",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-23.2_-176.8",
       "aggregate_id": "AGG-00109"
     },
     {
       "manifold_id": "MANI-00110",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "45.1_-122.5",
       "aggregate_id": "AGG-00110"
     },
     {
       "manifold_id": "MANI-00111",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.1_-156.4",
       "aggregate_id": "AGG-00111"
     },
     {
       "manifold_id": "MANI-00112",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 12,
+      "seam_phi": 0.24,
+      "density": 18,
       "event_count": 3,
       "spatial_region": "32.9_-115.5",
       "aggregate_id": "AGG-00112"
     },
     {
       "manifold_id": "MANI-00113",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "29.0_-98.0",
       "aggregate_id": "AGG-00113"
     },
     {
       "manifold_id": "MANI-00114",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.0_-155.1",
       "aggregate_id": "AGG-00114"
     },
     {
       "manifold_id": "MANI-00115",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.5_-146.7",
       "aggregate_id": "AGG-00115"
     },
     {
       "manifold_id": "MANI-00116",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "33.2_-116.8",
       "aggregate_id": "AGG-00116"
     },
     {
       "manifold_id": "MANI-00117",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "56.7_-135.3",
       "aggregate_id": "AGG-00117"
     },
     {
       "manifold_id": "MANI-00118",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 20,
+      "seam_phi": 0.24,
+      "density": 30,
       "event_count": 5,
       "spatial_region": "38.5_-112.9",
       "aggregate_id": "AGG-00118"
     },
     {
       "manifold_id": "MANI-00119",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 20,
+      "seam_phi": 0.24,
+      "density": 30,
       "event_count": 5,
       "spatial_region": "33.8_-116.9",
       "aggregate_id": "AGG-00119"
     },
     {
       "manifold_id": "MANI-00120",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "35.7_52.1",
       "aggregate_id": "AGG-00120"
     },
     {
       "manifold_id": "MANI-00121",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.8_-147.7",
       "aggregate_id": "AGG-00121"
     },
     {
       "manifold_id": "MANI-00122",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.2_-155.3",
       "aggregate_id": "AGG-00122"
     },
     {
       "manifold_id": "MANI-00123",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "38.8_-122.6",
       "aggregate_id": "AGG-00123"
     },
     {
       "manifold_id": "MANI-00124",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.9_-117.5",
       "aggregate_id": "AGG-00124"
     },
     {
       "manifold_id": "MANI-00125",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "53.9_-166.6",
       "aggregate_id": "AGG-00125"
     },
     {
       "manifold_id": "MANI-00126",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "37.6_-122.5",
       "aggregate_id": "AGG-00126"
     },
     {
       "manifold_id": "MANI-00127",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "53.8_-166.5",
       "aggregate_id": "AGG-00127"
     },
     {
       "manifold_id": "MANI-00128",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "57.8_-154.3",
       "aggregate_id": "AGG-00128"
     },
     {
       "manifold_id": "MANI-00129",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "32.8_-116.1",
       "aggregate_id": "AGG-00129"
     },
     {
       "manifold_id": "MANI-00130",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 12,
+      "seam_phi": 0.24,
+      "density": 18,
       "event_count": 3,
       "spatial_region": "19.2_-155.4",
       "aggregate_id": "AGG-00130"
     },
     {
       "manifold_id": "MANI-00131",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "46.2_-122.4",
       "aggregate_id": "AGG-00131"
     },
     {
       "manifold_id": "MANI-00132",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-16.9_-69.7",
       "aggregate_id": "AGG-00132"
     },
     {
       "manifold_id": "MANI-00133",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "2.9_127.9",
       "aggregate_id": "AGG-00133"
     },
     {
       "manifold_id": "MANI-00134",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "32.4_-101.8",
       "aggregate_id": "AGG-00134"
     },
     {
       "manifold_id": "MANI-00135",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.1_-115.0",
       "aggregate_id": "AGG-00135"
     },
     {
       "manifold_id": "MANI-00136",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "19.3_-155.4",
       "aggregate_id": "AGG-00136"
     },
     {
       "manifold_id": "MANI-00137",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "44.8_-110.9",
       "aggregate_id": "AGG-00137"
     },
     {
       "manifold_id": "MANI-00138",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "34.2_-118.6",
       "aggregate_id": "AGG-00138"
     },
     {
       "manifold_id": "MANI-00139",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "64.7_-149.1",
       "aggregate_id": "AGG-00139"
     },
     {
       "manifold_id": "MANI-00140",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "32.8_-115.6",
       "aggregate_id": "AGG-00140"
     },
     {
       "manifold_id": "MANI-00141",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "57.6_-138.0",
       "aggregate_id": "AGG-00141"
     },
     {
       "manifold_id": "MANI-00142",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.5_-148.4",
       "aggregate_id": "AGG-00142"
     },
     {
       "manifold_id": "MANI-00143",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.4_-116.3",
       "aggregate_id": "AGG-00143"
     },
     {
       "manifold_id": "MANI-00144",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "59.7_-153.1",
       "aggregate_id": "AGG-00144"
     },
     {
       "manifold_id": "MANI-00145",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "34.6_-118.0",
       "aggregate_id": "AGG-00145"
     },
     {
       "manifold_id": "MANI-00146",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "38.2_-122.3",
       "aggregate_id": "AGG-00146"
     },
     {
       "manifold_id": "MANI-00147",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "54.5_-163.2",
       "aggregate_id": "AGG-00147"
     },
     {
       "manifold_id": "MANI-00148",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "63.2_-150.4",
       "aggregate_id": "AGG-00148"
     },
     {
       "manifold_id": "MANI-00149",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-10.6_164.9",
       "aggregate_id": "AGG-00149"
     },
     {
       "manifold_id": "MANI-00150",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.9_-101.8",
       "aggregate_id": "AGG-00150"
     },
     {
       "manifold_id": "MANI-00151",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "35.8_-98.7",
       "aggregate_id": "AGG-00151"
     },
     {
       "manifold_id": "MANI-00152",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "56.2_-149.2",
       "aggregate_id": "AGG-00152"
     },
     {
       "manifold_id": "MANI-00153",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "64.5_-147.2",
       "aggregate_id": "AGG-00153"
     },
     {
       "manifold_id": "MANI-00154",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.6_-103.9",
       "aggregate_id": "AGG-00154"
     },
     {
       "manifold_id": "MANI-00155",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "64.5_-147.1",
       "aggregate_id": "AGG-00155"
     },
     {
       "manifold_id": "MANI-00156",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "28.5_104.8",
       "aggregate_id": "AGG-00156"
     },
     {
       "manifold_id": "MANI-00157",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "40.3_-124.8",
       "aggregate_id": "AGG-00157"
     },
     {
       "manifold_id": "MANI-00158",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "65.2_-150.5",
       "aggregate_id": "AGG-00158"
     },
     {
       "manifold_id": "MANI-00159",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "38.8_-123.0",
       "aggregate_id": "AGG-00159"
     },
     {
       "manifold_id": "MANI-00160",
-      "timestamp_utc": "2026-05-13T06:46:30.458692+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.2_-155.2",
       "aggregate_id": "AGG-00160"
     },
     {
       "manifold_id": "MANI-00161",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "56.1_-156.5",
       "aggregate_id": "AGG-00161"
     },
     {
       "manifold_id": "MANI-00162",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "62.4_-149.7",
       "aggregate_id": "AGG-00162"
     },
     {
       "manifold_id": "MANI-00163",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "35.9_-117.7",
       "aggregate_id": "AGG-00163"
     },
     {
       "manifold_id": "MANI-00164",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "60.2_-152.9",
       "aggregate_id": "AGG-00164"
     },
     {
       "manifold_id": "MANI-00165",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "32.0_-103.8",
       "aggregate_id": "AGG-00165"
     },
     {
       "manifold_id": "MANI-00166",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.3_-152.2",
       "aggregate_id": "AGG-00166"
     },
     {
       "manifold_id": "MANI-00167",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.9_-102.1",
       "aggregate_id": "AGG-00167"
     },
     {
       "manifold_id": "MANI-00168",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "54.9_-157.8",
       "aggregate_id": "AGG-00168"
     },
     {
       "manifold_id": "MANI-00169",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.5_-147.3",
       "aggregate_id": "AGG-00169"
     },
     {
       "manifold_id": "MANI-00170",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "19.5_-155.5",
       "aggregate_id": "AGG-00170"
     },
     {
       "manifold_id": "MANI-00171",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "55.5_-161.8",
       "aggregate_id": "AGG-00171"
     },
     {
       "manifold_id": "MANI-00172",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.5_-116.4",
       "aggregate_id": "AGG-00172"
     },
     {
       "manifold_id": "MANI-00173",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-39.5_174.3",
       "aggregate_id": "AGG-00173"
     },
     {
       "manifold_id": "MANI-00174",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "56.8_-155.8",
       "aggregate_id": "AGG-00174"
     },
     {
       "manifold_id": "MANI-00175",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "59.9_-148.3",
       "aggregate_id": "AGG-00175"
     },
     {
       "manifold_id": "MANI-00176",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "48.0_-128.8",
       "aggregate_id": "AGG-00176"
     },
     {
       "manifold_id": "MANI-00177",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.5_-116.8",
       "aggregate_id": "AGG-00177"
     },
     {
       "manifold_id": "MANI-00178",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "34.0_-116.9",
       "aggregate_id": "AGG-00178"
     },
     {
       "manifold_id": "MANI-00179",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "33.9_-116.9",
       "aggregate_id": "AGG-00179"
     },
     {
       "manifold_id": "MANI-00180",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "28.6_-98.4",
       "aggregate_id": "AGG-00180"
     },
     {
       "manifold_id": "MANI-00181",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 12,
+      "seam_phi": 0.24,
+      "density": 18,
       "event_count": 3,
       "spatial_region": "44.5_-111.0",
       "aggregate_id": "AGG-00181"
     },
     {
       "manifold_id": "MANI-00182",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-23.1_-68.7",
       "aggregate_id": "AGG-00182"
     },
     {
       "manifold_id": "MANI-00183",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "31.8_-103.8",
       "aggregate_id": "AGG-00183"
     },
     {
       "manifold_id": "MANI-00184",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "32.4_-101.6",
       "aggregate_id": "AGG-00184"
     },
     {
       "manifold_id": "MANI-00185",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "69.6_-144.6",
       "aggregate_id": "AGG-00185"
     },
     {
       "manifold_id": "MANI-00186",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "60.3_-143.1",
       "aggregate_id": "AGG-00186"
     },
     {
       "manifold_id": "MANI-00187",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.9_-116.3",
       "aggregate_id": "AGG-00187"
     },
     {
       "manifold_id": "MANI-00188",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.5_-146.6",
       "aggregate_id": "AGG-00188"
     },
     {
       "manifold_id": "MANI-00189",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "45.0_-121.4",
       "aggregate_id": "AGG-00189"
     },
     {
       "manifold_id": "MANI-00190",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 8,
+      "seam_phi": 0.24,
+      "density": 12,
       "event_count": 2,
       "spatial_region": "33.3_-116.3",
       "aggregate_id": "AGG-00190"
     },
     {
       "manifold_id": "MANI-00191",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "32.4_-101.7",
       "aggregate_id": "AGG-00191"
     },
     {
       "manifold_id": "MANI-00192",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.2_-146.5",
       "aggregate_id": "AGG-00192"
     },
     {
       "manifold_id": "MANI-00193",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-41.5_174.6",
       "aggregate_id": "AGG-00193"
     },
     {
       "manifold_id": "MANI-00194",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "61.6_-146.3",
       "aggregate_id": "AGG-00194"
     },
     {
       "manifold_id": "MANI-00195",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "4.8_127.5",
       "aggregate_id": "AGG-00195"
     },
     {
       "manifold_id": "MANI-00196",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.356358+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "33.4_-116.9",
       "aggregate_id": "AGG-00196"
     },
     {
       "manifold_id": "MANI-00197",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "53.4_-168.2",
       "aggregate_id": "AGG-00197"
     },
     {
       "manifold_id": "MANI-00198",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "60.6_-152.7",
       "aggregate_id": "AGG-00198"
     },
     {
       "manifold_id": "MANI-00199",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "38.8_-111.5",
       "aggregate_id": "AGG-00199"
     },
     {
       "manifold_id": "MANI-00200",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "52.7_-170.3",
       "aggregate_id": "AGG-00200"
     },
     {
       "manifold_id": "MANI-00201",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "58.2_-155.4",
       "aggregate_id": "AGG-00201"
     },
     {
       "manifold_id": "MANI-00202",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "60.9_-151.9",
       "aggregate_id": "AGG-00202"
     },
     {
       "manifold_id": "MANI-00203",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "44.7_-110.4",
       "aggregate_id": "AGG-00203"
     },
     {
       "manifold_id": "MANI-00204",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "-5.5_147.1",
       "aggregate_id": "AGG-00204"
     },
     {
       "manifold_id": "MANI-00205",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "34.4_-118.3",
       "aggregate_id": "AGG-00205"
     },
     {
       "manifold_id": "MANI-00206",
-      "timestamp_utc": "2026-05-13T06:46:30.459690+00:00",
+      "timestamp_utc": "2026-05-13T06:47:12.357357+00:00",
       "event_label": "SEAM_LITHIC_PERTURBATION",
       "event_types": [
         "seismic"
       ],
       "lock_state": "MONITOR",
-      "seam_phi": 0.16,
-      "density": 4,
+      "seam_phi": 0.24,
+      "density": 6,
       "event_count": 1,
       "spatial_region": "23.3_121.5",
       "aggregate_id": "AGG-00206"
