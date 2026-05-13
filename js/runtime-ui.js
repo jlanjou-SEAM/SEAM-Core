@@ -46,29 +46,91 @@ function probabilityClass(probability){
   return { box:"prob-low", text:"prob-low-text" };
 }
 
+function shortRegion(event){
+  if(event.region && event.region !== "Unknown Region") return event.region;
+
+  const regime = event.primary_regime || "event";
+  const lat = Number(event.lat ?? event.latitude ?? 0);
+  const lon = Number(event.lon ?? event.longitude ?? 0);
+
+  if(lat !== 0 || lon !== 0){
+    return `${String(regime).toUpperCase()} ${lat.toFixed(2)}, ${lon.toFixed(2)}`;
+  }
+
+  return String(regime || "Unknown Region").toUpperCase();
+}
+
+function normalizePercent(value, fallback=0){
+  const raw = Number(value ?? fallback ?? 0);
+  if(Number.isNaN(raw)) return 0;
+  if(raw <= 1) return Math.round(raw * 100);
+  return Math.round(raw);
+}
+
 function normalizeEvent(event){
-  const probability = Math.round((event.realization_probability ?? event.probability ?? 0) * 100);
-  const persistence = Math.round((event.persistence ?? 0) * 100);
+  const probability = normalizePercent(
+    event.realization_probability ??
+    event.probability ??
+    event.forecast_confidence ??
+    event.likelihood,
+    0
+  );
+
+  const persistence = normalizePercent(
+    event.persistence ??
+    event.persistence_score ??
+    event.source_convergence ??
+    event.convergence,
+    0
+  );
+
   const probClass = probabilityClass(probability);
-  const state = event.state || "MONITOR";
+
+  const state =
+    event.state ||
+    event.lock_state ||
+    event.verification_state ||
+    "MONITOR";
+
+  const lat = Number(event.lat ?? event.latitude ?? 0);
+  const lon = Number(event.lon ?? event.longitude ?? 0);
+
+  const verification = event.verification_state || "UNVERIFIED";
+  const leadTime = Number(event.lead_time_seconds ?? 0);
+  const liveSources = Number(event.live_source_count ?? 0);
+  const delayedSources = Number(event.delayed_source_count ?? 0);
+  const regime = event.primary_regime || event.regime || "unknown";
+
+  const hypothesis =
+    event.hypothesis ||
+    event.analysis ||
+    `${String(regime).toUpperCase()} target ${verification.toLowerCase()} | lead ${leadTime}s | live ${liveSources} / delayed ${delayedSources}`;
+
+  const evidence = event.evidence || [
+    `${verification.toLowerCase()}`,
+    `live_sources_${liveSources}`,
+    `delayed_sources_${delayedSources}`
+  ];
+
+  const contradictions = event.contradictions || [];
 
   return {
-    target: event.region || "Unknown Region",
-    coordinateRegion: event.region || "Unknown Region",
-    hypothesis: event.hypothesis || "SEAM analysis unavailable",
+    target: shortRegion(event),
+    coordinateRegion: event.region || `${String(regime).toUpperCase()} ${lat.toFixed(4)}, ${lon.toFixed(4)}`,
+    hypothesis,
     probability,
     persistence,
     observations: event.observation_count || event.observations || 0,
-    location: `${Number(event.lat ?? 0).toFixed(4)}, ${Number(event.lon ?? 0).toFixed(4)}`,
+    location: `${lat.toFixed(4)}, ${lon.toFixed(4)}`,
     state,
     stateClass: state === "TARGET" ? "state-critical" : state === "FOLLOW" ? "state-follow" : "state-monitor",
     cardClass: state === "TARGET" ? "target-critical" : state === "FOLLOW" ? "target-follow" : "",
     probabilityBoxClass: probClass.box,
     probabilityTextClass: probClass.text,
-    evidence: event.evidence || [],
-    contradictions: event.contradictions || [],
+    evidence,
+    contradictions,
     sources: event.sources || [],
-    trajectory: event.trajectory || "unknown"
+    trajectory: event.trajectory || event.trajectory_state || "stable"
   };
 }
 
@@ -178,7 +240,7 @@ async function loadRuntime(){
   try{
     const response = await fetch("./data/latest.json?v=" + Date.now(), { cache:"no-store" });
     const runtime = await response.json();
-    const rawEvents = runtime.active_events || runtime.candidate_hypotheses || [];
+    const rawEvents = runtime.active_events || runtime.candidate_hypotheses || runtime.events || [];
     renderEvents(rawEvents.map(normalizeEvent));
     refreshRemaining = REFRESH_SECONDS;
   }catch(error){
