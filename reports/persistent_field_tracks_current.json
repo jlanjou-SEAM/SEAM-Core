@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T18:37:37.115269+00:00",
-  "track_count": 1223,
+  "timestamp_utc": "2026-05-13T18:40:06.833771+00:00",
+  "track_count": 1225,
   "tracks": [
     {
       "persistent_track_id": "TRACK-00000",
@@ -46650,10 +46650,10 @@
       "persistent_track_id": "TRACK-01221",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T18:25:55.118875+00:00",
-      "last_seen_utc": "2026-05-13T18:36:12.676753+00:00",
+      "last_seen_utc": "2026-05-13T18:38:40.621257+00:00",
       "current_latitude": 37.673921666666665,
       "current_longitude": 139.873405,
-      "event_count": 5,
+      "event_count": 6,
       "velocity_vector": {
         "delta_latitude": 0.0,
         "delta_longitude": 0.0
@@ -46687,6 +46687,11 @@
           "timestamp": "2026-05-13T18:36:12.676753+00:00",
           "latitude": 37.673921666666665,
           "longitude": 139.873405
+        },
+        {
+          "timestamp": "2026-05-13T18:38:40.621257+00:00",
+          "latitude": 37.673921666666665,
+          "longitude": 139.873405
         }
       ]
     },
@@ -46711,6 +46716,54 @@
           "timestamp": "2026-05-13T18:28:57.407000+00:00",
           "latitude": 58.294,
           "longitude": -155.028
+        }
+      ]
+    },
+    {
+      "persistent_track_id": "TRACK-01223",
+      "primary_regime": "seismic",
+      "first_seen_utc": "2026-05-13T18:35:13.770000+00:00",
+      "last_seen_utc": "2026-05-13T18:35:13.770000+00:00",
+      "current_latitude": 36.6505012512207,
+      "current_longitude": -121.301498413086,
+      "event_count": 1,
+      "velocity_vector": {
+        "delta_latitude": 0.0,
+        "delta_longitude": 0.0
+      },
+      "forecast_position": {
+        "latitude": 36.6505012512207,
+        "longitude": -121.301498413086
+      },
+      "trajectory": [
+        {
+          "timestamp": "2026-05-13T18:35:13.770000+00:00",
+          "latitude": 36.6505012512207,
+          "longitude": -121.301498413086
+        }
+      ]
+    },
+    {
+      "persistent_track_id": "TRACK-01224",
+      "primary_regime": "seismic",
+      "first_seen_utc": "2026-05-13T18:35:37.430000+00:00",
+      "last_seen_utc": "2026-05-13T18:35:37.430000+00:00",
+      "current_latitude": 39.9457,
+      "current_longitude": -123.715,
+      "event_count": 1,
+      "velocity_vector": {
+        "delta_latitude": 0.0,
+        "delta_longitude": 0.0
+      },
+      "forecast_position": {
+        "latitude": 39.9457,
+        "longitude": -123.715
+      },
+      "trajectory": [
+        {
+          "timestamp": "2026-05-13T18:35:37.430000+00:00",
+          "latitude": 39.9457,
+          "longitude": -123.715
         }
       ]
     }
