@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="google-site-verification" content="uRGTzy2ZxVXS_MzS_OLNoTNjwJuIzOSSpRw_0rsqJ6o" />
+
+	<title>Berkeley SETI</title>
+
+	<link rel="shortcut icon" href="/img/bsrc.ico" type="image/vnd.microsoft.icon" />
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/SETI.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Montserrat:400,700|Bitter:400,400italic,700|Open+Sans:400,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105583924-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+
+
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+	<!-- Navigation -->
+
+	<!-- placeholder div that loads the nav sections w/ JS at the end -->
+    <div id="nav-placeholder"></div>
+
+
+
+
+	<!-- Intro Header -->
+	<header class="intro">
+		<div class="intro-body">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<h1 class="brand-heading">Berkeley SETI</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 text-center" style="margin-bottom:-60px;">
+			<h3>The Search for ExtraTerrestrial Intelligence <br/> At UC Berkeley </h3>
+		</div>
+	</div>
+	<section id="about" class="container content-section text-justify">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+
+
+				<p> Berkeley SETI Research Center conducts experiments searching for electromagnetic signatures of intelligent extraterrestrial civilizations, spanning wavelengths from radio to visible light. We're the creators of the SETI@home volunteer computing software, that utilizes spare resources on volunteer computers to aid in processing data from radio telescopes. And we're excited to be participating in the new Breakthrough Listen initiative to use the Green Bank, Parkes, and Automated Planet Finder telescopes to dramatically expand the search for cosmic company. </p>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container-fluid">
+		<div class="row">
+
+			<a href="/participate">
+				<div class="col-lg-4 col-lg-offset-2 col-md-6 col-xs-12 btnnocaps btn-info" style="height:170px;">
+
+					<h3 style="margin-bottom:20px;">SETI@home</h3>
+					<p style="line-height:1.4;">
+						Join the search by harnessing your computer's spare processing power </p>
+
+				</div>
+
+			</a>
+			<a href="https://seti.berkeley.edu/listen/">
+				<div class="col-xs-12 col-lg-4 col-md-6 btnnocaps btn-info" style="height:170px;">
+
+					<h3 style="margin-bottom:10px;">Breakthrough Listen</h3>
+					<p style="line-height:1.4;">
+
+						Sponsors of the most comprehensive search ever for extraterrestrial civilizations </p>
+
+				</div>
+
+			</a>
+		</div>
+	</section>
+
+
+
+	<section id="download" class="content-section text-center ">
+		<div class="download-section ">
+			<div class="container ">
+				<div class="col-lg-8 col-lg-offset-2 ">
+					<h2 class="news">Social Media</h2>
+					<!--<a href="http://startbootstrap.com/template-overviews/grayscale/ " class="btn btn-default btn-lg ">Visit Download Page</a>-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- news section -->
+
+	<section id="news" class="content-section text-center "> </section>
+	<div class="news-section ">
+		<div class="container ">
+			<div class="col-sm-8 col-sm-offset-2">
+				<a aria-label="Twitter timeline" class="twitter-timeline" data-width="100%" data-height="900" data-theme="dark" data-link-color="#259bdb" href="https://twitter.com/BerkeleySETI"></a>
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+
+
+	<!-- Contact Section -->
+
+	<!-- Footer -->
+	<footer class="footer ">
+		<div class="container text-center ">
+			<div class="row ">
+				<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2 ">
+					<ul class="footer-social-block ">
+                                                <li><a aria-label="Facebook" href="https://www.facebook.com/BerkeleySETI/"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></a></li>
+
+                                                <li><a aria-label="Twitter" href="https://twitter.com/BerkeleySETI"><i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i></a></li>
+
+                                                <li><a aria-label="Instagram" href="https://www.instagram.com/setiathome/"><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i></a></li>
+
+                                                <li><a aria-label="YouTube" href="https://www.youtube.com/user/BerkeleySETI"><i class="fa fa-youtube-play" aria-hidden="true" title="YouTube"></i></a></li>
+
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="row ">
+				<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2 ">
+
+
+					<p class="credit ">Website: Chris Schodt, Content: Steve Croft, Technical: Matt Lebofsky</p>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Bootstrap Core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/grayscale.js"></script>
+
+	<!-- twitter widget -->
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+     <!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+    <script>
+        $.get("navbar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+
+<!-- test 9 -->
+
+</body>
+
+</html>
