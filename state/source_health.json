@@ -4,13 +4,20 @@
     "stream": "LOFAR_ALT_RAW",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T21:14:39.694541+00:00"
+    "updated_utc": "2026-05-13T21:17:28.614734+00:00"
+  },
+  "Safecast:Safecast_ALT_RAW": {
+    "source": "Safecast",
+    "stream": "Safecast_ALT_RAW",
+    "ok": false,
+    "reason": "The read operation timed out",
+    "updated_utc": "2026-05-13T21:17:29.568037+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T21:14:45.342593+00:00"
+    "updated_utc": "2026-05-13T21:17:33.465990+00:00"
   }
 }
