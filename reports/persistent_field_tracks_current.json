@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-05-13T07:59:28.112647+00:00",
+  "timestamp_utc": "2026-05-13T08:00:34.415130+00:00",
   "track_count": 312,
   "tracks": [
     {
@@ -4806,20 +4806,25 @@
     {
       "persistent_track_id": "TRACK-00194",
       "primary_regime": "seismic",
-      "first_seen_utc": "2026-05-13T02:09:03.969000+00:00",
+      "first_seen_utc": "2026-05-13T02:09:03.553000+00:00",
       "last_seen_utc": "2026-05-13T02:09:03.969000+00:00",
       "current_latitude": 31.735,
       "current_longitude": -104.115,
-      "event_count": 1,
+      "event_count": 2,
       "velocity_vector": {
-        "delta_latitude": 0.0,
-        "delta_longitude": 0.0
+        "delta_latitude": 0.004,
+        "delta_longitude": -0.002
       },
       "forecast_position": {
-        "latitude": 31.735,
-        "longitude": -104.115
+        "latitude": 31.739,
+        "longitude": -104.117
       },
       "trajectory": [
+        {
+          "timestamp": "2026-05-13T02:09:03.553000+00:00",
+          "latitude": 31.731,
+          "longitude": -104.113
+        },
         {
           "timestamp": "2026-05-13T02:09:03.969000+00:00",
           "latitude": 31.735,
@@ -9205,10 +9210,10 @@
       "persistent_track_id": "TRACK-00311",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T07:56:48.856961+00:00",
-      "last_seen_utc": "2026-05-13T07:59:05.320359+00:00",
+      "last_seen_utc": "2026-05-13T08:00:11.323545+00:00",
       "current_latitude": 40.498493333333336,
       "current_longitude": -80.43104333333333,
-      "event_count": 3,
+      "event_count": 4,
       "velocity_vector": {
         "delta_latitude": 0.0,
         "delta_longitude": 0.0
@@ -9230,6 +9235,11 @@
         },
         {
           "timestamp": "2026-05-13T07:59:05.320359+00:00",
+          "latitude": 40.498493333333336,
+          "longitude": -80.43104333333333
+        },
+        {
+          "timestamp": "2026-05-13T08:00:11.323545+00:00",
           "latitude": 40.498493333333336,
           "longitude": -80.43104333333333
         }
