@@ -1,10 +1,10 @@
 {
-  "timestamp_utc": "2026-05-13T07:11:19.257442+00:00",
+  "timestamp_utc": "2026-05-13T07:12:11.456440+00:00",
   "schema": "SEAM Master Data Reconciliation v6.5.1",
-  "manifolds_input": 331,
+  "manifolds_input": 332,
   "tracks_input": 284,
   "forecasts_input": 284,
-  "events_input": 332,
+  "events_input": 333,
   "source_matrix": [
     {
       "regime": "unknown",
@@ -20,7 +20,7 @@
   "master_events": [
     {
       "event_id": "SEAM-00000-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -39,7 +39,7 @@
     },
     {
       "event_id": "SEAM-00001-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -58,7 +58,7 @@
     },
     {
       "event_id": "SEAM-00002-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -77,7 +77,7 @@
     },
     {
       "event_id": "SEAM-00003-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -96,7 +96,7 @@
     },
     {
       "event_id": "SEAM-00004-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -115,7 +115,7 @@
     },
     {
       "event_id": "SEAM-00005-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -134,7 +134,7 @@
     },
     {
       "event_id": "SEAM-00006-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -153,7 +153,7 @@
     },
     {
       "event_id": "SEAM-00007-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -172,7 +172,7 @@
     },
     {
       "event_id": "SEAM-00008-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -191,7 +191,7 @@
     },
     {
       "event_id": "SEAM-00009-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -210,7 +210,7 @@
     },
     {
       "event_id": "SEAM-00010-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -229,7 +229,7 @@
     },
     {
       "event_id": "SEAM-00011-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -248,7 +248,7 @@
     },
     {
       "event_id": "SEAM-00012-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -267,7 +267,7 @@
     },
     {
       "event_id": "SEAM-00013-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -286,7 +286,7 @@
     },
     {
       "event_id": "SEAM-00014-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -305,7 +305,7 @@
     },
     {
       "event_id": "SEAM-00015-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -324,7 +324,7 @@
     },
     {
       "event_id": "SEAM-00016-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -343,7 +343,7 @@
     },
     {
       "event_id": "SEAM-00017-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -362,7 +362,7 @@
     },
     {
       "event_id": "SEAM-00018-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -381,7 +381,7 @@
     },
     {
       "event_id": "SEAM-00019-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -400,7 +400,7 @@
     },
     {
       "event_id": "SEAM-00020-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -419,7 +419,7 @@
     },
     {
       "event_id": "SEAM-00021-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -438,7 +438,7 @@
     },
     {
       "event_id": "SEAM-00022-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -457,7 +457,7 @@
     },
     {
       "event_id": "SEAM-00023-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -476,7 +476,7 @@
     },
     {
       "event_id": "SEAM-00024-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -495,7 +495,7 @@
     },
     {
       "event_id": "SEAM-00025-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -514,7 +514,7 @@
     },
     {
       "event_id": "SEAM-00026-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -533,7 +533,7 @@
     },
     {
       "event_id": "SEAM-00027-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -552,7 +552,7 @@
     },
     {
       "event_id": "SEAM-00028-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -571,7 +571,7 @@
     },
     {
       "event_id": "SEAM-00029-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -590,7 +590,7 @@
     },
     {
       "event_id": "SEAM-00030-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -609,7 +609,7 @@
     },
     {
       "event_id": "SEAM-00031-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -628,7 +628,7 @@
     },
     {
       "event_id": "SEAM-00032-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -647,7 +647,7 @@
     },
     {
       "event_id": "SEAM-00033-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -666,7 +666,7 @@
     },
     {
       "event_id": "SEAM-00034-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -685,7 +685,7 @@
     },
     {
       "event_id": "SEAM-00035-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -704,7 +704,7 @@
     },
     {
       "event_id": "SEAM-00036-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -723,7 +723,7 @@
     },
     {
       "event_id": "SEAM-00037-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -742,7 +742,7 @@
     },
     {
       "event_id": "SEAM-00038-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -761,7 +761,7 @@
     },
     {
       "event_id": "SEAM-00039-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -780,7 +780,7 @@
     },
     {
       "event_id": "SEAM-00040-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -799,7 +799,7 @@
     },
     {
       "event_id": "SEAM-00041-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -818,7 +818,7 @@
     },
     {
       "event_id": "SEAM-00042-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -837,7 +837,7 @@
     },
     {
       "event_id": "SEAM-00043-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -856,7 +856,7 @@
     },
     {
       "event_id": "SEAM-00044-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -875,7 +875,7 @@
     },
     {
       "event_id": "SEAM-00045-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -894,7 +894,7 @@
     },
     {
       "event_id": "SEAM-00046-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -913,7 +913,7 @@
     },
     {
       "event_id": "SEAM-00047-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -932,7 +932,7 @@
     },
     {
       "event_id": "SEAM-00048-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -951,7 +951,7 @@
     },
     {
       "event_id": "SEAM-00049-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -970,7 +970,7 @@
     },
     {
       "event_id": "SEAM-00050-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -989,7 +989,7 @@
     },
     {
       "event_id": "SEAM-00051-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1008,7 +1008,7 @@
     },
     {
       "event_id": "SEAM-00052-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1027,7 +1027,7 @@
     },
     {
       "event_id": "SEAM-00053-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.232461+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1046,7 +1046,7 @@
     },
     {
       "event_id": "SEAM-00054-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1065,7 +1065,7 @@
     },
     {
       "event_id": "SEAM-00055-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1084,7 +1084,7 @@
     },
     {
       "event_id": "SEAM-00056-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1103,7 +1103,7 @@
     },
     {
       "event_id": "SEAM-00057-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1122,7 +1122,7 @@
     },
     {
       "event_id": "SEAM-00058-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1141,7 +1141,7 @@
     },
     {
       "event_id": "SEAM-00059-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1160,7 +1160,7 @@
     },
     {
       "event_id": "SEAM-00060-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1179,7 +1179,7 @@
     },
     {
       "event_id": "SEAM-00061-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1198,7 +1198,7 @@
     },
     {
       "event_id": "SEAM-00062-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1217,7 +1217,7 @@
     },
     {
       "event_id": "SEAM-00063-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1236,7 +1236,7 @@
     },
     {
       "event_id": "SEAM-00064-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1255,7 +1255,7 @@
     },
     {
       "event_id": "SEAM-00065-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1274,7 +1274,7 @@
     },
     {
       "event_id": "SEAM-00066-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1293,7 +1293,7 @@
     },
     {
       "event_id": "SEAM-00067-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1312,7 +1312,7 @@
     },
     {
       "event_id": "SEAM-00068-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.452441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1331,7 +1331,7 @@
     },
     {
       "event_id": "SEAM-00069-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1350,7 +1350,7 @@
     },
     {
       "event_id": "SEAM-00070-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1369,7 +1369,7 @@
     },
     {
       "event_id": "SEAM-00071-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1388,7 +1388,7 @@
     },
     {
       "event_id": "SEAM-00072-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1407,7 +1407,7 @@
     },
     {
       "event_id": "SEAM-00073-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1426,7 +1426,7 @@
     },
     {
       "event_id": "SEAM-00074-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1445,7 +1445,7 @@
     },
     {
       "event_id": "SEAM-00075-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1464,7 +1464,7 @@
     },
     {
       "event_id": "SEAM-00076-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1483,7 +1483,7 @@
     },
     {
       "event_id": "SEAM-00077-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1502,7 +1502,7 @@
     },
     {
       "event_id": "SEAM-00078-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1521,7 +1521,7 @@
     },
     {
       "event_id": "SEAM-00079-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1540,7 +1540,7 @@
     },
     {
       "event_id": "SEAM-00080-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1559,7 +1559,7 @@
     },
     {
       "event_id": "SEAM-00081-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1578,7 +1578,7 @@
     },
     {
       "event_id": "SEAM-00082-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1597,7 +1597,7 @@
     },
     {
       "event_id": "SEAM-00083-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1616,7 +1616,7 @@
     },
     {
       "event_id": "SEAM-00084-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1635,7 +1635,7 @@
     },
     {
       "event_id": "SEAM-00085-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1654,7 +1654,7 @@
     },
     {
       "event_id": "SEAM-00086-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1673,7 +1673,7 @@
     },
     {
       "event_id": "SEAM-00087-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1692,7 +1692,7 @@
     },
     {
       "event_id": "SEAM-00088-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1711,7 +1711,7 @@
     },
     {
       "event_id": "SEAM-00089-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1730,7 +1730,7 @@
     },
     {
       "event_id": "SEAM-00090-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1749,7 +1749,7 @@
     },
     {
       "event_id": "SEAM-00091-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1768,7 +1768,7 @@
     },
     {
       "event_id": "SEAM-00092-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1787,7 +1787,7 @@
     },
     {
       "event_id": "SEAM-00093-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.237453+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1806,7 +1806,7 @@
     },
     {
       "event_id": "SEAM-00094-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.240452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1825,7 +1825,7 @@
     },
     {
       "event_id": "SEAM-00095-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.240452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1844,7 +1844,7 @@
     },
     {
       "event_id": "SEAM-00096-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.240452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1863,7 +1863,7 @@
     },
     {
       "event_id": "SEAM-00097-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.240452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1882,7 +1882,7 @@
     },
     {
       "event_id": "SEAM-00098-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.240452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1901,7 +1901,7 @@
     },
     {
       "event_id": "SEAM-00099-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1920,7 +1920,7 @@
     },
     {
       "event_id": "SEAM-00100-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1939,7 +1939,7 @@
     },
     {
       "event_id": "SEAM-00101-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1958,7 +1958,7 @@
     },
     {
       "event_id": "SEAM-00102-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1977,7 +1977,7 @@
     },
     {
       "event_id": "SEAM-00103-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -1996,7 +1996,7 @@
     },
     {
       "event_id": "SEAM-00104-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2015,7 +2015,7 @@
     },
     {
       "event_id": "SEAM-00105-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2034,7 +2034,7 @@
     },
     {
       "event_id": "SEAM-00106-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2053,7 +2053,7 @@
     },
     {
       "event_id": "SEAM-00107-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2072,7 +2072,7 @@
     },
     {
       "event_id": "SEAM-00108-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2091,7 +2091,7 @@
     },
     {
       "event_id": "SEAM-00109-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2110,7 +2110,7 @@
     },
     {
       "event_id": "SEAM-00110-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2129,7 +2129,7 @@
     },
     {
       "event_id": "SEAM-00111-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2148,7 +2148,7 @@
     },
     {
       "event_id": "SEAM-00112-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2167,7 +2167,7 @@
     },
     {
       "event_id": "SEAM-00113-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2186,7 +2186,7 @@
     },
     {
       "event_id": "SEAM-00114-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2205,7 +2205,7 @@
     },
     {
       "event_id": "SEAM-00115-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2224,7 +2224,7 @@
     },
     {
       "event_id": "SEAM-00116-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.245450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2243,7 +2243,7 @@
     },
     {
       "event_id": "SEAM-00117-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2262,7 +2262,7 @@
     },
     {
       "event_id": "SEAM-00118-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2281,7 +2281,7 @@
     },
     {
       "event_id": "SEAM-00119-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2300,7 +2300,7 @@
     },
     {
       "event_id": "SEAM-00120-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2319,7 +2319,7 @@
     },
     {
       "event_id": "SEAM-00121-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2338,7 +2338,7 @@
     },
     {
       "event_id": "SEAM-00122-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2357,7 +2357,7 @@
     },
     {
       "event_id": "SEAM-00123-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2376,7 +2376,7 @@
     },
     {
       "event_id": "SEAM-00124-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2395,7 +2395,7 @@
     },
     {
       "event_id": "SEAM-00125-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2414,7 +2414,7 @@
     },
     {
       "event_id": "SEAM-00126-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2433,7 +2433,7 @@
     },
     {
       "event_id": "SEAM-00127-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2452,7 +2452,7 @@
     },
     {
       "event_id": "SEAM-00128-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2471,7 +2471,7 @@
     },
     {
       "event_id": "SEAM-00129-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2490,7 +2490,7 @@
     },
     {
       "event_id": "SEAM-00130-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2509,7 +2509,7 @@
     },
     {
       "event_id": "SEAM-00131-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2528,7 +2528,7 @@
     },
     {
       "event_id": "SEAM-00132-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2547,7 +2547,7 @@
     },
     {
       "event_id": "SEAM-00133-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2566,7 +2566,7 @@
     },
     {
       "event_id": "SEAM-00134-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2585,7 +2585,7 @@
     },
     {
       "event_id": "SEAM-00135-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2604,7 +2604,7 @@
     },
     {
       "event_id": "SEAM-00136-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2623,7 +2623,7 @@
     },
     {
       "event_id": "SEAM-00137-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2642,7 +2642,7 @@
     },
     {
       "event_id": "SEAM-00138-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2661,7 +2661,7 @@
     },
     {
       "event_id": "SEAM-00139-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2680,7 +2680,7 @@
     },
     {
       "event_id": "SEAM-00140-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.246445+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2699,7 +2699,7 @@
     },
     {
       "event_id": "SEAM-00141-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.250444+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2718,7 +2718,7 @@
     },
     {
       "event_id": "SEAM-00142-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.250444+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2737,7 +2737,7 @@
     },
     {
       "event_id": "SEAM-00143-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.250444+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2756,7 +2756,7 @@
     },
     {
       "event_id": "SEAM-00144-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.250444+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2775,7 +2775,7 @@
     },
     {
       "event_id": "SEAM-00145-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.250444+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2794,7 +2794,7 @@
     },
     {
       "event_id": "SEAM-00146-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.250444+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2813,7 +2813,7 @@
     },
     {
       "event_id": "SEAM-00147-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2832,7 +2832,7 @@
     },
     {
       "event_id": "SEAM-00148-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2851,7 +2851,7 @@
     },
     {
       "event_id": "SEAM-00149-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2870,7 +2870,7 @@
     },
     {
       "event_id": "SEAM-00150-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2889,7 +2889,7 @@
     },
     {
       "event_id": "SEAM-00151-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2908,7 +2908,7 @@
     },
     {
       "event_id": "SEAM-00152-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2927,7 +2927,7 @@
     },
     {
       "event_id": "SEAM-00153-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2946,7 +2946,7 @@
     },
     {
       "event_id": "SEAM-00154-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2965,7 +2965,7 @@
     },
     {
       "event_id": "SEAM-00155-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -2984,7 +2984,7 @@
     },
     {
       "event_id": "SEAM-00156-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3003,7 +3003,7 @@
     },
     {
       "event_id": "SEAM-00157-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3022,7 +3022,7 @@
     },
     {
       "event_id": "SEAM-00158-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3041,7 +3041,7 @@
     },
     {
       "event_id": "SEAM-00159-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3060,7 +3060,7 @@
     },
     {
       "event_id": "SEAM-00160-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3079,7 +3079,7 @@
     },
     {
       "event_id": "SEAM-00161-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3098,7 +3098,7 @@
     },
     {
       "event_id": "SEAM-00162-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3117,7 +3117,7 @@
     },
     {
       "event_id": "SEAM-00163-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3136,7 +3136,7 @@
     },
     {
       "event_id": "SEAM-00164-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.453443+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3155,7 +3155,7 @@
     },
     {
       "event_id": "SEAM-00165-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3174,7 +3174,7 @@
     },
     {
       "event_id": "SEAM-00166-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3193,7 +3193,7 @@
     },
     {
       "event_id": "SEAM-00167-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3212,7 +3212,7 @@
     },
     {
       "event_id": "SEAM-00168-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3231,7 +3231,7 @@
     },
     {
       "event_id": "SEAM-00169-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3250,7 +3250,7 @@
     },
     {
       "event_id": "SEAM-00170-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3269,7 +3269,7 @@
     },
     {
       "event_id": "SEAM-00171-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.251450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3288,7 +3288,7 @@
     },
     {
       "event_id": "SEAM-00172-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3307,7 +3307,7 @@
     },
     {
       "event_id": "SEAM-00173-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3326,7 +3326,7 @@
     },
     {
       "event_id": "SEAM-00174-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3345,7 +3345,7 @@
     },
     {
       "event_id": "SEAM-00175-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3364,7 +3364,7 @@
     },
     {
       "event_id": "SEAM-00176-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3383,7 +3383,7 @@
     },
     {
       "event_id": "SEAM-00177-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3402,7 +3402,7 @@
     },
     {
       "event_id": "SEAM-00178-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3421,7 +3421,7 @@
     },
     {
       "event_id": "SEAM-00179-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3440,7 +3440,7 @@
     },
     {
       "event_id": "SEAM-00180-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3459,7 +3459,7 @@
     },
     {
       "event_id": "SEAM-00181-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3478,7 +3478,7 @@
     },
     {
       "event_id": "SEAM-00182-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3497,7 +3497,7 @@
     },
     {
       "event_id": "SEAM-00183-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3516,7 +3516,7 @@
     },
     {
       "event_id": "SEAM-00184-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3535,7 +3535,7 @@
     },
     {
       "event_id": "SEAM-00185-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3554,7 +3554,7 @@
     },
     {
       "event_id": "SEAM-00186-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3573,7 +3573,7 @@
     },
     {
       "event_id": "SEAM-00187-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3592,7 +3592,7 @@
     },
     {
       "event_id": "SEAM-00188-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3611,7 +3611,7 @@
     },
     {
       "event_id": "SEAM-00189-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3630,7 +3630,7 @@
     },
     {
       "event_id": "SEAM-00190-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3649,7 +3649,7 @@
     },
     {
       "event_id": "SEAM-00191-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3668,7 +3668,7 @@
     },
     {
       "event_id": "SEAM-00192-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3687,7 +3687,7 @@
     },
     {
       "event_id": "SEAM-00193-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3706,7 +3706,7 @@
     },
     {
       "event_id": "SEAM-00194-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3725,7 +3725,7 @@
     },
     {
       "event_id": "SEAM-00195-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3744,7 +3744,7 @@
     },
     {
       "event_id": "SEAM-00196-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3763,7 +3763,7 @@
     },
     {
       "event_id": "SEAM-00197-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3782,7 +3782,7 @@
     },
     {
       "event_id": "SEAM-00198-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3801,7 +3801,7 @@
     },
     {
       "event_id": "SEAM-00199-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3820,7 +3820,7 @@
     },
     {
       "event_id": "SEAM-00200-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3839,7 +3839,7 @@
     },
     {
       "event_id": "SEAM-00201-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3858,7 +3858,7 @@
     },
     {
       "event_id": "SEAM-00202-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3877,7 +3877,7 @@
     },
     {
       "event_id": "SEAM-00203-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3896,7 +3896,7 @@
     },
     {
       "event_id": "SEAM-00204-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3915,7 +3915,7 @@
     },
     {
       "event_id": "SEAM-00205-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3934,7 +3934,7 @@
     },
     {
       "event_id": "SEAM-00206-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3953,7 +3953,7 @@
     },
     {
       "event_id": "SEAM-00207-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3972,7 +3972,7 @@
     },
     {
       "event_id": "SEAM-00208-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -3991,7 +3991,7 @@
     },
     {
       "event_id": "SEAM-00209-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4010,7 +4010,7 @@
     },
     {
       "event_id": "SEAM-00210-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4029,7 +4029,7 @@
     },
     {
       "event_id": "SEAM-00211-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4048,7 +4048,7 @@
     },
     {
       "event_id": "SEAM-00212-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4067,7 +4067,7 @@
     },
     {
       "event_id": "SEAM-00213-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.252447+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4086,7 +4086,7 @@
     },
     {
       "event_id": "SEAM-00214-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4105,7 +4105,7 @@
     },
     {
       "event_id": "SEAM-00215-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4124,7 +4124,7 @@
     },
     {
       "event_id": "SEAM-00216-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4143,7 +4143,7 @@
     },
     {
       "event_id": "SEAM-00217-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4162,7 +4162,7 @@
     },
     {
       "event_id": "SEAM-00218-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4181,7 +4181,7 @@
     },
     {
       "event_id": "SEAM-00219-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4200,7 +4200,7 @@
     },
     {
       "event_id": "SEAM-00220-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4219,7 +4219,7 @@
     },
     {
       "event_id": "SEAM-00221-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4238,7 +4238,7 @@
     },
     {
       "event_id": "SEAM-00222-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4257,7 +4257,7 @@
     },
     {
       "event_id": "SEAM-00223-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4276,7 +4276,7 @@
     },
     {
       "event_id": "SEAM-00224-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4295,7 +4295,7 @@
     },
     {
       "event_id": "SEAM-00225-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4314,7 +4314,7 @@
     },
     {
       "event_id": "SEAM-00226-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4333,7 +4333,7 @@
     },
     {
       "event_id": "SEAM-00227-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4352,7 +4352,7 @@
     },
     {
       "event_id": "SEAM-00228-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4371,7 +4371,7 @@
     },
     {
       "event_id": "SEAM-00229-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4390,7 +4390,7 @@
     },
     {
       "event_id": "SEAM-00230-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4409,7 +4409,7 @@
     },
     {
       "event_id": "SEAM-00231-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4428,7 +4428,7 @@
     },
     {
       "event_id": "SEAM-00232-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4447,7 +4447,7 @@
     },
     {
       "event_id": "SEAM-00233-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4466,7 +4466,7 @@
     },
     {
       "event_id": "SEAM-00234-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4485,7 +4485,7 @@
     },
     {
       "event_id": "SEAM-00235-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4504,7 +4504,7 @@
     },
     {
       "event_id": "SEAM-00236-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4523,7 +4523,7 @@
     },
     {
       "event_id": "SEAM-00237-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4542,7 +4542,7 @@
     },
     {
       "event_id": "SEAM-00238-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4561,7 +4561,7 @@
     },
     {
       "event_id": "SEAM-00239-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4580,7 +4580,7 @@
     },
     {
       "event_id": "SEAM-00240-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4599,7 +4599,7 @@
     },
     {
       "event_id": "SEAM-00241-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4618,7 +4618,7 @@
     },
     {
       "event_id": "SEAM-00242-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.454439+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4637,7 +4637,7 @@
     },
     {
       "event_id": "SEAM-00243-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4656,7 +4656,7 @@
     },
     {
       "event_id": "SEAM-00244-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4675,7 +4675,7 @@
     },
     {
       "event_id": "SEAM-00245-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4694,7 +4694,7 @@
     },
     {
       "event_id": "SEAM-00246-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4713,7 +4713,7 @@
     },
     {
       "event_id": "SEAM-00247-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4732,7 +4732,7 @@
     },
     {
       "event_id": "SEAM-00248-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4751,7 +4751,7 @@
     },
     {
       "event_id": "SEAM-00249-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.253443+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4770,7 +4770,7 @@
     },
     {
       "event_id": "SEAM-00250-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4789,7 +4789,7 @@
     },
     {
       "event_id": "SEAM-00251-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4808,7 +4808,7 @@
     },
     {
       "event_id": "SEAM-00252-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4827,7 +4827,7 @@
     },
     {
       "event_id": "SEAM-00253-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4846,7 +4846,7 @@
     },
     {
       "event_id": "SEAM-00254-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4865,7 +4865,7 @@
     },
     {
       "event_id": "SEAM-00255-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4884,7 +4884,7 @@
     },
     {
       "event_id": "SEAM-00256-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4903,7 +4903,7 @@
     },
     {
       "event_id": "SEAM-00257-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4922,7 +4922,7 @@
     },
     {
       "event_id": "SEAM-00258-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4941,7 +4941,7 @@
     },
     {
       "event_id": "SEAM-00259-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4960,7 +4960,7 @@
     },
     {
       "event_id": "SEAM-00260-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4979,7 +4979,7 @@
     },
     {
       "event_id": "SEAM-00261-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -4998,7 +4998,7 @@
     },
     {
       "event_id": "SEAM-00262-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5017,7 +5017,7 @@
     },
     {
       "event_id": "SEAM-00263-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5036,7 +5036,7 @@
     },
     {
       "event_id": "SEAM-00264-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5055,7 +5055,7 @@
     },
     {
       "event_id": "SEAM-00265-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5074,7 +5074,7 @@
     },
     {
       "event_id": "SEAM-00266-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5093,7 +5093,7 @@
     },
     {
       "event_id": "SEAM-00267-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5112,7 +5112,7 @@
     },
     {
       "event_id": "SEAM-00268-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5131,7 +5131,7 @@
     },
     {
       "event_id": "SEAM-00269-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5150,7 +5150,7 @@
     },
     {
       "event_id": "SEAM-00270-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5169,7 +5169,7 @@
     },
     {
       "event_id": "SEAM-00271-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5188,7 +5188,7 @@
     },
     {
       "event_id": "SEAM-00272-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5207,7 +5207,7 @@
     },
     {
       "event_id": "SEAM-00273-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5226,7 +5226,7 @@
     },
     {
       "event_id": "SEAM-00274-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5245,7 +5245,7 @@
     },
     {
       "event_id": "SEAM-00275-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5264,7 +5264,7 @@
     },
     {
       "event_id": "SEAM-00276-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5283,7 +5283,7 @@
     },
     {
       "event_id": "SEAM-00277-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5302,7 +5302,7 @@
     },
     {
       "event_id": "SEAM-00278-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5321,7 +5321,7 @@
     },
     {
       "event_id": "SEAM-00279-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5340,7 +5340,7 @@
     },
     {
       "event_id": "SEAM-00280-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5359,7 +5359,7 @@
     },
     {
       "event_id": "SEAM-00281-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5378,7 +5378,7 @@
     },
     {
       "event_id": "SEAM-00282-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5397,7 +5397,7 @@
     },
     {
       "event_id": "SEAM-00283-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5416,7 +5416,7 @@
     },
     {
       "event_id": "SEAM-00284-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5435,7 +5435,7 @@
     },
     {
       "event_id": "SEAM-00285-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5454,7 +5454,7 @@
     },
     {
       "event_id": "SEAM-00286-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5473,7 +5473,7 @@
     },
     {
       "event_id": "SEAM-00287-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5492,7 +5492,7 @@
     },
     {
       "event_id": "SEAM-00288-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5511,7 +5511,7 @@
     },
     {
       "event_id": "SEAM-00289-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.254448+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5530,7 +5530,7 @@
     },
     {
       "event_id": "SEAM-00290-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5549,7 +5549,7 @@
     },
     {
       "event_id": "SEAM-00291-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5568,7 +5568,7 @@
     },
     {
       "event_id": "SEAM-00292-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5587,7 +5587,7 @@
     },
     {
       "event_id": "SEAM-00293-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5606,7 +5606,7 @@
     },
     {
       "event_id": "SEAM-00294-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5625,7 +5625,7 @@
     },
     {
       "event_id": "SEAM-00295-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5644,7 +5644,7 @@
     },
     {
       "event_id": "SEAM-00296-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5663,7 +5663,7 @@
     },
     {
       "event_id": "SEAM-00297-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5682,7 +5682,7 @@
     },
     {
       "event_id": "SEAM-00298-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5701,7 +5701,7 @@
     },
     {
       "event_id": "SEAM-00299-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5720,7 +5720,7 @@
     },
     {
       "event_id": "SEAM-00300-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5739,7 +5739,7 @@
     },
     {
       "event_id": "SEAM-00301-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5758,7 +5758,7 @@
     },
     {
       "event_id": "SEAM-00302-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5777,7 +5777,7 @@
     },
     {
       "event_id": "SEAM-00303-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5796,7 +5796,7 @@
     },
     {
       "event_id": "SEAM-00304-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5815,7 +5815,7 @@
     },
     {
       "event_id": "SEAM-00305-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5834,7 +5834,7 @@
     },
     {
       "event_id": "SEAM-00306-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5853,7 +5853,7 @@
     },
     {
       "event_id": "SEAM-00307-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.455441+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5872,7 +5872,7 @@
     },
     {
       "event_id": "SEAM-00308-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5891,7 +5891,7 @@
     },
     {
       "event_id": "SEAM-00309-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5910,7 +5910,7 @@
     },
     {
       "event_id": "SEAM-00310-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5929,7 +5929,7 @@
     },
     {
       "event_id": "SEAM-00311-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5948,7 +5948,7 @@
     },
     {
       "event_id": "SEAM-00312-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.255452+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5967,7 +5967,7 @@
     },
     {
       "event_id": "SEAM-00313-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -5986,7 +5986,7 @@
     },
     {
       "event_id": "SEAM-00314-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6005,7 +6005,7 @@
     },
     {
       "event_id": "SEAM-00315-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6024,7 +6024,7 @@
     },
     {
       "event_id": "SEAM-00316-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6043,7 +6043,7 @@
     },
     {
       "event_id": "SEAM-00317-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6062,7 +6062,7 @@
     },
     {
       "event_id": "SEAM-00318-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6081,7 +6081,7 @@
     },
     {
       "event_id": "SEAM-00319-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6100,7 +6100,7 @@
     },
     {
       "event_id": "SEAM-00320-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6119,7 +6119,7 @@
     },
     {
       "event_id": "SEAM-00321-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6138,7 +6138,7 @@
     },
     {
       "event_id": "SEAM-00322-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6157,7 +6157,7 @@
     },
     {
       "event_id": "SEAM-00323-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6176,7 +6176,7 @@
     },
     {
       "event_id": "SEAM-00324-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6195,7 +6195,7 @@
     },
     {
       "event_id": "SEAM-00325-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.256450+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6214,7 +6214,7 @@
     },
     {
       "event_id": "SEAM-00326-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.257442+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6233,7 +6233,7 @@
     },
     {
       "event_id": "SEAM-00327-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.257442+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6252,7 +6252,7 @@
     },
     {
       "event_id": "SEAM-00328-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.257442+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6271,7 +6271,7 @@
     },
     {
       "event_id": "SEAM-00329-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.257442+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6290,7 +6290,7 @@
     },
     {
       "event_id": "SEAM-00330-UNKNOWN",
-      "acquisition_utc": "2026-05-13T07:11:19.257442+00:00",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
       "lock_state": "MONITOR",
       "execution_tier": "IDLE/MONITOR",
       "phi": 0.0,
@@ -6304,6 +6304,25 @@
         "unknown"
       ],
       "manifold_id": "MANI-00330",
+      "event_count": 0,
+      "density": 0
+    },
+    {
+      "event_id": "SEAM-00331-UNKNOWN",
+      "acquisition_utc": "2026-05-13T07:12:11.456440+00:00",
+      "lock_state": "MONITOR",
+      "execution_tier": "IDLE/MONITOR",
+      "phi": 0.0,
+      "predicted_time_utc": "TBD",
+      "magnitude": 0,
+      "spatial_region": "NOLOC",
+      "lat_long": "NOLOC",
+      "course": "STATIC",
+      "signature": "Unclassified SEAM Field",
+      "event_types": [
+        "unknown"
+      ],
+      "manifold_id": "MANI-00331",
       "event_count": 0,
       "density": 0
     }

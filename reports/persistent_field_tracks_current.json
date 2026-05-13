@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-05-13T07:11:18.239783+00:00",
+  "timestamp_utc": "2026-05-13T07:12:10.861150+00:00",
   "track_count": 284,
   "tracks": [
     {
@@ -6978,10 +6978,10 @@
       "persistent_track_id": "TRACK-00283",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T07:07:50.030238+00:00",
-      "last_seen_utc": "2026-05-13T07:11:11.117878+00:00",
+      "last_seen_utc": "2026-05-13T07:12:01.259462+00:00",
       "current_latitude": 38.137076666666665,
       "current_longitude": 140.92935,
-      "event_count": 13,
+      "event_count": 14,
       "velocity_vector": {
         "delta_latitude": 0.0,
         "delta_longitude": 0.0
@@ -7053,6 +7053,11 @@
         },
         {
           "timestamp": "2026-05-13T07:11:11.117878+00:00",
+          "latitude": 38.137076666666665,
+          "longitude": 140.92935
+        },
+        {
+          "timestamp": "2026-05-13T07:12:01.259462+00:00",
           "latitude": 38.137076666666665,
           "longitude": 140.92935
         }
