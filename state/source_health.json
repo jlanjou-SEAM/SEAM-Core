@@ -4,90 +4,104 @@
     "stream": "BERKELEY_SETI_OPENDATA",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:18.192982+00:00"
+    "updated_utc": "2026-05-13T14:14:44.602239+00:00"
   },
   "NOAA_Buoys:NOAA_Buoys_CURATED": {
     "source": "NOAA_Buoys",
     "stream": "NOAA_Buoys_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:18.285935+00:00"
+    "updated_utc": "2026-05-13T14:14:44.661262+00:00"
   },
-  "SloanDigitalSkySurvey:SDSS_DR18": {
-    "source": "SloanDigitalSkySurvey",
-    "stream": "SDSS_DR18",
+  "NOAA_Buoys:NOAA_Buoys_RAW": {
+    "source": "NOAA_Buoys",
+    "stream": "NOAA_Buoys_RAW",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:18.332813+00:00"
+    "updated_utc": "2026-05-13T14:14:44.699681+00:00"
+  },
+  "SatNOGS:SatNOGS_RAW": {
+    "source": "SatNOGS",
+    "stream": "SatNOGS_RAW",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T14:14:44.801024+00:00"
+  },
+  "OpenSky:OpenSky_RAW": {
+    "source": "OpenSky",
+    "stream": "OpenSky_RAW",
+    "ok": false,
+    "reason": "HTTP 429",
+    "updated_utc": "2026-05-13T14:14:44.895952+00:00"
   },
   "ARGO:ARGO_ALT_CURATED": {
     "source": "ARGO",
     "stream": "ARGO_ALT_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:18.688356+00:00"
+    "updated_utc": "2026-05-13T14:14:45.064588+00:00"
   },
-  "LOFAR:LOFAR_ALT_CURATED": {
-    "source": "LOFAR",
-    "stream": "LOFAR_ALT_CURATED",
+  "ReverseBeaconNetwork:ReverseBeaconNetwork_ALT_RAW": {
+    "source": "ReverseBeaconNetwork",
+    "stream": "ReverseBeaconNetwork_ALT_RAW",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:18.708711+00:00"
+    "updated_utc": "2026-05-13T14:14:45.129163+00:00"
   },
   "LightningMaps:LightningMaps_ALT_RAW": {
     "source": "LightningMaps",
     "stream": "LightningMaps_ALT_RAW",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:19.125518+00:00"
+    "updated_utc": "2026-05-13T14:14:45.302111+00:00"
+  },
+  "LOFAR:LOFAR_ALT_CURATED": {
+    "source": "LOFAR",
+    "stream": "LOFAR_ALT_CURATED",
+    "ok": true,
+    "reason": "",
+    "updated_utc": "2026-05-13T14:14:45.427879+00:00"
   },
   "GlobeAtNight:GLOBE_AT_NIGHT_MAP": {
     "source": "GlobeAtNight",
     "stream": "GLOBE_AT_NIGHT_MAP",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:19.645798+00:00"
+    "updated_utc": "2026-05-13T14:14:46.192909+00:00"
   },
   "Blitzortung:Blitzortung_ALT_CURATED": {
     "source": "Blitzortung",
     "stream": "Blitzortung_ALT_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:19.755056+00:00"
-  },
-  "Blitzortung:BLITZORTUNG_ROOT": {
-    "source": "Blitzortung",
-    "stream": "BLITZORTUNG_ROOT",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T14:12:20.090889+00:00"
-  },
-  "MADIS:MADIS_ARCHIVE_ROOT": {
-    "source": "MADIS",
-    "stream": "MADIS_ARCHIVE_ROOT",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T14:12:20.966139+00:00"
+    "updated_utc": "2026-05-13T14:14:46.442924+00:00"
   },
   "ARGO:ARGO_ALT_RAW": {
     "source": "ARGO",
     "stream": "ARGO_ALT_RAW",
     "ok": false,
     "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T14:12:21.427032+00:00"
+    "updated_utc": "2026-05-13T14:14:47.921945+00:00"
   },
   "Celestrak:CELESTRAK_STATIONS": {
     "source": "Celestrak",
     "stream": "CELESTRAK_STATIONS",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T14:12:22.504780+00:00"
+    "updated_utc": "2026-05-13T14:14:49.469602+00:00"
+  },
+  "Celestrak:CELESTRAK_STATIONS_CURATED": {
+    "source": "Celestrak",
+    "stream": "CELESTRAK_STATIONS_CURATED",
+    "ok": false,
+    "reason": "URL error: timed out",
+    "updated_utc": "2026-05-13T14:14:49.487697+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T14:12:26.963643+00:00"
+    "updated_utc": "2026-05-13T14:14:54.095516+00:00"
   }
 }
