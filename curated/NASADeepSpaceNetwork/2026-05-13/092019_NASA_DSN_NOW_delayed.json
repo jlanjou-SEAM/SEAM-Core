@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<!-- Conditionals for IE classes -->
+<!--[if lt IE 9 ]>    <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>DSN Now</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="The real time status of communications with our deep space explorers">
+  <meta content='width=device-width' name='viewport'>
+<!--   no zoom -->
+<!--   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" /> -->
+
+  <!-- Facebook meta tags -->
+  <meta property="og:title" content="Deep Space Network Now"/>
+  <meta property="og:site_name" content="Deep Space Network Now"/>
+  <meta property="og:description" content="The real time status of communications with our deep space explorers"/>
+  <meta property="og:image" content="http://eyes.nasa.gov/dsn/images/thumbnail.jpg"/>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="stylesheets/reset.css" type="text/css">
+  <link rel="stylesheet" href="stylesheets/intro.css" type="text/css">
+  
+  <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js"></script>
+  <![endif]-->
+  
+  <!--[if lt IE 8]>
+    <p class="browsehappy" style="margin: 20px; position: absolute; z-index: 9999;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+    <div style="position:absolute; width: 100%; height: 3000px; background: black; z-index: 9998;"></div>
+  <![endif]-->
+
+  <!-- javascripts -->
+  <script src="javascripts/prefixfree.js"></script>
+  <script src="javascripts/respond.js"></script>
+  <script src="javascripts/modernzr.js"></script>
+  <script src="javascripts/fastclick.js"></script>
+
+</head>
+
+<body>
+  <div id="curtain"></div>
+  <div id="container"></div>
+
+  
+  <div id="page">
+    <header id="page_header">
+      <div class="masthead clearfix" role="banner">
+        <a class="parent_brand" href="http://www.nasa.gov" target="_blank" alt="NASA">
+          <img src="images/nasa_logo@2x.png" alt="NASA">
+        </a>
+        <div class='site_brand'>
+          <a class="jpl_logo" href="http://jpl.nasa.gov"  target="_blank" alt="Jet Propulsion Laboratory">
+            <img src="images/intro/jpl-logo@2x.png" alt="NASA">
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <section id="main_section">
+      <a class="site_logo" href="dsn.html">
+        <img src="images/intro/deep-space-network-logo@2x.png" alt="NASA">
+      </a>
+      <h1>The real time status of communications with our deep space explorers</h1>
+      <div id="main_panel" class="clearfix">
+        
+        <article class='more_info'>
+          <!--<div class="gradient_line"></div>-->
+          <h3>Welcome to "Deep Space Network Now"</h3>
+          <p>At three sites around the globe NASA's Jet Propulsion Laboratory operates a network of large radio antennas called the DSN. The DSN is used to keep in contact with the spacecraft exploring our solar system and the universe beyond.</p>
+          <p>This online tool will let you see what the DSN is up to right now. Which antennas are currently in use? Which spacecraft are talking to us?  How quickly is data being received?  How long does a signal take to get there, and back?</p>
+          <p>The grid of antennas show you the current state of the network.  'Radio Waves' will show you if data is being sent to, or received from a spacecraft. Often both will be happening at the same time sometimes to more than one spacecraft at a time. Click on an antenna to see more technical information about the live link between the spacecraft and the ground.</p>
+          <p>To get started, click the enter button below.</p>
+        </article>
+        
+      </div> <!-- #main_panel -->
+      <div class="formlink_wrapper">
+        <form id="start">
+          <button id="submit" type="submit">ENTER</button>
+        </form>
+        <div class="link_wrapper">
+          <a class="more_link" href="javascript:void(0)">more info</a>
+          <form id="skip_intro">
+            <input id="skip" name="skip" class="dsn_checkbox" value="skip" type="checkbox">        
+            <label for="skip" class="dsn-label">skip next time</label>
+          </form> 
+          <a class="dsn_home_link" href="http://deepspace.jpl.nasa.gov">DSN home</a>
+        </div><!-- link_wrapper -->
+        
+      </div><!-- formlink_wrapper -->
+      
+      
+    </section>
+
+  </div> <!-- #page -->
+  
+  
+ 
+  <!-- Add jquery -->
+  <!-- <script src="javascripts/jquery.js"></script> -->
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="javascripts/jquery-3.7.1.min.js"></script>
+  <script src="javascripts/jquery.cookie.js"></script>
+  <!-- Add main -->
+  <script src="javascripts/mb_utils.js"></script>
+  <script src="javascripts/intro.js"></script>
+  
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+					var _gaq = _gaq || [];
+					_gaq.push(
+									['_setAccount', 'UA-19316180-1'],
+									['_setDomainName', 'nasa.gov'],
+									['_setAllowLinker', true],
+									['_trackPageview']
+					);
+
+					(function() {
+									var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+									ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+									var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+					})();
+	</script>
+
+</body>
+
+</html>
