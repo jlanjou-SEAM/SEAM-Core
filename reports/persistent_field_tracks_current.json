@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T14:40:44.490517+00:00",
-  "track_count": 898,
+  "timestamp_utc": "2026-05-13T14:42:54.174576+00:00",
+  "track_count": 900,
   "tracks": [
     {
       "persistent_track_id": "TRACK-00000",
@@ -33575,17 +33575,17 @@
       "persistent_track_id": "TRACK-00871",
       "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T13:55:23+00:00",
-      "last_seen_utc": "2026-05-13T13:55:23.498000+00:00",
-      "current_latitude": -20.3552,
-      "current_longitude": -68.8668,
-      "event_count": 3,
+      "last_seen_utc": "2026-05-13T13:55:23.780000+00:00",
+      "current_latitude": -20.3758,
+      "current_longitude": -68.8913,
+      "event_count": 4,
       "velocity_vector": {
-        "delta_latitude": 0.0148,
-        "delta_longitude": 0.0432
+        "delta_latitude": -0.0206,
+        "delta_longitude": -0.0245
       },
       "forecast_position": {
-        "latitude": -20.3404,
-        "longitude": -68.8236
+        "latitude": -20.3964,
+        "longitude": -68.9158
       },
       "trajectory": [
         {
@@ -33602,6 +33602,11 @@
           "timestamp": "2026-05-13T13:55:23.498000+00:00",
           "latitude": -20.3552,
           "longitude": -68.8668
+        },
+        {
+          "timestamp": "2026-05-13T13:55:23.780000+00:00",
+          "latitude": -20.3758,
+          "longitude": -68.8913
         }
       ]
     },
@@ -34215,6 +34220,30 @@
     {
       "persistent_track_id": "TRACK-00890",
       "primary_regime": "seismic",
+      "first_seen_utc": "2026-05-13T14:20:31+00:00",
+      "last_seen_utc": "2026-05-13T14:20:31+00:00",
+      "current_latitude": 37.7539,
+      "current_longitude": 36.1636,
+      "event_count": 1,
+      "velocity_vector": {
+        "delta_latitude": 0.0,
+        "delta_longitude": 0.0
+      },
+      "forecast_position": {
+        "latitude": 37.7539,
+        "longitude": 36.1636
+      },
+      "trajectory": [
+        {
+          "timestamp": "2026-05-13T14:20:31+00:00",
+          "latitude": 37.7539,
+          "longitude": 36.1636
+        }
+      ]
+    },
+    {
+      "persistent_track_id": "TRACK-00891",
+      "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T14:20:42+00:00",
       "last_seen_utc": "2026-05-13T14:20:42+00:00",
       "current_latitude": 7.4082,
@@ -34237,7 +34266,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-00891",
+      "persistent_track_id": "TRACK-00892",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T14:21:13.989510+00:00",
       "last_seen_utc": "2026-05-13T14:23:14.770322+00:00",
@@ -34266,7 +34295,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-00892",
+      "persistent_track_id": "TRACK-00893",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T14:21:13.989510+00:00",
       "last_seen_utc": "2026-05-13T14:23:14.770322+00:00",
@@ -34295,7 +34324,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-00893",
+      "persistent_track_id": "TRACK-00894",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T14:21:13.989510+00:00",
       "last_seen_utc": "2026-05-13T14:23:14.770322+00:00",
@@ -34324,31 +34353,36 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-00894",
+      "persistent_track_id": "TRACK-00895",
       "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T14:21:48.005000+00:00",
-      "last_seen_utc": "2026-05-13T14:21:48.005000+00:00",
-      "current_latitude": 19.3312,
-      "current_longitude": -67.3012,
-      "event_count": 1,
+      "last_seen_utc": "2026-05-13T14:21:49.890000+00:00",
+      "current_latitude": 19.2957,
+      "current_longitude": -67.3365,
+      "event_count": 2,
       "velocity_vector": {
-        "delta_latitude": 0.0,
-        "delta_longitude": 0.0
+        "delta_latitude": -0.0355,
+        "delta_longitude": -0.0353
       },
       "forecast_position": {
-        "latitude": 19.3312,
-        "longitude": -67.3012
+        "latitude": 19.2602,
+        "longitude": -67.3718
       },
       "trajectory": [
         {
           "timestamp": "2026-05-13T14:21:48.005000+00:00",
           "latitude": 19.3312,
           "longitude": -67.3012
+        },
+        {
+          "timestamp": "2026-05-13T14:21:49.890000+00:00",
+          "latitude": 19.2957,
+          "longitude": -67.3365
         }
       ]
     },
     {
-      "persistent_track_id": "TRACK-00895",
+      "persistent_track_id": "TRACK-00896",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T14:25:17.630675+00:00",
       "last_seen_utc": "2026-05-13T14:39:41.023899+00:00",
@@ -34407,7 +34441,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-00896",
+      "persistent_track_id": "TRACK-00897",
       "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T14:29:16+00:00",
       "last_seen_utc": "2026-05-13T14:29:16+00:00",
@@ -34431,7 +34465,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-00897",
+      "persistent_track_id": "TRACK-00898",
       "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T14:30:05.130187+00:00",
       "last_seen_utc": "2026-05-13T14:30:05.130187+00:00",
@@ -34451,6 +34485,30 @@
           "timestamp": "2026-05-13T14:30:05.130187+00:00",
           "latitude": 46.2281,
           "longitude": 6.9741
+        }
+      ]
+    },
+    {
+      "persistent_track_id": "TRACK-00899",
+      "primary_regime": "radiological",
+      "first_seen_utc": "2026-05-13T14:41:50.068510+00:00",
+      "last_seen_utc": "2026-05-13T14:41:50.068510+00:00",
+      "current_latitude": 41.89835166666667,
+      "current_longitude": 12.476381666666667,
+      "event_count": 1,
+      "velocity_vector": {
+        "delta_latitude": 0.0,
+        "delta_longitude": 0.0
+      },
+      "forecast_position": {
+        "latitude": 41.89835166666667,
+        "longitude": 12.476381666666667
+      },
+      "trajectory": [
+        {
+          "timestamp": "2026-05-13T14:41:50.068510+00:00",
+          "latitude": 41.89835166666667,
+          "longitude": 12.476381666666667
         }
       ]
     }
