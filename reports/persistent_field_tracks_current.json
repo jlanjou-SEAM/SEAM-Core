@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T16:18:23.123677+00:00",
-  "track_count": 1011,
+  "timestamp_utc": "2026-05-13T16:21:00.084241+00:00",
+  "track_count": 1012,
   "tracks": [
     {
       "persistent_track_id": "TRACK-00000",
@@ -38584,12 +38584,36 @@
     },
     {
       "persistent_track_id": "TRACK-01010",
+      "primary_regime": "seismic",
+      "first_seen_utc": "2026-05-13T16:15:43.213000+00:00",
+      "last_seen_utc": "2026-05-13T16:15:43.213000+00:00",
+      "current_latitude": 28.848,
+      "current_longitude": -99.072,
+      "event_count": 1,
+      "velocity_vector": {
+        "delta_latitude": 0.0,
+        "delta_longitude": 0.0
+      },
+      "forecast_position": {
+        "latitude": 28.848,
+        "longitude": -99.072
+      },
+      "trajectory": [
+        {
+          "timestamp": "2026-05-13T16:15:43.213000+00:00",
+          "latitude": 28.848,
+          "longitude": -99.072
+        }
+      ]
+    },
+    {
+      "persistent_track_id": "TRACK-01011",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:17:01.114688+00:00",
-      "last_seen_utc": "2026-05-13T16:17:01.114688+00:00",
+      "last_seen_utc": "2026-05-13T16:19:36.052522+00:00",
       "current_latitude": 45.096895,
       "current_longitude": 7.573611666666666,
-      "event_count": 15,
+      "event_count": 30,
       "velocity_vector": {
         "delta_latitude": 0.002133,
         "delta_longitude": 0.002873
@@ -38671,6 +38695,81 @@
         },
         {
           "timestamp": "2026-05-13T16:17:01.114688+00:00",
+          "latitude": 45.096895,
+          "longitude": 7.573611666666666
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.07302333333333,
+          "longitude": 7.546458333333334
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.07542333333333,
+          "longitude": 7.547196666666666
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.07659666666667,
+          "longitude": 7.547576666666667
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.079116666666664,
+          "longitude": 7.548333333333333
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.080955,
+          "longitude": 7.550073333333334
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.08139833333333,
+          "longitude": 7.5515316666666665
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.08261666666667,
+          "longitude": 7.555023333333334
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.083576666666666,
+          "longitude": 7.55663
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.08585,
+          "longitude": 7.5595566666666665
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.08815,
+          "longitude": 7.562443333333333
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.089281666666665,
+          "longitude": 7.5638716666666665
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.09152,
+          "longitude": 7.566681666666667
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.093615,
+          "longitude": 7.569315
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
+          "latitude": 45.09476166666666,
+          "longitude": 7.570738333333333
+        },
+        {
+          "timestamp": "2026-05-13T16:19:36.052522+00:00",
           "latitude": 45.096895,
           "longitude": 7.573611666666666
         }
