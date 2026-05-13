@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-05-13T14:32:32.780990+00:00",
+  "timestamp_utc": "2026-05-13T14:34:37.802943+00:00",
   "track_count": 895,
   "tracks": [
     {
@@ -33570,17 +33570,17 @@
       "persistent_track_id": "TRACK-00871",
       "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T13:55:23+00:00",
-      "last_seen_utc": "2026-05-13T13:55:23+00:00",
-      "current_latitude": -20.37,
-      "current_longitude": -68.91,
-      "event_count": 2,
+      "last_seen_utc": "2026-05-13T13:55:23.498000+00:00",
+      "current_latitude": -20.3552,
+      "current_longitude": -68.8668,
+      "event_count": 3,
       "velocity_vector": {
-        "delta_latitude": 0.0,
-        "delta_longitude": -0.01
+        "delta_latitude": 0.0148,
+        "delta_longitude": 0.0432
       },
       "forecast_position": {
-        "latitude": -20.37,
-        "longitude": -68.92
+        "latitude": -20.3404,
+        "longitude": -68.8236
       },
       "trajectory": [
         {
@@ -33592,6 +33592,11 @@
           "timestamp": "2026-05-13T13:55:23+00:00",
           "latitude": -20.37,
           "longitude": -68.91
+        },
+        {
+          "timestamp": "2026-05-13T13:55:23.498000+00:00",
+          "latitude": -20.3552,
+          "longitude": -68.8668
         }
       ]
     },
@@ -34317,10 +34322,10 @@
       "persistent_track_id": "TRACK-00894",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T14:25:17.630675+00:00",
-      "last_seen_utc": "2026-05-13T14:31:29.536823+00:00",
+      "last_seen_utc": "2026-05-13T14:33:34.801688+00:00",
       "current_latitude": 37.783971666666666,
       "current_longitude": -122.40283833333334,
-      "event_count": 4,
+      "event_count": 5,
       "velocity_vector": {
         "delta_latitude": 0.0,
         "delta_longitude": 0.0
@@ -34347,6 +34352,11 @@
         },
         {
           "timestamp": "2026-05-13T14:31:29.536823+00:00",
+          "latitude": 37.783971666666666,
+          "longitude": -122.40283833333334
+        },
+        {
+          "timestamp": "2026-05-13T14:33:34.801688+00:00",
           "latitude": 37.783971666666666,
           "longitude": -122.40283833333334
         }
