@@ -1,37 +1,37 @@
 {
-  "Blitzortung:BLITZORTUNG_ROOT": {
+  "Blitzortung:Blitzortung_ALT_CURATED": {
     "source": "Blitzortung",
-    "stream": "BLITZORTUNG_ROOT",
+    "stream": "Blitzortung_ALT_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T09:12:38.511739+00:00"
+    "updated_utc": "2026-05-13T09:13:55.792005+00:00"
   },
   "ARGO:ARGO_ALT_RAW": {
     "source": "ARGO",
     "stream": "ARGO_ALT_RAW",
     "ok": false,
     "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T09:12:40.208229+00:00"
+    "updated_utc": "2026-05-13T09:13:57.411677+00:00"
   },
   "Celestrak:CELESTRAK_STATIONS": {
     "source": "Celestrak",
     "stream": "CELESTRAK_STATIONS",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T09:12:41.471650+00:00"
+    "updated_utc": "2026-05-13T09:13:58.724515+00:00"
   },
   "Celestrak:CELESTRAK_STATIONS_CURATED": {
     "source": "Celestrak",
     "stream": "CELESTRAK_STATIONS_CURATED",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T09:12:41.490362+00:00"
+    "updated_utc": "2026-05-13T09:13:58.763102+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T09:12:47.108300+00:00"
+    "updated_utc": "2026-05-13T09:14:07.876927+00:00"
   }
 }
