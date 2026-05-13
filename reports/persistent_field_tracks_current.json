@@ -1,6 +1,6 @@
 {
-  "timestamp_utc": "2026-05-13T16:37:17.575443+00:00",
-  "track_count": 1052,
+  "timestamp_utc": "2026-05-13T16:39:53.558181+00:00",
+  "track_count": 1054,
   "tracks": [
     {
       "persistent_track_id": "TRACK-00000",
@@ -7163,23 +7163,28 @@
       "persistent_track_id": "TRACK-00288",
       "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T06:15:32.160000+00:00",
-      "last_seen_utc": "2026-05-13T06:15:32.160000+00:00",
-      "current_latitude": 60.5786666666667,
-      "current_longitude": -152.7235,
-      "event_count": 1,
+      "last_seen_utc": "2026-05-13T06:15:46.080000+00:00",
+      "current_latitude": 60.6081666666667,
+      "current_longitude": -152.720333333333,
+      "event_count": 2,
       "velocity_vector": {
-        "delta_latitude": 0.0,
-        "delta_longitude": 0.0
+        "delta_latitude": 0.0295,
+        "delta_longitude": 0.003167
       },
       "forecast_position": {
-        "latitude": 60.5786666666667,
-        "longitude": -152.7235
+        "latitude": 60.637667,
+        "longitude": -152.717167
       },
       "trajectory": [
         {
           "timestamp": "2026-05-13T06:15:32.160000+00:00",
           "latitude": 60.5786666666667,
           "longitude": -152.7235
+        },
+        {
+          "timestamp": "2026-05-13T06:15:46.080000+00:00",
+          "latitude": 60.6081666666667,
+          "longitude": -152.720333333333
         }
       ]
     },
@@ -39019,6 +39024,30 @@
     },
     {
       "persistent_track_id": "TRACK-01020",
+      "primary_regime": "seismic",
+      "first_seen_utc": "2026-05-13T16:24:49+00:00",
+      "last_seen_utc": "2026-05-13T16:24:49+00:00",
+      "current_latitude": -9.78,
+      "current_longitude": 123.44,
+      "event_count": 1,
+      "velocity_vector": {
+        "delta_latitude": 0.0,
+        "delta_longitude": 0.0
+      },
+      "forecast_position": {
+        "latitude": -9.78,
+        "longitude": 123.44
+      },
+      "trajectory": [
+        {
+          "timestamp": "2026-05-13T16:24:49+00:00",
+          "latitude": -9.78,
+          "longitude": 123.44
+        }
+      ]
+    },
+    {
+      "persistent_track_id": "TRACK-01021",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.772867+00:00",
@@ -39052,7 +39081,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01021",
+      "persistent_track_id": "TRACK-01022",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:30:12.082967+00:00",
@@ -39081,7 +39110,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01022",
+      "persistent_track_id": "TRACK-01023",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.771866+00:00",
@@ -39125,7 +39154,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01023",
+      "persistent_track_id": "TRACK-01024",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:30:12.082967+00:00",
@@ -39154,7 +39183,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01024",
+      "persistent_track_id": "TRACK-01025",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39218,7 +39247,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01025",
+      "persistent_track_id": "TRACK-01026",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39257,7 +39286,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01026",
+      "persistent_track_id": "TRACK-01027",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39326,7 +39355,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01027",
+      "persistent_track_id": "TRACK-01028",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.772867+00:00",
@@ -39360,7 +39389,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01028",
+      "persistent_track_id": "TRACK-01029",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:30:12.082967+00:00",
@@ -39389,7 +39418,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01029",
+      "persistent_track_id": "TRACK-01030",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39428,7 +39457,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01030",
+      "persistent_track_id": "TRACK-01031",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:30:12.082967+00:00",
@@ -39457,7 +39486,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01031",
+      "persistent_track_id": "TRACK-01032",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39496,7 +39525,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01032",
+      "persistent_track_id": "TRACK-01033",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:27:19.608495+00:00",
       "last_seen_utc": "2026-05-13T16:30:12.082967+00:00",
@@ -39525,7 +39554,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01033",
+      "persistent_track_id": "TRACK-01034",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.771866+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.772867+00:00",
@@ -39559,7 +39588,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01034",
+      "persistent_track_id": "TRACK-01035",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.771866+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.771866+00:00",
@@ -39583,7 +39612,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01035",
+      "persistent_track_id": "TRACK-01036",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.771866+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.771866+00:00",
@@ -39607,7 +39636,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01036",
+      "persistent_track_id": "TRACK-01037",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.771866+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.771866+00:00",
@@ -39631,7 +39660,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01037",
+      "persistent_track_id": "TRACK-01038",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.771866+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.771866+00:00",
@@ -39655,7 +39684,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01038",
+      "persistent_track_id": "TRACK-01039",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.772867+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.772867+00:00",
@@ -39679,7 +39708,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01039",
+      "persistent_track_id": "TRACK-01040",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.772867+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.772867+00:00",
@@ -39703,7 +39732,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01040",
+      "persistent_track_id": "TRACK-01041",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:32:52.772867+00:00",
       "last_seen_utc": "2026-05-13T16:32:52.772867+00:00",
@@ -39727,7 +39756,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01041",
+      "persistent_track_id": "TRACK-01042",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39751,7 +39780,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01042",
+      "persistent_track_id": "TRACK-01043",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39780,7 +39809,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01043",
+      "persistent_track_id": "TRACK-01044",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39804,7 +39833,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01044",
+      "persistent_track_id": "TRACK-01045",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39828,7 +39857,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01045",
+      "persistent_track_id": "TRACK-01046",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39852,7 +39881,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01046",
+      "persistent_track_id": "TRACK-01047",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39876,7 +39905,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01047",
+      "persistent_track_id": "TRACK-01048",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39900,7 +39929,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01048",
+      "persistent_track_id": "TRACK-01049",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39924,7 +39953,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01049",
+      "persistent_track_id": "TRACK-01050",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39948,7 +39977,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01050",
+      "persistent_track_id": "TRACK-01051",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39972,7 +40001,7 @@
       ]
     },
     {
-      "persistent_track_id": "TRACK-01051",
+      "persistent_track_id": "TRACK-01052",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T16:35:32.380921+00:00",
       "last_seen_utc": "2026-05-13T16:35:32.380921+00:00",
@@ -39992,6 +40021,55 @@
           "timestamp": "2026-05-13T16:35:32.380921+00:00",
           "latitude": 38.3151,
           "longitude": -123.0752
+        }
+      ]
+    },
+    {
+      "persistent_track_id": "TRACK-01053",
+      "primary_regime": "radiological",
+      "first_seen_utc": "2026-05-13T16:38:37.103484+00:00",
+      "last_seen_utc": "2026-05-13T16:38:37.104483+00:00",
+      "current_latitude": 35.91271666666667,
+      "current_longitude": 138.26282333333333,
+      "event_count": 6,
+      "velocity_vector": {
+        "delta_latitude": -0.000647,
+        "delta_longitude": 0.001837
+      },
+      "forecast_position": {
+        "latitude": 35.91207,
+        "longitude": 138.26466
+      },
+      "trajectory": [
+        {
+          "timestamp": "2026-05-13T16:38:37.103484+00:00",
+          "latitude": 35.91778,
+          "longitude": 138.25859
+        },
+        {
+          "timestamp": "2026-05-13T16:38:37.103484+00:00",
+          "latitude": 35.916145,
+          "longitude": 138.25803666666667
+        },
+        {
+          "timestamp": "2026-05-13T16:38:37.103484+00:00",
+          "latitude": 35.91439,
+          "longitude": 138.25693166666667
+        },
+        {
+          "timestamp": "2026-05-13T16:38:37.103484+00:00",
+          "latitude": 35.913045,
+          "longitude": 138.25861
+        },
+        {
+          "timestamp": "2026-05-13T16:38:37.104483+00:00",
+          "latitude": 35.913363333333336,
+          "longitude": 138.26098666666667
+        },
+        {
+          "timestamp": "2026-05-13T16:38:37.104483+00:00",
+          "latitude": 35.91271666666667,
+          "longitude": 138.26282333333333
         }
       ]
     }
