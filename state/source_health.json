@@ -1,65 +1,30 @@
 {
-  "LOFAR:LOFAR_ALT_CURATED": {
-    "source": "LOFAR",
-    "stream": "LOFAR_ALT_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T15:45:48.255210+00:00"
-  },
-  "LightningMaps:LightningMaps_ALT_RAW": {
-    "source": "LightningMaps",
-    "stream": "LightningMaps_ALT_RAW",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T15:45:48.461868+00:00"
-  },
-  "Blitzortung:BLITZORTUNG_ROOT": {
-    "source": "Blitzortung",
-    "stream": "BLITZORTUNG_ROOT",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T15:45:49.020132+00:00"
-  },
-  "GlobeAtNight:GLOBE_AT_NIGHT_MAP": {
-    "source": "GlobeAtNight",
-    "stream": "GLOBE_AT_NIGHT_MAP",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T15:45:49.239483+00:00"
-  },
-  "Blitzortung:Blitzortung_ALT_CURATED": {
-    "source": "Blitzortung",
-    "stream": "Blitzortung_ALT_CURATED",
-    "ok": true,
-    "reason": "",
-    "updated_utc": "2026-05-13T15:45:49.452644+00:00"
-  },
   "ARGO:ARGO_ALT_RAW": {
     "source": "ARGO",
     "stream": "ARGO_ALT_RAW",
     "ok": false,
     "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
-    "updated_utc": "2026-05-13T15:45:51.207986+00:00"
+    "updated_utc": "2026-05-13T15:48:35.052508+00:00"
   },
-  "Celestrak:CELESTRAK_STATIONS": {
-    "source": "Celestrak",
-    "stream": "CELESTRAK_STATIONS",
+  "IRIS:IRIS_ALT_CURATED": {
+    "source": "IRIS",
+    "stream": "IRIS_ALT_CURATED",
     "ok": false,
-    "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T15:45:52.451271+00:00"
+    "reason": "The read operation timed out",
+    "updated_utc": "2026-05-13T15:48:35.958579+00:00"
   },
   "Celestrak:CELESTRAK_STATIONS_CURATED": {
     "source": "Celestrak",
     "stream": "CELESTRAK_STATIONS_CURATED",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T15:45:52.452951+00:00"
+    "updated_utc": "2026-05-13T15:48:36.364004+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T15:45:58.456860+00:00"
+    "updated_utc": "2026-05-13T15:48:40.333850+00:00"
   }
 }
