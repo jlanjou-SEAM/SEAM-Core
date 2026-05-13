@@ -1,9 +1,16 @@
 {
+  "Celestrak:CELESTRAK_STATIONS": {
+    "source": "Celestrak",
+    "stream": "CELESTRAK_STATIONS",
+    "ok": false,
+    "reason": "URL error: timed out",
+    "updated_utc": "2026-05-13T10:21:55.461973+00:00"
+  },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T10:20:14.916582+00:00"
+    "updated_utc": "2026-05-13T10:21:56.363932+00:00"
   }
 }
