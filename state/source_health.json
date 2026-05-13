@@ -1,16 +1,30 @@
 {
+  "ARGO:ARGO_ALT_RAW": {
+    "source": "ARGO",
+    "stream": "ARGO_ALT_RAW",
+    "ok": false,
+    "reason": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
+    "updated_utc": "2026-05-13T21:03:05.991358+00:00"
+  },
+  "Celestrak:CELESTRAK_STATIONS": {
+    "source": "Celestrak",
+    "stream": "CELESTRAK_STATIONS",
+    "ok": false,
+    "reason": "URL error: timed out",
+    "updated_utc": "2026-05-13T21:03:07.322127+00:00"
+  },
   "LOFAR:LOFAR_ALT_RAW": {
     "source": "LOFAR",
     "stream": "LOFAR_ALT_RAW",
     "ok": false,
     "reason": "URL error: timed out",
-    "updated_utc": "2026-05-13T21:00:00.567443+00:00"
+    "updated_utc": "2026-05-13T21:03:07.521250+00:00"
   },
   "SatNOGS:SatNOGS_CURATED": {
     "source": "SatNOGS",
     "stream": "SatNOGS_CURATED",
     "ok": true,
     "reason": "",
-    "updated_utc": "2026-05-13T21:00:02.360973+00:00"
+    "updated_utc": "2026-05-13T21:03:14.154620+00:00"
   }
 }
