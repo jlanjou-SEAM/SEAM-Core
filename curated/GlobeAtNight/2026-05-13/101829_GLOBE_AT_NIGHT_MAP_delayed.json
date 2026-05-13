@@ -1,0 +1,1605 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>
+    
+      Maps &amp; Data
+    
+    
+      
+      - Globe At Night
+    
+  </title>
+  <meta name="description" content=""/>
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/static/images/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+  
+
+  
+  <link type="text/css" href="/static/dist/modules.b1427e4b4d26424d7054.css" rel="stylesheet" />
+<script type="text/javascript" src="/static/dist/modules.7f7dea304871cb1a4c1b.js" ></script>
+  <link type="text/css" href="/static/dist/vendor.a4c33dbbb8a76a329a31.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/static/css/style.css"/>
+  <link rel="stylesheet" href="/static/css/style-responsive.css"/>
+  <link rel="stylesheet" href="/static/css/vertical-rhythm.min.css"/>
+  <link rel="stylesheet" href="/static/css/magnific-popup.css"/>
+  <link rel="stylesheet" href="/static/css/owl.carousel.css"/>
+  <link rel="stylesheet" href="/static/css/animate.min.css"/>
+  <link rel="stylesheet" href="/static/css/splitting.css"/>
+
+  
+  <link type="text/css" href="/static/dist/app.0edc22eae040ace07569.css" rel="stylesheet" />
+
+  
+    
+  
+
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//matomo.noirlab.edu/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '6']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</head>
+
+<body class=" appear-animate">
+
+
+
+
+<!-- Page Loader -->
+  
+    <!-- Page Loader -->
+    <div class="page-loader dark">
+      <div class="loader">Loading...</div>
+    </div>
+  
+<!-- End Page Loader -->
+
+<!-- Skip to Content -->
+<a href="#main" class="btn skip-to-content">Skip to Content</a>
+<!-- End Skip to Content -->
+
+<!-- Page Wrap -->
+<div class="page bg-dark light-content" id="top">
+  
+
+
+
+<nav class="main-nav dark transparent stick-fixed wow-menubar">
+  <div class="full-wrapper relative clearfix">
+    <!-- Logo ( * your text or image into link tag *) -->
+    <div class="nav-logo-wrap local-scroll d-flex align-items-center">
+      <a href="/" class="logo py-2">
+        <img
+          src="/static/images/gan-logo.png"
+          alt="GAN Logo"
+          height="85"
+        />
+      </a>
+      <div class="ms-3">
+        <img
+          src="https://noirlab.edu/public/media/archives/logos/original_trans/logo071.png"
+          alt=""
+          width="110"
+        />
+      </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="mobile-nav" role="button" tabindex="0">
+      <i class="fa fa-bars"></i>
+      <span class="sr-only">Menu</span>
+    </div>
+    <!-- Main Menu -->
+    <div class="inner-nav desktop-nav">
+      <ul class="clearlist">
+        <!-- Items -->
+        
+          
+            
+              <li>
+                <a href="/"  class="">
+                  Home
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/about/"  class="">
+                  About
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="#"  class="mn-has-sub ">
+                  Learn <i class="mn-has-sub-icon"></i>
+                </a>
+
+                <ul class="mn-sub">
+                  
+                    <li>
+                      <a href="/constellations/"  class="">
+                        Constellations
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/light-pollution/"  class="">
+                        Light Pollution
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/magnitudes/"  class="">
+                        Magnitudes
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/education-standards/"  class="">
+                        Educational Standards
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/dark-skies-rangers/"  class="">
+                        Dark Skies Rangers
+                      </a>
+                    </li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li>
+                <a href="#"  class="mn-has-sub ">
+                  Observe <i class="mn-has-sub-icon"></i>
+                </a>
+
+                <ul class="mn-sub">
+                  
+                    <li>
+                      <a href="/campaigns/"  class="">
+                        Campaigns
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/magnitude-charts/"  class="">
+                        Magnitude Charts
+                      </a>
+                    </li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li>
+                <a href="https://app.globeatnight.org" target="_blank" class="">
+                  Report
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="#"  class="mn-has-sub ">
+                  Maps &amp; Data <i class="mn-has-sub-icon"></i>
+                </a>
+
+                <ul class="mn-sub">
+                  
+                    <li>
+                      <a href="/maps-data/"  class="active">
+                        Data
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="https://app.globeatnight.org/map"  target="_blank" class="">
+                        Interactive Data Map
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/gan-mn/"  class="">
+                        Sky Brightness MN
+                      </a>
+                    </li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/resources/"  class="">
+                  Resources
+                </a>
+              </li>
+            
+          
+          <!-- End Items -->
+        
+
+        <!-- Divider -->
+        <li>&nbsp;</li>
+        <!-- End Divider -->
+
+        <!-- Search -->
+        <li>
+          <a href="#" class="mn-has-sub">
+            <i class="main-nav-icon-search"></i> Search
+          </a>
+
+          <ul class="mn-sub">
+            <li>
+              <div class="mn-wrap">
+                <form method="post" class="form">
+                  <div class="search-wrap">
+                    <input
+                      type="text"
+                      class="form-control search-field round"
+                      placeholder="Search..."
+                    />
+                    <button
+                      class="search-button animate"
+                      type="submit"
+                      title="Start Search"
+                    >
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- End Search -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <!-- End Main Menu -->
+  </div>
+</nav>
+
+  <main id="main">
+    
+  <section class="small-section bg-dark-alfa-50 light-content ">
+    <div class="container relative pt-70">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="wow fadeInUpShort mb-2" data-wow-delay=".1s">
+            
+
+<div class="mod-breadcrumbs d-flex align-items-center">
+  
+    
+      
+      
+    
+      
+        <a href="/" class="fw-bold">Home</a>
+      
+      
+        <span class="mod-breadcrumbs-slash mx-2"><i class="fa fa-chevron-right"></i></span>
+      
+    
+    <span>Maps &amp; Data</span>
+  
+</div>
+
+          </div>
+
+          
+            <div class="wow fadeInUpShort" data-wow-delay=".1s">
+              <h1 class="hs-line-7 mb-20 mb-xs-10">Maps &amp; Data</h1>
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <div class="mt-80 mb-80">
+      <div class="block-one_column_richtext_block"><section class="container mt-4">
+  <h3 data-block-key="may8v">2026 Globe at Night Campaigns</h3><p data-block-key="d1tfk">Globe at Night has been collecting data about the night sky since 2006. All of that data is available to download in a variety of formats, and also can be explored in our interactive map. Links to previous years’ data is available below. We are just getting started with this year’s campaign, but you can <a href="https://app.globeatnight.org/map/">explore the data from 2026</a> as it comes in.</p><h3 data-block-key="27dc2">Globe at Night - Sky Brightness Monitoring Network (GaN-MN)</h3><p data-block-key="iqmn">The <a href="/gan-mn/">GaN-MN project</a>, an extension of the original Globe at Night project, is a global night sky brightness monitoring network using a commercially available meter (SQM-LE by Unihedron) for long-term monitoring of the light pollution conditions in different places around the world.</p>
+</section>
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2025 Results:</strong> 13419 total observations
+      </p>
+
+      
+        <p>Download the 2025 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/1189/GaN2025.json">GaN2025</a>&nbsp;(.json)</li>
+        
+          
+          <li><a href="/documents/1190/GaN2025.csv">GaN2025</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2025 Observations.</strong>
+        To explore the 2025 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2025" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/2025-map.original.png?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=m5N%2BuNPG7B62n24d2ykcVotYUaw%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671107"
+            alt="map-2025"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2024 Results:</strong> 14377 total observations
+      </p>
+
+      
+        <p>Download the 2024 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/925/GaN2024.json">GaN2024</a>&nbsp;(.json)</li>
+        
+          
+          <li><a href="/documents/926/GaN2024.csv">GaN2024</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2024 Observations.</strong>
+        To explore the 2024 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2024" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2024Map.original.png?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=YOaQqvWs%2FNnBUmhE%2F2Ed7C%2B6%2Fxw%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2024"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2023 Results:</strong> 21973 total observations
+      </p>
+
+      
+        <p>Download the 2023 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/638/GaN2023.json">GaN2023</a>&nbsp;(.json)</li>
+        
+          
+          <li><a href="/documents/661/GaN2023.csv">GaN2023</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2023 Observations.</strong>
+        To explore the 2023 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2023" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/2023-map.original.png?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=6xZxoKOXSfsN1W7hQ4GvrxAuJCk%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2023"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2022 Results:</strong> 19685 total observations
+      </p>
+
+      
+        <p>Download the 2022 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/431/GaN2022.xlsx">GaN2022</a>&nbsp;(.xlsx)</li>
+        
+          
+          <li><a href="/documents/432/GaN2022.json">GaN2022</a>&nbsp;(.json)</li>
+        
+          
+          <li><a href="/documents/662/GaN2022.csv">GaN2022</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2022 Observations.</strong>
+        To explore the 2022 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2022" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/2022-map.original.png?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=Puy%2BGiSW%2FDeUNy0zGd7rcR1eh4s%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2022"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2021 Results:</strong> 25268 total observations
+      </p>
+
+      
+        <p>Download the 2021 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/407/GaN2021.kmz">GaN2021</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/406/GaN2021_SQM.kmz">GaN2021_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/405/GaN2021.xls">GaN2021</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/663/GaN2021.csv">GaN2021</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2021 Observations.</strong>
+        To explore the 2021 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2021" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2021Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=0o4cKnoOaI49HjQPciiK0AJ3X3c%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2021"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2020 Results:</strong> 29404 total observations
+      </p>
+
+      
+        <p>Download the 2020 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/402/GaN2020.kmz">GaN2020</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/401/GaN2020_SQM.kmz">GaN2020_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/400/GaN2020.xls">GaN2020</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/679/GaN2020.csv">GaN2020</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2020 Observations.</strong>
+        To explore the 2020 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2020" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2020Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=vNg8JZOWYGJ%2FeNr2AFKxrxuLGF4%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2020"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2019 Results:</strong> 10197 total observations
+      </p>
+
+      
+        <p>Download the 2019 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/397/GaN2019.kmz">GaN2019</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/396/GaN2019_SQM.kmz">GaN2019_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/395/GaN2019.xls">GaN2019</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/665/GaN2019.csv">GaN2019</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2019 Observations.</strong>
+        To explore the 2019 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2019" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2019Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=UDexOgFabSRFpHbGfmugVN97u4c%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2019"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2018 Results:</strong> 8155 total observations
+      </p>
+
+      
+        <p>Download the 2018 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/392/GaN2018.kmz">GaN2018</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/391/GaN2018_SQM.kmz">GaN2018_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/390/GaN2018.xls">GaN2018</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/666/GaN2018.csv">GaN2018</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2018 Observations.</strong>
+        To explore the 2018 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2018" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2018Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=J5Id5aG7%2FMXqx2SzKg3LJr3jt7c%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2018"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2017 Results:</strong> 14260 total observations
+      </p>
+
+      
+        <p>Download the 2017 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/387/GaN2017.kmz">GaN2017</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/386/GaN2017_SQM.kmz">GaN2017_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/385/GaN2017.xls">GaN2017</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/667/GaN2017.csv">GaN2017</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2017 Observations.</strong>
+        To explore the 2017 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2017" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2017Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=mpELCVj%2FEJwIqMYMi%2BYfCc996O0%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2017"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2016 Results:</strong> 15411 total observations
+      </p>
+
+      
+        <p>Download the 2016 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/382/GaN2016.kmz">GaN2016</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/381/GaN2016_SQM.kmz">GaN2016_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/380/GaN2016.xls">GaN2016</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/668/GaN2016.csv">GaN2016</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2016 Observations.</strong>
+        To explore the 2016 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2016" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2016Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=FSjs31OQVN5PkbHJX%2BpVI4MRs2A%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2016"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2015 Results:</strong> 22981 total observations
+      </p>
+
+      
+        <p>Download the 2015 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/376/GaN2015.kmz">GaN2015</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/375/GaN2015_SQM.kmz">GaN2015_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/374/GaN2015.xls">GaN2015</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/669/GaN2015.csv">GaN2015</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2015 Observations.</strong>
+        To explore the 2015 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2015" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2015Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=wVvB3EWe%2FZieI4ubcOGRlw0PtxM%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2015"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2014 Results:</strong> 20819 total observations
+      </p>
+
+      
+        <p>Download the 2014 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/371/GaN2014.kmz">GaN2014</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/370/GaN2014_SQM.kmz">GaN2014_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/369/GaN2014.xls">GaN2014</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/670/GaN2014.csv">GaN2014</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2014 Observations.</strong>
+        To explore the 2014 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2014" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2014Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=IFoGRp21qUdj0hWgVkU8NuOjhPA%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2014"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2013 Results:</strong> 20695 total observations
+      </p>
+
+      
+        <p>Download the 2013 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/366/GaN2013.kmz">GaN2013</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/365/GaN2013_SQM.kmz">GaN2013_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/364/GaN2013.xls">GaN2013</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/671/GaN2013.csv">GaN2013</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2013 Observations.</strong>
+        To explore the 2013 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2013" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2013Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=wU0Vn2emt7H%2BAefuJYhAIY8lkLU%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2013"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2012 Results:</strong> 16995 total observations
+      </p>
+
+      
+        <p>Download the 2012 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/361/GaN2012.kmz">GaN2012</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/360/GaN2012_SQM.kmz">GaN2012_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/359/GaN2012.xls">GaN2012</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/672/GaN2012.csv">GaN2012</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2012 Observations.</strong>
+        To explore the 2012 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2012" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2012Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=p%2Bq3uKHEFiuocj58OowW4Guvxb8%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2012"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2011 Results:</strong> 14353 total observations
+      </p>
+
+      
+        <p>Download the 2011 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/356/BB2011.csv">BB2011</a>&nbsp;(.csv)</li>
+        
+          
+          <li><a href="/documents/355/GaN2011.kmz">GaN2011</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/354/GaN2011_SQM.kmz">GaN2011_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/353/BB2011.kmz">BB2011</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/352/GaN2011.xls">GaN2011</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/673/GaN2011.csv">GaN2011</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2011 Observations.</strong>
+        To explore the 2011 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2011" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2011Map.original.png?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=skfBU9V21uxqL8AGJ2cPgSqV%2F5A%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2011"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2010 Results:</strong> 17644 total observations
+      </p>
+
+      
+        <p>Download the 2010 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/349/GaN2010.kmz">GaN2010</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/348/GaN2010_SQM.kmz">GaN2010_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/347/GaN2010_ORION.kmz">GaN2010_ORION</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/346/GaN2010.xls">GaN2010</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/344/GaN2010_fields.txt">GaN2010_fields</a>&nbsp;(.txt)</li>
+        
+          
+          <li><a href="/documents/343/GaN2010.gdb.zip">GaN2010.gdb</a>&nbsp;(.zip)</li>
+        
+          
+          <li><a href="/documents/342/GaN2010_shp.zip">GaN2010_shp</a>&nbsp;(.zip)</li>
+        
+          
+          <li><a href="/documents/674/GaN2010.csv">GaN2010</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2010 Observations.</strong>
+        To explore the 2010 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2010" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2010Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=WNYytaRVPyN0hTd6Qe0YlnVtu%2Bg%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671108"
+            alt="map-2010"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2009 Results:</strong> 14140 total observations
+      </p>
+
+      
+        <p>Download the 2009 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/340/GaN2009.kmz">GaN2009</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/339/GaN2009_SQM.kmz">GaN2009_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/338/GaN2009.xls">GaN2009</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/675/GaN2009.csv">GaN2009</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2009 Observations.</strong>
+        To explore the 2009 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2009" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2009Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=5w8AGi6nexMXnzk%2Fp9Q0bqg%2FEFY%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671109"
+            alt="map-2009"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2008 Results:</strong> 6837 total observations
+      </p>
+
+      
+        <p>Download the 2008 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/335/GaN2008.kmz">GaN2008</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/334/GaN2008_SQM.kmz">GaN2008_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/333/GaN2008.xls">GaN2008</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/676/GaN2008.csv">GaN2008</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2008 Observations.</strong>
+        To explore the 2008 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2008" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2008Map.original.png?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=v2pJoYmjZNIlHHg2tOgcuPkUrq0%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671109"
+            alt="map-2008"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2007 Results:</strong> 8491 total observations
+      </p>
+
+      
+        <p>Download the 2007 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/330/GaN2007.kmz">GaN2007</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/329/GaN2007_SQM.kmz">GaN2007_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/328/GaN2007.xls">GaN2007</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/677/GaN2007.csv">GaN2007</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2007 Observations.</strong>
+        To explore the 2007 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2007" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2007Map.original.png?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=YgHsC7%2FS8h3vH%2F5k6sJ%2F40D373E%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671109"
+            alt="map-2007"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-year_data">
+
+
+
+
+<section class="container my-5">
+  <div class="p-5 d-flex flex-row" style="border: 2px solid #ffffff;">
+    <!-- Left Column -->
+    <div class="w-50">
+      <p>
+        <strong>2006 Results:</strong> 3992 total observations
+      </p>
+
+      
+        <p>Download the 2006 data:</p>
+        <ul>
+        
+          
+          <li><a href="/documents/325/GaN2006.kmz">GaN2006</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/324/GaN2006_SQM.kmz">GaN2006_SQM</a>&nbsp;(.kmz)</li>
+        
+          
+          <li><a href="/documents/323/GaN2006.xls">GaN2006</a>&nbsp;(.xls)</li>
+        
+          
+          <li><a href="/documents/678/GaN2006.csv">GaN2006</a>&nbsp;(.csv)</li>
+        
+        </ul>
+      
+
+      
+    </div>
+
+    <!-- Right Column -->
+    <div class="w-50">
+      <p><strong>2006 Observations.</strong>
+        To explore the 2006 data in more detail, click the map below to launch the Map Viewer.
+      </p>
+      <a href="https://app.globeatnight.org/map/?year=2006" target="_blank">
+        
+          
+          <img
+            class="pt-3"
+            src="https://s3.us-west-2.amazonaws.com/noirlab.edu.cee.prod/globeatnight/images/GaN2006Map.original.jpg?AWSAccessKeyId=ASIAWX3YSJVTDA4UBRYM&amp;Signature=GvF1%2Br25rRih0lKc1GsP8vAyy%2Bc%3D&amp;x-amz-security-token=IQoJb3JpZ2luX2VjEHoaCXVzLXdlc3QtMiJHMEUCIQD1eeQcfI%2FJ3sCtK0yGvQdqTyhh7NxrKKbvkU0pJ0haZAIgVK2otaSnriaPED0z%2FDUQN%2F4MFdVFx0lW%2BHV9P8jDcgwqhwUIQxABGgw0NjM1NzI0NTQ3NTgiDOf7j%2BG87tFzQgY7dyrkBEkv62K4a9r9W8E1yQwsgmlOWt%2FLsN6Xy2HmMpRXB3xzwXjkMFDoVoVpFcZZgtw9OfISmuQT7RWMCS7dhnaV9VlGR45n3A1f1jX%2Bo8ox7IiGudyx%2FIpy8GvHSnJRQ%2BWrWCAnoGrJS%2F1F2vT%2FTOD%2BaNx5%2Fjob1NWuYwQHByWdYvzCmJwqmNl11pPQllZipDLYXLqGlXGbIGamCdGqkS8RP3LJ%2FqnD%2FF2V8DsnwSVrGSzJMv12qfuQzfROcySg9rF89JPbvwPfTSGOLWKIeM6YE%2BV%2B98eJYCBVu4z2dsamz1sms6lBXpnwYitJ9a4xT6tZv4vijXngeblySY5Mj9kRiwrQr0N2WV0s0DIAMQzdbCcANv24JuoFCNrJKzNDFWylXS%2BETPyLoexKTODVjQiN8qSaUXEIYGT0L18WkuQe%2FpPziv5T3ELItd5hgVcbtspkqRQnORrdHpL5dAmX5CkPZ5l3wLo%2Bhqyk%2FI4qJoc4kSDZWWBymsxcAChs7qL7ZyixO%2B8D99qXblHTCiYmC0jeJ43vECf0UCVu1BXtm7XTesGlckcWpE6BKpz82mIEtZFfp316kKOrgcpOt%2BwCnN4rSF%2Fm62fW8Oz2RAVrLosxMpgLuMbEiQLQSvJZFwoEDndb9Wpacr%2BOavJUgSzQtzqknZlDIGGqX%2Fg7ehLWlHtXWfPktqnFZRIuph8ckh7T%2FfMhEV%2BNL8yCpGDzXrW9a16sLavdGV5yVj%2Fgd%2B60n7hywC4INfKhTAsoXQt4EjqHP9rGKV%2FPtRAAhK0QQzOu0BbyOkslaJzVXA%2FlGWW2jNdjimde12wITDCxkJHQBjqYAQVroQBNQoDk9xapzeB57r13Iy9nUYWFY0rCCWIUG91GPsJ1Dq54bMLrpifgiDlaoYKp5621S9DGsybjdsfYyUXsTvLB1NxYxPOx%2Bd%2BKM6iFcqQYmKm5Lg%2F642xCqan3i3Rou9U2LrFbvQjz6OmsfhqckbskvK8jBQ18AXx5TQxf5CCpjnBiBuf7XyfP1%2BYkkjnG7nHkJDp3&amp;Expires=1778671109"
+            alt="map-2006"
+            height="320px"
+          />
+        
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<div class="block-one_column_richtext_block"><section class="container mt-4">
+  <p data-block-key="adnff">Globe at Night data is made available under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p><p data-block-key="b2qkl"><i>** Files generated by Dennis L. Ward, © Copyright 2007 University Corporation for Atmospheric Research.</i></p>
+</section>
+</div>
+    </div>
+  
+
+  </main>
+  
+
+
+<footer class="page-section bg-dark light-content footer pb-100 pb-sm-50">
+  <div class="container">
+    <!-- Social Links -->
+    <div class="footer-social-links mb-40 mb-xs-40">
+      
+        <a
+          href="https://www.facebook.com/GLOBEatNight"
+          title="Facebook"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+          <span class="sr-only">Facebook profile</span>
+        </a>
+      
+
+      
+        <a href="https://twitter.com/globeatnight" title="Twitter" target="_blank">
+          <i class="fab fa-twitter"></i>
+          <span class="sr-only">Twitter profile</span>
+        </a>
+      
+
+      
+    </div>
+    <!-- End Social Links -->
+
+
+
+    <div
+      class="d-flex justify-content-center align-items-center mb-40 mt-100"
+    >
+      <img
+        src="https://noirlab.edu/public/media/archives/logos/original_trans/logo071.png"
+        alt=""
+        style="height: 90px"
+      />
+      <img
+        src="https://noirlab.edu/public/media/archives/logos/original_trans/logo149.png"
+        alt=""
+        style="height: 40px"
+      />
+    </div>
+
+    <!-- Footer Text -->
+    <div class="footer-text">
+      <!-- Copyright -->
+      <div class="footer-copy">
+        <a href="/">
+          
+          Globe at Night is a program of NSF’s NOIRLab, the preeminent US
+          national center for ground-based, nighttime optical and infrared
+          astronomy, which is managed by the Association of Universities
+          for Research in Astronomy (AURA), under cooperative agreement
+          with the National Science Foundation.
+          
+        </a>
+      </div>
+      <!-- End Copyright -->
+    </div>
+    <!-- End Footer Text -->
+  </div>
+
+  <!-- Top Link -->
+  <div class="local-scroll">
+    <a href="#top" class="link-to-top"
+    ><i class="link-to-top-icon"></i
+    ><span class="sr-only">Scroll to top</span></a
+    >
+  </div>
+  <!-- End Top Link -->
+</footer>
+
+</div>
+<!-- End Page Wrap -->
+
+
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery.easing.1.3.js"></script>
+<script src="/static/js/SmoothScroll.js"></script>
+<script src="/static/js/jquery.scrollTo.min.js"></script>
+<script src="/static/js/jquery.localScroll.min.js"></script>
+<script src="/static/js/jquery.viewport.mini.js"></script>
+<script src="/static/js/jquery.countTo.js"></script>
+<script src="/static/js/jquery.appear.js"></script>
+<script src="/static/js/jquery.parallax-1.1.3.js"></script>
+<script src="/static/js/jquery.fitvids.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/isotope.pkgd.min.js"></script>
+<script src="/static/js/imagesloaded.pkgd.min.js"></script>
+<script src="/static/js/jquery.magnific-popup.min.js"></script>
+<script src="/static/js/masonry.pkgd.min.js"></script>
+<script src="/static/js/jquery.lazyload.min.js"></script>
+<script src="/static/js/wow.min.js"></script>
+<script src="/static/js/morphext.js"></script>
+<script src="/static/js/typed.min.js"></script>
+<script src="/static/js/all.js"></script>
+<script src="/static/js/contact-form.js"></script>
+<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+<script src="/static/js/objectFitPolyfill.min.js"></script>
+<script src="/static/js/splitting.min.js"></script>
+
+<script type="text/javascript" src="/static/dist/vendor.c6136db68949c1dc1ab3.js" ></script>
+<script type="text/javascript" src="/static/dist/app.bf2e1677e150ad1517d0.js" ></script>
+
+
+  
+
+</body>
+
+</html>
