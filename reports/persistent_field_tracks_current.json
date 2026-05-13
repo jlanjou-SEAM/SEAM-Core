@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-05-13T14:34:37.802943+00:00",
+  "timestamp_utc": "2026-05-13T14:36:38.920717+00:00",
   "track_count": 895,
   "tracks": [
     {
@@ -32746,17 +32746,17 @@
       "persistent_track_id": "TRACK-00850",
       "primary_regime": "seismic",
       "first_seen_utc": "2026-05-13T13:46:36.680000+00:00",
-      "last_seen_utc": "2026-05-13T14:24:42.500000+00:00",
-      "current_latitude": 38.8283348083496,
-      "current_longitude": -122.803497314453,
-      "event_count": 7,
+      "last_seen_utc": "2026-05-13T14:33:26.700000+00:00",
+      "current_latitude": 38.7813339233398,
+      "current_longitude": -122.740333557129,
+      "event_count": 8,
       "velocity_vector": {
-        "delta_latitude": -0.008331,
-        "delta_longitude": -0.011497
+        "delta_latitude": -0.047001,
+        "delta_longitude": 0.063164
       },
       "forecast_position": {
-        "latitude": 38.820004,
-        "longitude": -122.814995
+        "latitude": 38.734333,
+        "longitude": -122.67717
       },
       "trajectory": [
         {
@@ -32793,6 +32793,11 @@
           "timestamp": "2026-05-13T14:24:42.500000+00:00",
           "latitude": 38.8283348083496,
           "longitude": -122.803497314453
+        },
+        {
+          "timestamp": "2026-05-13T14:33:26.700000+00:00",
+          "latitude": 38.7813339233398,
+          "longitude": -122.740333557129
         }
       ]
     },
@@ -34322,17 +34327,17 @@
       "persistent_track_id": "TRACK-00894",
       "primary_regime": "radiological",
       "first_seen_utc": "2026-05-13T14:25:17.630675+00:00",
-      "last_seen_utc": "2026-05-13T14:33:34.801688+00:00",
-      "current_latitude": 37.783971666666666,
-      "current_longitude": -122.40283833333334,
-      "event_count": 5,
+      "last_seen_utc": "2026-05-13T14:35:36.270133+00:00",
+      "current_latitude": 37.78434333333333,
+      "current_longitude": -122.402895,
+      "event_count": 6,
       "velocity_vector": {
-        "delta_latitude": 0.0,
-        "delta_longitude": 0.0
+        "delta_latitude": 0.000372,
+        "delta_longitude": -5.7e-05
       },
       "forecast_position": {
-        "latitude": 37.783972,
-        "longitude": -122.402838
+        "latitude": 37.784715,
+        "longitude": -122.402952
       },
       "trajectory": [
         {
@@ -34359,6 +34364,11 @@
           "timestamp": "2026-05-13T14:33:34.801688+00:00",
           "latitude": 37.783971666666666,
           "longitude": -122.40283833333334
+        },
+        {
+          "timestamp": "2026-05-13T14:35:36.270133+00:00",
+          "latitude": 37.78434333333333,
+          "longitude": -122.402895
         }
       ]
     }
