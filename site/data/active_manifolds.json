@@ -1,0 +1,148 @@
+{
+  "timestamp_utc": "2026-05-08T19:29:54.545589+00:00",
+  "active_events": [
+    {
+      "id": "seismic",
+      "region": "Pacific Seismic Arc",
+      "lat": 0,
+      "lon": 0,
+      "state": "TARGET",
+      "hypothesis": "Persistent seismic recurrence manifold",
+      "probability": 0.98,
+      "persistence": 0.96,
+      "trajectory": "tectonic migration",
+      "sources": [
+        "EMSC",
+        "IRIS",
+        "USGS"
+      ],
+      "evidence": [
+        "84 accumulated observations",
+        "3 contributing sources",
+        "cross-cycle persistence"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "solar",
+      "region": "Solar Weather Envelope",
+      "lat": 0,
+      "lon": 0,
+      "state": "TARGET",
+      "hypothesis": "Elevated geomagnetic interaction potential",
+      "probability": 0.91,
+      "persistence": 0.85,
+      "trajectory": "solar wind propagation",
+      "sources": [
+        "GOES",
+        "NOAA_SWPC"
+      ],
+      "evidence": [
+        "56 accumulated observations",
+        "2 contributing sources",
+        "cross-cycle persistence"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "atmospheric",
+      "region": "Atmospheric Electrical Corridor",
+      "lat": 0,
+      "lon": 0,
+      "state": "FOLLOW",
+      "hypothesis": "Electrical storm recurrence manifold",
+      "probability": 0.63,
+      "persistence": 0.62,
+      "trajectory": "storm line propagation",
+      "sources": [
+        "Blitzortung"
+      ],
+      "evidence": [
+        "28 accumulated observations",
+        "1 contributing sources",
+        "cross-cycle persistence"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "rf",
+      "region": "RF Observation Grid",
+      "lat": 0,
+      "lon": 0,
+      "state": "FOLLOW",
+      "hypothesis": "Persistent RF anomaly recurrence",
+      "probability": 0.63,
+      "persistence": 0.62,
+      "trajectory": "multi-band propagation",
+      "sources": [
+        "KiwiSDR"
+      ],
+      "evidence": [
+        "28 accumulated observations",
+        "1 contributing sources",
+        "cross-cycle persistence"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "transit",
+      "region": "Transit Observation Mesh",
+      "lat": 0,
+      "lon": 0,
+      "state": "FOLLOW",
+      "hypothesis": "Transit density anomaly persistence",
+      "probability": 0.63,
+      "persistence": 0.62,
+      "trajectory": "air corridor continuity",
+      "sources": [
+        "OpenSky"
+      ],
+      "evidence": [
+        "28 accumulated observations",
+        "1 contributing sources",
+        "cross-cycle persistence"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "radiological",
+      "region": "Radiological Observation Grid",
+      "lat": 0,
+      "lon": 0,
+      "state": "FOLLOW",
+      "hypothesis": "Background radiological deviation persistence",
+      "probability": 0.63,
+      "persistence": 0.62,
+      "trajectory": "environmental drift",
+      "sources": [
+        "Safecast"
+      ],
+      "evidence": [
+        "28 accumulated observations",
+        "1 contributing sources",
+        "cross-cycle persistence"
+      ],
+      "contradictions": []
+    },
+    {
+      "id": "orbital",
+      "region": "Orbital Telemetry Shell",
+      "lat": 0,
+      "lon": 0,
+      "state": "FOLLOW",
+      "hypothesis": "Elevated orbital telemetry clustering",
+      "probability": 0.63,
+      "persistence": 0.62,
+      "trajectory": "orbital persistence",
+      "sources": [
+        "SatNOGS"
+      ],
+      "evidence": [
+        "28 accumulated observations",
+        "1 contributing sources",
+        "cross-cycle persistence"
+      ],
+      "contradictions": []
+    }
+  ]
+}

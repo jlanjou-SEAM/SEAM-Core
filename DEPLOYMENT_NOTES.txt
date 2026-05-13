@@ -1,0 +1,24 @@
+SEAM Publish Build
+
+Normalized Structure:
+site/
+├── index.html
+├── css/
+├── js/
+├── data/
+├── assets/
+└── vendor/
+
+Changes:
+- Updated JSON fetch paths to /site/data
+- Updated CSS/JS relative references
+- Excluded analysis/runtime payloads
+- Prepared for GitHub Pages deployment
+
+GitHub Pages:
+Settings -> Pages
+Branch: main
+Folder: /site
+
+Deployment URL:
+https://jlanjou-seam.github.io/SEAM-Core/

@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-05-08T18:38:25.436967+00:00",
+  "mode": "finite_bootstrap",
+  "record_target_per_source": 5000,
+  "source_results": [
+    {
+      "collector": "usgs",
+      "function": "collect_usgs_feeds",
+      "status": "ok",
+      "records": 434
+    },
+    {
+      "collector": "emsc",
+      "function": "collect_emsc_feeds",
+      "status": "ok",
+      "records": 100
+    },
+    {
+      "collector": "noaa",
+      "function": "collect_noaa_feeds",
+      "status": "ok",
+      "records": 36440
+    }
+  ],
+  "total_records": 36974
+}

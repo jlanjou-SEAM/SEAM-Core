@@ -1,76 +1,31 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>CleanRoom SEAM Runtime</title>
-
-<style>
-
-body {
-    background:#101010;
-    color:#f0f0f0;
-    font-family:Arial;
-    margin:20px;
-}
-
-h1 {
-    margin-bottom:5px;
-}
-
-#summary {
-    margin-bottom:20px;
-    color:#8fd3ff;
-}
-
-table {
-    width:100%;
-    border-collapse:collapse;
-}
-
-th, td {
-    padding:6px;
-    border-bottom:1px solid #333;
-    text-align:left;
-    font-size:13px;
-}
-
-th {
-    color:#999;
-}
-
-</style>
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SEAM Recursive Inference Monitor</title>
+  <link rel="stylesheet" href="./css/core.css?v=11"/>
 </head>
 
 <body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="kicker">SEAM Recursive Inference Monitor</div>
+        <h1>Operational Target Grid</h1>
+      </div>
 
-<h1>SEAM ACTIVE EVENTS</h1>
+      <div class="ops-status">
+        <div class="live-row"><span class="live-dot"></span><span>LIVE</span></div>
+        <div id="user-time" class="time-line">--:--:--</div>
+        <div id="user-date" class="date-line">----</div>
+        <div id="refresh-countdown" class="refresh-line">refresh 00:10</div>
+      </div>
+    </header>
 
-<div id="summary">
-loading...
-</div>
+    <main id="forecast-root" class="forecast-grid"></main>
+  </div>
 
-<table>
-
-<thead>
-<tr>
-<th>ID</th>
-<th>TYPE</th>
-<th>STATUS</th>
-<th>VERIFY</th>
-<th>CONF</th>
-<th>LAT</th>
-<th>LON</th>
-<th>LEAD</th>
-</tr>
-</thead>
-
-<tbody id="events">
-</tbody>
-
-</table>
-
-<script src="seam_remap_adapter.js"></script>
-
+  <script src="./js/runtime-ui.js?v=11"></script>
 </body>
 </html>

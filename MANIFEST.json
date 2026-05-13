@@ -1,19 +1,17 @@
 {
-  "package": "CleanRoom functional replacement",
-  "created_utc": "2026-05-12T00:00:00Z",
-  "scripts": [
-    "continuum_dual_acquisition_runtime.py",
-    "continuum_decoded_payload_pipeline.py",
-    "continuum_spacetime_event_bus.py",
-    "continuum_spatial_aggregate.py",
-    "continuum_cross_stream_reconcile.py",
-    "continuum_persistent_field_tracking.py",
-    "continuum_forecast_cone_engine.py",
-    "continuum_stage2_seam_reconcile.py",
-    "continuum_forecast_correlation_engine.py",
-    "continuum_unified_realtime_runtime.py",
-    "continuum_unified_realtime_runtime_FIXED.py"
+  "package": "SEAM_SOURCE_DOCUMENTS",
+  "status": "documentation_bundle",
+  "documents": [
+    "README.md",
+    "docs/COLLECTOR_ADAPTER_CONTRACT.md",
+    "docs/DATA_MODEL.md",
+    "docs/FUTURE_SOURCE_ADAPTER_PLAN.md",
+    "docs/GITHUB_SYNC_OPERATION.md",
+    "docs/IMPLEMENTATION_CHECKLIST.md",
+    "docs/SEAM_RUNTIME_ARCHITECTURE.md",
+    "docs/SOURCE_REGISTRY.md",
+    "docs/STATE_COLOR_LOGIC.md",
+    "docs/TROUBLESHOOTING.md"
   ],
-  "primary_run": "python continuum_unified_realtime_runtime.py",
-  "primary_live_output": "reports/live_event_state.json"
+  "runtime_model": "local runtime -> git sync -> GitHub Pages"
 }
