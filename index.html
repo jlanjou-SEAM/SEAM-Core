@@ -8,21 +8,22 @@
 <style>
 body{margin:0;background:#05070b;color:#dce7f7;font-family:Arial,Helvetica,sans-serif;}
 header{padding:10px 16px;background:#0b1017;border-bottom:1px solid #1f2937;}
-.top{display:flex;justify-content:space-between;align-items:flex-start;}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
 h1{margin:0;font-size:18px;}
 .metrics{margin-top:6px;display:flex;flex-wrap:wrap;gap:14px;font-size:11px;color:#9fb0c9;}
 .navbtn{background:#122033;border:1px solid #23364f;color:#dce7f7;padding:6px 12px;border-radius:6px;text-decoration:none;font-size:12px;}
 .section-title{padding:8px 14px;font-size:11px;color:#7d8ca3;text-transform:uppercase;}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:8px;padding:0 10px 12px 10px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;padding:0 10px 12px 10px;}
 .card{background:#0c1118;border:1px solid #1f2937;border-radius:8px;padding:10px;}
-.row{display:flex;justify-content:space-between;align-items:center;}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;}
 .sig{color:#57a8ff;font-weight:bold;font-size:14px;}
-.lock{font-size:18px;font-weight:bold;}
+.lock{font-size:18px;font-weight:bold;white-space:nowrap;}
 .high{color:#ff6161;}.mid{color:#ffb84d;}.low{color:#00d084;}
 .small{margin-top:4px;font-size:11px;color:#9fb0c9;}
 .phase{margin-top:6px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;font-size:10px;}
 .phase div{border:1px solid #1f2937;padding:4px;border-radius:4px;}
 .full{border-color:#ff6161;}
+.empty{padding:8px 14px;color:#5f6f85;font-size:12px;}
 </style>
 </head>
 <body>
@@ -37,6 +38,8 @@ h1{margin:0;font-size:18px;}
 <div>Expired: <span id="m_expired">--</span></div>
 <div>Hit Rate: <span id="m_hit">--</span></div>
 <div>Avg Lead: <span id="m_lead">--</span></div>
+<div>Field Generated: <span id="m_generated">--</span></div>
+<div>Refresh In: <span id="m_countdown">10s</span></div>
 </div>
 </div>
 <a class="navbtn" href="./ledger.html">LOG</a>
@@ -53,23 +56,92 @@ h1{margin:0;font-size:18px;}
 <div id="follow" class="grid"></div>
 
 <script>
+const REFRESH_SECONDS = 10;
+let countdown = REFRESH_SECONDS;
+
 async function load(url){
     const r = await fetch(url + '?ts=' + Date.now());
     if(!r.ok) throw new Error(url);
     return await r.json();
 }
-function cls(v){if(v>=95)return'high';if(v>=75)return'mid';return'low';}
-function shortTime(v){if(!v)return'-';try{return new Date(v).toISOString().substring(11,16);}catch{return'-';}}
+
+function cls(v){
+    if(v>=95)return'high';
+    if(v>=75)return'mid';
+    return'low';
+}
+
+function humanTime(v){
+    if(!v)return'-';
+    try{
+        const d = new Date(v);
+        const day = String(d.getUTCDate()).padStart(2,'0');
+        const mon = d.toLocaleString('en-US',{month:'short',timeZone:'UTC'});
+        const hh = String(d.getUTCHours()).padStart(2,'0');
+        const mm = String(d.getUTCMinutes()).padStart(2,'0');
+        return `${day} ${mon} ${hh}:${mm} UTC`;
+    }catch{
+        return '-';
+    }
+}
+
+function shortTime(v){
+    if(!v)return'-';
+    try{
+        const d = new Date(v);
+        const hh = String(d.getUTCHours()).padStart(2,'0');
+        const mm = String(d.getUTCMinutes()).padStart(2,'0');
+        return `${hh}:${mm} UTC`;
+    }catch{
+        return '-';
+    }
+}
+
+function ageText(v){
+    if(!v)return'';
+    try{
+        const delta = Math.max(0, Date.now() - new Date(v).getTime());
+        const mins = Math.floor(delta / 60000);
+        if(mins < 1)return'updated <1m ago';
+        if(mins < 60)return`updated ${mins}m ago`;
+        const hrs = Math.floor(mins/60);
+        return`updated ${hrs}h ${mins%60}m ago`;
+    }catch{
+        return'';
+    }
+}
+
 function locFor(event, mode){
     const l = event.location || {};
     if(mode==='follow') return l.display_follow || event.display_location || event.spatial_region || event.lat_long || '-';
     if(mode==='full') return l.display_lock || event.display_location || event.street_cross || event.lat_long || '-';
     return l.display_target || event.display_location || event.street_cross || event.lat_long || '-';
 }
+
+function velocity(event){
+    const rate = event.lock_velocity_per_minute;
+    const direction = event.lock_direction;
+    if(typeof rate === 'number'){
+        const arrow = direction || (rate>0?'↑':rate<0?'↓':'→');
+        const sign = rate>0?'+':'';
+        return `${arrow} ${sign}${rate.toFixed(2)}/min`;
+    }
+    return '→ --/min';
+}
+
+function obsLine(event){
+    const obs = event.observation_count || 0;
+    const src = event.source_count || 0;
+    const det = event.detector_count || event.unique_detector_count || '-';
+    return `Obs ${obs} | Src ${src} | Det ${det}`;
+}
+
 function card(event,mode){
     const div=document.createElement('div');
     div.className='card';
+
     let extra='';
+
     if(mode!=='follow'){
         extra += `
         <div class="phase">
@@ -79,23 +151,30 @@ function card(event,mode){
         </div>
         <div class="small">${event.lat_long || '-'}</div>`;
     }
+
     if(mode==='full'){
         extra += `
         <div class="small">Official: ${event.verification_state?.official_classification || 'Pending'}</div>
         <div class="small">Lead: ${event.verification_state?.lead_time_seconds || '-'} sec</div>`;
     }
+
     div.innerHTML=`
         <div class="row">
             <div class="sig">${event.signature || '-'}</div>
-            <div class="lock ${cls(event.recursive_lock || 0)}">${(event.recursive_lock || 0).toFixed(1)}%</div>
+            <div class="lock ${cls(event.recursive_lock || 0)}">
+                ${(event.recursive_lock || 0).toFixed(1)}%
+            </div>
         </div>
+        <div class="small">${velocity(event)}</div>
         <div class="small">${locFor(event,mode)}</div>
         <div class="small">${event.course || 'Static'} | ${event.regime || '-'}</div>
-        <div class="small">Obs ${event.observation_count || 0}</div>
-        <div class="small">${event.acquisition_utc || '-'}</div>
+        <div class="small">${obsLine(event)}</div>
+        <div class="small">Observed: ${humanTime(event.acquisition_utc)}</div>
+        <div class="small">${ageText(event.last_observation_utc || event.acquisition_utc)}</div>
         ${extra}`;
     return div;
 }
+
 function deriveMetrics(events){
     const total=events.length;
     const verified=events.filter(e=>e.verification_state?.official_confirmation).length;
@@ -105,28 +184,57 @@ function deriveMetrics(events){
     const avgLead=leads.length?Math.round((leads.reduce((a,b)=>a+b,0)/leads.length)/60)+'m':'--';
     return{total,verified,expired,hitRate,avgLead};
 }
+
+function emptyIfNeeded(el){
+    if(!el.children.length){
+        el.innerHTML = '<div class="empty">No active records in this phase.</div>';
+    }
+}
+
 async function init(){
     const latest=await load('./data/latest.json');
     const events=latest.active_events || [];
     const metrics=deriveMetrics(events);
+
     document.getElementById('m_total').textContent=metrics.total;
     document.getElementById('m_verified').textContent=metrics.verified;
     document.getElementById('m_expired').textContent=metrics.expired;
     document.getElementById('m_hit').textContent=metrics.hitRate;
     document.getElementById('m_lead').textContent=metrics.avgLead;
+    document.getElementById('m_generated').textContent=humanTime(latest.generated_utc);
+
     const follow=document.getElementById('follow');
     const target=document.getElementById('target');
     const full=document.getElementById('full');
-    follow.innerHTML='';target.innerHTML='';full.innerHTML='';
+
+    follow.innerHTML='';
+    target.innerHTML='';
+    full.innerHTML='';
+
     for(const event of events){
         const lock=event.recursive_lock || 0;
         if(lock>=95) full.appendChild(card(event,'full'));
         else if(lock>=75) target.appendChild(card(event,'target'));
         else follow.appendChild(card(event,'follow'));
     }
+
+    emptyIfNeeded(full);
+    emptyIfNeeded(target);
+    emptyIfNeeded(follow);
+    countdown = REFRESH_SECONDS;
 }
-init();
-setInterval(init,5000);
+
+function tick(){
+    countdown -= 1;
+    if(countdown <= 0){
+        init().catch(console.error);
+        countdown = REFRESH_SECONDS;
+    }
+    document.getElementById('m_countdown').textContent = countdown + 's';
+}
+
+init().catch(console.error);
+setInterval(tick,1000);
 </script>
 </body>
 </html>

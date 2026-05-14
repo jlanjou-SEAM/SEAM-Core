@@ -1,23 +1,23 @@
-SEAM Location Resolution Update v1.3
+SEAM Live UI Refresh v1.2
 
 Files:
-- seam_operational_synthesis.py
 - index.html
 - ledger.html
 
-Fixes:
-- Adds structured location object to every operational event.
-- No more Unresolved if coordinates exist.
-- Adds area/country/state/city/locality fallback.
-- FOLLOW uses county/area style location.
-- TARGET uses city/state/country + lat/long.
-- FULL LOCK uses best full place + lat/long.
-- Ledger uses full location string.
+Updates:
+- 10 second auto refresh on both pages
+- visible countdown timer
+- human-readable UTC timestamps on STATUS cards
+- ISO/UTC precision retained on LOG page
+- manifold velocity field display if present
+- observation/source/detector line support
+- FULL DATA RECORDING remains at top
+- LOG / STATUS buttons preserved
 
-Run:
-python seam_operational_synthesis.py
+Install:
+Replace index.html and ledger.html.
 
-Then publish:
+Publish:
 git add -A
-git commit -m "Add operational location resolution"
+git commit -m "Update SEAM UI refresh and lifecycle display"
 git push origin main

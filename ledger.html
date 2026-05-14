@@ -13,7 +13,7 @@ h1{margin:0;font-size:18px;}
 .navbtn{background:#122033;border:1px solid #23364f;color:#dce7f7;padding:6px 12px;border-radius:6px;text-decoration:none;font-size:12px;}
 table{width:100%;border-collapse:collapse;font-size:11px;}
 thead{position:sticky;top:0;background:#0b1017;}
-th,td{border-bottom:1px solid #1f2937;padding:6px 8px;text-align:left;}
+th,td{border-bottom:1px solid #1f2937;padding:6px 8px;text-align:left;vertical-align:top;}
 tr:hover{background:#0f1722;}
 .good{color:#00d084;}.bad{color:#ff6161;}.pending{color:#ffb84d;}
 </style>
@@ -28,24 +28,75 @@ tr:hover{background:#0f1722;}
 <div>Verified: <span id="m_verified">--</span></div>
 <div>Expired: <span id="m_expired">--</span></div>
 <div>Hit Rate: <span id="m_hit">--</span></div>
+<div>Refresh In: <span id="m_countdown">10s</span></div>
 </div>
 </div>
 <a class="navbtn" href="./index.html">STATUS</a>
 </div>
 </header>
+
 <table>
 <thead>
 <tr>
-<th>State</th><th>Lock</th><th>Signature</th><th>Location</th><th>Lat/Long</th><th>85%</th><th>90%</th><th>95%</th><th>Official</th><th>Lead</th><th>Status</th>
+<th>State</th>
+<th>Lock</th>
+<th>Δ/min</th>
+<th>Signature</th>
+<th>Location</th>
+<th>Lat/Long</th>
+<th>Observed UTC</th>
+<th>85%</th>
+<th>90%</th>
+<th>95%</th>
+<th>Obs</th>
+<th>Official</th>
+<th>Lead</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody id="rows"></tbody>
 </table>
+
 <script>
-async function load(url){const r=await fetch(url+'?ts='+Date.now());if(!r.ok)throw new Error(url);return await r.json();}
-function t(v){if(!v)return'-';try{return new Date(v).toISOString().substring(11,16);}catch{return'-';}}
-function statusClass(v){if(v==='VERIFIED')return'good';if(v==='EXPIRED')return'bad';return'pending';}
-function loc(event){return event.location?.display_lock || event.location?.display_target || event.display_location || event.street_cross || event.lat_long || '-';}
+const REFRESH_SECONDS = 10;
+let countdown = REFRESH_SECONDS;
+
+async function load(url){
+    const r=await fetch(url+'?ts='+Date.now());
+    if(!r.ok)throw new Error(url);
+    return await r.json();
+}
+
+function t(v){
+    return v || '-';
+}
+
+function statusClass(v){
+    if(v==='VERIFIED')return'good';
+    if(v==='EXPIRED')return'bad';
+    return'pending';
+}
+
+function loc(event){
+    return event.location?.display_lock ||
+           event.location?.display_target ||
+           event.display_location ||
+           event.street_cross ||
+           event.lat_long ||
+           '-';
+}
+
+function velocity(event){
+    const rate = event.lock_velocity_per_minute;
+    const direction = event.lock_direction;
+    if(typeof rate === 'number'){
+        const arrow = direction || (rate>0?'↑':rate<0?'↓':'→');
+        const sign = rate>0?'+':'';
+        return `${arrow} ${sign}${rate.toFixed(2)}`;
+    }
+    return '→ --';
+}
+
 function deriveMetrics(events){
  const total=events.length;
  const verified=events.filter(e=>e.verification_state?.official_confirmation).length;
@@ -53,37 +104,56 @@ function deriveMetrics(events){
  const hitRate=total>0?((verified/total)*100).toFixed(1)+'%':'0%';
  return{total,verified,expired,hitRate};
 }
+
 async function init(){
  const state=await load('./reports/seam_recursive_operational_state.json');
  const events=state.events || [];
  const metrics=deriveMetrics(events);
+
  document.getElementById('m_total').textContent=metrics.total;
  document.getElementById('m_verified').textContent=metrics.verified;
  document.getElementById('m_expired').textContent=metrics.expired;
  document.getElementById('m_hit').textContent=metrics.hitRate;
+
  const rows=document.getElementById('rows');
  rows.innerHTML='';
+
  for(const event of events){
   const verified=event.verification_state?.official_confirmation;
-  const status=verified?'VERIFIED':(event.recursive_lock>=95?'PENDING':'TRACKING');
+  const status=verified?'VERIFIED':(event.recursive_lock>=95?'PENDING':(event.operational_state||'TRACKING'));
   const tr=document.createElement('tr');
   tr.innerHTML=`
    <td>${event.lock_state || '-'}</td>
    <td>${(event.recursive_lock || 0).toFixed(1)}%</td>
+   <td>${velocity(event)}</td>
    <td>${event.signature || '-'}</td>
    <td>${loc(event)}</td>
    <td>${event.lat_long || '-'}</td>
+   <td>${t(event.acquisition_utc)}</td>
    <td>${t(event.lock_thresholds?.['85_percent_utc'])}</td>
    <td>${t(event.lock_thresholds?.['90_percent_utc'])}</td>
    <td>${t(event.lock_thresholds?.['95_percent_utc'])}</td>
+   <td>${event.observation_count || 0}</td>
    <td>${event.verification_state?.official_classification || '-'}</td>
    <td>${event.verification_state?.lead_time_seconds || '-'}</td>
    <td class="${statusClass(status)}">${status}</td>`;
   rows.appendChild(tr);
  }
+
+ countdown = REFRESH_SECONDS;
 }
-init();
-setInterval(init,10000);
+
+function tick(){
+ countdown -= 1;
+ if(countdown <= 0){
+   init().catch(console.error);
+   countdown = REFRESH_SECONDS;
+ }
+ document.getElementById('m_countdown').textContent = countdown + 's';
+}
+
+init().catch(console.error);
+setInterval(tick,1000);
 </script>
 </body>
 </html>
