@@ -1,27 +1,40 @@
-SEAM Dashboard Index v2.0
+SEAM Recursive Convergence + Compact Dashboard v1.0
 
-Purpose:
---------
-Production dashboard index using:
-    data/latest.json
+Included:
+---------
+index.html
+RECURSIVE_CONVERGENCE_PATCH.py
+README_INSTALL.txt
 
-No local scoring is performed.
+Dashboard Changes:
+------------------
+- condensed operational cards
+- denser target grid
+- minimal operational display
+- removes verbose evidence sections
 
-SEAM operational synthesis provides:
-- recursive lock
-- operational state
-- topology
-- persistence
-- threshold lifecycle
-- verification state
+Convergence Changes:
+--------------------
+Adds recursive manifold convergence stage.
 
-Dashboard is visualization only.
+New Behavior:
+-------------
+seed manifolds
+    ↓
+recursive convergence
+    ↓
+canonical swarm fields
+    ↓
+operational synthesis
 
-Install:
---------
-Replace existing:
-    index.html
+Fixes:
+------
+- duplicate swarm manifolds
+- fragmented geothermal fields
+- fragmented seismic clusters
 
-Run:
-----
-Serve locally or via GitHub Pages.
+Expected Result:
+----------------
+60 targets
+    ↓
+~15-30 canonical operational manifolds

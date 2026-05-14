@@ -2,495 +2,175 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SEAM Recursive Operational Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEAM Ops</title>
 
 <style>
-
-:root {
-    --bg: #05070b;
-    --panel: #0d1117;
-    --border: #1f2937;
-    --text: #d6e2ff;
-    --muted: #7f8ea3;
-    --good: #00d084;
-    --warn: #ffb020;
-    --high: #ff5d5d;
-    --accent: #4da3ff;
+body{
+    margin:0;
+    background:#05070b;
+    color:#d7e2f0;
+    font-family:Arial,Helvetica,sans-serif;
 }
-
-* {
-    box-sizing: border-box;
+header{
+    padding:10px 16px;
+    border-bottom:1px solid #1b2430;
+    background:#0b1017;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
+h1{
+    margin:0;
+    font-size:18px;
 }
-
-header {
-    padding: 18px 24px;
-    border-bottom: 1px solid var(--border);
-    background: #090d14;
+#meta{
+    margin-top:4px;
+    color:#7d8ca3;
+    font-size:11px;
 }
-
-header h1 {
-    margin: 0;
-    font-size: 22px;
+#grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+    gap:8px;
+    padding:10px;
 }
-
-header .sub {
-    margin-top: 6px;
-    color: var(--muted);
-    font-size: 13px;
+.card{
+    border:1px solid #1f2937;
+    background:#0c1118;
+    border-radius:8px;
+    padding:10px;
 }
-
-.summary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 12px;
-    padding: 20px;
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
-
-.summary-card {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 14px;
+.sig{
+    color:#4ea1ff;
+    font-size:14px;
+    font-weight:bold;
 }
-
-.summary-label {
-    color: var(--muted);
-    font-size: 12px;
-    margin-bottom: 6px;
+.lock{
+    font-size:18px;
+    font-weight:bold;
 }
-
-.summary-value {
-    font-size: 28px;
-    font-weight: bold;
+.loc{
+    margin-top:4px;
+    font-size:12px;
 }
-
-#target-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 16px;
-    padding: 20px;
+.row{
+    margin-top:6px;
+    display:flex;
+    justify-content:space-between;
+    font-size:11px;
+    color:#9fb0c9;
 }
-
-.seam-target-card {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px;
+.state{
+    margin-top:6px;
+    font-size:11px;
+    color:#ffb84d;
 }
-
-.target-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer{
+    margin-top:6px;
+    display:flex;
+    justify-content:space-between;
+    font-size:10px;
+    color:#7d8ca3;
 }
-
-.target-signature {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--accent);
-}
-
-.target-lock {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.lock-high {
-    color: var(--high);
-}
-
-.lock-mid {
-    color: var(--warn);
-}
-
-.lock-low {
-    color: var(--good);
-}
-
-.section {
-    margin-top: 12px;
-}
-
-.section-title {
-    color: var(--muted);
-    font-size: 11px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-}
-
-.value {
-    font-size: 14px;
-}
-
-.thresholds {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
-}
-
-.threshold-box {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 8px;
-    background: #0a0f17;
-}
-
-.threshold-label {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-.threshold-time {
-    font-size: 12px;
-    margin-top: 4px;
-}
-
-.evidence-list {
-    margin: 0;
-    padding-left: 18px;
-    color: var(--text);
-}
-
-.footer {
-    margin-top: 12px;
-    display: flex;
-    justify-content: space-between;
-    color: var(--muted);
-    font-size: 12px;
-}
-
-.badge {
-    display: inline-block;
-    padding: 3px 8px;
-    border-radius: 999px;
-    background: #132033;
-    border: 1px solid var(--border);
-    font-size: 11px;
-}
-
-.loading {
-    padding: 40px;
-    color: var(--muted);
-}
-
-.error {
-    padding: 40px;
-    color: var(--high);
-}
-
+.high{color:#ff6161;}
+.mid{color:#ffb84d;}
+.low{color:#00d084;}
 </style>
 </head>
-
 <body>
 
 <header>
-    <h1>SEAM Recursive Operational Dashboard</h1>
-
-    <div class="sub">
-        Recursive manifold operational synthesis
-    </div>
+<h1>SEAM Operational State</h1>
+<div id="meta">Loading...</div>
 </header>
 
-<section class="summary-grid">
-
-    <div class="summary-card">
-        <div class="summary-label">Generated UTC</div>
-        <div class="summary-value" id="generated">--</div>
-    </div>
-
-    <div class="summary-card">
-        <div class="summary-label">Operational Events</div>
-        <div class="summary-value" id="event-count">0</div>
-    </div>
-
-    <div class="summary-card">
-        <div class="summary-label">High Lock Targets</div>
-        <div class="summary-value" id="high-lock-count">0</div>
-    </div>
-
-    <div class="summary-card">
-        <div class="summary-label">Confirmed Targets</div>
-        <div class="summary-value" id="confirmed-count">0</div>
-    </div>
-
-</section>
-
-<section id="target-grid">
-    <div class="loading">
-        Loading SEAM operational state...
-    </div>
-</section>
+<div id="grid"></div>
 
 <script>
 
-async function loadState() {
+function lockClass(v){
+    if(v>=95)return 'high';
+    if(v>=75)return 'mid';
+    return 'low';
+}
 
-    const response = await fetch('./data/latest.json?ts=' + Date.now());
+async function load(){
 
-    if (!response.ok) {
-        throw new Error(
-            `Failed loading latest.json (${response.status})`
-        );
+    const r = await fetch('./data/latest.json?ts='+Date.now());
+
+    if(!r.ok){
+        throw new Error('latest.json failed');
     }
 
-    return await response.json();
+    return await r.json();
 }
 
-function lockClass(value) {
+function card(event){
 
-    if (value >= 95) return 'lock-high';
-    if (value >= 75) return 'lock-mid';
+    const div = document.createElement('div');
 
-    return 'lock-low';
-}
-
-function fmt(value) {
-
-    if (!value) return '-';
-
-    try {
-        return new Date(value).toLocaleString();
-    }
-    catch {
-        return value;
-    }
-}
-
-function renderSummary(events, generatedUtc) {
-
-    document.getElementById('generated').textContent =
-        generatedUtc
-            ? generatedUtc.replace('T', ' ').substring(0, 19)
-            : '--';
-
-    document.getElementById('event-count').textContent =
-        events.length;
-
-    document.getElementById('high-lock-count').textContent =
-        events.filter(x => x.recursive_lock >= 90).length;
-
-    document.getElementById('confirmed-count').textContent =
-        events.filter(
-            x => x.verification_state &&
-                 x.verification_state.official_confirmation
-        ).length;
-}
-
-function createCard(event) {
-
-    const thresholds =
-        event.lock_thresholds || {};
-
-    const persistence =
-        event.persistence_state || {};
-
-    const verification =
-        event.verification_state || {};
-
-    const forecast =
-        event.forecast_state || {};
-
-    const topology =
-        event.manifold_topology || {};
-
-    const div =
-        document.createElement('div');
-
-    div.className = 'seam-target-card';
+    div.className='card';
 
     div.innerHTML = `
-
-        <div class="target-header">
-
-            <div class="target-signature">
-                ${event.signature || 'Unknown'}
-            </div>
-
-            <div class="target-lock ${lockClass(event.recursive_lock || 0)}">
-                ${(event.recursive_lock || 0).toFixed(1)}%
-            </div>
-
-        </div>
-
-        <div class="section">
-            <div class="badge">
-                ${event.lock_state || 'UNKNOWN'}
+        <div class="top">
+            <div class="sig">${event.signature||'-'}</div>
+            <div class="lock ${lockClass(event.recursive_lock||0)}">
+                ${(event.recursive_lock||0).toFixed(1)}%
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Location</div>
-            <div class="value">
-                ${event.street_cross || '-'}
-            </div>
+        <div class="loc">
+            ${event.street_cross||event.lat_long||'-'}
         </div>
 
-        <div class="section">
-            <div class="section-title">Coordinates</div>
-            <div class="value">
-                ${event.lat_long || '-'}
-            </div>
+        <div class="row">
+            <div>${event.regime||'-'}</div>
+            <div>Obs ${event.observation_count||0}</div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Regime</div>
-            <div class="value">
-                ${event.regime || '-'}
-            </div>
+        <div class="row">
+            <div>${event.course||'Static'}</div>
+            <div>${event.operational_priority||'-'}</div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Trajectory</div>
-            <div class="value">
-                ${event.course || '-'}
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Observation Density</div>
-            <div class="value">
-                ${event.observation_count || 0}
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Persistence</div>
-            <div class="value">
-                ${((persistence.persistence_score || 0) * 100).toFixed(0)}%
-                (${persistence.field_viability || 'UNKNOWN'})
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Lifecycle Thresholds</div>
-
-            <div class="thresholds">
-
-                <div class="threshold-box">
-                    <div class="threshold-label">85%</div>
-                    <div class="threshold-time">
-                        ${fmt(thresholds['85_percent_utc'])}
-                    </div>
-                </div>
-
-                <div class="threshold-box">
-                    <div class="threshold-label">90%</div>
-                    <div class="threshold-time">
-                        ${fmt(thresholds['90_percent_utc'])}
-                    </div>
-                </div>
-
-                <div class="threshold-box">
-                    <div class="threshold-label">95%</div>
-                    <div class="threshold-time">
-                        ${fmt(thresholds['95_percent_utc'])}
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Topology</div>
-
-            <div class="value">
-                ${topology.topology_class || '-'}
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Forecast State</div>
-
-            <div class="value">
-                ${forecast.projection_state || '-'}
-                /
-                ${((forecast.forecast_confidence || 0) * 100).toFixed(0)}%
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Evidence</div>
-
-            <ul class="evidence-list">
-                ${(event.evidence_summary || [])
-                    .map(x => `<li>${x}</li>`)
-                    .join('')}
-            </ul>
+        <div class="state">
+            ${event.lock_state||'-'}
         </div>
 
         <div class="footer">
-
+            <div>${event.event_id||'-'}</div>
             <div>
-                ${event.event_id || '-'}
+                ${(event.persistence_state?.persistence_score||0)*100|0}%
             </div>
-
-            <div>
-                ${verification.official_confirmation
-                    ? 'OFFICIALLY VERIFIED'
-                    : 'UNVERIFIED'}
-            </div>
-
         </div>
     `;
 
     return div;
 }
 
-async function initialize() {
+async function init(){
 
-    const grid =
-        document.getElementById('target-grid');
+    const payload = await load();
 
-    try {
+    const events = payload.active_events || [];
 
-        const payload =
-            await loadState();
+    document.getElementById('meta').textContent =
+        `${events.length} active recursive manifolds`;
 
-        const events =
-            payload.active_events || [];
+    const grid = document.getElementById('grid');
 
-        renderSummary(
-            events,
-            payload.generated_utc
-        );
+    grid.innerHTML='';
 
-        grid.innerHTML = '';
-
-        for (const event of events) {
-            grid.appendChild(
-                createCard(event)
-            );
-        }
-
-    }
-    catch (err) {
-
-        console.error(err);
-
-        grid.innerHTML = `
-            <div class="error">
-                Failed loading SEAM operational state.
-            </div>
-        `;
+    for(const event of events){
+        grid.appendChild(card(event));
     }
 }
 
-initialize();
-
-setInterval(
-    initialize,
-    5000
-);
+init();
+setInterval(init,5000);
 
 </script>
 
