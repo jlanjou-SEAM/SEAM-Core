@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-14T12:20:27.363965+00:00",
+  "generated_utc": "2026-05-14T12:21:45.537835+00:00",
   "event_count": 2,
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -16,7 +16,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T12:19:55.951319+00:00",
+      "last_observation_utc": "2026-05-14T12:21:13.974080+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -77,7 +77,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59629950,
+        "active_duration_seconds": 59630028,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -365,7 +365,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T16:19:55.951319+00:00",
+        "estimated_decay_utc": "2026-05-14T16:21:13.974080+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -380,7 +380,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T12:19:55.779787+00:00",
+      "last_observation_utc": "2026-05-14T12:21:13.807986+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -439,7 +439,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163043118,
+        "active_duration_seconds": 163043196,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -517,7 +517,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T16:19:55.779787+00:00",
+        "estimated_decay_utc": "2026-05-14T16:21:13.807986+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
