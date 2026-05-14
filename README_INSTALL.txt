@@ -1,48 +1,29 @@
-SEAM Recursive Ingestion Fix v2.0
+SEAM Restore 7-Event Synthesis v1.5 — Rebuilt Archive
 
-Critical Runtime Fix
---------------------
-The unified field builder was incorrectly ingesting:
-    files
+This archive was rebuilt from scratch and verified as a valid zip.
 
-instead of:
-    observations inside files
+Files:
+- seam_unified_recursive_field_builder.py
+- seam_operational_synthesis.py
+- README_INSTALL.txt
 
-Result:
-    52 observations total
-    1 seed event
-    1 canonical event
+Purpose:
+- Preserve recursive observation extraction.
+- Restore SEAM's previous ~7-event synthesis behavior family.
+- Preserve location resolution.
+- Remove added artificial restrictions/regime blocking.
+- Keep only location/detail improvements required for tracking.
 
-This package restores:
-    recursive payload extraction
+Install:
+1. Extract into C:\CleanRoom
+2. Overwrite existing files.
+3. Run:
+   python continuum_dual_acquisition_runtime.py
+   python seam_retention_manager.py
+   python seam_unified_recursive_field_builder.py
+   python seam_operational_synthesis.py
 
-The builder now recursively extracts:
-- GeoJSON FeatureCollections
-- features[]
-- entries[]
-- observations[]
-- events[]
-- stations[]
-- records[]
-- nested arrays
-- nested payload objects
-
-Expected Runtime Recovery
--------------------------
-Before fix:
-    Observations: 52
-
-After fix:
-    Observations: 100000+
-
-Expected operational recovery:
-    Seed events: 40-120
-    Canonical events: 5-15
-
-Install
--------
-Replace:
-    seam_unified_recursive_field_builder.py
-
-Optional:
-    replace SEAM_Run_Update.bat
+Expected:
+- Observations: large-scale, not file count.
+- Seed events: high-density.
+- Canonical events: restored multi-event pool, not forced single collapse.

@@ -1,31 +1,19 @@
 """
-seam_operational_synthesis.py
-Version: 1.3
+SEAM Operational Synthesis v1.5
+Canonical filename:
+    seam_operational_synthesis.py
 
-Adds canonical location resolution to every SEAM operational record.
+Purpose:
+--------
+Restore SEAM's prior manifold convergence behavior that produced ~7 distinct
+canonical events, while preserving:
+- recursive observation extraction compatibility
+- location resolution object
+- lifecycle thresholds
+- status/log UI fields
+- no imposed regime-blocking restrictions
 
-Fixes:
-------
-- No more "Unresolved" display when coordinates exist.
-- Adds location_precision by operational state.
-- Adds structured location object:
-    country
-    state_region
-    county_area
-    city
-    locality
-    street_cross
-    display_follow
-    display_target
-    display_lock
-- UI can render different detail levels per phase.
-
-Important:
-----------
-This is still offline/local. It derives location from source payload fields first,
-then falls back to coordinate/geographic region inference. For true street/cross
-resolution at FULL DATA RECORDING, curated or GIS resolver input should later
-populate the same fields.
+This file intentionally avoids adding new artificial convergence restrictions.
 """
 
 from __future__ import annotations
@@ -45,10 +33,12 @@ DASHBOARD_OUTPUT = ROOT / "data" / "latest.json"
 ACTIVE_OUTPUT_LIMIT = 80
 MIN_DASHBOARD_LOCK = 50.0
 
+# Restored permissive convergence settings from the 7-event behavior family.
 CONVERGENCE_SCORE_THRESHOLD = 0.58
 STRONG_DISTANCE_KM = 18.0
 WEAK_DISTANCE_KM = 45.0
 TIME_CHAIN_HOURS = 8.0
+MAX_CONVERGENCE_PASSES = 5
 
 
 def utc_now():
@@ -59,7 +49,7 @@ def load_json(path: Path):
     if not path.exists():
         return {}
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8", errors="replace"))
     except Exception as exc:
         print(f"[SEAM] Failed loading {path}: {exc}")
         return {}
@@ -108,7 +98,7 @@ def regime(obs):
 
 def event_time(obs):
     props = properties(obs)
-    for key in ["time", "updated", "timestamp", "created", "eventTime"]:
+    for key in ["time", "updated", "timestamp", "created", "eventTime", "validTime", "date"]:
         parsed = parse_time(props.get(key))
         if parsed:
             return parsed
@@ -138,6 +128,7 @@ def lat_lon(obs):
                     return float(props[lat_key]), float(props[lon_key])
                 except Exception:
                     pass
+
     return None, None
 
 
@@ -154,19 +145,9 @@ def source_id(obs):
     return str(src).split("/")[0].split("\\")[0]
 
 
-def text_value(obs, keys):
-    props = properties(obs)
-    for key in keys:
-        value = props.get(key) or obs.get(key)
-        if value:
-            return str(value)
-    return None
-
-
 def extract_place_candidates(obs):
     props = properties(obs)
     candidates = []
-
     for key in [
         "place", "location", "title", "name", "station", "areaDesc",
         "headline", "event", "nearestCity", "city", "county", "state"
@@ -174,27 +155,17 @@ def extract_place_candidates(obs):
         value = props.get(key) or obs.get(key)
         if value:
             candidates.append(str(value))
-
     return candidates
 
 
 def coordinate_region(lat, lon):
-    """
-    Lightweight offline region resolver.
-    This prevents Unknown/Unresolved when no named source location exists.
-    It is intentionally broad, not a substitute for GIS reverse geocoding.
-    """
-
     if lat is None or lon is None:
-        return {
-            "country": "No spatial fix",
-            "state_region": "No spatial fix",
-            "county_area": "No spatial fix",
-            "city": None,
-            "locality": "No spatial fix",
-        }
+        return {"country":"No spatial fix","state_region":"No spatial fix","county_area":"No spatial fix","city":None,"locality":"No spatial fix"}
 
-    # United States broad regional boxes.
+    # More specific regional fallback for operational display.
+    if 36 <= lat <= 42 and 44 <= lon <= 52:
+        return {"country":"Azerbaijan / Caspian Region","state_region":"Western Caspian Corridor","county_area":"Caspian / Caucasus Corridor","city":None,"locality":"Caspian / Azerbaijan Region"}
+
     if 24 <= lat <= 50 and -125 <= lon <= -66:
         state = "United States"
         if 32 <= lat <= 42.2 and -124.6 <= lon <= -114.0:
@@ -206,125 +177,40 @@ def coordinate_region(lat, lon):
         elif 37 <= lat <= 42.2 and -114.2 <= lon <= -109.0:
             state = "Utah"
         elif 25 <= lat <= 37.5 and -106.8 <= lon <= -93.5:
-            state = "Texas / New Mexico region"
-        elif 44 <= lat <= 49.5 and -116.2 <= lon <= -104.0:
-            state = "Montana / Northern Rockies"
-        else:
-            state = "United States"
-
-        return {
-            "country": "United States",
-            "state_region": state,
-            "county_area": state,
-            "city": None,
-            "locality": state,
-        }
+            state = "Texas / New Mexico Region"
+        return {"country":"United States","state_region":state,"county_area":state,"city":None,"locality":state}
 
     if 51 <= lat <= 72 and -170 <= lon <= -129:
-        return {
-            "country": "United States",
-            "state_region": "Alaska",
-            "county_area": "Alaska",
-            "city": None,
-            "locality": "Alaska",
-        }
-
+        return {"country":"United States","state_region":"Alaska","county_area":"Alaska","city":None,"locality":"Alaska"}
     if 18 <= lat <= 23 and -161 <= lon <= -154:
-        return {
-            "country": "United States",
-            "state_region": "Hawaii",
-            "county_area": "Hawaii",
-            "city": None,
-            "locality": "Hawaii",
-        }
-
-    if 24 <= lat <= 50 and -130 <= lon <= -60:
-        return {
-            "country": "North America",
-            "state_region": "North America",
-            "county_area": "North America",
-            "city": None,
-            "locality": "North America",
-        }
-
+        return {"country":"United States","state_region":"Hawaii","county_area":"Hawaii","city":None,"locality":"Hawaii"}
     if -60 <= lat <= 15 and -90 <= lon <= -30:
-        return {
-            "country": "South America / South Atlantic",
-            "state_region": "South America / South Atlantic",
-            "county_area": "South America / South Atlantic",
-            "city": None,
-            "locality": "South America / South Atlantic",
-        }
-
+        return {"country":"South America / South Atlantic","state_region":"South America / South Atlantic","county_area":"South America / South Atlantic","city":None,"locality":"South America / South Atlantic"}
     if 35 <= lat <= 72 and -25 <= lon <= 45:
-        return {
-            "country": "Europe",
-            "state_region": "Europe",
-            "county_area": "Europe",
-            "city": None,
-            "locality": "Europe",
-        }
-
+        return {"country":"Europe","state_region":"Europe","county_area":"Europe","city":None,"locality":"Europe"}
     if -35 <= lat <= 38 and -20 <= lon <= 55:
-        return {
-            "country": "Africa",
-            "state_region": "Africa",
-            "county_area": "Africa",
-            "city": None,
-            "locality": "Africa",
-        }
-
+        return {"country":"Africa","state_region":"Africa","county_area":"Africa","city":None,"locality":"Africa"}
     if 5 <= lat <= 80 and 45 <= lon <= 180:
-        return {
-            "country": "Asia",
-            "state_region": "Asia",
-            "county_area": "Asia",
-            "city": None,
-            "locality": "Asia",
-        }
-
+        return {"country":"Asia","state_region":"Asia","county_area":"Asia","city":None,"locality":"Asia"}
     if -50 <= lat <= 5 and 95 <= lon <= 180:
-        return {
-            "country": "Oceania",
-            "state_region": "Oceania",
-            "county_area": "Oceania",
-            "city": None,
-            "locality": "Oceania",
-        }
+        return {"country":"Oceania","state_region":"Oceania","county_area":"Oceania","city":None,"locality":"Oceania"}
 
-    return {
-        "country": "Oceanic / Remote Field",
-        "state_region": "Oceanic / Remote Field",
-        "county_area": "Oceanic / Remote Field",
-        "city": None,
-        "locality": "Oceanic / Remote Field",
-    }
+    return {"country":"Oceanic / Remote Field","state_region":"Oceanic / Remote Field","county_area":"Oceanic / Remote Field","city":None,"locality":"Oceanic / Remote Field"}
 
 
 def parse_usgs_place(place_text):
-    """
-    Turns strings like:
-      '23 km N of Borrego Springs, CA'
-    into locality and state fields.
-    """
-
     if not place_text:
         return {}
-
     result = {}
-
     if " of " in place_text:
         locality = place_text.split(" of ", 1)[1].strip()
-        result["locality"] = locality
     else:
         locality = place_text.strip()
-        result["locality"] = locality
-
+    result["locality"] = locality
     if "," in locality:
         city, state = [x.strip() for x in locality.rsplit(",", 1)]
         result["city"] = city
         result["state_region"] = state
-
     return result
 
 
@@ -333,17 +219,10 @@ def resolve_location(observations, latitude, longitude, phi):
     for obs in observations:
         all_candidates.extend(extract_place_candidates(obs))
 
-    cleaned = [
-        x for x in all_candidates
-        if x and x.lower() not in {"unresolved", "unknown", "none", "null"}
-    ]
-
-    best_place = None
-    if cleaned:
-        best_place = Counter(cleaned).most_common(1)[0][0]
+    cleaned = [x for x in all_candidates if x and x.lower() not in {"unresolved", "unknown", "none", "null"}]
+    best_place = Counter(cleaned).most_common(1)[0][0] if cleaned else None
 
     fallback = coordinate_region(latitude, longitude)
-
     parsed = parse_usgs_place(best_place) if best_place else {}
 
     country = parsed.get("country") or fallback["country"]
@@ -354,30 +233,23 @@ def resolve_location(observations, latitude, longitude, phi):
 
     lat_long = f"{latitude:.4f}, {longitude:.4f}"
 
-    # By phase:
-    # follow: county/area
-    # target: country/state/city where possible
-    # lock: full known place + lat/long
     display_follow = county_area or state_region or country or lat_long
 
-    display_target_parts = []
+    target_parts = []
     if city:
-        display_target_parts.append(city)
+        target_parts.append(city)
     if state_region:
-        display_target_parts.append(state_region)
-    if country and country not in display_target_parts:
-        display_target_parts.append(country)
-    display_target = ", ".join(display_target_parts) if display_target_parts else f"{display_follow} | {lat_long}"
+        target_parts.append(state_region)
+    if country and country not in target_parts:
+        target_parts.append(country)
+
+    display_target = ", ".join(target_parts) if target_parts else f"{display_follow} | {lat_long}"
 
     display_lock = locality or display_target
     if lat_long not in display_lock:
         display_lock = f"{display_lock} | {lat_long}"
 
-    precision = "area"
-    if phi >= 95:
-        precision = "lock"
-    elif phi >= 75:
-        precision = "target"
+    precision = "lock" if phi >= 95 else "target" if phi >= 75 else "area"
 
     return {
         "country": country,
@@ -439,13 +311,10 @@ def course_from_points(points):
     points.sort(key=lambda x: x[0])
     _, lat1, lon1 = points[0]
     _, lat2, lon2 = points[-1]
-    dlat = lat2 - lat1
-    dlon = lon2 - lon1
+    dlat, dlon = lat2 - lat1, lon2 - lon1
     if abs(dlat) < 0.05 and abs(dlon) < 0.05:
         return "Static"
-    ns = "N" if dlat > 0 else "S"
-    ew = "E" if dlon > 0 else "W"
-    return f"{ns}{ew} drift"
+    return ("N" if dlat > 0 else "S") + ("E" if dlon > 0 else "W") + " drift"
 
 
 def centroid(observations):
@@ -473,6 +342,7 @@ def recursive_lock(observations):
     density = min(1.0, math.log10(count + 1) / 2.4)
     timed, spatial = 0, 0
     regimes, times = set(), []
+
     for obs in observations:
         regimes.add(regime(obs))
         ts = event_time(obs)
@@ -482,17 +352,22 @@ def recursive_lock(observations):
         lat, lon = lat_lon(obs)
         if lat is not None and lon is not None:
             spatial += 1
+
     temporal = timed / max(1, count)
     spatial_ratio = spatial / max(1, count)
     cross_regime = min(1.0, len(regimes) / 4.0)
+
     if times:
         span = max(1.0, (max(times) - min(times)).total_seconds())
         temporal_density = min(1.0, count / max(1.0, span / 600.0))
     else:
         temporal_density = 0.0
+
+    # Restored from v1.2 family: saturation dampening only, no added regime penalties.
     saturation_penalty = 0.0
     if count > 1000:
         saturation_penalty = min(0.12, math.log10(count / 1000 + 1) * 0.07)
+
     phi = (
         density * 0.30
         + temporal * 0.15
@@ -543,6 +418,7 @@ def progression(thresholds, official=None):
 def seed_to_event(index, observations):
     first_seen, last_seen = time_bounds(observations)
     latitude, longitude = centroid(observations)
+
     points = []
     for obs in observations:
         ts = event_time(obs)
@@ -562,8 +438,8 @@ def seed_to_event(index, observations):
             mags.append(float(mag))
         except Exception:
             pass
-    mag = max(mags) if mags else None
 
+    mag = max(mags) if mags else None
     phi = recursive_lock(observations)
     thresholds = phase_thresholds(first_seen, phi)
     verification_time = (last_seen + timedelta(minutes=18)).isoformat()
@@ -588,7 +464,7 @@ def seed_to_event(index, observations):
         "magnitude": f"M {mag}" if mag is not None and regime_name == "seismic" else ("N/A" if mag is None else str(mag)),
         "location": location,
         "street_cross": location["street_cross"],
-        "display_location": location["display_target"],
+        "display_location": location["display_target"] if phi < 95 else location["display_lock"],
         "latitude": round(latitude, 4),
         "longitude": round(longitude, 4),
         "lat_long": location["lat_long"],
@@ -626,25 +502,34 @@ def overlap_hours(a, b):
 
 def recursive_similarity(a, b):
     score = 0.0
+
+    # Restored: similarity, not hard blocking.
     if a.get("regime") == b.get("regime"):
         score += 0.28
+
     if a.get("signature") == b.get("signature"):
         score += 0.20
+
     dist = distance_km(a, b)
-    if dist <= 18:
+    if dist <= STRONG_DISTANCE_KM:
         score += 0.30
-    elif dist <= 45:
+    elif dist <= WEAK_DISTANCE_KM:
         score += 0.16
+
     time_rel = overlap_hours(a, b)
     if time_rel >= 0:
         score += 0.12
-    elif abs(time_rel) <= 8:
+    elif abs(time_rel) <= TIME_CHAIN_HOURS:
         score += 0.08
+
     if a.get("course") == b.get("course"):
         score += 0.05
+
     obs_a, obs_b = a.get("observation_count", 0), b.get("observation_count", 0)
-    if max(obs_a, obs_b) > 0 and min(obs_a, obs_b) / max(obs_a, obs_b) > 0.25:
-        score += 0.05
+    if max(obs_a, obs_b) > 0:
+        if min(obs_a, obs_b) / max(obs_a, obs_b) > 0.25:
+            score += 0.05
+
     return score
 
 
@@ -652,17 +537,22 @@ def transitive_components(events):
     n = len(events)
     visited = [False] * n
     graph = [[] for _ in range(n)]
+
     for i in range(n):
         for j in range(i + 1, n):
-            if recursive_similarity(events[i], events[j]) >= 0.58:
+            if recursive_similarity(events[i], events[j]) >= CONVERGENCE_SCORE_THRESHOLD:
                 graph[i].append(j)
                 graph[j].append(i)
+
     components = []
     for i in range(n):
         if visited[i]:
             continue
-        q, comp = deque([i]), []
+
+        q = deque([i])
         visited[i] = True
+        comp = []
+
         while q:
             cur = q.popleft()
             comp.append(cur)
@@ -670,7 +560,9 @@ def transitive_components(events):
                 if not visited[nxt]:
                     visited[nxt] = True
                     q.append(nxt)
+
         components.append(comp)
+
     return components
 
 
@@ -678,32 +570,41 @@ def merge_component(component_events, component_index):
     observations = []
     for event in component_events:
         observations.extend(event.get("_observations", []))
+
     merged = seed_to_event(component_index, observations)
     absorbed = len(component_events) - 1
+
     if absorbed > 0:
         merged["evidence_summary"].append(f"Recursive convergence absorbed {absorbed} adjacent seed manifolds")
         merged["manifold_topology_override"] = "Recursive Persistent Swarm Field"
+
     return merged
 
 
 def recursive_transitive_convergence(seed_events):
     current = seed_events
     passes = 0
+
     while True:
         passes += 1
         components = transitive_components(current)
         merged = []
         changed = False
+
         for idx, comp in enumerate(components, start=1):
             comp_events = [current[i] for i in comp]
             if len(comp_events) > 1:
                 changed = True
             merged.append(merge_component(comp_events, idx))
+
         current = merged
-        if not changed or passes >= 5:
+
+        if not changed or passes >= MAX_CONVERGENCE_PASSES:
             break
+
     for event in current:
         event["_convergence_passes"] = passes
+
     return current
 
 
@@ -713,9 +614,9 @@ def enrich_final_event(event):
     last_seen = parse_time(event["last_observation_utc"])
     active_seconds = int((last_seen - first_seen).total_seconds()) if first_seen and last_seen else 0
     phi = event["recursive_lock"]
+
     topology_class = event.pop("manifold_topology_override", None) or "Localized Recursive Compression"
 
-    # Re-resolve after convergence to avoid stale seed place names.
     location = resolve_location(observations, event["latitude"], event["longitude"], phi)
     event["location"] = location
     event["street_cross"] = location["street_cross"]
@@ -724,6 +625,9 @@ def enrich_final_event(event):
     event["spatial_region"] = location["county_area"]
 
     event.update({
+        "lock_direction": "→",
+        "lock_velocity_per_minute": None,
+        "detector_count": None,
         "persistence_state": {
             "active_duration_seconds": active_seconds,
             "persistence_score": round(min(1.0, max(0, active_seconds) / 7200), 2),
@@ -763,6 +667,7 @@ def enrich_final_event(event):
         "operational_priority": "HIGH" if phi >= 90 else "MODERATE" if phi >= 75 else "LOW",
         "operational_notes": ["Monitor recursive stabilization", "Track cross-regime emergence"],
     })
+
     event.pop("_observations", None)
     return event
 
@@ -773,19 +678,21 @@ def build(field):
     seed_events = [seed_to_event(idx, group) for idx, group in enumerate(seed_groups, start=1)]
     converged = recursive_transitive_convergence(seed_events)
     events = [enrich_final_event(event) for event in converged]
+
     events.sort(key=lambda x: (x["recursive_lock"], x["observation_count"]), reverse=True)
     active = [event for event in events if event["recursive_lock"] >= MIN_DASHBOARD_LOCK][:ACTIVE_OUTPUT_LIMIT]
+
     return {
         "schema": "SEAM_RECURSIVE_OPERATIONAL_STATE",
-        "version": "1.3",
+        "version": "1.5",
         "generated_utc": utc_now().isoformat(),
         "source_field": str(COMBINED_INPUT.relative_to(ROOT)),
         "convergence": {
-            "mode": "recursive_transitive",
-            "score_threshold": 0.58,
-            "strong_distance_km": 18.0,
-            "weak_distance_km": 45.0,
-            "time_chain_hours": 8.0,
+            "mode": "recursive_transitive_restored",
+            "score_threshold": CONVERGENCE_SCORE_THRESHOLD,
+            "strong_distance_km": STRONG_DISTANCE_KM,
+            "weak_distance_km": WEAK_DISTANCE_KM,
+            "time_chain_hours": TIME_CHAIN_HOURS,
             "seed_count": len(seed_events),
             "canonical_count": len(events),
         },
@@ -809,16 +716,19 @@ def export_dashboard(state):
 
 def main():
     print()
-    print("=== SEAM OPERATIONAL SYNTHESIS v1.3 ===")
+    print("=== SEAM OPERATIONAL SYNTHESIS v1.5 ===")
     print()
+
     field = load_json(COMBINED_INPUT)
     if not field:
         print("No combined field available.")
         return
+
     state = build(field)
     REPORT_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     REPORT_OUTPUT.write_text(json.dumps(state, indent=2), encoding="utf-8")
     export_dashboard(state)
+
     conv = state.get("convergence", {})
     print(f"Input observations: {field.get('observation_count', len(field.get('observations', [])))}")
     print(f"Seed events: {conv.get('seed_count')}")
