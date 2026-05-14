@@ -6,99 +6,23 @@
 <title>SEAM Status</title>
 
 <style>
-body{
-    margin:0;
-    background:#05070b;
-    color:#dce7f7;
-    font-family:Arial,Helvetica,sans-serif;
-}
-header{
-    padding:10px 16px;
-    background:#0b1017;
-    border-bottom:1px solid #1f2937;
-}
-.top{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-}
-h1{
-    margin:0;
-    font-size:18px;
-}
-.metrics{
-    margin-top:6px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-    font-size:11px;
-    color:#9fb0c9;
-}
-.navbtn{
-    background:#122033;
-    border:1px solid #23364f;
-    color:#dce7f7;
-    padding:6px 12px;
-    border-radius:6px;
-    cursor:pointer;
-    text-decoration:none;
-    font-size:12px;
-}
-.section-title{
-    padding:8px 14px;
-    font-size:11px;
-    color:#7d8ca3;
-    text-transform:uppercase;
-}
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-    gap:8px;
-    padding:0 10px 12px 10px;
-}
-.card{
-    background:#0c1118;
-    border:1px solid #1f2937;
-    border-radius:8px;
-    padding:10px;
-}
-.row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-.sig{
-    color:#57a8ff;
-    font-weight:bold;
-    font-size:14px;
-}
-.lock{
-    font-size:18px;
-    font-weight:bold;
-}
-.high{color:#ff6161;}
-.mid{color:#ffb84d;}
-.low{color:#00d084;}
-.small{
-    margin-top:4px;
-    font-size:11px;
-    color:#9fb0c9;
-}
-.phase{
-    margin-top:6px;
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:4px;
-    font-size:10px;
-}
-.phase div{
-    border:1px solid #1f2937;
-    padding:4px;
-    border-radius:4px;
-}
-.full{
-    border-color:#ff6161;
-}
+body{margin:0;background:#05070b;color:#dce7f7;font-family:Arial,Helvetica,sans-serif;}
+header{padding:10px 16px;background:#0b1017;border-bottom:1px solid #1f2937;}
+.top{display:flex;justify-content:space-between;align-items:flex-start;}
+h1{margin:0;font-size:18px;}
+.metrics{margin-top:6px;display:flex;flex-wrap:wrap;gap:14px;font-size:11px;color:#9fb0c9;}
+.navbtn{background:#122033;border:1px solid #23364f;color:#dce7f7;padding:6px 12px;border-radius:6px;text-decoration:none;font-size:12px;}
+.section-title{padding:8px 14px;font-size:11px;color:#7d8ca3;text-transform:uppercase;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:8px;padding:0 10px 12px 10px;}
+.card{background:#0c1118;border:1px solid #1f2937;border-radius:8px;padding:10px;}
+.row{display:flex;justify-content:space-between;align-items:center;}
+.sig{color:#57a8ff;font-weight:bold;font-size:14px;}
+.lock{font-size:18px;font-weight:bold;}
+.high{color:#ff6161;}.mid{color:#ffb84d;}.low{color:#00d084;}
+.small{margin-top:4px;font-size:11px;color:#9fb0c9;}
+.phase{margin-top:6px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;font-size:10px;}
+.phase div{border:1px solid #1f2937;padding:4px;border-radius:4px;}
+.full{border-color:#ff6161;}
 </style>
 </head>
 <body>
@@ -107,7 +31,6 @@ h1{
 <div class="top">
 <div>
 <h1>SEAM Operational Status</h1>
-
 <div class="metrics">
 <div>Total Predictions: <span id="m_total">--</span></div>
 <div>Verified: <span id="m_verified">--</span></div>
@@ -116,9 +39,7 @@ h1{
 <div>Avg Lead: <span id="m_lead">--</span></div>
 </div>
 </div>
-
 <a class="navbtn" href="./ledger.html">LOG</a>
-
 </div>
 </header>
 
@@ -132,196 +53,80 @@ h1{
 <div id="follow" class="grid"></div>
 
 <script>
-
 async function load(url){
     const r = await fetch(url + '?ts=' + Date.now());
     if(!r.ok) throw new Error(url);
     return await r.json();
 }
-
-function cls(v){
-    if(v>=95)return 'high';
-    if(v>=75)return 'mid';
-    return 'low';
+function cls(v){if(v>=95)return'high';if(v>=75)return'mid';return'low';}
+function shortTime(v){if(!v)return'-';try{return new Date(v).toISOString().substring(11,16);}catch{return'-';}}
+function locFor(event, mode){
+    const l = event.location || {};
+    if(mode==='follow') return l.display_follow || event.display_location || event.spatial_region || event.lat_long || '-';
+    if(mode==='full') return l.display_lock || event.display_location || event.street_cross || event.lat_long || '-';
+    return l.display_target || event.display_location || event.street_cross || event.lat_long || '-';
 }
-
-function shortTime(v){
-    if(!v)return '-';
-    try{
-        return new Date(v).toISOString().substring(11,16);
-    }catch{
-        return '-';
-    }
-}
-
 function card(event,mode){
-
     const div=document.createElement('div');
-
     div.className='card';
-
     let extra='';
-
     if(mode!=='follow'){
-
         extra += `
         <div class="phase">
             <div>85%<br>${shortTime(event.lock_thresholds?.['85_percent_utc'])}</div>
             <div>90%<br>${shortTime(event.lock_thresholds?.['90_percent_utc'])}</div>
-            <div class="${mode==='full'?'full':''}">
-                95%<br>${shortTime(event.lock_thresholds?.['95_percent_utc'])}
-            </div>
+            <div class="${mode==='full'?'full':''}">95%<br>${shortTime(event.lock_thresholds?.['95_percent_utc'])}</div>
         </div>
-
-        <div class="small">
-            ${event.lat_long || '-'}
-        </div>
-        `;
+        <div class="small">${event.lat_long || '-'}</div>`;
     }
-
     if(mode==='full'){
-
         extra += `
-        <div class="small">
-            Official:
-            ${event.verification_state?.official_classification || 'Pending'}
-        </div>
-
-        <div class="small">
-            Lead:
-            ${event.verification_state?.lead_time_seconds || '-'} sec
-        </div>
-        `;
+        <div class="small">Official: ${event.verification_state?.official_classification || 'Pending'}</div>
+        <div class="small">Lead: ${event.verification_state?.lead_time_seconds || '-'} sec</div>`;
     }
-
-    div.innerHTML = `
+    div.innerHTML=`
         <div class="row">
             <div class="sig">${event.signature || '-'}</div>
-
-            <div class="lock ${cls(event.recursive_lock || 0)}">
-                ${(event.recursive_lock || 0).toFixed(1)}%
-            </div>
+            <div class="lock ${cls(event.recursive_lock || 0)}">${(event.recursive_lock || 0).toFixed(1)}%</div>
         </div>
-
-        <div class="small">
-            ${event.street_cross || '-'}
-        </div>
-
-        <div class="small">
-            ${event.course || 'Static'}
-            |
-            ${event.regime || '-'}
-        </div>
-
-        <div class="small">
-            Obs ${event.observation_count || 0}
-        </div>
-
-        <div class="small">
-            ${event.acquisition_utc || '-'}
-        </div>
-
-        ${extra}
-    `;
-
+        <div class="small">${locFor(event,mode)}</div>
+        <div class="small">${event.course || 'Static'} | ${event.regime || '-'}</div>
+        <div class="small">Obs ${event.observation_count || 0}</div>
+        <div class="small">${event.acquisition_utc || '-'}</div>
+        ${extra}`;
     return div;
 }
-
 function deriveMetrics(events){
-
-    const total = events.length;
-
-    const verified = events.filter(
-        e => e.verification_state?.official_confirmation
-    ).length;
-
-    const expired = events.filter(
-        e => e.operational_state === 'EXPIRED'
-    ).length;
-
-    const hitRate = total > 0
-        ? ((verified / total) * 100).toFixed(1) + '%'
-        : '0%';
-
-    const leadValues = events
-        .map(e => e.verification_state?.lead_time_seconds)
-        .filter(v => typeof v === 'number');
-
-    let avgLead = '--';
-
-    if(leadValues.length){
-
-        const avg =
-            leadValues.reduce((a,b)=>a+b,0) /
-            leadValues.length;
-
-        avgLead =
-            Math.round(avg / 60) + 'm';
-    }
-
-    return {
-        total,
-        verified,
-        expired,
-        hitRate,
-        avgLead
-    };
+    const total=events.length;
+    const verified=events.filter(e=>e.verification_state?.official_confirmation).length;
+    const expired=events.filter(e=>e.operational_state==='EXPIRED').length;
+    const hitRate=total>0?((verified/total)*100).toFixed(1)+'%':'0%';
+    const leads=events.map(e=>e.verification_state?.lead_time_seconds).filter(v=>typeof v==='number');
+    const avgLead=leads.length?Math.round((leads.reduce((a,b)=>a+b,0)/leads.length)/60)+'m':'--';
+    return{total,verified,expired,hitRate,avgLead};
 }
-
 async function init(){
-
-    const latest =
-        await load('./data/latest.json');
-
-    const events =
-        latest.active_events || [];
-
-    const metrics =
-        deriveMetrics(events);
-
-    document.getElementById('m_total').textContent =
-        metrics.total;
-
-    document.getElementById('m_verified').textContent =
-        metrics.verified;
-
-    document.getElementById('m_expired').textContent =
-        metrics.expired;
-
-    document.getElementById('m_hit').textContent =
-        metrics.hitRate;
-
-    document.getElementById('m_lead').textContent =
-        metrics.avgLead;
-
+    const latest=await load('./data/latest.json');
+    const events=latest.active_events || [];
+    const metrics=deriveMetrics(events);
+    document.getElementById('m_total').textContent=metrics.total;
+    document.getElementById('m_verified').textContent=metrics.verified;
+    document.getElementById('m_expired').textContent=metrics.expired;
+    document.getElementById('m_hit').textContent=metrics.hitRate;
+    document.getElementById('m_lead').textContent=metrics.avgLead;
     const follow=document.getElementById('follow');
     const target=document.getElementById('target');
     const full=document.getElementById('full');
-
-    follow.innerHTML='';
-    target.innerHTML='';
-    full.innerHTML='';
-
+    follow.innerHTML='';target.innerHTML='';full.innerHTML='';
     for(const event of events){
-
-        const lock = event.recursive_lock || 0;
-
-        if(lock >= 95){
-            full.appendChild(card(event,'full'));
-        }
-        else if(lock >= 75){
-            target.appendChild(card(event,'target'));
-        }
-        else{
-            follow.appendChild(card(event,'follow'));
-        }
+        const lock=event.recursive_lock || 0;
+        if(lock>=95) full.appendChild(card(event,'full'));
+        else if(lock>=75) target.appendChild(card(event,'target'));
+        else follow.appendChild(card(event,'follow'));
     }
 }
-
 init();
 setInterval(init,5000);
-
 </script>
-
 </body>
 </html>

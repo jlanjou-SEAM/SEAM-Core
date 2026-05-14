@@ -1,18 +1,23 @@
-SEAM Dashboard Live Fix v1.1
+SEAM Location Resolution Update v1.3
+
+Files:
+- seam_operational_synthesis.py
+- index.html
+- ledger.html
 
 Fixes:
--------
-- FULL DATA RECORDING now appears first
-- dashboard now derives metrics from LIVE data
-- no placeholder metric dependency
-- lat/long restored
-- operational timestamps restored
-- official placeholders restored
+- Adds structured location object to every operational event.
+- No more Unresolved if coordinates exist.
+- Adds area/country/state/city/locality fallback.
+- FOLLOW uses county/area style location.
+- TARGET uses city/state/country + lat/long.
+- FULL LOCK uses best full place + lat/long.
+- Ledger uses full location string.
 
-Data Sources:
---------------
-index.html
-    -> data/latest.json
+Run:
+python seam_operational_synthesis.py
 
-ledger.html
-    -> reports/seam_recursive_operational_state.json
+Then publish:
+git add -A
+git commit -m "Add operational location resolution"
+git push origin main
