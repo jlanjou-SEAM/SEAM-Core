@@ -1,7 +1,7 @@
 {
   "schema": "SEAM_RECURSIVE_OPERATIONAL_STATE",
   "version": "1.3",
-  "generated_utc": "2026-05-14T06:45:22.551955+00:00",
+  "generated_utc": "2026-05-14T06:52:44.209852+00:00",
   "source_field": "combined\\seam_unified_recursive_field_48h.json",
   "convergence": {
     "mode": "recursive_transitive",
@@ -9,21 +9,21 @@
     "strong_distance_km": 18.0,
     "weak_distance_km": 45.0,
     "time_chain_hours": 8.0,
-    "seed_count": 1,
+    "seed_count": 2148,
     "canonical_count": 1
   },
   "event_count": 1,
-  "active_event_count": 1,
+  "active_event_count": 0,
   "events": [
     {
-      "event_id": "MANI-051426-0001",
+      "event_id": "MANI-041819-0001",
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
-      "acquisition_utc": "2026-05-14T06:45:00+00:00",
-      "first_observation_utc": "2026-05-14T06:45:00+00:00",
-      "last_observation_utc": "2026-05-14T06:45:18.648859+00:00",
-      "pred_time_utc": "2026-05-14T07:06:00+00:00",
-      "lock_state": "FOLLOW PROTOCOL (60.3%)",
-      "recursive_lock": 60.3,
+      "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
+      "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
+      "last_observation_utc": "2026-05-14T06:51:57.631514+00:00",
+      "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
+      "lock_state": "IDLE/MONITOR (36.8%)",
+      "recursive_lock": 36.8,
       "lock_thresholds": {
         "85_percent_utc": null,
         "90_percent_utc": null,
@@ -38,33 +38,59 @@
       "signature_family": "UNKNOWN",
       "signature_subclass": "Recursive Coupled Perturbation",
       "regime": "unknown",
-      "magnitude": "N/A",
+      "magnitude": "69.0",
       "location": {
-        "country": "Africa",
-        "state_region": "Africa",
-        "county_area": "Africa",
-        "city": null,
-        "locality": "Africa",
-        "street_cross": "Africa",
-        "display_follow": "Africa",
-        "display_target": "Africa",
-        "display_lock": "Africa | 0.0000, 0.0000",
-        "lat_long": "0.0000, 0.0000",
+        "country": "United States",
+        "state_region": "CA",
+        "county_area": "United States",
+        "city": "Redlands",
+        "locality": "Redlands, CA",
+        "street_cross": "6 km SSW of Redlands, CA",
+        "display_follow": "United States",
+        "display_target": "Redlands, CA, United States",
+        "display_lock": "Redlands, CA | 35.0747, -93.3181",
+        "lat_long": "35.0747, -93.3181",
         "location_precision": "area",
-        "location_source": "coordinate_region"
+        "location_source": "payload"
       },
-      "street_cross": "Africa",
-      "display_location": "Africa",
-      "latitude": 0.0,
-      "longitude": 0.0,
-      "lat_long": "0.0000, 0.0000",
-      "course": "Static",
-      "spatial_region": "Africa",
-      "observation_count": 52,
-      "source_count": 2,
+      "street_cross": "6 km SSW of Redlands, CA",
+      "display_location": "Redlands, CA, United States",
+      "latitude": 35.0747,
+      "longitude": -93.3181,
+      "lat_long": "35.0747, -93.3181",
+      "course": "SW drift",
+      "spatial_region": "United States",
+      "observation_count": 17400,
+      "source_count": 28,
       "sources": [
-        "decoded",
-        "raw"
+        "ARGO",
+        "AllenTelescopeArray",
+        "BerkeleySETI",
+        "Blitzortung",
+        "CWOP",
+        "GlobeAtNight",
+        "HamSCI",
+        "IRIS",
+        "KiwiSDR",
+        "LOFAR",
+        "LightningMaps",
+        "MADIS",
+        "MITHaystack",
+        "MurchisonWidefieldArray",
+        "NASADeepSpaceNetwork",
+        "NOAA_Buoys",
+        "RaspberryShake",
+        "ReverseBeaconNetwork",
+        "SETILive",
+        "Safecast",
+        "SloanDigitalSkySurvey",
+        "StanfordSID",
+        "USCRN",
+        "VLA",
+        "WebSDR",
+        "ZooniverseRadio",
+        "eCallisto",
+        "unknown"
       ],
       "evidence_summary": [
         "Recursive manifold density detected",
@@ -72,11 +98,11 @@
         "Spatial clustering present"
       ],
       "contradictions": [],
-      "_convergence_passes": 1,
+      "_convergence_passes": 2,
       "persistence_state": {
-        "active_duration_seconds": 18,
-        "persistence_score": 0.0,
-        "trajectory_stability": 0.6,
+        "active_duration_seconds": 223175524,
+        "persistence_score": 1.0,
+        "trajectory_stability": 0.37,
         "field_viability": "TRANSIENT"
       },
       "verification_state": {
@@ -93,9 +119,9 @@
       "cross_regime_couplings": [],
       "manifold_topology": {
         "topology_class": "Localized Recursive Compression",
-        "field_density": 0.6,
+        "field_density": 0.37,
         "cross_regime_density": 0.25,
-        "recursive_complexity": 0.02
+        "recursive_complexity": 1.0
       },
       "estimated_energy": {
         "value": null,
@@ -110,11 +136,11 @@
       "source_lineage": [],
       "linked_observations": [],
       "forecast_state": {
-        "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T10:45:18.648859+00:00",
-        "forecast_confidence": 0.6
+        "projection_state": "MONITOR",
+        "estimated_decay_utc": "2026-05-14T10:51:57.631514+00:00",
+        "forecast_confidence": 0.37
       },
-      "dashboard_priority": 60.3,
+      "dashboard_priority": 36.8,
       "operational_priority": "LOW",
       "operational_notes": [
         "Monitor recursive stabilization",
@@ -122,112 +148,5 @@
       ]
     }
   ],
-  "active_events": [
-    {
-      "event_id": "MANI-051426-0001",
-      "event_family": "SEAM_RECURSIVE_MANIFOLD",
-      "acquisition_utc": "2026-05-14T06:45:00+00:00",
-      "first_observation_utc": "2026-05-14T06:45:00+00:00",
-      "last_observation_utc": "2026-05-14T06:45:18.648859+00:00",
-      "pred_time_utc": "2026-05-14T07:06:00+00:00",
-      "lock_state": "FOLLOW PROTOCOL (60.3%)",
-      "recursive_lock": 60.3,
-      "lock_thresholds": {
-        "85_percent_utc": null,
-        "90_percent_utc": null,
-        "95_percent_utc": null
-      },
-      "lock_progression_seconds": {
-        "85_to_90": null,
-        "90_to_95": null,
-        "85_to_official": null
-      },
-      "signature": "Recursive Field Perturbation",
-      "signature_family": "UNKNOWN",
-      "signature_subclass": "Recursive Coupled Perturbation",
-      "regime": "unknown",
-      "magnitude": "N/A",
-      "location": {
-        "country": "Africa",
-        "state_region": "Africa",
-        "county_area": "Africa",
-        "city": null,
-        "locality": "Africa",
-        "street_cross": "Africa",
-        "display_follow": "Africa",
-        "display_target": "Africa",
-        "display_lock": "Africa | 0.0000, 0.0000",
-        "lat_long": "0.0000, 0.0000",
-        "location_precision": "area",
-        "location_source": "coordinate_region"
-      },
-      "street_cross": "Africa",
-      "display_location": "Africa",
-      "latitude": 0.0,
-      "longitude": 0.0,
-      "lat_long": "0.0000, 0.0000",
-      "course": "Static",
-      "spatial_region": "Africa",
-      "observation_count": 52,
-      "source_count": 2,
-      "sources": [
-        "decoded",
-        "raw"
-      ],
-      "evidence_summary": [
-        "Recursive manifold density detected",
-        "Temporal coherence preserved",
-        "Spatial clustering present"
-      ],
-      "contradictions": [],
-      "_convergence_passes": 1,
-      "persistence_state": {
-        "active_duration_seconds": 18,
-        "persistence_score": 0.0,
-        "trajectory_stability": 0.6,
-        "field_viability": "TRANSIENT"
-      },
-      "verification_state": {
-        "official_confirmation": false,
-        "official_source": null,
-        "official_record_id": null,
-        "official_classification": null,
-        "official_timestamp_utc": null,
-        "lead_time_seconds": null,
-        "magnitude_delta": null,
-        "spatial_error_km": null,
-        "classification_agreement": null
-      },
-      "cross_regime_couplings": [],
-      "manifold_topology": {
-        "topology_class": "Localized Recursive Compression",
-        "field_density": 0.6,
-        "cross_regime_density": 0.25,
-        "recursive_complexity": 0.02
-      },
-      "estimated_energy": {
-        "value": null,
-        "units": "joules"
-      },
-      "altitude_km": null,
-      "depth_km": null,
-      "velocity_vector": {
-        "bearing_degrees": null,
-        "velocity_kmh": null
-      },
-      "source_lineage": [],
-      "linked_observations": [],
-      "forecast_state": {
-        "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T10:45:18.648859+00:00",
-        "forecast_confidence": 0.6
-      },
-      "dashboard_priority": 60.3,
-      "operational_priority": "LOW",
-      "operational_notes": [
-        "Monitor recursive stabilization",
-        "Track cross-regime emergence"
-      ]
-    }
-  ]
+  "active_events": []
 }
