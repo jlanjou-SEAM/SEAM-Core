@@ -1,0 +1,5 @@
+REM SEAM focused epistemic acquisition test
+python continuum_dual_acquisition_runtime.py
+python continuum_dual_acquisition_runtime.py
+python continuum_dual_acquisition_runtime.py
+python seam_unified_48h_field.py

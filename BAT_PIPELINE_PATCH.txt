@@ -1,0 +1,15 @@
+REM ==========================================================
+REM SEAM EPISTEMIC PIPELINE v2.0
+REM ==========================================================
+
+python continuum_dual_acquisition_runtime.py
+
+python seam_unified_48h_field.py
+
+REM SEAM manifold synthesis stages here
+
+python continuum_retention_manager.py
+
+git add -A
+git commit -m "SEAM epistemic architecture v2.0"
+git push origin main

@@ -1,34 +1,27 @@
-SEAM Tiered Threshold Filtering v1.7
+SEAM Dashboard Index v2.0
 
-New operational manifold bands:
+Purpose:
+--------
+Production dashboard index using:
+    data/latest.json
 
-95%+  -> CRITICAL
-90%+  -> ACTIVE
-85%+  -> MONITOR
+No local scoring is performed.
 
-Below 85%:
-- excluded from dashboard
-- retained historically
+SEAM operational synthesis provides:
+- recursive lock
+- operational state
+- topology
+- persistence
+- threshold lifecycle
+- verification state
 
-Additional filtering preserved:
-- only events active within last 12 hours
-
-Expected result:
-- dramatically fewer dashboard tiles
-- stronger recursive target concentration
-- clearer manifold hierarchy
+Dashboard is visualization only.
 
 Install:
 --------
-Replace:
-    C:\CleanRoom\continuum_cross_stream_reconcile.py
+Replace existing:
+    index.html
 
 Run:
 ----
-python continuum_cross_stream_reconcile.py
-
-Publish:
---------
-git add -A
-git commit -m "Add tiered manifold threshold filtering"
-git push origin main
+Serve locally or via GitHub Pages.

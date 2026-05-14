@@ -1,0 +1,101 @@
+<!-- =====================================================
+SEAM DASHBOARD REMAP v1.0
+====================================================== -->
+
+<!-- OLD -->
+<!-- fetch canonical/manifold/raw files directly -->
+
+<!-- REMOVE -->
+<!-- Any dashboard-side confidence calculations -->
+<!-- Any manifold scoring -->
+<!-- Any source aggregation -->
+<!-- Any recursive lock generation -->
+
+<!-- NEW -->
+<!-- Dashboard becomes PRESENTATION ONLY -->
+
+<script type="module">
+
+import {
+    buildSEAMDashboardDataset
+} from './dashboard_adapter.js';
+
+async function initializeSEAMDashboard() {
+
+    const dataset =
+        await buildSEAMDashboardDataset();
+
+    console.log(
+        '[SEAM] Dashboard dataset:',
+        dataset.length
+    );
+
+    renderTargetGrid(dataset);
+}
+
+
+function renderTargetGrid(events) {
+
+    const grid =
+        document.getElementById('target-grid');
+
+    grid.innerHTML = '';
+
+    for (const event of events) {
+
+        const card =
+            document.createElement('div');
+
+        card.className =
+            'seam-target-card';
+
+        card.innerHTML = `
+            <div class="target-header">
+                <div class="target-signature">
+                    ${event.signature}
+                </div>
+
+                <div class="target-lock">
+                    ${event.lock.toFixed(1)}%
+                </div>
+            </div>
+
+            <div class="target-location">
+                ${event.location}
+            </div>
+
+            <div class="target-regime">
+                ${event.regime}
+            </div>
+
+            <div class="target-state">
+                ${event.lockState}
+            </div>
+
+            <div class="target-course">
+                ${event.trajectory}
+            </div>
+
+            <div class="target-observations">
+                Obs: ${event.observations}
+            </div>
+
+            <div class="target-thresholds">
+                85%: ${event.threshold85 || '-'}<br>
+                90%: ${event.threshold90 || '-'}<br>
+                95%: ${event.threshold95 || '-'}
+            </div>
+
+            <div class="target-persistence">
+                Persistence:
+                ${(event.persistence * 100).toFixed(0)}%
+            </div>
+        `;
+
+        grid.appendChild(card);
+    }
+}
+
+initializeSEAMDashboard();
+
+</script>

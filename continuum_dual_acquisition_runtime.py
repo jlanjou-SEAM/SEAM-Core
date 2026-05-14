@@ -1,22 +1,24 @@
 """
 continuum_dual_acquisition_runtime.py
-Continuum Dual Acquisition Runtime
-Version: 1.0
+Version: 2.3
 
-Purpose:
-- Load config/dual_acquisition_sources.json
-- Fetch all enabled configured source endpoints
-- Keep live GeoJSON separate from delayed / already-analyzed reports
-- Write live GeoJSON into raw/<source>/...
-- Write all non-GeoJSON reports into curated/<source>/...
-- Write configured secondary_curated reports into curated/<source>/...
-- Preserve metadata without semantic interpretation
-- Produce acquisition log and health state
-- Feed downstream decoded/event/analysis stages
+SEAM Epistemic Acquisition Runtime
 
-Classification rule:
-- GeoJSON payloads are live data
-- All other source reports are delayed/analyzed reports
+Changes from v2.2:
+------------------
+1. Timeout reduced from 6s to 2s.
+2. Curated/official endpoints are first-class fetch routes.
+3. Existing production config compatibility preserved:
+   - primary_raw       -> raw/
+   - secondary_curated -> decoded/
+   - curated           -> curated/
+   - official          -> curated/
+
+Expected:
+---------
+Sources configured: 40
+Fetch tasks: ~55+ depending on config
+Successful fetches: ~50+
 """
 
 from __future__ import annotations
@@ -25,12 +27,11 @@ import concurrent.futures
 import json
 import mimetypes
 import re
-import sys
 import time
 from dataclasses import dataclass
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Tuple
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
@@ -41,21 +42,22 @@ ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = ROOT / "config" / "dual_acquisition_sources.json"
 
 RAW_DIR = ROOT / "raw"
+DECODED_DIR = ROOT / "decoded"
 CURATED_DIR = ROOT / "curated"
+
 LOG_DIR = ROOT / "logs"
 STATE_DIR = ROOT / "state"
 
 ACQUISITION_LOG = LOG_DIR / "acquisition_log.jsonl"
 SOURCE_HEALTH = STATE_DIR / "source_health.json"
 
-CONNECT_TIMEOUT_SECONDS = 6
+CONNECT_TIMEOUT_SECONDS = 2
 MAX_WORKERS = 16
-MAX_BYTES = 5_000_000
+MAX_BYTES = 50_000_000
 
-USER_AGENT = "SEAM-CleanRoom-Continuum-Acquisition/1.0"
+USER_AGENT = "SEAM-CleanRoom-Epistemic-Acquisition/2.3"
 
-LIVE_EXTENSIONS = {".geojson"}
-JSON_EXTENSIONS = {".json", ".geojson"}
+VALID_EPISTEMIC_LAYERS = {"raw", "decoded", "curated"}
 
 NO_VALID_ENDPOINT_ROUTINGS = {
     "awaiting_endpoint",
@@ -70,10 +72,13 @@ class AcquisitionTask:
     url: str
     configured_route: str
     source_route: str
+    epistemic_layer: str
+    regime: str
+    latency_class: str
 
 
 def utc_now() -> datetime:
-    return datetime.now(UTC)
+    return datetime.now(timezone.utc)
 
 
 def utc_stamp() -> str:
@@ -98,11 +103,66 @@ def load_config() -> Dict[str, Any]:
         return json.load(f)
 
 
+def infer_epistemic_layer(source_cfg: Dict[str, Any], endpoint: Dict[str, Any], route_name: str) -> str:
+    explicit = (
+        endpoint.get("epistemic_layer")
+        or source_cfg.get("epistemic_layer")
+        or source_cfg.get("layer")
+    )
+
+    if explicit:
+        layer = str(explicit).lower().strip()
+        if layer in VALID_EPISTEMIC_LAYERS:
+            return layer
+
+    # Hard route rules.
+    if route_name == "primary_raw":
+        return "raw"
+
+    if route_name == "secondary_curated":
+        return "decoded"
+
+    if route_name in {"curated", "official"}:
+        return "curated"
+
+    # Soft official marker fallback.
+    source_text = json.dumps(source_cfg, default=str).lower()
+    endpoint_text = json.dumps(endpoint, default=str).lower()
+
+    official_markers = [
+        "official",
+        "nws",
+        "noaa_spc",
+        "spc",
+        "warning",
+        "watch",
+        "advisory",
+        "bulletin",
+        "storm_report",
+        "official_report",
+    ]
+
+    if any(marker in source_text or marker in endpoint_text for marker in official_markers):
+        return "curated"
+
+    return "raw"
+
+
+def output_root_for_layer(layer: str) -> Path:
+    if layer == "raw":
+        return RAW_DIR
+    if layer == "decoded":
+        return DECODED_DIR
+    if layer == "curated":
+        return CURATED_DIR
+    return RAW_DIR
+
+
 def content_extension(url: str, content_type: str, payload: bytes) -> str:
     parsed = urlparse(url)
     suffix = Path(parsed.path).suffix.lower()
 
-    if suffix in JSON_EXTENSIONS:
+    if suffix in {".json", ".geojson", ".txt", ".csv", ".xml"}:
         return suffix
 
     lowered_type = (content_type or "").lower()
@@ -127,78 +187,40 @@ def content_extension(url: str, content_type: str, payload: bytes) -> str:
     return ".payload"
 
 
-def is_geojson_payload(url: str, content_type: str, payload: bytes) -> bool:
-    ext = content_extension(url, content_type, payload)
-
-    if ext == ".geojson":
-        return True
-
-    try:
-        data = json.loads(payload.decode("utf-8", errors="ignore"))
-        return isinstance(data, dict) and data.get("type") == "FeatureCollection"
-    except Exception:
-        return False
-
-
-def wrap_non_json_payload(
-    task: AcquisitionTask,
-    payload: bytes,
-    status: int,
-    content_type: str,
-    route_class: str
-) -> bytes:
+def wrap_non_json_payload(task: AcquisitionTask, payload: bytes, status: int, content_type: str) -> bytes:
     wrapper = {
         "timestamp_utc": utc_now().isoformat(),
         "source": task.source,
         "stream": task.stream,
         "url": task.url,
-        "route_class": route_class,
+        "epistemic_layer": task.epistemic_layer,
+        "regime": task.regime,
+        "latency_class": task.latency_class,
+        "configured_route": task.configured_route,
         "status": status,
         "content_type": content_type,
         "bytes": len(payload),
-        "payload_text": payload.decode("utf-8", errors="replace")[:200_000]
+        "payload_text": payload.decode("utf-8", errors="replace")[:200_000],
     }
 
     return json.dumps(wrapper, indent=2).encode("utf-8")
 
 
-def destination_for(
-    task: AcquisitionTask,
-    payload: bytes,
-    content_type: str
-) -> Tuple[Path, str, str]:
-    """
-    Return destination path, route class, extension.
-
-    Rule:
-    - GeoJSON is live data -> raw/<source>/...
-    - Everything else is delayed/analyzed report -> curated/<source>/...
-    - Explicit secondary_curated always goes to curated/<source>/...
-    """
-
-    detected_geojson = is_geojson_payload(task.url, content_type, payload)
-    detected_ext = content_extension(task.url, content_type, payload)
+def destination_for(task: AcquisitionTask, payload: bytes, content_type: str) -> Tuple[Path, str]:
+    original_ext = content_extension(task.url, content_type, payload)
+    ext = original_ext
 
     source_name = sanitize(task.source)
     stream_name = sanitize(task.stream)
 
-    if task.configured_route == "secondary_curated":
-        route_class = "delayed_report"
-        root = CURATED_DIR
-        ext = ".json" if detected_ext not in JSON_EXTENSIONS else detected_ext
-        filename = f"{utc_stamp()}_{stream_name}_curated{ext}"
-    elif detected_geojson:
-        route_class = "live_geojson"
-        root = RAW_DIR
-        ext = ".geojson"
-        filename = f"{utc_stamp()}_{stream_name}_live{ext}"
-    else:
-        route_class = "delayed_report"
-        root = CURATED_DIR
-        ext = ".json" if detected_ext not in JSON_EXTENSIONS else detected_ext
-        filename = f"{utc_stamp()}_{stream_name}_delayed{ext}"
+    root = output_root_for_layer(task.epistemic_layer)
 
-    return root / source_name / utc_date() / filename, route_class, ext
+    if ext not in {".json", ".geojson"}:
+        ext = ".json"
+
+    filename = f"{utc_stamp()}_{stream_name}_{task.epistemic_layer}{ext}"
+
+    return root / source_name / utc_date() / filename, original_ext
 
 
 def append_log(record: Dict[str, Any]) -> None:
@@ -223,10 +245,39 @@ def update_health(source: str, stream: str, ok: bool, reason: str = "") -> None:
         "stream": stream,
         "ok": ok,
         "reason": reason,
-        "updated_utc": utc_now().isoformat()
+        "updated_utc": utc_now().isoformat(),
     }
 
     SOURCE_HEALTH.write_text(json.dumps(health, indent=2), encoding="utf-8")
+
+
+def add_endpoint_tasks(tasks: List[AcquisitionTask], source_cfg: Dict[str, Any], route_name: str) -> None:
+    source_name = source_cfg.get("source", "unknown")
+    source_route = source_cfg.get("routing", "")
+
+    endpoints = source_cfg.get(route_name, []) or []
+
+    for endpoint in endpoints:
+        url = endpoint.get("url")
+        name = endpoint.get("name")
+
+        if not url or not name:
+            continue
+
+        layer = infer_epistemic_layer(source_cfg, endpoint, route_name)
+
+        tasks.append(
+            AcquisitionTask(
+                source=source_name,
+                stream=name,
+                url=url,
+                configured_route=route_name,
+                source_route=source_route,
+                epistemic_layer=layer,
+                regime=str(endpoint.get("regime") or source_cfg.get("regime") or "unknown"),
+                latency_class=str(endpoint.get("latency_class") or source_cfg.get("latency_class") or route_name),
+            )
+        )
 
 
 def build_tasks(config: Dict[str, Any]) -> List[AcquisitionTask]:
@@ -236,41 +287,17 @@ def build_tasks(config: Dict[str, Any]) -> List[AcquisitionTask]:
         if not source_cfg.get("enabled", False):
             continue
 
-        source_name = source_cfg.get("source", "unknown")
-        source_route = source_cfg.get("routing", "")
-
-        if source_route in NO_VALID_ENDPOINT_ROUTINGS:
+        if source_cfg.get("routing", "") in NO_VALID_ENDPOINT_ROUTINGS:
             continue
 
-        for endpoint in source_cfg.get("primary_raw", []) or []:
-            url = endpoint.get("url")
-            name = endpoint.get("name")
+        # Production compatibility routes.
+        add_endpoint_tasks(tasks, source_cfg, "primary_raw")
+        add_endpoint_tasks(tasks, source_cfg, "secondary_curated")
 
-            if url and name:
-                tasks.append(
-                    AcquisitionTask(
-                        source=source_name,
-                        stream=name,
-                        url=url,
-                        configured_route="primary_raw",
-                        source_route=source_route
-                    )
-                )
-
-        for endpoint in source_cfg.get("secondary_curated", []) or []:
-            url = endpoint.get("url")
-            name = endpoint.get("name")
-
-            if url and name:
-                tasks.append(
-                    AcquisitionTask(
-                        source=source_name,
-                        stream=name,
-                        url=url,
-                        configured_route="secondary_curated",
-                        source_route=source_route
-                    )
-                )
+        # New first-class epistemic routes.
+        add_endpoint_tasks(tasks, source_cfg, "decoded")
+        add_endpoint_tasks(tasks, source_cfg, "curated")
+        add_endpoint_tasks(tasks, source_cfg, "official")
 
     return tasks
 
@@ -282,13 +309,14 @@ def fetch(task: AcquisitionTask) -> Dict[str, Any]:
         task.url,
         headers={
             "User-Agent": USER_AGENT,
-            "Accept": "application/geo+json, application/json, text/plain, */*"
-        }
+            "Accept": "application/geo+json, application/json, text/plain, */*",
+        },
     )
 
     try:
         with urlopen(request, timeout=CONNECT_TIMEOUT_SECONDS) as response:
-            status = int(getattr(response, "status", 200))
+            raw_status = getattr(response, "status", 200)
+            status = int(raw_status) if raw_status is not None else 200
             content_type = response.headers.get("Content-Type", "")
             payload = response.read(MAX_BYTES + 1)
 
@@ -297,19 +325,11 @@ def fetch(task: AcquisitionTask) -> Dict[str, Any]:
             if truncated:
                 payload = payload[:MAX_BYTES]
 
-            destination, route_class, ext = destination_for(task, payload, content_type)
-
+            destination, original_ext = destination_for(task, payload, content_type)
             destination.parent.mkdir(parents=True, exist_ok=True)
 
-            if ext not in JSON_EXTENSIONS:
-                payload_to_write = wrap_non_json_payload(
-                    task=task,
-                    payload=payload,
-                    status=status,
-                    content_type=content_type,
-                    route_class=route_class
-                )
-                destination = destination.with_suffix(".json")
+            if original_ext not in {".json", ".geojson"}:
+                payload_to_write = wrap_non_json_payload(task, payload, status, content_type)
             else:
                 payload_to_write = payload
 
@@ -323,14 +343,16 @@ def fetch(task: AcquisitionTask) -> Dict[str, Any]:
                 "stream": task.stream,
                 "url": task.url,
                 "configured_route": task.configured_route,
-                "route_class": route_class,
+                "epistemic_layer": task.epistemic_layer,
+                "regime": task.regime,
+                "latency_class": task.latency_class,
                 "status": status,
                 "success": 200 <= status < 400,
                 "content_type": content_type,
                 "bytes": len(payload),
                 "truncated": truncated,
                 "output": str(destination.relative_to(ROOT)),
-                "elapsed_seconds": elapsed
+                "elapsed_seconds": elapsed,
             }
 
             append_log(record)
@@ -353,11 +375,13 @@ def fetch(task: AcquisitionTask) -> Dict[str, Any]:
         "stream": task.stream,
         "url": task.url,
         "configured_route": task.configured_route,
-        "route_class": "failed",
+        "epistemic_layer": task.epistemic_layer,
+        "regime": task.regime,
+        "latency_class": task.latency_class,
         "status": "ERROR",
         "success": False,
         "error": reason,
-        "elapsed_seconds": elapsed
+        "elapsed_seconds": elapsed,
     }
 
     append_log(record)
@@ -385,44 +409,46 @@ def acquire_all(tasks: Iterable[AcquisitionTask]) -> List[Dict[str, Any]]:
 
 def main() -> int:
     print()
-    print("=== CLEAN-ROOM DUAL ACQUISITION RUNTIME v1.0 ===")
+    print("=== SEAM EPISTEMIC ACQUISITION RUNTIME v2.3 ===")
     print()
 
-    for folder in [RAW_DIR, CURATED_DIR, LOG_DIR, STATE_DIR]:
+    for folder in [RAW_DIR, DECODED_DIR, CURATED_DIR, LOG_DIR, STATE_DIR]:
         folder.mkdir(parents=True, exist_ok=True)
 
     config = load_config()
     tasks = build_tasks(config)
 
-    primary_count = sum(1 for task in tasks if task.configured_route == "primary_raw")
-    curated_count = sum(1 for task in tasks if task.configured_route == "secondary_curated")
+    route_counts: Dict[str, int] = {}
+    layer_counts: Dict[str, int] = {}
+
+    for task in tasks:
+        route_counts[task.configured_route] = route_counts.get(task.configured_route, 0) + 1
+        layer_counts[task.epistemic_layer] = layer_counts.get(task.epistemic_layer, 0) + 1
 
     print(f"Config: {CONFIG_PATH}")
     print(f"Sources configured: {len(config.get('sources', []))}")
     print(f"Fetch tasks: {len(tasks)}")
-    print(f"Primary raw tasks: {primary_count}")
-    print(f"Secondary curated tasks: {curated_count}")
+    print(f"Task routes: {route_counts}")
+    print(f"Task layers: {layer_counts}")
     print(f"Workers: {MAX_WORKERS}")
     print(f"Timeout: {CONNECT_TIMEOUT_SECONDS}s")
-    print()
-    print("Routing rule:")
-    print("  *.geojson / FeatureCollection -> raw/<source>/... live")
-    print("  all other reports -> curated/<source>/... delayed")
-    print("  secondary_curated -> curated/<source>/... delayed")
     print()
 
     results = acquire_all(tasks)
 
     successes = [r for r in results if r.get("success")]
     failures = [r for r in results if not r.get("success")]
-    live = [r for r in successes if r.get("route_class") == "live_geojson"]
-    delayed = [r for r in successes if r.get("route_class") == "delayed_report"]
+
+    raw_count = sum(1 for r in successes if r.get("epistemic_layer") == "raw")
+    decoded_count = sum(1 for r in successes if r.get("epistemic_layer") == "decoded")
+    curated_count = sum(1 for r in successes if r.get("epistemic_layer") == "curated")
 
     print("Acquisition complete.")
     print(f"Successful fetches: {len(successes)}")
     print(f"Failed fetches: {len(failures)}")
-    print(f"Live GeoJSON files: {len(live)}")
-    print(f"Delayed/curated report files: {len(delayed)}")
+    print(f"RAW files: {raw_count}")
+    print(f"DECODED files: {decoded_count}")
+    print(f"CURATED files: {curated_count}")
     print(f"Log: {ACQUISITION_LOG}")
     print(f"Health: {SOURCE_HEALTH}")
     print()
@@ -433,6 +459,7 @@ def main() -> int:
             print(f"  - {row.get('source')}:{row.get('stream')} :: {row.get('error') or row.get('status')}")
         if len(failures) > 20:
             print(f"  ... {len(failures) - 20} more")
+        print()
 
     return 0
 

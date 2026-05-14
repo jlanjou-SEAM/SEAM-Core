@@ -25,25 +25,30 @@
       "primary_raw": [
         {
           "name": "USGS_ALL_HOUR",
-          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
+          "epistemic_layer": "raw"
         },
         {
           "name": "USGS_ALL_DAY",
-          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+          "epistemic_layer": "raw"
         },
         {
           "name": "USGS_SIGNIFICANT_MONTH",
-          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "USGS_ALL_DAY_CURATED",
-          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+          "epistemic_layer": "decoded"
         },
         {
           "name": "USGS_SIGNIFICANT_MONTH_CURATED",
-          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
+          "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -56,13 +61,15 @@
       "primary_raw": [
         {
           "name": "EMSC_RECENT",
-          "url": "https://www.seismicportal.eu/fdsnws/event/1/query?limit=50&format=json"
+          "url": "https://www.seismicportal.eu/fdsnws/event/1/query?limit=50&format=json",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "EMSC_RECENT_CURATED",
-          "url": "https://www.seismicportal.eu/fdsnws/event/1/query?limit=50&format=json"
+          "url": "https://www.seismicportal.eu/fdsnws/event/1/query?limit=50&format=json",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -75,13 +82,15 @@
       "primary_raw": [
         {
           "name": "IRIS_EVENT_TEXT",
-          "url": "https://service.iris.edu/fdsnws/event/1/query?format=text&limit=20&starttime=2026-01-01"
+          "url": "https://service.iris.edu/fdsnws/event/1/query?format=text&limit=20&starttime=2026-01-01",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "IRIS_ALT_CURATED",
-          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=25"
+          "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=25",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -94,13 +103,15 @@
       "primary_raw": [
         {
           "name": "RaspberryShake_ALT_RAW",
-          "url": "https://data.raspberryshake.org"
+          "url": "https://data.raspberryshake.org",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "RaspberryShake_ALT_CURATED",
-          "url": "https://stationview.raspberryshake.org"
+          "url": "https://stationview.raspberryshake.org",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -113,13 +124,15 @@
       "primary_raw": [
         {
           "name": "NOAA_SWPC_PLANETARY_K_INDEX",
-          "url": "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json"
+          "url": "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "NOAA_SWPC_ALERTS",
-          "url": "https://services.swpc.noaa.gov/products/alerts.json"
+          "url": "https://services.swpc.noaa.gov/products/alerts.json",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -132,13 +145,15 @@
       "primary_raw": [
         {
           "name": "GOES_RAW",
-          "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-1-day.json"
+          "url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-1-day.json",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "GOES_CURATED",
-          "url": "https://services.swpc.noaa.gov/products/alerts.json"
+          "url": "https://services.swpc.noaa.gov/products/alerts.json",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -151,7 +166,8 @@
       "primary_raw": [
         {
           "name": "MADIS_ARCHIVE_ROOT",
-          "url": "https://madis-data.ncep.noaa.gov/madisPublic1/data/archive/"
+          "url": "https://madis-data.ncep.noaa.gov/madisPublic1/data/archive/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -165,7 +181,8 @@
       "primary_raw": [
         {
           "name": "CWOP_QA",
-          "url": "http://wxqa.com/"
+          "url": "http://wxqa.com/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -179,7 +196,8 @@
       "primary_raw": [
         {
           "name": "USCRN_HOURLY_INDEX",
-          "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/hourly02/2026/"
+          "url": "https://www.ncei.noaa.gov/pub/data/uscrn/products/hourly02/2026/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -193,7 +211,8 @@
       "primary_raw": [
         {
           "name": "KiwiSDR_ALT_RAW",
-          "url": "http://kiwisdr.com/public/"
+          "url": "http://kiwisdr.com/public/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -207,7 +226,8 @@
       "primary_raw": [
         {
           "name": "WebSDR_ALT_RAW",
-          "url": "http://websdr.ewi.utwente.nl:8901/"
+          "url": "http://websdr.ewi.utwente.nl:8901/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -221,13 +241,15 @@
       "primary_raw": [
         {
           "name": "ReverseBeaconNetwork_ALT_RAW",
-          "url": "https://reversebeacon.net/raw_data/"
+          "url": "https://reversebeacon.net/raw_data/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "ReverseBeaconNetwork_ALT_CURATED",
-          "url": "https://reversebeacon.net/main.php"
+          "url": "https://reversebeacon.net/main.php",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -240,13 +262,15 @@
       "primary_raw": [
         {
           "name": "HamSCI_ALT_RAW",
-          "url": "https://hamsci.org/data"
+          "url": "https://hamsci.org/data",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "HamSCI_ALT_CURATED",
-          "url": "https://hamsci.org/research"
+          "url": "https://hamsci.org/research",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -259,13 +283,15 @@
       "primary_raw": [
         {
           "name": "SatNOGS_RAW",
-          "url": "https://network.satnogs.org/api/observations/"
+          "url": "https://network.satnogs.org/api/observations/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "SatNOGS_CURATED",
-          "url": "https://db.satnogs.org/api/transmitters/"
+          "url": "https://db.satnogs.org/api/transmitters/",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -278,13 +304,15 @@
       "primary_raw": [
         {
           "name": "CELESTRAK_STATIONS",
-          "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json"
+          "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "CELESTRAK_STATIONS_CURATED",
-          "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json"
+          "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -297,13 +325,15 @@
       "primary_raw": [
         {
           "name": "eCallisto_ALT_RAW",
-          "url": "http://soleil.i4ds.ch/solarradio/data/2002-20yy_Callisto/"
+          "url": "http://soleil.i4ds.ch/solarradio/data/2002-20yy_Callisto/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "eCallisto_ALT_CURATED",
-          "url": "http://soleil.i4ds.ch/solarradio/"
+          "url": "http://soleil.i4ds.ch/solarradio/",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -316,13 +346,15 @@
       "primary_raw": [
         {
           "name": "LOFAR_ALT_RAW",
-          "url": "https://lofar-surveys.org"
+          "url": "https://lofar-surveys.org",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "LOFAR_ALT_CURATED",
-          "url": "https://www.astron.nl/telescopes/lofar/"
+          "url": "https://www.astron.nl/telescopes/lofar/",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -335,7 +367,8 @@
       "primary_raw": [
         {
           "name": "MWA_ASVO",
-          "url": "https://asvo.mwatelescope.org/"
+          "url": "https://asvo.mwatelescope.org/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -349,7 +382,8 @@
       "primary_raw": [
         {
           "name": "SETI_ATA",
-          "url": "https://www.seti.org/ata"
+          "url": "https://www.seti.org/ata",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -363,7 +397,8 @@
       "primary_raw": [
         {
           "name": "NRAO_ARCHIVE_QUERY",
-          "url": "https://archive.nrao.edu/archive/advquery.jsp"
+          "url": "https://archive.nrao.edu/archive/advquery.jsp",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -386,13 +421,15 @@
       "primary_raw": [
         {
           "name": "SETILive_ALT_RAW",
-          "url": "https://seti.berkeley.edu/opendata"
+          "url": "https://seti.berkeley.edu/opendata",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "SETILive_ALT_CURATED",
-          "url": "https://seti.berkeley.edu"
+          "url": "https://seti.berkeley.edu",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -405,7 +442,8 @@
       "primary_raw": [
         {
           "name": "NASA_DSN_NOW",
-          "url": "https://eyes.nasa.gov/dsn/dsn.html"
+          "url": "https://eyes.nasa.gov/dsn/dsn.html",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -419,13 +457,15 @@
       "primary_raw": [
         {
           "name": "STANFORD_SID_SOLAR_CENTER",
-          "url": "https://solar-center.stanford.edu/SID/"
+          "url": "https://solar-center.stanford.edu/SID/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "StanfordSID_ALT_CURATED",
-          "url": "https://solar-center.stanford.edu/SID/"
+          "url": "https://solar-center.stanford.edu/SID/",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -438,7 +478,8 @@
       "primary_raw": [
         {
           "name": "OPENMADRIGAL_ROOT",
-          "url": "https://cedar.openmadrigal.org/"
+          "url": "https://cedar.openmadrigal.org/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -452,7 +493,8 @@
       "primary_raw": [
         {
           "name": "BERKELEY_SETI_OPENDATA",
-          "url": "https://seti.berkeley.edu/opendata"
+          "url": "https://seti.berkeley.edu/opendata",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -475,7 +517,8 @@
       "primary_raw": [
         {
           "name": "SDSS_DR18",
-          "url": "https://skyserver.sdss.org/dr18"
+          "url": "https://skyserver.sdss.org/dr18",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -489,7 +532,8 @@
       "primary_raw": [
         {
           "name": "ZOONIVERSE_ROOT",
-          "url": "https://www.zooniverse.org/"
+          "url": "https://www.zooniverse.org/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -503,7 +547,8 @@
       "primary_raw": [
         {
           "name": "GLOBE_AT_NIGHT_MAP",
-          "url": "https://www.globeatnight.org/maps.php"
+          "url": "https://www.globeatnight.org/maps.php",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -517,7 +562,8 @@
       "primary_raw": [
         {
           "name": "OpenSky_RAW",
-          "url": "https://opensky-network.org/api/states/all"
+          "url": "https://opensky-network.org/api/states/all",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -540,13 +586,15 @@
       "primary_raw": [
         {
           "name": "Safecast_ALT_RAW",
-          "url": "https://api.safecast.org/measurements.json"
+          "url": "https://api.safecast.org/measurements.json",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "Safecast_ALT_CURATED",
-          "url": "https://map.safecast.org"
+          "url": "https://map.safecast.org",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -559,13 +607,15 @@
       "primary_raw": [
         {
           "name": "OPENAQ_LOCATIONS",
-          "url": "https://api.openaq.org/v3/locations?limit=100"
+          "url": "https://api.openaq.org/v3/locations?limit=100",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "OPENAQ_LOCATIONS_CURATED",
-          "url": "https://api.openaq.org/v3/locations?limit=100"
+          "url": "https://api.openaq.org/v3/locations?limit=100",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -578,13 +628,15 @@
       "primary_raw": [
         {
           "name": "BLITZORTUNG_ROOT",
-          "url": "https://www.blitzortung.org/"
+          "url": "https://www.blitzortung.org/",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "Blitzortung_ALT_CURATED",
-          "url": "https://www.blitzortung.org"
+          "url": "https://www.blitzortung.org",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -597,7 +649,8 @@
       "primary_raw": [
         {
           "name": "LightningMaps_ALT_RAW",
-          "url": "https://www.lightningmaps.org"
+          "url": "https://www.lightningmaps.org",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [],
@@ -611,13 +664,15 @@
       "primary_raw": [
         {
           "name": "NOAA_Buoys_RAW",
-          "url": "https://www.ndbc.noaa.gov/data/realtime2/46042.txt"
+          "url": "https://www.ndbc.noaa.gov/data/realtime2/46042.txt",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "NOAA_Buoys_CURATED",
-          "url": "https://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt"
+          "url": "https://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -630,13 +685,15 @@
       "primary_raw": [
         {
           "name": "ARGO_ALT_RAW",
-          "url": "ftp://ftp.ifremer.fr/ifremer/argo"
+          "url": "ftp://ftp.ifremer.fr/ifremer/argo",
+          "epistemic_layer": "raw"
         }
       ],
       "secondary_curated": [
         {
           "name": "ARGO_ALT_CURATED",
-          "url": "https://argo.ucsd.edu/data/"
+          "url": "https://argo.ucsd.edu/data/",
+          "epistemic_layer": "decoded"
         }
       ],
       "routing": "raw_first_then_curated",
@@ -671,5 +728,15 @@
       404
     ],
     "failure_cooldown_cycles": 5
+  },
+  "epistemic_policy": {
+    "raw": "primary_raw endpoints: live unresolved observations",
+    "decoded": "secondary_curated endpoints by default: interpreted/unofficial evidence",
+    "curated": "explicit epistemic_layer=curated only: official retrospective validation",
+    "combined_inputs": [
+      "raw",
+      "decoded"
+    ],
+    "curated_role": "comparison/validation only, not predictive synthesis input"
   }
 }

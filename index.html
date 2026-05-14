@@ -1,34 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SEAM Recursive Inference Monitor</title>
-  <link rel="stylesheet" href="./css/core.css?v=20"/>
-  <link rel="stylesheet" href="./css/target-state-overrides.css?v=20"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SEAM Recursive Operational Dashboard</title>
+
+<style>
+
+:root {
+    --bg: #05070b;
+    --panel: #0d1117;
+    --border: #1f2937;
+    --text: #d6e2ff;
+    --muted: #7f8ea3;
+    --good: #00d084;
+    --warn: #ffb020;
+    --high: #ff5d5d;
+    --accent: #4da3ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+    background: #090d14;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+header .sub {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    padding: 20px;
+}
+
+.summary-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.summary-label {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.summary-value {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#target-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+.seam-target-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.target-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.target-signature {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.target-lock {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lock-high {
+    color: var(--high);
+}
+
+.lock-mid {
+    color: var(--warn);
+}
+
+.lock-low {
+    color: var(--good);
+}
+
+.section {
+    margin-top: 12px;
+}
+
+.section-title {
+    color: var(--muted);
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.value {
+    font-size: 14px;
+}
+
+.thresholds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.threshold-box {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px;
+    background: #0a0f17;
+}
+
+.threshold-label {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.threshold-time {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.evidence-list {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--text);
+}
+
+.footer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #132033;
+    border: 1px solid var(--border);
+    font-size: 11px;
+}
+
+.loading {
+    padding: 40px;
+    color: var(--muted);
+}
+
+.error {
+    padding: 40px;
+    color: var(--high);
+}
+
+</style>
 </head>
 
 <body>
-  <div class="app-shell">
-    <header class="topbar">
-      <div>
-        <div class="kicker">SEAM Recursive Inference Monitor</div>
-        <h1>Operational Target Grid</h1>
-      </div>
 
-      <div class="ops-status">
-        <div class="live-row"><span class="live-dot"></span><span>LIVE</span></div>
-        <div id="user-time" class="time-line">--:--:--</div>
-        <div id="user-date" class="date-line">----</div>
-        <div id="refresh-countdown" class="refresh-line">refresh 00:10</div>
-      </div>
-    </header>
+<header>
+    <h1>SEAM Recursive Operational Dashboard</h1>
 
-    <main id="forecast-root" class="forecast-grid">
-      <div class="empty-state">Loading SEAM runtime feed…</div>
-    </main>
-  </div>
+    <div class="sub">
+        Recursive manifold operational synthesis
+    </div>
+</header>
 
-  <script src="./js/runtime-ui.js?v=20"></script>
+<section class="summary-grid">
+
+    <div class="summary-card">
+        <div class="summary-label">Generated UTC</div>
+        <div class="summary-value" id="generated">--</div>
+    </div>
+
+    <div class="summary-card">
+        <div class="summary-label">Operational Events</div>
+        <div class="summary-value" id="event-count">0</div>
+    </div>
+
+    <div class="summary-card">
+        <div class="summary-label">High Lock Targets</div>
+        <div class="summary-value" id="high-lock-count">0</div>
+    </div>
+
+    <div class="summary-card">
+        <div class="summary-label">Confirmed Targets</div>
+        <div class="summary-value" id="confirmed-count">0</div>
+    </div>
+
+</section>
+
+<section id="target-grid">
+    <div class="loading">
+        Loading SEAM operational state...
+    </div>
+</section>
+
+<script>
+
+async function loadState() {
+
+    const response = await fetch('./data/latest.json?ts=' + Date.now());
+
+    if (!response.ok) {
+        throw new Error(
+            `Failed loading latest.json (${response.status})`
+        );
+    }
+
+    return await response.json();
+}
+
+function lockClass(value) {
+
+    if (value >= 95) return 'lock-high';
+    if (value >= 75) return 'lock-mid';
+
+    return 'lock-low';
+}
+
+function fmt(value) {
+
+    if (!value) return '-';
+
+    try {
+        return new Date(value).toLocaleString();
+    }
+    catch {
+        return value;
+    }
+}
+
+function renderSummary(events, generatedUtc) {
+
+    document.getElementById('generated').textContent =
+        generatedUtc
+            ? generatedUtc.replace('T', ' ').substring(0, 19)
+            : '--';
+
+    document.getElementById('event-count').textContent =
+        events.length;
+
+    document.getElementById('high-lock-count').textContent =
+        events.filter(x => x.recursive_lock >= 90).length;
+
+    document.getElementById('confirmed-count').textContent =
+        events.filter(
+            x => x.verification_state &&
+                 x.verification_state.official_confirmation
+        ).length;
+}
+
+function createCard(event) {
+
+    const thresholds =
+        event.lock_thresholds || {};
+
+    const persistence =
+        event.persistence_state || {};
+
+    const verification =
+        event.verification_state || {};
+
+    const forecast =
+        event.forecast_state || {};
+
+    const topology =
+        event.manifold_topology || {};
+
+    const div =
+        document.createElement('div');
+
+    div.className = 'seam-target-card';
+
+    div.innerHTML = `
+
+        <div class="target-header">
+
+            <div class="target-signature">
+                ${event.signature || 'Unknown'}
+            </div>
+
+            <div class="target-lock ${lockClass(event.recursive_lock || 0)}">
+                ${(event.recursive_lock || 0).toFixed(1)}%
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="badge">
+                ${event.lock_state || 'UNKNOWN'}
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Location</div>
+            <div class="value">
+                ${event.street_cross || '-'}
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Coordinates</div>
+            <div class="value">
+                ${event.lat_long || '-'}
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Regime</div>
+            <div class="value">
+                ${event.regime || '-'}
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Trajectory</div>
+            <div class="value">
+                ${event.course || '-'}
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Observation Density</div>
+            <div class="value">
+                ${event.observation_count || 0}
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Persistence</div>
+            <div class="value">
+                ${((persistence.persistence_score || 0) * 100).toFixed(0)}%
+                (${persistence.field_viability || 'UNKNOWN'})
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Lifecycle Thresholds</div>
+
+            <div class="thresholds">
+
+                <div class="threshold-box">
+                    <div class="threshold-label">85%</div>
+                    <div class="threshold-time">
+                        ${fmt(thresholds['85_percent_utc'])}
+                    </div>
+                </div>
+
+                <div class="threshold-box">
+                    <div class="threshold-label">90%</div>
+                    <div class="threshold-time">
+                        ${fmt(thresholds['90_percent_utc'])}
+                    </div>
+                </div>
+
+                <div class="threshold-box">
+                    <div class="threshold-label">95%</div>
+                    <div class="threshold-time">
+                        ${fmt(thresholds['95_percent_utc'])}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Topology</div>
+
+            <div class="value">
+                ${topology.topology_class || '-'}
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Forecast State</div>
+
+            <div class="value">
+                ${forecast.projection_state || '-'}
+                /
+                ${((forecast.forecast_confidence || 0) * 100).toFixed(0)}%
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Evidence</div>
+
+            <ul class="evidence-list">
+                ${(event.evidence_summary || [])
+                    .map(x => `<li>${x}</li>`)
+                    .join('')}
+            </ul>
+        </div>
+
+        <div class="footer">
+
+            <div>
+                ${event.event_id || '-'}
+            </div>
+
+            <div>
+                ${verification.official_confirmation
+                    ? 'OFFICIALLY VERIFIED'
+                    : 'UNVERIFIED'}
+            </div>
+
+        </div>
+    `;
+
+    return div;
+}
+
+async function initialize() {
+
+    const grid =
+        document.getElementById('target-grid');
+
+    try {
+
+        const payload =
+            await loadState();
+
+        const events =
+            payload.active_events || [];
+
+        renderSummary(
+            events,
+            payload.generated_utc
+        );
+
+        grid.innerHTML = '';
+
+        for (const event of events) {
+            grid.appendChild(
+                createCard(event)
+            );
+        }
+
+    }
+    catch (err) {
+
+        console.error(err);
+
+        grid.innerHTML = `
+            <div class="error">
+                Failed loading SEAM operational state.
+            </div>
+        `;
+    }
+}
+
+initialize();
+
+setInterval(
+    initialize,
+    5000
+);
+
+</script>
+
 </body>
 </html>
