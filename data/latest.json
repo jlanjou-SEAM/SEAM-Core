@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-14T15:57:24.508769+00:00",
+  "generated_utc": "2026-05-14T15:58:37.272907+00:00",
   "event_count": 2,
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -7,7 +7,7 @@
     "strong_distance_km": 18.0,
     "weak_distance_km": 45.0,
     "time_chain_hours": 8.0,
-    "seed_count": 2269,
+    "seed_count": 2268,
     "canonical_count": 7
   },
   "active_events": [
@@ -16,7 +16,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T15:56:53.300214+00:00",
+      "last_observation_utc": "2026-05-14T15:58:06.076615+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.7%)",
       "recursive_lock": 68.7,
@@ -44,19 +44,19 @@
         "street_cross": "13 km ENE of Borrego Springs, CA",
         "display_follow": "United States",
         "display_target": "Borrego Springs, CA, United States",
-        "display_lock": "Borrego Springs, CA | 33.2239, -87.9190",
-        "lat_long": "33.2239, -87.9190",
+        "display_lock": "Borrego Springs, CA | 33.1142, -87.2438",
+        "lat_long": "33.1142, -87.2438",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "13 km ENE of Borrego Springs, CA",
       "display_location": "Borrego Springs, CA, United States",
-      "latitude": 33.2239,
-      "longitude": -87.919,
-      "lat_long": "33.2239, -87.9190",
+      "latitude": 33.1142,
+      "longitude": -87.2438,
+      "lat_long": "33.1142, -87.2438",
       "course": "NW drift",
       "spatial_region": "United States",
-      "observation_count": 538,
+      "observation_count": 537,
       "source_count": 6,
       "sources": [
         "EMSC",
@@ -77,7 +77,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59642967,
+        "active_duration_seconds": 59643040,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -98,7 +98,7 @@
         "topology_class": "Localized Recursive Compression",
         "field_density": 0.69,
         "cross_regime_density": 0.25,
-        "recursive_complexity": 0.22
+        "recursive_complexity": 0.21
       },
       "estimated_energy": {
         "value": null,
@@ -114,7 +114,7 @@
       "linked_observations": [
         "OBS-00000006",
         "OBS-00003060",
-        "OBS-00003258",
+        "OBS-00003257",
         "OBS-00003273",
         "OBS-00003421",
         "OBS-00008410",
@@ -124,6 +124,7 @@
         "OBS-00003275",
         "OBS-00000009",
         "OBS-00003061",
+        "OBS-00003258",
         "OBS-00003276",
         "OBS-00003422",
         "OBS-00008411",
@@ -360,12 +361,11 @@
         "OBS-00003118",
         "OBS-00008468",
         "OBS-00003119",
-        "OBS-00008469",
-        "OBS-00003120"
+        "OBS-00008469"
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T19:56:53.300214+00:00",
+        "estimated_decay_utc": "2026-05-14T19:58:06.076615+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.7,
@@ -380,7 +380,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T15:56:53.132065+00:00",
+      "last_observation_utc": "2026-05-14T15:58:05.911539+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -439,7 +439,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163056136,
+        "active_duration_seconds": 163056208,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -517,7 +517,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T19:56:53.132065+00:00",
+        "estimated_decay_utc": "2026-05-14T19:58:05.911539+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
