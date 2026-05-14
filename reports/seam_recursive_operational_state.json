@@ -1,7 +1,7 @@
 {
   "schema": "SEAM_RECURSIVE_OPERATIONAL_STATE",
   "version": "1.5",
-  "generated_utc": "2026-05-14T08:25:36.849163+00:00",
+  "generated_utc": "2026-05-14T08:26:55.639212+00:00",
   "source_field": "combined\\seam_unified_recursive_field_48h.json",
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -9,7 +9,7 @@
     "strong_distance_km": 18.0,
     "weak_distance_km": 45.0,
     "time_chain_hours": 8.0,
-    "seed_count": 2300,
+    "seed_count": 2299,
     "canonical_count": 7
   },
   "event_count": 7,
@@ -20,7 +20,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T08:25:04.114794+00:00",
+      "last_observation_utc": "2026-05-14T08:26:23.398777+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -48,19 +48,19 @@
         "street_cross": "19 km SSE of Silver Springs, Nevada",
         "display_follow": "Texas / New Mexico Region",
         "display_target": "Silver Springs, Nevada, United States",
-        "display_lock": "Silver Springs, Nevada | 34.9645, -95.5140",
-        "lat_long": "34.9645, -95.5140",
+        "display_lock": "Silver Springs, Nevada | 34.9750, -95.4868",
+        "lat_long": "34.9750, -95.4868",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "19 km SSE of Silver Springs, Nevada",
       "display_location": "Silver Springs, Nevada, United States",
-      "latitude": 34.9645,
-      "longitude": -95.514,
-      "lat_long": "34.9645, -95.5140",
+      "latitude": 34.975,
+      "longitude": -95.4868,
+      "lat_long": "34.9750, -95.4868",
       "course": "SW drift",
       "spatial_region": "Texas / New Mexico Region",
-      "observation_count": 614,
+      "observation_count": 612,
       "source_count": 6,
       "sources": [
         "EMSC",
@@ -81,7 +81,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59615858,
+        "active_duration_seconds": 59615937,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -102,7 +102,7 @@
         "topology_class": "Localized Recursive Compression",
         "field_density": 0.69,
         "cross_regime_density": 0.25,
-        "recursive_complexity": 0.25
+        "recursive_complexity": 0.24
       },
       "estimated_energy": {
         "value": null,
@@ -227,27 +227,27 @@
         "OBS-00000055",
         "OBS-00003358",
         "OBS-00003058",
-        "OBS-00003293",
+        "OBS-00003292",
         "OBS-00003457",
         "OBS-00008446",
         "OBS-00003059",
-        "OBS-00003294",
+        "OBS-00003293",
         "OBS-00003458",
         "OBS-00008447",
         "OBS-00003060",
-        "OBS-00003295",
+        "OBS-00003294",
         "OBS-00003459",
         "OBS-00008448",
         "OBS-00003061",
-        "OBS-00003296",
+        "OBS-00003295",
         "OBS-00003460",
         "OBS-00008449",
         "OBS-00003062",
-        "OBS-00003297",
+        "OBS-00003296",
         "OBS-00003461",
         "OBS-00008450",
         "OBS-00003063",
-        "OBS-00003298",
+        "OBS-00003297",
         "OBS-00003462",
         "OBS-00008451",
         "OBS-00003064",
@@ -369,7 +369,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T12:25:04.114794+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:23.398777+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -384,7 +384,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T08:25:03.943198+00:00",
+      "last_observation_utc": "2026-05-14T08:26:23.215959+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -422,7 +422,7 @@
       "latitude": 39.45,
       "longitude": 35.4261,
       "lat_long": "39.4500, 35.4261",
-      "course": "NE drift",
+      "course": "NW drift",
       "spatial_region": "Europe",
       "observation_count": 40,
       "source_count": 4,
@@ -443,7 +443,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163029026,
+        "active_duration_seconds": 163029106,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -497,6 +497,10 @@
         "OBS-00003017",
         "OBS-00003018",
         "OBS-00003019",
+        "OBS-00003020",
+        "OBS-00003022",
+        "OBS-00003023",
+        "OBS-00003028",
         "OBS-00003026",
         "OBS-00003027",
         "OBS-00003398",
@@ -513,15 +517,11 @@
         "OBS-00005863",
         "OBS-00005926",
         "OBS-00005955",
-        "OBS-00006957",
-        "OBS-00003020",
-        "OBS-00003022",
-        "OBS-00003023",
-        "OBS-00003028"
+        "OBS-00006957"
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T12:25:03.943198+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:23.215959+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
@@ -536,7 +536,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T08:25:05.009739+00:00",
+      "last_observation_utc": "2026-05-14T08:26:24.279822+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (44.5%)",
       "recursive_lock": 44.5,
@@ -598,7 +598,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223181111,
+        "active_duration_seconds": 223181190,
         "persistence_score": 1.0,
         "trajectory_stability": 0.45,
         "field_viability": "TRANSIENT"
@@ -886,7 +886,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T12:25:05.009739+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:24.279822+00:00",
         "forecast_confidence": 0.45
       },
       "dashboard_priority": 44.5,
@@ -901,7 +901,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T08:25:03.911980+00:00",
+      "last_observation_utc": "2026-05-14T08:26:23.184977+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (43.8%)",
       "recursive_lock": 43.8,
@@ -967,7 +967,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223181110,
+        "active_duration_seconds": 223181189,
         "persistence_score": 1.0,
         "trajectory_stability": 0.44,
         "field_viability": "TRANSIENT"
@@ -1032,7 +1032,7 @@
         "OBS-00003052",
         "OBS-00003054",
         "OBS-00003057",
-        "OBS-00003305",
+        "OBS-00003304",
         "OBS-00003482",
         "OBS-00003586",
         "OBS-00003604",
@@ -1255,7 +1255,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T12:25:03.911980+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:23.184977+00:00",
         "forecast_confidence": 0.44
       },
       "dashboard_priority": 43.8,
@@ -1270,7 +1270,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-22T08:22:29.502698+00:00",
       "first_observation_utc": "2019-04-22T08:22:29.502698+00:00",
-      "last_observation_utc": "2026-05-14T08:25:03.645831+00:00",
+      "last_observation_utc": "2026-05-14T08:26:22.818710+00:00",
       "pred_time_utc": "2019-04-22T08:43:29.502698+00:00",
       "lock_state": "IDLE/MONITOR (42.7%)",
       "recursive_lock": 42.7,
@@ -1332,7 +1332,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 222825754,
+        "active_duration_seconds": 222825833,
         "persistence_score": 1.0,
         "trajectory_stability": 0.43,
         "field_viability": "TRANSIENT"
@@ -1371,8 +1371,8 @@
         "OBS-00002933",
         "OBS-00002939",
         "OBS-00002940",
-        "OBS-00003304",
-        "OBS-00003306",
+        "OBS-00003303",
+        "OBS-00003305",
         "OBS-00003587",
         "OBS-00003589",
         "OBS-00003590",
@@ -1452,7 +1452,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T12:25:03.645831+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:22.818710+00:00",
         "forecast_confidence": 0.43
       },
       "dashboard_priority": 42.7,
@@ -1467,7 +1467,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T08:25:03.927621+00:00",
+      "last_observation_utc": "2026-05-14T08:26:23.193375+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (34.1%)",
       "recursive_lock": 34.1,
@@ -1525,7 +1525,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223181110,
+        "active_duration_seconds": 223181189,
         "persistence_score": 1.0,
         "trajectory_stability": 0.34,
         "field_viability": "TRANSIENT"
@@ -1564,7 +1564,7 @@
         "OBS-00002942",
         "OBS-00003047",
         "OBS-00003048",
-        "OBS-00003307",
+        "OBS-00003306",
         "OBS-00003483",
         "OBS-00003743",
         "OBS-00003846",
@@ -1579,7 +1579,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T12:25:03.927621+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:23.193375+00:00",
         "forecast_confidence": 0.34
       },
       "dashboard_priority": 34.1,
@@ -1594,10 +1594,10 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2023-08-15T15:34:33.179219+00:00",
       "first_observation_utc": "2023-08-15T15:34:33.179219+00:00",
-      "last_observation_utc": "2026-05-14T08:25:04.957986+00:00",
+      "last_observation_utc": "2026-05-14T08:26:24.225444+00:00",
       "pred_time_utc": "2023-08-15T15:55:33.179219+00:00",
-      "lock_state": "IDLE/MONITOR (31.3%)",
-      "recursive_lock": 31.3,
+      "lock_state": "IDLE/MONITOR (31.8%)",
+      "recursive_lock": 31.8,
       "lock_thresholds": {
         "85_percent_utc": null,
         "90_percent_utc": null,
@@ -1634,7 +1634,7 @@
       "lat_long": "0.0000, 0.0000",
       "course": "Static",
       "spatial_region": "Africa",
-      "observation_count": 9,
+      "observation_count": 10,
       "source_count": 7,
       "sources": [
         "Blitzortung",
@@ -1656,9 +1656,9 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 86633431,
+        "active_duration_seconds": 86633511,
         "persistence_score": 1.0,
-        "trajectory_stability": 0.31,
+        "trajectory_stability": 0.32,
         "field_viability": "TRANSIENT"
       },
       "verification_state": {
@@ -1675,7 +1675,7 @@
       "cross_regime_couplings": [],
       "manifold_topology": {
         "topology_class": "Localized Recursive Compression",
-        "field_density": 0.31,
+        "field_density": 0.32,
         "cross_regime_density": 0.25,
         "recursive_complexity": 0.0
       },
@@ -1696,6 +1696,7 @@
         "OBS-00002935",
         "OBS-00002936",
         "OBS-00003003",
+        "OBS-00003307",
         "OBS-00003583",
         "OBS-00008444",
         "OBS-00005823",
@@ -1703,10 +1704,10 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T12:25:04.957986+00:00",
-        "forecast_confidence": 0.31
+        "estimated_decay_utc": "2026-05-14T12:26:24.225444+00:00",
+        "forecast_confidence": 0.32
       },
-      "dashboard_priority": 31.3,
+      "dashboard_priority": 31.8,
       "operational_priority": "LOW",
       "operational_notes": [
         "Monitor recursive stabilization",
@@ -1720,7 +1721,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T08:25:04.114794+00:00",
+      "last_observation_utc": "2026-05-14T08:26:23.398777+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -1748,19 +1749,19 @@
         "street_cross": "19 km SSE of Silver Springs, Nevada",
         "display_follow": "Texas / New Mexico Region",
         "display_target": "Silver Springs, Nevada, United States",
-        "display_lock": "Silver Springs, Nevada | 34.9645, -95.5140",
-        "lat_long": "34.9645, -95.5140",
+        "display_lock": "Silver Springs, Nevada | 34.9750, -95.4868",
+        "lat_long": "34.9750, -95.4868",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "19 km SSE of Silver Springs, Nevada",
       "display_location": "Silver Springs, Nevada, United States",
-      "latitude": 34.9645,
-      "longitude": -95.514,
-      "lat_long": "34.9645, -95.5140",
+      "latitude": 34.975,
+      "longitude": -95.4868,
+      "lat_long": "34.9750, -95.4868",
       "course": "SW drift",
       "spatial_region": "Texas / New Mexico Region",
-      "observation_count": 614,
+      "observation_count": 612,
       "source_count": 6,
       "sources": [
         "EMSC",
@@ -1781,7 +1782,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59615858,
+        "active_duration_seconds": 59615937,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -1802,7 +1803,7 @@
         "topology_class": "Localized Recursive Compression",
         "field_density": 0.69,
         "cross_regime_density": 0.25,
-        "recursive_complexity": 0.25
+        "recursive_complexity": 0.24
       },
       "estimated_energy": {
         "value": null,
@@ -1927,27 +1928,27 @@
         "OBS-00000055",
         "OBS-00003358",
         "OBS-00003058",
-        "OBS-00003293",
+        "OBS-00003292",
         "OBS-00003457",
         "OBS-00008446",
         "OBS-00003059",
-        "OBS-00003294",
+        "OBS-00003293",
         "OBS-00003458",
         "OBS-00008447",
         "OBS-00003060",
-        "OBS-00003295",
+        "OBS-00003294",
         "OBS-00003459",
         "OBS-00008448",
         "OBS-00003061",
-        "OBS-00003296",
+        "OBS-00003295",
         "OBS-00003460",
         "OBS-00008449",
         "OBS-00003062",
-        "OBS-00003297",
+        "OBS-00003296",
         "OBS-00003461",
         "OBS-00008450",
         "OBS-00003063",
-        "OBS-00003298",
+        "OBS-00003297",
         "OBS-00003462",
         "OBS-00008451",
         "OBS-00003064",
@@ -2069,7 +2070,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T12:25:04.114794+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:23.398777+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -2084,7 +2085,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T08:25:03.943198+00:00",
+      "last_observation_utc": "2026-05-14T08:26:23.215959+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -2122,7 +2123,7 @@
       "latitude": 39.45,
       "longitude": 35.4261,
       "lat_long": "39.4500, 35.4261",
-      "course": "NE drift",
+      "course": "NW drift",
       "spatial_region": "Europe",
       "observation_count": 40,
       "source_count": 4,
@@ -2143,7 +2144,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163029026,
+        "active_duration_seconds": 163029106,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -2197,6 +2198,10 @@
         "OBS-00003017",
         "OBS-00003018",
         "OBS-00003019",
+        "OBS-00003020",
+        "OBS-00003022",
+        "OBS-00003023",
+        "OBS-00003028",
         "OBS-00003026",
         "OBS-00003027",
         "OBS-00003398",
@@ -2213,15 +2218,11 @@
         "OBS-00005863",
         "OBS-00005926",
         "OBS-00005955",
-        "OBS-00006957",
-        "OBS-00003020",
-        "OBS-00003022",
-        "OBS-00003023",
-        "OBS-00003028"
+        "OBS-00006957"
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T12:25:03.943198+00:00",
+        "estimated_decay_utc": "2026-05-14T12:26:23.215959+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
