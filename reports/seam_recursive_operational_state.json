@@ -1,7 +1,7 @@
 {
   "schema": "SEAM_RECURSIVE_OPERATIONAL_STATE",
   "version": "1.5",
-  "generated_utc": "2026-05-14T09:05:50.492174+00:00",
+  "generated_utc": "2026-05-14T09:07:10.645942+00:00",
   "source_field": "combined\\seam_unified_recursive_field_48h.json",
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -20,7 +20,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T09:05:18.699076+00:00",
+      "last_observation_utc": "2026-05-14T09:06:38.990059+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -80,7 +80,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59618272,
+        "active_duration_seconds": 59618353,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -368,7 +368,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T13:05:18.699076+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:38.990059+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -383,7 +383,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T09:05:18.505728+00:00",
+      "last_observation_utc": "2026-05-14T09:06:38.811935+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -401,7 +401,7 @@
       "signature_family": "RADIOLOGICAL",
       "signature_subclass": "Recursive Coupled Perturbation",
       "regime": "radiological",
-      "magnitude": "50.0",
+      "magnitude": "48.0",
       "location": {
         "country": "Asia",
         "state_region": "Asia",
@@ -411,16 +411,16 @@
         "street_cross": "Asia",
         "display_follow": "Asia",
         "display_target": "Asia",
-        "display_lock": "Asia | 36.9651, 126.9923",
-        "lat_long": "36.9651, 126.9923",
+        "display_lock": "Asia | 36.9503, 127.0219",
+        "lat_long": "36.9503, 127.0219",
         "location_precision": "area",
         "location_source": "coordinate_region"
       },
       "street_cross": "Asia",
       "display_location": "Asia",
-      "latitude": 36.9651,
-      "longitude": 126.9923,
-      "lat_long": "36.9651, 126.9923",
+      "latitude": 36.9503,
+      "longitude": 127.0219,
+      "lat_long": "36.9503, 127.0219",
       "course": "Static",
       "spatial_region": "Asia",
       "observation_count": 40,
@@ -442,7 +442,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163031441,
+        "active_duration_seconds": 163031521,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -520,7 +520,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T13:05:18.505728+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:38.811935+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
@@ -535,7 +535,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T09:05:19.562102+00:00",
+      "last_observation_utc": "2026-05-14T09:06:39.842741+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (44.5%)",
       "recursive_lock": 44.5,
@@ -597,7 +597,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223183526,
+        "active_duration_seconds": 223183606,
         "persistence_score": 1.0,
         "trajectory_stability": 0.45,
         "field_viability": "TRANSIENT"
@@ -885,7 +885,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T13:05:19.562102+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:39.842741+00:00",
         "forecast_confidence": 0.45
       },
       "dashboard_priority": 44.5,
@@ -900,7 +900,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T09:05:18.459496+00:00",
+      "last_observation_utc": "2026-05-14T09:06:38.772619+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (43.8%)",
       "recursive_lock": 43.8,
@@ -966,7 +966,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223183525,
+        "active_duration_seconds": 223183605,
         "persistence_score": 1.0,
         "trajectory_stability": 0.44,
         "field_viability": "TRANSIENT"
@@ -1254,7 +1254,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T13:05:18.459496+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:38.772619+00:00",
         "forecast_confidence": 0.44
       },
       "dashboard_priority": 43.8,
@@ -1269,7 +1269,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-22T08:22:29.502698+00:00",
       "first_observation_utc": "2019-04-22T08:22:29.502698+00:00",
-      "last_observation_utc": "2026-05-14T09:05:18.131218+00:00",
+      "last_observation_utc": "2026-05-14T09:06:38.431571+00:00",
       "pred_time_utc": "2019-04-22T08:43:29.502698+00:00",
       "lock_state": "IDLE/MONITOR (42.7%)",
       "recursive_lock": 42.7,
@@ -1331,7 +1331,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 222828168,
+        "active_duration_seconds": 222828248,
         "persistence_score": 1.0,
         "trajectory_stability": 0.43,
         "field_viability": "TRANSIENT"
@@ -1451,7 +1451,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T13:05:18.131218+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:38.431571+00:00",
         "forecast_confidence": 0.43
       },
       "dashboard_priority": 42.7,
@@ -1466,7 +1466,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T09:05:18.484201+00:00",
+      "last_observation_utc": "2026-05-14T09:06:38.789715+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (34.1%)",
       "recursive_lock": 34.1,
@@ -1524,7 +1524,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223183525,
+        "active_duration_seconds": 223183605,
         "persistence_score": 1.0,
         "trajectory_stability": 0.34,
         "field_viability": "TRANSIENT"
@@ -1578,7 +1578,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T13:05:18.484201+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:38.789715+00:00",
         "forecast_confidence": 0.34
       },
       "dashboard_priority": 34.1,
@@ -1593,7 +1593,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2023-08-15T15:34:33.179219+00:00",
       "first_observation_utc": "2023-08-15T15:34:33.179219+00:00",
-      "last_observation_utc": "2026-05-14T09:05:19.509654+00:00",
+      "last_observation_utc": "2026-05-14T09:06:39.797832+00:00",
       "pred_time_utc": "2023-08-15T15:55:33.179219+00:00",
       "lock_state": "IDLE/MONITOR (31.8%)",
       "recursive_lock": 31.8,
@@ -1655,7 +1655,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 86635846,
+        "active_duration_seconds": 86635926,
         "persistence_score": 1.0,
         "trajectory_stability": 0.32,
         "field_viability": "TRANSIENT"
@@ -1703,7 +1703,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T13:05:19.509654+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:39.797832+00:00",
         "forecast_confidence": 0.32
       },
       "dashboard_priority": 31.8,
@@ -1720,7 +1720,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T09:05:18.699076+00:00",
+      "last_observation_utc": "2026-05-14T09:06:38.990059+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -1780,7 +1780,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59618272,
+        "active_duration_seconds": 59618353,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -2068,7 +2068,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T13:05:18.699076+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:38.990059+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -2083,7 +2083,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T09:05:18.505728+00:00",
+      "last_observation_utc": "2026-05-14T09:06:38.811935+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -2101,7 +2101,7 @@
       "signature_family": "RADIOLOGICAL",
       "signature_subclass": "Recursive Coupled Perturbation",
       "regime": "radiological",
-      "magnitude": "50.0",
+      "magnitude": "48.0",
       "location": {
         "country": "Asia",
         "state_region": "Asia",
@@ -2111,16 +2111,16 @@
         "street_cross": "Asia",
         "display_follow": "Asia",
         "display_target": "Asia",
-        "display_lock": "Asia | 36.9651, 126.9923",
-        "lat_long": "36.9651, 126.9923",
+        "display_lock": "Asia | 36.9503, 127.0219",
+        "lat_long": "36.9503, 127.0219",
         "location_precision": "area",
         "location_source": "coordinate_region"
       },
       "street_cross": "Asia",
       "display_location": "Asia",
-      "latitude": 36.9651,
-      "longitude": 126.9923,
-      "lat_long": "36.9651, 126.9923",
+      "latitude": 36.9503,
+      "longitude": 127.0219,
+      "lat_long": "36.9503, 127.0219",
       "course": "Static",
       "spatial_region": "Asia",
       "observation_count": 40,
@@ -2142,7 +2142,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163031441,
+        "active_duration_seconds": 163031521,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -2220,7 +2220,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T13:05:18.505728+00:00",
+        "estimated_decay_utc": "2026-05-14T13:06:38.811935+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
