@@ -1,40 +1,27 @@
-SEAM Recursive Convergence + Compact Dashboard v1.0
+SEAM Operational Synthesis v1.2
 
-Included:
----------
-index.html
-RECURSIVE_CONVERGENCE_PATCH.py
-README_INSTALL.txt
+This is a full replacement file, not a patch.
 
-Dashboard Changes:
-------------------
-- condensed operational cards
-- denser target grid
-- minimal operational display
-- removes verbose evidence sections
+Primary change:
+---------------
+Adds recursive transitive convergence.
 
-Convergence Changes:
---------------------
-Adds recursive manifold convergence stage.
+Meaning:
+A ~ B and B ~ C now collapses into one canonical manifold,
+even when A and C are not directly similar enough.
 
-New Behavior:
--------------
-seed manifolds
-    ↓
-recursive convergence
-    ↓
-canonical swarm fields
-    ↓
-operational synthesis
-
-Fixes:
-------
-- duplicate swarm manifolds
-- fragmented geothermal fields
-- fragmented seismic clusters
-
-Expected Result:
+Expected effect:
 ----------------
-60 targets
-    ↓
-~15-30 canonical operational manifolds
+- Brawley fragments collapse into one swarm field
+- Geysers/Cobb fragments collapse into persistent geothermal field(s)
+- dashboard target count should fall materially
+
+Run:
+----
+python seam_operational_synthesis.py
+
+Expected console:
+-----------------
+Seed events: <old local count>
+Canonical events: <reduced count>
+Active events: <reduced active targets>
