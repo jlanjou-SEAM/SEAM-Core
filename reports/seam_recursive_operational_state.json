@@ -1,7 +1,7 @@
 {
   "schema": "SEAM_RECURSIVE_OPERATIONAL_STATE",
   "version": "1.5",
-  "generated_utc": "2026-05-14T18:34:14.721442+00:00",
+  "generated_utc": "2026-05-14T18:35:37.362914+00:00",
   "source_field": "combined\\seam_unified_recursive_field_48h.json",
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -20,7 +20,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T18:33:43.541092+00:00",
+      "last_observation_utc": "2026-05-14T18:34:59.107348+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -48,16 +48,16 @@
         "street_cross": "13 km ENE of Borrego Springs, CA",
         "display_follow": "United States",
         "display_target": "Borrego Springs, CA, United States",
-        "display_lock": "Borrego Springs, CA | 33.4612, -87.6799",
-        "lat_long": "33.4612, -87.6799",
+        "display_lock": "Borrego Springs, CA | 33.4615, -87.6800",
+        "lat_long": "33.4615, -87.6800",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "13 km ENE of Borrego Springs, CA",
       "display_location": "Borrego Springs, CA, United States",
-      "latitude": 33.4612,
-      "longitude": -87.6799,
-      "lat_long": "33.4612, -87.6799",
+      "latitude": 33.4615,
+      "longitude": -87.68,
+      "lat_long": "33.4615, -87.6800",
       "course": "SW drift",
       "spatial_region": "United States",
       "observation_count": 551,
@@ -81,7 +81,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59652377,
+        "active_duration_seconds": 59652453,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -369,7 +369,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T22:33:43.541092+00:00",
+        "estimated_decay_utc": "2026-05-14T22:34:59.107348+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -384,7 +384,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T18:33:43.364749+00:00",
+      "last_observation_utc": "2026-05-14T18:34:58.911770+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -443,7 +443,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163065546,
+        "active_duration_seconds": 163065621,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -521,7 +521,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T22:33:43.364749+00:00",
+        "estimated_decay_utc": "2026-05-14T22:34:58.911770+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
@@ -536,7 +536,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T18:33:44.395853+00:00",
+      "last_observation_utc": "2026-05-14T18:35:00.095460+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (44.5%)",
       "recursive_lock": 44.5,
@@ -598,7 +598,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223217631,
+        "active_duration_seconds": 223217706,
         "persistence_score": 1.0,
         "trajectory_stability": 0.45,
         "field_viability": "TRANSIENT"
@@ -886,7 +886,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T22:33:44.395853+00:00",
+        "estimated_decay_utc": "2026-05-14T22:35:00.095460+00:00",
         "forecast_confidence": 0.45
       },
       "dashboard_priority": 44.5,
@@ -901,7 +901,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T18:33:43.333033+00:00",
+      "last_observation_utc": "2026-05-14T18:34:58.882780+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (43.8%)",
       "recursive_lock": 43.8,
@@ -966,7 +966,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223217629,
+        "active_duration_seconds": 223217705,
         "persistence_score": 1.0,
         "trajectory_stability": 0.44,
         "field_viability": "TRANSIENT"
@@ -1254,7 +1254,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T22:33:43.333033+00:00",
+        "estimated_decay_utc": "2026-05-14T22:34:58.882780+00:00",
         "forecast_confidence": 0.44
       },
       "dashboard_priority": 43.8,
@@ -1269,7 +1269,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-22T08:22:29.502698+00:00",
       "first_observation_utc": "2019-04-22T08:22:29.502698+00:00",
-      "last_observation_utc": "2026-05-14T18:33:43.013545+00:00",
+      "last_observation_utc": "2026-05-14T18:34:58.474130+00:00",
       "pred_time_utc": "2019-04-22T08:43:29.502698+00:00",
       "lock_state": "IDLE/MONITOR (42.7%)",
       "recursive_lock": 42.7,
@@ -1331,7 +1331,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 222862273,
+        "active_duration_seconds": 222862348,
         "persistence_score": 1.0,
         "trajectory_stability": 0.43,
         "field_viability": "TRANSIENT"
@@ -1451,7 +1451,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T22:33:43.013545+00:00",
+        "estimated_decay_utc": "2026-05-14T22:34:58.474130+00:00",
         "forecast_confidence": 0.43
       },
       "dashboard_priority": 42.7,
@@ -1466,7 +1466,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-14T18:33:43.355723+00:00",
+      "last_observation_utc": "2026-05-14T18:34:58.895468+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (33.5%)",
       "recursive_lock": 33.5,
@@ -1524,7 +1524,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223217630,
+        "active_duration_seconds": 223217705,
         "persistence_score": 1.0,
         "trajectory_stability": 0.34,
         "field_viability": "TRANSIENT"
@@ -1576,7 +1576,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T22:33:43.355723+00:00",
+        "estimated_decay_utc": "2026-05-14T22:34:58.895468+00:00",
         "forecast_confidence": 0.34
       },
       "dashboard_priority": 33.5,
@@ -1591,7 +1591,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2023-08-15T15:34:33.179219+00:00",
       "first_observation_utc": "2023-08-15T15:34:33.179219+00:00",
-      "last_observation_utc": "2026-05-14T18:33:44.334840+00:00",
+      "last_observation_utc": "2026-05-14T18:35:00.040125+00:00",
       "pred_time_utc": "2023-08-15T15:55:33.179219+00:00",
       "lock_state": "IDLE/MONITOR (31.8%)",
       "recursive_lock": 31.8,
@@ -1653,7 +1653,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 86669951,
+        "active_duration_seconds": 86670026,
         "persistence_score": 1.0,
         "trajectory_stability": 0.32,
         "field_viability": "TRANSIENT"
@@ -1701,7 +1701,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-14T22:33:44.334840+00:00",
+        "estimated_decay_utc": "2026-05-14T22:35:00.040125+00:00",
         "forecast_confidence": 0.32
       },
       "dashboard_priority": 31.8,
@@ -1718,7 +1718,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-14T18:33:43.541092+00:00",
+      "last_observation_utc": "2026-05-14T18:34:59.107348+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -1746,16 +1746,16 @@
         "street_cross": "13 km ENE of Borrego Springs, CA",
         "display_follow": "United States",
         "display_target": "Borrego Springs, CA, United States",
-        "display_lock": "Borrego Springs, CA | 33.4612, -87.6799",
-        "lat_long": "33.4612, -87.6799",
+        "display_lock": "Borrego Springs, CA | 33.4615, -87.6800",
+        "lat_long": "33.4615, -87.6800",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "13 km ENE of Borrego Springs, CA",
       "display_location": "Borrego Springs, CA, United States",
-      "latitude": 33.4612,
-      "longitude": -87.6799,
-      "lat_long": "33.4612, -87.6799",
+      "latitude": 33.4615,
+      "longitude": -87.68,
+      "lat_long": "33.4615, -87.6800",
       "course": "SW drift",
       "spatial_region": "United States",
       "observation_count": 551,
@@ -1779,7 +1779,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59652377,
+        "active_duration_seconds": 59652453,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -2067,7 +2067,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T22:33:43.541092+00:00",
+        "estimated_decay_utc": "2026-05-14T22:34:59.107348+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -2082,7 +2082,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-14T18:33:43.364749+00:00",
+      "last_observation_utc": "2026-05-14T18:34:58.911770+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -2141,7 +2141,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163065546,
+        "active_duration_seconds": 163065621,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -2219,7 +2219,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-14T22:33:43.364749+00:00",
+        "estimated_decay_utc": "2026-05-14T22:34:58.911770+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
