@@ -1,27 +1,32 @@
-SEAM Operational Synthesis v1.2
+SEAM Dual Page Operational Interface v1.0
 
-This is a full replacement file, not a patch.
+Files:
+------
+index.html
+ledger.html
 
-Primary change:
----------------
-Adds recursive transitive convergence.
+Navigation:
+-----------
+STATUS page:
+    [ LOG ]
 
-Meaning:
-A ~ B and B ~ C now collapses into one canonical manifold,
-even when A and C are not directly similar enough.
+LOG page:
+    [ STATUS ]
 
-Expected effect:
-----------------
-- Brawley fragments collapse into one swarm field
-- Geysers/Cobb fragments collapse into persistent geothermal field(s)
-- dashboard target count should fall materially
+Status Page:
+------------
+- state-separated manifold lifecycle views
+- FOLLOW PROTOCOL
+- TARGET ACQUISITION
+- FULL DATA RECORDING
 
-Run:
-----
-python seam_operational_synthesis.py
+Log Page:
+---------
+- single-line operational records
+- full lifecycle timestamps
+- official reconciliation placeholders
+- prediction statistics
 
-Expected console:
------------------
-Seed events: <old local count>
-Canonical events: <reduced count>
-Active events: <reduced active targets>
+Statistics Source:
+------------------
+reports/seam_operational_metrics.json

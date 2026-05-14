@@ -2,150 +2,221 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEAM Ops</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SEAM Status</title>
 
 <style>
 body{
     margin:0;
     background:#05070b;
-    color:#d7e2f0;
+    color:#dce7f7;
     font-family:Arial,Helvetica,sans-serif;
 }
 header{
     padding:10px 16px;
-    border-bottom:1px solid #1b2430;
     background:#0b1017;
+    border-bottom:1px solid #1f2937;
+}
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
 }
 h1{
     margin:0;
     font-size:18px;
 }
-#meta{
-    margin-top:4px;
-    color:#7d8ca3;
+.metrics{
+    margin-top:6px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
     font-size:11px;
+    color:#9fb0c9;
 }
-#grid{
+.navbtn{
+    background:#122033;
+    border:1px solid #23364f;
+    color:#dce7f7;
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    text-decoration:none;
+    font-size:12px;
+}
+.section-title{
+    padding:8px 14px;
+    font-size:11px;
+    color:#7d8ca3;
+    text-transform:uppercase;
+}
+.grid{
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
     gap:8px;
-    padding:10px;
+    padding:0 10px 12px 10px;
 }
 .card{
-    border:1px solid #1f2937;
     background:#0c1118;
+    border:1px solid #1f2937;
     border-radius:8px;
     padding:10px;
 }
-.top{
+.row{
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 .sig{
-    color:#4ea1ff;
-    font-size:14px;
+    color:#57a8ff;
     font-weight:bold;
+    font-size:14px;
 }
 .lock{
     font-size:18px;
     font-weight:bold;
 }
-.loc{
-    margin-top:4px;
-    font-size:12px;
-}
-.row{
-    margin-top:6px;
-    display:flex;
-    justify-content:space-between;
-    font-size:11px;
-    color:#9fb0c9;
-}
-.state{
-    margin-top:6px;
-    font-size:11px;
-    color:#ffb84d;
-}
-.footer{
-    margin-top:6px;
-    display:flex;
-    justify-content:space-between;
-    font-size:10px;
-    color:#7d8ca3;
-}
 .high{color:#ff6161;}
 .mid{color:#ffb84d;}
 .low{color:#00d084;}
+.small{
+    margin-top:4px;
+    font-size:11px;
+    color:#9fb0c9;
+}
+.phase{
+    margin-top:6px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:4px;
+    font-size:10px;
+}
+.phase div{
+    border:1px solid #1f2937;
+    padding:4px;
+    border-radius:4px;
+}
+.full{
+    border-color:#ff6161;
+}
 </style>
 </head>
 <body>
 
 <header>
-<h1>SEAM Operational State</h1>
-<div id="meta">Loading...</div>
+<div class="top">
+<div>
+<h1>SEAM Operational Status</h1>
+
+<div class="metrics">
+<div>Total Predictions: <span id="m_total">0</span></div>
+<div>Verified: <span id="m_verified">0</span></div>
+<div>Expired: <span id="m_expired">0</span></div>
+<div>Avg Lead: <span id="m_lead">0m</span></div>
+</div>
+</div>
+
+<a class="navbtn" href="./ledger.html">LOG</a>
+
+</div>
 </header>
 
-<div id="grid"></div>
+<div class="section-title">FOLLOW PROTOCOL</div>
+<div id="follow" class="grid"></div>
+
+<div class="section-title">TARGET ACQUISITION</div>
+<div id="target" class="grid"></div>
+
+<div class="section-title">FULL DATA RECORDING</div>
+<div id="full" class="grid"></div>
 
 <script>
 
-function lockClass(v){
+async function load(url){
+    const r = await fetch(url + '?ts=' + Date.now());
+    if(!r.ok) throw new Error(url);
+    return await r.json();
+}
+
+function cls(v){
     if(v>=95)return 'high';
     if(v>=75)return 'mid';
     return 'low';
 }
 
-async function load(){
-
-    const r = await fetch('./data/latest.json?ts='+Date.now());
-
-    if(!r.ok){
-        throw new Error('latest.json failed');
+function shortTime(v){
+    if(!v)return '-';
+    try{
+        return new Date(v).toISOString().substring(11,16);
+    }catch{
+        return '-';
     }
-
-    return await r.json();
 }
 
-function card(event){
+function card(event,mode){
 
-    const div = document.createElement('div');
-
+    const div=document.createElement('div');
     div.className='card';
 
+    let extra='';
+
+    if(mode!=='follow'){
+
+        extra += `
+        <div class="phase">
+            <div>85%<br>${shortTime(event.lock_thresholds?.['85_percent_utc'])}</div>
+            <div>90%<br>${shortTime(event.lock_thresholds?.['90_percent_utc'])}</div>
+            <div class="${mode==='full'?'full':''}">
+                95%<br>${shortTime(event.lock_thresholds?.['95_percent_utc'])}
+            </div>
+        </div>
+        `;
+
+        extra += `
+        <div class="small">
+            ${event.lat_long||'-'}
+        </div>
+        `;
+    }
+
+    if(mode==='full'){
+
+        extra += `
+        <div class="small">
+            Official:
+            ${event.verification_state?.official_classification || 'Pending'}
+        </div>
+
+        <div class="small">
+            Lead:
+            ${event.verification_state?.lead_time_seconds || '-'} sec
+        </div>
+        `;
+    }
+
     div.innerHTML = `
-        <div class="top">
+        <div class="row">
             <div class="sig">${event.signature||'-'}</div>
-            <div class="lock ${lockClass(event.recursive_lock||0)}">
+            <div class="lock ${cls(event.recursive_lock||0)}">
                 ${(event.recursive_lock||0).toFixed(1)}%
             </div>
         </div>
 
-        <div class="loc">
-            ${event.street_cross||event.lat_long||'-'}
+        <div class="small">
+            ${event.street_cross||'-'}
         </div>
 
-        <div class="row">
-            <div>${event.regime||'-'}</div>
-            <div>Obs ${event.observation_count||0}</div>
+        <div class="small">
+            ${event.course||'Static'}
+            |
+            ${event.regime||'-'}
         </div>
 
-        <div class="row">
-            <div>${event.course||'Static'}</div>
-            <div>${event.operational_priority||'-'}</div>
+        <div class="small">
+            ${event.acquisition_utc||'-'}
         </div>
 
-        <div class="state">
-            ${event.lock_state||'-'}
-        </div>
-
-        <div class="footer">
-            <div>${event.event_id||'-'}</div>
-            <div>
-                ${(event.persistence_state?.persistence_score||0)*100|0}%
-            </div>
-        </div>
+        ${extra}
     `;
 
     return div;
@@ -153,19 +224,42 @@ function card(event){
 
 async function init(){
 
-    const payload = await load();
+    const latest = await load('./data/latest.json');
+    const ledger = await load('./reports/seam_operational_metrics.json');
 
-    const events = payload.active_events || [];
+    document.getElementById('m_total').textContent =
+        ledger.total_predictions || 0;
 
-    document.getElementById('meta').textContent =
-        `${events.length} active recursive manifolds`;
+    document.getElementById('m_verified').textContent =
+        ledger.verified_predictions || 0;
 
-    const grid = document.getElementById('grid');
+    document.getElementById('m_expired').textContent =
+        ledger.expired_predictions || 0;
 
-    grid.innerHTML='';
+    document.getElementById('m_lead').textContent =
+        ledger.average_lead_minutes || '0';
 
-    for(const event of events){
-        grid.appendChild(card(event));
+    const follow=document.getElementById('follow');
+    const target=document.getElementById('target');
+    const full=document.getElementById('full');
+
+    follow.innerHTML='';
+    target.innerHTML='';
+    full.innerHTML='';
+
+    for(const event of latest.active_events || []){
+
+        const lock = event.recursive_lock || 0;
+
+        if(lock >= 95){
+            full.appendChild(card(event,'full'));
+        }
+        else if(lock >= 75){
+            target.appendChild(card(event,'target'));
+        }
+        else{
+            follow.appendChild(card(event,'follow'));
+        }
     }
 }
 
