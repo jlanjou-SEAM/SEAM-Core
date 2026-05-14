@@ -76,11 +76,10 @@ tr:hover{
 <h1>SEAM Operational Ledger</h1>
 
 <div class="metrics">
-<div>Total: <span id="m_total">0</span></div>
-<div>Verified: <span id="m_verified">0</span></div>
-<div>Expired: <span id="m_expired">0</span></div>
-<div>Hit Rate: <span id="m_hit">0%</span></div>
-<div>Avg Lead: <span id="m_lead">0m</span></div>
+<div>Total: <span id="m_total">--</span></div>
+<div>Verified: <span id="m_verified">--</span></div>
+<div>Expired: <span id="m_expired">--</span></div>
+<div>Hit Rate: <span id="m_hit">--</span></div>
 </div>
 
 </div>
@@ -136,36 +135,58 @@ function statusClass(v){
     return 'pending';
 }
 
+function deriveMetrics(events){
+
+    const total = events.length;
+
+    const verified = events.filter(
+        e => e.verification_state?.official_confirmation
+    ).length;
+
+    const expired = events.filter(
+        e => e.operational_state === 'EXPIRED'
+    ).length;
+
+    const hitRate = total > 0
+        ? ((verified / total) * 100).toFixed(1) + '%'
+        : '0%';
+
+    return {
+        total,
+        verified,
+        expired,
+        hitRate
+    };
+}
+
 async function init(){
 
     const state =
         await load('./reports/seam_recursive_operational_state.json');
 
+    const events =
+        state.events || [];
+
     const metrics =
-        await load('./reports/seam_operational_metrics.json');
+        deriveMetrics(events);
 
     document.getElementById('m_total').textContent =
-        metrics.total_predictions || 0;
+        metrics.total;
 
     document.getElementById('m_verified').textContent =
-        metrics.verified_predictions || 0;
+        metrics.verified;
 
     document.getElementById('m_expired').textContent =
-        metrics.expired_predictions || 0;
+        metrics.expired;
 
     document.getElementById('m_hit').textContent =
-        metrics.hit_rate || '0%';
-
-    document.getElementById('m_lead').textContent =
-        metrics.average_lead_minutes || '0';
+        metrics.hitRate;
 
     const rows=document.getElementById('rows');
 
     rows.innerHTML='';
 
-    for(const event of state.events || []){
-
-        const tr=document.createElement('tr');
+    for(const event of events){
 
         const verified =
             event.verification_state?.official_confirmation;
@@ -174,12 +195,14 @@ async function init(){
             verified ? 'VERIFIED' :
             (event.recursive_lock >= 95 ? 'PENDING' : 'TRACKING');
 
+        const tr=document.createElement('tr');
+
         tr.innerHTML=`
-            <td>${event.lock_state||'-'}</td>
-            <td>${(event.recursive_lock||0).toFixed(1)}%</td>
-            <td>${event.signature||'-'}</td>
-            <td>${event.street_cross||'-'}</td>
-            <td>${event.lat_long||'-'}</td>
+            <td>${event.lock_state || '-'}</td>
+            <td>${(event.recursive_lock || 0).toFixed(1)}%</td>
+            <td>${event.signature || '-'}</td>
+            <td>${event.street_cross || '-'}</td>
+            <td>${event.lat_long || '-'}</td>
             <td>${t(event.lock_thresholds?.['85_percent_utc'])}</td>
             <td>${t(event.lock_thresholds?.['90_percent_utc'])}</td>
             <td>${t(event.lock_thresholds?.['95_percent_utc'])}</td>

@@ -52,7 +52,7 @@ h1{
 }
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
     gap:8px;
     padding:0 10px 12px 10px;
 }
@@ -109,10 +109,11 @@ h1{
 <h1>SEAM Operational Status</h1>
 
 <div class="metrics">
-<div>Total Predictions: <span id="m_total">0</span></div>
-<div>Verified: <span id="m_verified">0</span></div>
-<div>Expired: <span id="m_expired">0</span></div>
-<div>Avg Lead: <span id="m_lead">0m</span></div>
+<div>Total Predictions: <span id="m_total">--</span></div>
+<div>Verified: <span id="m_verified">--</span></div>
+<div>Expired: <span id="m_expired">--</span></div>
+<div>Hit Rate: <span id="m_hit">--</span></div>
+<div>Avg Lead: <span id="m_lead">--</span></div>
 </div>
 </div>
 
@@ -121,14 +122,14 @@ h1{
 </div>
 </header>
 
-<div class="section-title">FOLLOW PROTOCOL</div>
-<div id="follow" class="grid"></div>
+<div class="section-title">FULL DATA RECORDING</div>
+<div id="full" class="grid"></div>
 
 <div class="section-title">TARGET ACQUISITION</div>
 <div id="target" class="grid"></div>
 
-<div class="section-title">FULL DATA RECORDING</div>
-<div id="full" class="grid"></div>
+<div class="section-title">FOLLOW PROTOCOL</div>
+<div id="follow" class="grid"></div>
 
 <script>
 
@@ -156,6 +157,7 @@ function shortTime(v){
 function card(event,mode){
 
     const div=document.createElement('div');
+
     div.className='card';
 
     let extra='';
@@ -170,11 +172,9 @@ function card(event,mode){
                 95%<br>${shortTime(event.lock_thresholds?.['95_percent_utc'])}
             </div>
         </div>
-        `;
 
-        extra += `
         <div class="small">
-            ${event.lat_long||'-'}
+            ${event.lat_long || '-'}
         </div>
         `;
     }
@@ -196,24 +196,29 @@ function card(event,mode){
 
     div.innerHTML = `
         <div class="row">
-            <div class="sig">${event.signature||'-'}</div>
-            <div class="lock ${cls(event.recursive_lock||0)}">
-                ${(event.recursive_lock||0).toFixed(1)}%
+            <div class="sig">${event.signature || '-'}</div>
+
+            <div class="lock ${cls(event.recursive_lock || 0)}">
+                ${(event.recursive_lock || 0).toFixed(1)}%
             </div>
         </div>
 
         <div class="small">
-            ${event.street_cross||'-'}
+            ${event.street_cross || '-'}
         </div>
 
         <div class="small">
-            ${event.course||'Static'}
+            ${event.course || 'Static'}
             |
-            ${event.regime||'-'}
+            ${event.regime || '-'}
         </div>
 
         <div class="small">
-            ${event.acquisition_utc||'-'}
+            Obs ${event.observation_count || 0}
+        </div>
+
+        <div class="small">
+            ${event.acquisition_utc || '-'}
         </div>
 
         ${extra}
@@ -222,22 +227,72 @@ function card(event,mode){
     return div;
 }
 
+function deriveMetrics(events){
+
+    const total = events.length;
+
+    const verified = events.filter(
+        e => e.verification_state?.official_confirmation
+    ).length;
+
+    const expired = events.filter(
+        e => e.operational_state === 'EXPIRED'
+    ).length;
+
+    const hitRate = total > 0
+        ? ((verified / total) * 100).toFixed(1) + '%'
+        : '0%';
+
+    const leadValues = events
+        .map(e => e.verification_state?.lead_time_seconds)
+        .filter(v => typeof v === 'number');
+
+    let avgLead = '--';
+
+    if(leadValues.length){
+
+        const avg =
+            leadValues.reduce((a,b)=>a+b,0) /
+            leadValues.length;
+
+        avgLead =
+            Math.round(avg / 60) + 'm';
+    }
+
+    return {
+        total,
+        verified,
+        expired,
+        hitRate,
+        avgLead
+    };
+}
+
 async function init(){
 
-    const latest = await load('./data/latest.json');
-    const ledger = await load('./reports/seam_operational_metrics.json');
+    const latest =
+        await load('./data/latest.json');
+
+    const events =
+        latest.active_events || [];
+
+    const metrics =
+        deriveMetrics(events);
 
     document.getElementById('m_total').textContent =
-        ledger.total_predictions || 0;
+        metrics.total;
 
     document.getElementById('m_verified').textContent =
-        ledger.verified_predictions || 0;
+        metrics.verified;
 
     document.getElementById('m_expired').textContent =
-        ledger.expired_predictions || 0;
+        metrics.expired;
+
+    document.getElementById('m_hit').textContent =
+        metrics.hitRate;
 
     document.getElementById('m_lead').textContent =
-        ledger.average_lead_minutes || '0';
+        metrics.avgLead;
 
     const follow=document.getElementById('follow');
     const target=document.getElementById('target');
@@ -247,7 +302,7 @@ async function init(){
     target.innerHTML='';
     full.innerHTML='';
 
-    for(const event of latest.active_events || []){
+    for(const event of events){
 
         const lock = event.recursive_lock || 0;
 
