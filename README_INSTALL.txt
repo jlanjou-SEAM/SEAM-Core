@@ -1,23 +1,39 @@
-SEAM Live UI Refresh v1.2
+SEAM Clean Runtime Rebuild v1.4
 
-Files:
-- index.html
-- ledger.html
+Purpose
+-------
+Fix filename mismatches and standardize the retrieval-to-deployment runtime.
+This is a real rebuild, not wrapper aliases.
 
-Updates:
-- 10 second auto refresh on both pages
-- visible countdown timer
-- human-readable UTC timestamps on STATUS cards
-- ISO/UTC precision retained on LOG page
-- manifold velocity field display if present
-- observation/source/detector line support
-- FULL DATA RECORDING remains at top
-- LOG / STATUS buttons preserved
+Canonical runtime files
+-----------------------
+continuum_dual_acquisition_runtime.py
+seam_retention_manager.py
+seam_unified_recursive_field_builder.py
+seam_operational_synthesis.py
+index.html
+ledger.html
+SEAM_Run_Update.bat
+.gitignore
 
-Install:
-Replace index.html and ledger.html.
+Runtime order
+-------------
+1. python continuum_dual_acquisition_runtime.py
+2. python seam_retention_manager.py
+3. python seam_unified_recursive_field_builder.py
+4. python seam_operational_synthesis.py
+5. git add -A
+6. git commit -m "SEAM operational runtime update"
+7. git push origin main
 
-Publish:
-git add -A
-git commit -m "Update SEAM UI refresh and lifecycle display"
-git push origin main
+Install
+-------
+1. Extract all files into C:\CleanRoom
+2. Run optional cleanup:
+   powershell -ExecutionPolicy Bypass -File CLEANUP_DEPRECATED_FILES.ps1
+3. Run:
+   SEAM_Run_Update.bat
+
+Notes
+-----
+The GitHub repository currently contains older names such as continuum_retention_manager.py and older patch files. This package standardizes the local runtime around the script names used in the operational batch.

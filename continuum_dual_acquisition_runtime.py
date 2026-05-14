@@ -53,7 +53,7 @@ SOURCE_HEALTH = STATE_DIR / "source_health.json"
 
 CONNECT_TIMEOUT_SECONDS = 2
 MAX_WORKERS = 16
-MAX_BYTES = 50_000_000
+MAX_BYTES = 5_000_000
 
 USER_AGENT = "SEAM-CleanRoom-Epistemic-Acquisition/2.3"
 

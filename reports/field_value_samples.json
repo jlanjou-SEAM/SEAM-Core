@@ -1,0 +1,102 @@
+{
+  "manifold_lock": {
+    "present_count": 0,
+    "unique_values": 0,
+    "sample_values": []
+  },
+  "manifold_lock_percentage": {
+    "present_count": 0,
+    "unique_values": 0,
+    "sample_values": []
+  },
+  "lock_percentage": {
+    "present_count": 0,
+    "unique_values": 0,
+    "sample_values": []
+  },
+  "seam_phi": {
+    "present_count": 0,
+    "unique_values": 0,
+    "sample_values": []
+  },
+  "forecast_confidence": {
+    "present_count": 5035,
+    "unique_values": 23,
+    "sample_values": [
+      0.999,
+      0.999,
+      0.999,
+      0.999,
+      0.999,
+      0.999,
+      0.999,
+      0.999,
+      0.999,
+      0.999
+    ]
+  },
+  "lock_state": {
+    "present_count": 5035,
+    "unique_values": 4,
+    "sample_values": [
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK",
+      "HARD LOCK"
+    ]
+  },
+  "verification_state": {
+    "present_count": 5035,
+    "unique_values": 2,
+    "sample_values": [
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED",
+      "CONFIRMED"
+    ]
+  },
+  "source_count": {
+    "present_count": 5035,
+    "unique_values": 387,
+    "sample_values": [
+      254,
+      242,
+      240,
+      230,
+      1149,
+      1105,
+      226,
+      226,
+      224,
+      54
+    ]
+  },
+  "observation_count": {
+    "present_count": 5035,
+    "unique_values": 412,
+    "sample_values": [
+      255,
+      243,
+      241,
+      231,
+      1151,
+      1107,
+      227,
+      227,
+      225,
+      55
+    ]
+  }
+}
