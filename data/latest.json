@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-15T12:56:14.413798+00:00",
+  "generated_utc": "2026-05-15T12:57:28.351701+00:00",
   "event_count": 2,
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -16,7 +16,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-15T12:55:43.664874+00:00",
+      "last_observation_utc": "2026-05-15T12:56:57.259277+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -44,16 +44,16 @@
         "street_cross": "7 km NW of The Geysers, CA",
         "display_follow": "Texas / New Mexico Region",
         "display_target": "The Geysers, CA, United States",
-        "display_lock": "The Geysers, CA | 35.6201, -97.6004",
-        "lat_long": "35.6201, -97.6004",
+        "display_lock": "The Geysers, CA | 35.6201, -97.6002",
+        "lat_long": "35.6201, -97.6002",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "7 km NW of The Geysers, CA",
       "display_location": "The Geysers, CA, United States",
       "latitude": 35.6201,
-      "longitude": -97.6004,
-      "lat_long": "35.6201, -97.6004",
+      "longitude": -97.6002,
+      "lat_long": "35.6201, -97.6002",
       "course": "SW drift",
       "spatial_region": "Texas / New Mexico Region",
       "observation_count": 599,
@@ -77,7 +77,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59718497,
+        "active_duration_seconds": 59718571,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -365,7 +365,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T16:55:43.664874+00:00",
+        "estimated_decay_utc": "2026-05-15T16:56:57.259277+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -380,7 +380,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-15T12:55:43.498826+00:00",
+      "last_observation_utc": "2026-05-15T12:56:57.086487+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -439,7 +439,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163131666,
+        "active_duration_seconds": 163131739,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -517,7 +517,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T16:55:43.498826+00:00",
+        "estimated_decay_utc": "2026-05-15T16:56:57.086487+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
