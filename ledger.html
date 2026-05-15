@@ -7,28 +7,32 @@
 <title>SEAM Operational Ledger</title>
 
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 
 <style>
+
 body{
-    background:#0b0f14;
-    color:#d7e0ea;
-    font-family:Arial,Helvetica,sans-serif;
     margin:0;
     padding:20px;
+    background:#0b0f14;
+    color:#dce6f2;
+    font-family:Arial,Helvetica,sans-serif;
 }
+
 .row{
-    border-bottom:1px solid #2a3642;
-    padding:10px 0;
+    border-bottom:1px solid #243140;
+    padding:12px 0;
 }
+
 .small{
     color:#8ea1b5;
     font-size:13px;
 }
+
 a{
     color:#7dc4ff;
+    text-decoration:none;
 }
+
 </style>
 </head>
 <body>
@@ -37,7 +41,7 @@ a{
 
 <a href="index.html">STATUS</a>
 
-<div id="ledger" style="margin-top:20px;">
+<div id="ledger" style="margin-top:24px;">
 Loading ledger...
 </div>
 
@@ -78,6 +82,8 @@ async function loadSEAMLedger(){
 
                     <div>
                         ${event.recursive_lock || 0}%
+                        ${event.lock_direction || "→"}
+                        ${event.lock_velocity_per_minute ?? "--"}/min
                     </div>
 
                     <div>
@@ -98,7 +104,7 @@ async function loadSEAMLedger(){
     }catch(err){
 
         document.getElementById("ledger").innerHTML =
-            "Ledger load failed";
+            "Ledger load failed.";
     }
 }
 
