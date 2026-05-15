@@ -1,240 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SEAM Status</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SEAM Operational Status</title>
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 
 <style>
-body{margin:0;background:#05070b;color:#dce7f7;font-family:Arial,Helvetica,sans-serif;}
-header{padding:10px 16px;background:#0b1017;border-bottom:1px solid #1f2937;}
-.top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
-h1{margin:0;font-size:18px;}
-.metrics{margin-top:6px;display:flex;flex-wrap:wrap;gap:14px;font-size:11px;color:#9fb0c9;}
-.navbtn{background:#122033;border:1px solid #23364f;color:#dce7f7;padding:6px 12px;border-radius:6px;text-decoration:none;font-size:12px;}
-.section-title{padding:8px 14px;font-size:11px;color:#7d8ca3;text-transform:uppercase;}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;padding:0 10px 12px 10px;}
-.card{background:#0c1118;border:1px solid #1f2937;border-radius:8px;padding:10px;}
-.row{display:flex;justify-content:space-between;align-items:center;gap:8px;}
-.sig{color:#57a8ff;font-weight:bold;font-size:14px;}
-.lock{font-size:18px;font-weight:bold;white-space:nowrap;}
-.high{color:#ff6161;}.mid{color:#ffb84d;}.low{color:#00d084;}
-.small{margin-top:4px;font-size:11px;color:#9fb0c9;}
-.phase{margin-top:6px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;font-size:10px;}
-.phase div{border:1px solid #1f2937;padding:4px;border-radius:4px;}
-.full{border-color:#ff6161;}
-.empty{padding:8px 14px;color:#5f6f85;font-size:12px;}
+body{
+    background:#0b0f14;
+    color:#d7e0ea;
+    font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:20px;
+}
+.header{
+    margin-bottom:20px;
+}
+.card{
+    background:#141b22;
+    border:1px solid #2a3642;
+    border-radius:10px;
+    padding:12px;
+    margin-bottom:12px;
+}
+.lock{
+    font-size:28px;
+    font-weight:bold;
+}
+.small{
+    color:#8ea1b5;
+    font-size:13px;
+}
+.section{
+    margin-top:24px;
+}
+a{
+    color:#7dc4ff;
+}
 </style>
 </head>
 <body>
 
-<header>
-<div class="top">
-<div>
-<h1>SEAM Operational Status</h1>
-<div class="metrics">
-<div>Total Predictions: <span id="m_total">--</span></div>
-<div>Verified: <span id="m_verified">--</span></div>
-<div>Expired: <span id="m_expired">--</span></div>
-<div>Hit Rate: <span id="m_hit">--</span></div>
-<div>Avg Lead: <span id="m_lead">--</span></div>
-<div>Field Generated: <span id="m_generated">--</span></div>
-<div>Refresh In: <span id="m_countdown">10s</span></div>
-</div>
-</div>
-<a class="navbtn" href="./ledger.html">LOG</a>
-</div>
-</header>
+<div class="header">
+    <h1>SEAM Operational Status</h1>
 
-<div class="section-title">FULL DATA RECORDING</div>
-<div id="full" class="grid"></div>
+    <div id="generated">Loading telemetry...</div>
+    <div id="countdown">Refresh In: 10s</div>
 
-<div class="section-title">TARGET ACQUISITION</div>
-<div id="target" class="grid"></div>
+    <br>
 
-<div class="section-title">FOLLOW PROTOCOL</div>
-<div id="follow" class="grid"></div>
+    <a href="ledger.html">LOG</a>
+</div>
+
+<div class="section">
+    <h2>FULL DATA RECORDING</h2>
+    <div id="full"></div>
+</div>
+
+<div class="section">
+    <h2>TARGET ACQUISITION</h2>
+    <div id="target"></div>
+</div>
+
+<div class="section">
+    <h2>FOLLOW PROTOCOL</h2>
+    <div id="follow"></div>
+</div>
 
 <script>
-const REFRESH_SECONDS = 10;
-let countdown = REFRESH_SECONDS;
 
-async function load(url){
-    const r = await fetch(url + '?ts=' + Date.now());
-    if(!r.ok) throw new Error(url);
-    return await r.json();
-}
+const TELEMETRY_URL =
+"https://raw.githubusercontent.com/jlanjou-SEAM/SEAM-Core/telemetry/data/latest.json";
 
-function cls(v){
-    if(v>=95)return'high';
-    if(v>=75)return'mid';
-    return'low';
-}
+function renderEvent(event){
 
-function humanTime(v){
-    if(!v)return'-';
-    try{
-        const d = new Date(v);
-        const day = String(d.getUTCDate()).padStart(2,'0');
-        const mon = d.toLocaleString('en-US',{month:'short',timeZone:'UTC'});
-        const hh = String(d.getUTCHours()).padStart(2,'0');
-        const mm = String(d.getUTCMinutes()).padStart(2,'0');
-        return `${day} ${mon} ${hh}:${mm} UTC`;
-    }catch{
-        return '-';
-    }
-}
+    return `
+    <div class="card">
+        <div class="lock">${event.signature || "Unknown"}</div>
 
-function shortTime(v){
-    if(!v)return'-';
-    try{
-        const d = new Date(v);
-        const hh = String(d.getUTCHours()).padStart(2,'0');
-        const mm = String(d.getUTCMinutes()).padStart(2,'0');
-        return `${hh}:${mm} UTC`;
-    }catch{
-        return '-';
-    }
-}
-
-function ageText(v){
-    if(!v)return'';
-    try{
-        const delta = Math.max(0, Date.now() - new Date(v).getTime());
-        const mins = Math.floor(delta / 60000);
-        if(mins < 1)return'updated <1m ago';
-        if(mins < 60)return`updated ${mins}m ago`;
-        const hrs = Math.floor(mins/60);
-        return`updated ${hrs}h ${mins%60}m ago`;
-    }catch{
-        return'';
-    }
-}
-
-function locFor(event, mode){
-    const l = event.location || {};
-    if(mode==='follow') return l.display_follow || event.display_location || event.spatial_region || event.lat_long || '-';
-    if(mode==='full') return l.display_lock || event.display_location || event.street_cross || event.lat_long || '-';
-    return l.display_target || event.display_location || event.street_cross || event.lat_long || '-';
-}
-
-function velocity(event){
-    const rate = event.lock_velocity_per_minute;
-    const direction = event.lock_direction;
-    if(typeof rate === 'number'){
-        const arrow = direction || (rate>0?'↑':rate<0?'↓':'→');
-        const sign = rate>0?'+':'';
-        return `${arrow} ${sign}${rate.toFixed(2)}/min`;
-    }
-    return '→ --/min';
-}
-
-function obsLine(event){
-    const obs = event.observation_count || 0;
-    const src = event.source_count || 0;
-    const det = event.detector_count || event.unique_detector_count || '-';
-    return `Obs ${obs} | Src ${src} | Det ${det}`;
-}
-
-function card(event,mode){
-    const div=document.createElement('div');
-    div.className='card';
-
-    let extra='';
-
-    if(mode!=='follow'){
-        extra += `
-        <div class="phase">
-            <div>85%<br>${shortTime(event.lock_thresholds?.['85_percent_utc'])}</div>
-            <div>90%<br>${shortTime(event.lock_thresholds?.['90_percent_utc'])}</div>
-            <div class="${mode==='full'?'full':''}">95%<br>${shortTime(event.lock_thresholds?.['95_percent_utc'])}</div>
+        <div style="font-size:22px;margin-top:6px;">
+            ${event.recursive_lock || 0}%
+            ${event.lock_direction || "→"}
+            ${event.lock_velocity_per_minute ?? "--"}/min
         </div>
-        <div class="small">${event.lat_long || '-'}</div>`;
-    }
 
-    if(mode==='full'){
-        extra += `
-        <div class="small">Official: ${event.verification_state?.official_classification || 'Pending'}</div>
-        <div class="small">Lead: ${event.verification_state?.lead_time_seconds || '-'} sec</div>`;
-    }
-
-    div.innerHTML=`
-        <div class="row">
-            <div class="sig">${event.signature || '-'}</div>
-            <div class="lock ${cls(event.recursive_lock || 0)}">
-                ${(event.recursive_lock || 0).toFixed(1)}%
-            </div>
+        <div style="margin-top:10px;">
+            ${event.location_resolved || event.street_cross || event.lat_long || "Unknown"}
         </div>
-        <div class="small">${velocity(event)}</div>
-        <div class="small">${locFor(event,mode)}</div>
-        <div class="small">${event.course || 'Static'} | ${event.regime || '-'}</div>
-        <div class="small">${obsLine(event)}</div>
-        <div class="small">Observed: ${humanTime(event.acquisition_utc)}</div>
-        <div class="small">${ageText(event.last_observation_utc || event.acquisition_utc)}</div>
-        ${extra}`;
-    return div;
+
+        <div class="small" style="margin-top:8px;">
+            ${event.course || "Static"} |
+            ${event.regime || "unknown"}
+        </div>
+
+        <div class="small" style="margin-top:8px;">
+            Obs ${event.observation_count || 0}
+        </div>
+
+        <div class="small" style="margin-top:8px;">
+            ${event.acquisition_utc || ""}
+        </div>
+    </div>
+    `;
 }
 
-function deriveMetrics(events){
-    const total=events.length;
-    const verified=events.filter(e=>e.verification_state?.official_confirmation).length;
-    const expired=events.filter(e=>e.operational_state==='EXPIRED').length;
-    const hitRate=total>0?((verified/total)*100).toFixed(1)+'%':'0%';
-    const leads=events.map(e=>e.verification_state?.lead_time_seconds).filter(v=>typeof v==='number');
-    const avgLead=leads.length?Math.round((leads.reduce((a,b)=>a+b,0)/leads.length)/60)+'m':'--';
-    return{total,verified,expired,hitRate,avgLead};
-}
+async function loadSEAMTelemetry(){
 
-function emptyIfNeeded(el){
-    if(!el.children.length){
-        el.innerHTML = '<div class="empty">No active records in this phase.</div>';
+    try{
+
+        const response = await fetch(
+            TELEMETRY_URL + "?t=" + Date.now(),
+            {
+                cache:"no-store"
+            }
+        );
+
+        const data = await response.json();
+
+        document.getElementById("generated").innerText =
+            "Field Generated: " + (data.generated_utc || "Unknown");
+
+        const events = data.active_events || data.events || [];
+
+        const full = [];
+        const target = [];
+        const follow = [];
+
+        for(const event of events){
+
+            const lock = Number(event.recursive_lock || 0);
+
+            if(lock >= 95){
+                full.push(renderEvent(event));
+            }
+            else if(lock >= 75){
+                target.push(renderEvent(event));
+            }
+            else if(lock >= 50){
+                follow.push(renderEvent(event));
+            }
+        }
+
+        document.getElementById("full").innerHTML =
+            full.join("") || "<div class='small'>No active records in this phase.</div>";
+
+        document.getElementById("target").innerHTML =
+            target.join("") || "<div class='small'>No active records in this phase.</div>";
+
+        document.getElementById("follow").innerHTML =
+            follow.join("") || "<div class='small'>No active records in this phase.</div>";
+
+    }catch(err){
+
+        document.getElementById("generated").innerText =
+            "Telemetry load failed";
     }
 }
 
-async function init(){
-    const latest=await load('./data/latest.json');
-    const events=latest.active_events || [];
-    const metrics=deriveMetrics(events);
+let countdown = 10;
 
-    document.getElementById('m_total').textContent=metrics.total;
-    document.getElementById('m_verified').textContent=metrics.verified;
-    document.getElementById('m_expired').textContent=metrics.expired;
-    document.getElementById('m_hit').textContent=metrics.hitRate;
-    document.getElementById('m_lead').textContent=metrics.avgLead;
-    document.getElementById('m_generated').textContent=humanTime(latest.generated_utc);
+setInterval(() => {
 
-    const follow=document.getElementById('follow');
-    const target=document.getElementById('target');
-    const full=document.getElementById('full');
+    countdown--;
 
-    follow.innerHTML='';
-    target.innerHTML='';
-    full.innerHTML='';
-
-    for(const event of events){
-        const lock=event.recursive_lock || 0;
-        if(lock>=95) full.appendChild(card(event,'full'));
-        else if(lock>=75) target.appendChild(card(event,'target'));
-        else follow.appendChild(card(event,'follow'));
-    }
-
-    emptyIfNeeded(full);
-    emptyIfNeeded(target);
-    emptyIfNeeded(follow);
-    countdown = REFRESH_SECONDS;
-}
-
-function tick(){
-    countdown -= 1;
     if(countdown <= 0){
-        init().catch(console.error);
-        countdown = REFRESH_SECONDS;
+        countdown = 10;
+        loadSEAMTelemetry();
     }
-    document.getElementById('m_countdown').textContent = countdown + 's';
-}
 
-init().catch(console.error);
-setInterval(tick,1000);
+    document.getElementById("countdown").innerText =
+        "Refresh In: " + countdown + "s";
+
+},1000);
+
+loadSEAMTelemetry();
+
 </script>
+
 </body>
 </html>

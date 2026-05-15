@@ -1,159 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SEAM Log</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SEAM Operational Ledger</title>
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
 <style>
-body{margin:0;background:#05070b;color:#dce7f7;font-family:Arial,Helvetica,sans-serif;}
-header{padding:10px 16px;background:#0b1017;border-bottom:1px solid #1f2937;}
-.top{display:flex;justify-content:space-between;align-items:flex-start;}
-h1{margin:0;font-size:18px;}
-.metrics{margin-top:6px;display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:#9fb0c9;}
-.navbtn{background:#122033;border:1px solid #23364f;color:#dce7f7;padding:6px 12px;border-radius:6px;text-decoration:none;font-size:12px;}
-table{width:100%;border-collapse:collapse;font-size:11px;}
-thead{position:sticky;top:0;background:#0b1017;}
-th,td{border-bottom:1px solid #1f2937;padding:6px 8px;text-align:left;vertical-align:top;}
-tr:hover{background:#0f1722;}
-.good{color:#00d084;}.bad{color:#ff6161;}.pending{color:#ffb84d;}
+body{
+    background:#0b0f14;
+    color:#d7e0ea;
+    font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:20px;
+}
+.row{
+    border-bottom:1px solid #2a3642;
+    padding:10px 0;
+}
+.small{
+    color:#8ea1b5;
+    font-size:13px;
+}
+a{
+    color:#7dc4ff;
+}
 </style>
 </head>
 <body>
-<header>
-<div class="top">
-<div>
-<h1>SEAM Operational Ledger</h1>
-<div class="metrics">
-<div>Total: <span id="m_total">--</span></div>
-<div>Verified: <span id="m_verified">--</span></div>
-<div>Expired: <span id="m_expired">--</span></div>
-<div>Hit Rate: <span id="m_hit">--</span></div>
-<div>Refresh In: <span id="m_countdown">10s</span></div>
-</div>
-</div>
-<a class="navbtn" href="./index.html">STATUS</a>
-</div>
-</header>
 
-<table>
-<thead>
-<tr>
-<th>State</th>
-<th>Lock</th>
-<th>Δ/min</th>
-<th>Signature</th>
-<th>Location</th>
-<th>Lat/Long</th>
-<th>Observed UTC</th>
-<th>85%</th>
-<th>90%</th>
-<th>95%</th>
-<th>Obs</th>
-<th>Official</th>
-<th>Lead</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody id="rows"></tbody>
-</table>
+<h1>SEAM Operational Ledger</h1>
+
+<a href="index.html">STATUS</a>
+
+<div id="ledger" style="margin-top:20px;">
+Loading ledger...
+</div>
 
 <script>
-const REFRESH_SECONDS = 10;
-let countdown = REFRESH_SECONDS;
 
-async function load(url){
-    const r=await fetch(url+'?ts='+Date.now());
-    if(!r.ok)throw new Error(url);
-    return await r.json();
-}
+const LEDGER_URL =
+"https://raw.githubusercontent.com/jlanjou-SEAM/SEAM-Core/telemetry/reports/seam_recursive_operational_state.json";
 
-function t(v){
-    return v || '-';
-}
+async function loadSEAMLedger(){
 
-function statusClass(v){
-    if(v==='VERIFIED')return'good';
-    if(v==='EXPIRED')return'bad';
-    return'pending';
-}
+    try{
 
-function loc(event){
-    return event.location?.display_lock ||
-           event.location?.display_target ||
-           event.display_location ||
-           event.street_cross ||
-           event.lat_long ||
-           '-';
-}
+        const response = await fetch(
+            LEDGER_URL + "?t=" + Date.now(),
+            {
+                cache:"no-store"
+            }
+        );
 
-function velocity(event){
-    const rate = event.lock_velocity_per_minute;
-    const direction = event.lock_direction;
-    if(typeof rate === 'number'){
-        const arrow = direction || (rate>0?'↑':rate<0?'↓':'→');
-        const sign = rate>0?'+':'';
-        return `${arrow} ${sign}${rate.toFixed(2)}`;
+        const data = await response.json();
+
+        const events = data.events || [];
+
+        document.getElementById("ledger").innerHTML =
+            events.map(event => `
+                <div class="row">
+                    <div><strong>${event.event_id || "Unknown"}</strong></div>
+                    <div>${event.signature || "Unknown"}</div>
+                    <div>${event.recursive_lock || 0}%</div>
+                    <div>${event.location_resolved || event.street_cross || event.lat_long || "Unknown"}</div>
+                    <div class="small">${event.acquisition_utc || ""}</div>
+                </div>
+            `).join("");
+
+    }catch(err){
+
+        document.getElementById("ledger").innerHTML =
+            "Ledger load failed.";
     }
-    return '→ --';
 }
 
-function deriveMetrics(events){
- const total=events.length;
- const verified=events.filter(e=>e.verification_state?.official_confirmation).length;
- const expired=events.filter(e=>e.operational_state==='EXPIRED').length;
- const hitRate=total>0?((verified/total)*100).toFixed(1)+'%':'0%';
- return{total,verified,expired,hitRate};
-}
+setInterval(loadSEAMLedger,10000);
 
-async function init(){
- const state=await load('./reports/seam_recursive_operational_state.json');
- const events=state.events || [];
- const metrics=deriveMetrics(events);
+loadSEAMLedger();
 
- document.getElementById('m_total').textContent=metrics.total;
- document.getElementById('m_verified').textContent=metrics.verified;
- document.getElementById('m_expired').textContent=metrics.expired;
- document.getElementById('m_hit').textContent=metrics.hitRate;
-
- const rows=document.getElementById('rows');
- rows.innerHTML='';
-
- for(const event of events){
-  const verified=event.verification_state?.official_confirmation;
-  const status=verified?'VERIFIED':(event.recursive_lock>=95?'PENDING':(event.operational_state||'TRACKING'));
-  const tr=document.createElement('tr');
-  tr.innerHTML=`
-   <td>${event.lock_state || '-'}</td>
-   <td>${(event.recursive_lock || 0).toFixed(1)}%</td>
-   <td>${velocity(event)}</td>
-   <td>${event.signature || '-'}</td>
-   <td>${loc(event)}</td>
-   <td>${event.lat_long || '-'}</td>
-   <td>${t(event.acquisition_utc)}</td>
-   <td>${t(event.lock_thresholds?.['85_percent_utc'])}</td>
-   <td>${t(event.lock_thresholds?.['90_percent_utc'])}</td>
-   <td>${t(event.lock_thresholds?.['95_percent_utc'])}</td>
-   <td>${event.observation_count || 0}</td>
-   <td>${event.verification_state?.official_classification || '-'}</td>
-   <td>${event.verification_state?.lead_time_seconds || '-'}</td>
-   <td class="${statusClass(status)}">${status}</td>`;
-  rows.appendChild(tr);
- }
-
- countdown = REFRESH_SECONDS;
-}
-
-function tick(){
- countdown -= 1;
- if(countdown <= 0){
-   init().catch(console.error);
-   countdown = REFRESH_SECONDS;
- }
- document.getElementById('m_countdown').textContent = countdown + 's';
-}
-
-init().catch(console.error);
-setInterval(tick,1000);
 </script>
+
 </body>
 </html>
