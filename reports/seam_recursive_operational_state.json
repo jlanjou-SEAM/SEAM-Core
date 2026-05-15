@@ -1,7 +1,7 @@
 {
   "schema": "SEAM_RECURSIVE_OPERATIONAL_STATE",
   "version": "1.5",
-  "generated_utc": "2026-05-15T04:54:05.180846+00:00",
+  "generated_utc": "2026-05-15T04:55:22.399305+00:00",
   "source_field": "combined\\seam_unified_recursive_field_48h.json",
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -20,7 +20,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-15T04:53:33.806100+00:00",
+      "last_observation_utc": "2026-05-15T04:54:50.299195+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -48,16 +48,16 @@
         "street_cross": "78 km SE of King Salmon, Alaska",
         "display_follow": "Texas / New Mexico Region",
         "display_target": "King Salmon, Alaska, United States",
-        "display_lock": "King Salmon, Alaska | 36.2584, -97.6571",
-        "lat_long": "36.2584, -97.6571",
+        "display_lock": "King Salmon, Alaska | 36.2584, -97.6573",
+        "lat_long": "36.2584, -97.6573",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "78 km SE of King Salmon, Alaska",
       "display_location": "King Salmon, Alaska, United States",
       "latitude": 36.2584,
-      "longitude": -97.6571,
-      "lat_long": "36.2584, -97.6571",
+      "longitude": -97.6573,
+      "lat_long": "36.2584, -97.6573",
       "course": "SW drift",
       "spatial_region": "Texas / New Mexico Region",
       "observation_count": 606,
@@ -81,7 +81,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59689568,
+        "active_duration_seconds": 59689644,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -369,7 +369,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T08:53:33.806100+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:50.299195+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -384,7 +384,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-15T04:53:33.637333+00:00",
+      "last_observation_utc": "2026-05-15T04:54:50.131929+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -402,7 +402,7 @@
       "signature_family": "RADIOLOGICAL",
       "signature_subclass": "Recursive Coupled Perturbation",
       "regime": "radiological",
-      "magnitude": "36.0",
+      "magnitude": "46.0",
       "location": {
         "country": "Europe",
         "state_region": "Europe",
@@ -412,16 +412,16 @@
         "street_cross": "Europe",
         "display_follow": "Europe",
         "display_target": "Europe",
-        "display_lock": "Europe | 49.5000, 15.4772",
-        "lat_long": "49.5000, 15.4772",
+        "display_lock": "Europe | 49.1486, 15.6642",
+        "lat_long": "49.1486, 15.6642",
         "location_precision": "area",
         "location_source": "coordinate_region"
       },
       "street_cross": "Europe",
       "display_location": "Europe",
-      "latitude": 49.5,
-      "longitude": 15.4772,
-      "lat_long": "49.5000, 15.4772",
+      "latitude": 49.1486,
+      "longitude": 15.6642,
+      "lat_long": "49.1486, 15.6642",
       "course": "Static",
       "spatial_region": "Europe",
       "observation_count": 40,
@@ -443,7 +443,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163102736,
+        "active_duration_seconds": 163102813,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -521,7 +521,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T08:53:33.637333+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:50.131929+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
@@ -536,7 +536,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-15T04:53:34.666410+00:00",
+      "last_observation_utc": "2026-05-15T04:54:51.158372+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (44.5%)",
       "recursive_lock": 44.5,
@@ -576,7 +576,7 @@
       "lat_long": "0.0000, 0.0000",
       "course": "Static",
       "spatial_region": "Africa",
-      "observation_count": 3313,
+      "observation_count": 3314,
       "source_count": 7,
       "sources": [
         "GOES",
@@ -598,7 +598,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223254821,
+        "active_duration_seconds": 223254897,
         "persistence_score": 1.0,
         "trajectory_stability": 0.45,
         "field_viability": "TRANSIENT"
@@ -886,7 +886,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T08:53:34.666410+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:51.158372+00:00",
         "forecast_confidence": 0.45
       },
       "dashboard_priority": 44.5,
@@ -901,7 +901,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-15T04:53:33.614704+00:00",
+      "last_observation_utc": "2026-05-15T04:54:50.096992+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (43.8%)",
       "recursive_lock": 43.8,
@@ -941,7 +941,7 @@
       "lat_long": "0.0000, 0.0000",
       "course": "Static",
       "spatial_region": "Africa",
-      "observation_count": 4607,
+      "observation_count": 4606,
       "source_count": 10,
       "sources": [
         "BerkeleySETI",
@@ -966,7 +966,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223254820,
+        "active_duration_seconds": 223254896,
         "persistence_score": 1.0,
         "trajectory_stability": 0.44,
         "field_viability": "TRANSIENT"
@@ -1008,7 +1008,6 @@
         "OBS-00002937",
         "OBS-00002996",
         "OBS-00003023",
-        "OBS-00003025",
         "OBS-00003026",
         "OBS-00003027",
         "OBS-00003028",
@@ -1250,11 +1249,12 @@
         "OBS-00003974",
         "OBS-00003975",
         "OBS-00003976",
-        "OBS-00003983"
+        "OBS-00003983",
+        "OBS-00003984"
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T08:53:33.614704+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:50.096992+00:00",
         "forecast_confidence": 0.44
       },
       "dashboard_priority": 43.8,
@@ -1269,7 +1269,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-22T08:22:29.502698+00:00",
       "first_observation_utc": "2019-04-22T08:22:29.502698+00:00",
-      "last_observation_utc": "2026-05-15T04:53:33.290729+00:00",
+      "last_observation_utc": "2026-05-15T04:54:49.781715+00:00",
       "pred_time_utc": "2019-04-22T08:43:29.502698+00:00",
       "lock_state": "IDLE/MONITOR (42.7%)",
       "recursive_lock": 42.7,
@@ -1331,7 +1331,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 222899463,
+        "active_duration_seconds": 222899540,
         "persistence_score": 1.0,
         "trajectory_stability": 0.43,
         "field_viability": "TRANSIENT"
@@ -1451,7 +1451,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T08:53:33.290729+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:49.781715+00:00",
         "forecast_confidence": 0.43
       },
       "dashboard_priority": 42.7,
@@ -1466,7 +1466,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-15T04:53:33.625704+00:00",
+      "last_observation_utc": "2026-05-15T04:54:50.113357+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (33.8%)",
       "recursive_lock": 33.8,
@@ -1524,7 +1524,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223254820,
+        "active_duration_seconds": 223254896,
         "persistence_score": 1.0,
         "trajectory_stability": 0.34,
         "field_viability": "TRANSIENT"
@@ -1561,7 +1561,7 @@
       "linked_observations": [
         "OBS-00000001",
         "OBS-00002938",
-        "OBS-00003024",
+        "OBS-00003025",
         "OBS-00003299",
         "OBS-00003476",
         "OBS-00003736",
@@ -1577,7 +1577,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T08:53:33.625704+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:50.113357+00:00",
         "forecast_confidence": 0.34
       },
       "dashboard_priority": 33.8,
@@ -1592,7 +1592,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2023-08-15T15:34:33.179219+00:00",
       "first_observation_utc": "2023-08-15T15:34:33.179219+00:00",
-      "last_observation_utc": "2026-05-15T04:53:34.617171+00:00",
+      "last_observation_utc": "2026-05-15T04:54:51.111017+00:00",
       "pred_time_utc": "2023-08-15T15:55:33.179219+00:00",
       "lock_state": "IDLE/MONITOR (31.8%)",
       "recursive_lock": 31.8,
@@ -1654,7 +1654,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 86707141,
+        "active_duration_seconds": 86707217,
         "persistence_score": 1.0,
         "trajectory_stability": 0.32,
         "field_viability": "TRANSIENT"
@@ -1702,7 +1702,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T08:53:34.617171+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:51.111017+00:00",
         "forecast_confidence": 0.32
       },
       "dashboard_priority": 31.8,
@@ -1719,7 +1719,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-15T04:53:33.806100+00:00",
+      "last_observation_utc": "2026-05-15T04:54:50.299195+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -1747,16 +1747,16 @@
         "street_cross": "78 km SE of King Salmon, Alaska",
         "display_follow": "Texas / New Mexico Region",
         "display_target": "King Salmon, Alaska, United States",
-        "display_lock": "King Salmon, Alaska | 36.2584, -97.6571",
-        "lat_long": "36.2584, -97.6571",
+        "display_lock": "King Salmon, Alaska | 36.2584, -97.6573",
+        "lat_long": "36.2584, -97.6573",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "78 km SE of King Salmon, Alaska",
       "display_location": "King Salmon, Alaska, United States",
       "latitude": 36.2584,
-      "longitude": -97.6571,
-      "lat_long": "36.2584, -97.6571",
+      "longitude": -97.6573,
+      "lat_long": "36.2584, -97.6573",
       "course": "SW drift",
       "spatial_region": "Texas / New Mexico Region",
       "observation_count": 606,
@@ -1780,7 +1780,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59689568,
+        "active_duration_seconds": 59689644,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -2068,7 +2068,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T08:53:33.806100+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:50.299195+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -2083,7 +2083,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-15T04:53:33.637333+00:00",
+      "last_observation_utc": "2026-05-15T04:54:50.131929+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -2101,7 +2101,7 @@
       "signature_family": "RADIOLOGICAL",
       "signature_subclass": "Recursive Coupled Perturbation",
       "regime": "radiological",
-      "magnitude": "36.0",
+      "magnitude": "46.0",
       "location": {
         "country": "Europe",
         "state_region": "Europe",
@@ -2111,16 +2111,16 @@
         "street_cross": "Europe",
         "display_follow": "Europe",
         "display_target": "Europe",
-        "display_lock": "Europe | 49.5000, 15.4772",
-        "lat_long": "49.5000, 15.4772",
+        "display_lock": "Europe | 49.1486, 15.6642",
+        "lat_long": "49.1486, 15.6642",
         "location_precision": "area",
         "location_source": "coordinate_region"
       },
       "street_cross": "Europe",
       "display_location": "Europe",
-      "latitude": 49.5,
-      "longitude": 15.4772,
-      "lat_long": "49.5000, 15.4772",
+      "latitude": 49.1486,
+      "longitude": 15.6642,
+      "lat_long": "49.1486, 15.6642",
       "course": "Static",
       "spatial_region": "Europe",
       "observation_count": 40,
@@ -2142,7 +2142,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163102736,
+        "active_duration_seconds": 163102813,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -2220,7 +2220,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T08:53:33.637333+00:00",
+        "estimated_decay_utc": "2026-05-15T08:54:50.131929+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
