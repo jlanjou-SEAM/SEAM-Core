@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-15T01:20:47.125299+00:00",
+  "generated_utc": "2026-05-15T01:22:05.662109+00:00",
   "event_count": 2,
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -16,7 +16,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-15T01:20:13.927477+00:00",
+      "last_observation_utc": "2026-05-15T01:21:32.794895+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -77,7 +77,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59676768,
+        "active_duration_seconds": 59676847,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -365,7 +365,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T05:20:13.927477+00:00",
+        "estimated_decay_utc": "2026-05-15T05:21:32.794895+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -380,7 +380,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-15T01:20:13.758095+00:00",
+      "last_observation_utc": "2026-05-15T01:21:32.631188+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -439,7 +439,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163089936,
+        "active_duration_seconds": 163090015,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -497,12 +497,12 @@
         "OBS-00003011",
         "OBS-00003012",
         "OBS-00003013",
+        "OBS-00003016",
+        "OBS-00003018",
         "OBS-00003387",
         "OBS-00003402",
         "OBS-00003512",
         "OBS-00003527",
-        "OBS-00003016",
-        "OBS-00003018",
         "OBS-00003840",
         "OBS-00004094",
         "OBS-00004706",
@@ -517,7 +517,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T05:20:13.758095+00:00",
+        "estimated_decay_utc": "2026-05-15T05:21:32.631188+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
