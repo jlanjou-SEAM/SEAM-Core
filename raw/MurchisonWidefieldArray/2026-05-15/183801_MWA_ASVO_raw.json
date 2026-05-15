@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-05-15T18:38:01.286095+00:00",
+  "source": "MurchisonWidefieldArray",
+  "stream": "MWA_ASVO",
+  "url": "https://asvo.mwatelescope.org/",
+  "epistemic_layer": "raw",
+  "regime": "unknown",
+  "latency_class": "primary_raw",
+  "configured_route": "primary_raw",
+  "status": 200,
+  "content_type": "text/html",
+  "bytes": 1434,
+  "payload_text": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-- Basic -->\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n\n    <title>MWA ASVO</title>\n\n    <meta\n      name=\"keywords\"\n      content=\"MWA,ASVO,Data,Radio astronomy,IVOA,Murchison Widefield Array,Data portal,visibilities\"\n    />\n    <meta\n      name=\"description\"\n      content=\"The MWA ASVO is a web-based portal enabling researchers around the world access to visibility data from the Murchison Widefield Array.\"\n    />\n    <meta name=\"author\" content=\"MWA ASVO Team\" />\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n\n    <!-- Favicon -->\n    <link rel=\"icon\" href=\"/img/favicon.ico\" />\n    <link rel=\"apple-touch-icon\" href=\"/img/logo192.png\" />\n\n    <!-- Mobile Metas -->\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\n    <!-- Fonts -->\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Roboto&family=Open+Sans\"\n      rel=\"stylesheet\"\n      type=\"text/css\"\n    />\n\n    <script\n      src=\"https://kit.fontawesome.com/b919628f29.js\"\n      crossorigin=\"anonymous\"\n    ></script>\n    <script type=\"module\" crossorigin src=\"/assets/index-D8B0ISlm.js\"></script>\n    <link rel=\"stylesheet\" crossorigin href=\"/assets/index-B3WUDAuv.css\">\n  </head>\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n    <div id=\"modal\"></div>\n  </body>\n</html>\n"
+}

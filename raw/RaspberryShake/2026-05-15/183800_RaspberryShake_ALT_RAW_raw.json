@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-05-15T18:38:00.980252+00:00",
+  "source": "RaspberryShake",
+  "stream": "RaspberryShake_ALT_RAW",
+  "url": "https://data.raspberryshake.org",
+  "epistemic_layer": "raw",
+  "regime": "unknown",
+  "latency_class": "primary_raw",
+  "configured_route": "primary_raw",
+  "status": 200,
+  "content_type": "text/html",
+  "bytes": 1731,
+  "payload_text": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"author\" content=\"Raspberry Shake\">\n  <title>Raspberry Shake FDSN Web Service</title>\n</head>\n<body>\n  <p><a href=\"../\">Parent Directory</a></p>\n  <h1>Raspberry Shake FDSN Web Service</h1>\n  <p>Index of /fdsnws/</p>\n  <ul>\n<li><a href=\"dataselect/\">dataselect/</a></li>\n<li><a href=\"station/\">station/</a></li>\n\n  </ul>\n  <footer>\n     <div class=\"container\">\n      <br>By using this service, you automatically accept these license terms: <a href=\"https://shop.raspberryshake.org/license/\" target=\"_blank\">https://shop.raspberryshake.org/license/</a>.<br><br>\nAn excerpt: 'It is prohibited to redistribute RaspberryShake data obtained from  <a href=\"https://data.raspberryshake.org/fdsnws/\" target=\"_blank\">https://data.raspberryshake.org/fdsnws/</a> via your own FDSN Web Service, data center or server.'<br><br>\nFor publication purposes, please use <a href=\"http://www.fdsn.org/networks/detail/AM/\" target=\"_blank\">DOI:10.7914/SN/AM</a>.<br><br>\nFDSN is not a real-time streaming protocol. It will serve data T minus 30 minutes and older. For real-time streaming services, please contact <a href=\"mailto:sales@raspberryshake.org\">sales@rasperryshake.org</a>. For additional details, please consult our <a href=\"https://shop.raspberryshake.org/license/\" target=\"_blank\">license</a>.<br><br>\nTo ensure the best service performance and user experience, each request allows to download up to 24h of data. For multi-day requests, consider splitting them accordingly. For more information, visit our <a href=\"https://manual.raspberryshake.org/fdsn.html#fdsnws-traffic-optimization\" target=\"_blank\"> dedicated manual page</a>.\n     </div>\n  </footer>\n</body>"
+}
