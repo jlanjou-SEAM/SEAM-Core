@@ -44,7 +44,7 @@ Loading ledger...
 <script>
 
 const LEDGER_URL =
-"https://raw.githubusercontent.com/jlanjou-SEAM/SEAM-Core/telemetry/reports/seam_recursive_operational_state.json";
+"https://jlanjou-seam.github.io/SEAM-Core/reports/seam_recursive_operational_state.json";
 
 async function loadSEAMLedger(){
 
@@ -63,19 +63,42 @@ async function loadSEAMLedger(){
 
         document.getElementById("ledger").innerHTML =
             events.map(event => `
+
                 <div class="row">
-                    <div><strong>${event.event_id || "Unknown"}</strong></div>
-                    <div>${event.signature || "Unknown"}</div>
-                    <div>${event.recursive_lock || 0}%</div>
-                    <div>${event.location_resolved || event.street_cross || event.lat_long || "Unknown"}</div>
-                    <div class="small">${event.acquisition_utc || ""}</div>
+
+                    <div>
+                        <strong>
+                            ${event.event_id || "Unknown"}
+                        </strong>
+                    </div>
+
+                    <div>
+                        ${event.signature || "Unknown"}
+                    </div>
+
+                    <div>
+                        ${event.recursive_lock || 0}%
+                    </div>
+
+                    <div>
+                        ${event.location_resolved ||
+                          event.street_cross ||
+                          event.lat_long ||
+                          "Unknown"}
+                    </div>
+
+                    <div class="small">
+                        ${event.acquisition_utc || ""}
+                    </div>
+
                 </div>
+
             `).join("");
 
     }catch(err){
 
         document.getElementById("ledger").innerHTML =
-            "Ledger load failed.";
+            "Ledger load failed";
     }
 }
 

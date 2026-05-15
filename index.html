@@ -21,6 +21,9 @@ body{
 .header{
     margin-bottom:20px;
 }
+.section{
+    margin-top:24px;
+}
 .card{
     background:#141b22;
     border:1px solid #2a3642;
@@ -35,9 +38,6 @@ body{
 .small{
     color:#8ea1b5;
     font-size:13px;
-}
-.section{
-    margin-top:24px;
 }
 a{
     color:#7dc4ff;
@@ -75,13 +75,16 @@ a{
 <script>
 
 const TELEMETRY_URL =
-"https://raw.githubusercontent.com/jlanjou-SEAM/SEAM-Core/telemetry/data/latest.json";
+"https://jlanjou-seam.github.io/SEAM-Core/data/latest.json";
 
 function renderEvent(event){
 
     return `
     <div class="card">
-        <div class="lock">${event.signature || "Unknown"}</div>
+
+        <div class="lock">
+            ${event.signature || "Unknown"}
+        </div>
 
         <div style="font-size:22px;margin-top:6px;">
             ${event.recursive_lock || 0}%
@@ -90,7 +93,10 @@ function renderEvent(event){
         </div>
 
         <div style="margin-top:10px;">
-            ${event.location_resolved || event.street_cross || event.lat_long || "Unknown"}
+            ${event.location_resolved ||
+              event.street_cross ||
+              event.lat_long ||
+              "Unknown"}
         </div>
 
         <div class="small" style="margin-top:8px;">
@@ -105,6 +111,7 @@ function renderEvent(event){
         <div class="small" style="margin-top:8px;">
             ${event.acquisition_utc || ""}
         </div>
+
     </div>
     `;
 }
@@ -123,9 +130,13 @@ async function loadSEAMTelemetry(){
         const data = await response.json();
 
         document.getElementById("generated").innerText =
-            "Field Generated: " + (data.generated_utc || "Unknown");
+            "Field Generated: " +
+            (data.generated_utc || "Unknown");
 
-        const events = data.active_events || data.events || [];
+        const events =
+            data.active_events ||
+            data.events ||
+            [];
 
         const full = [];
         const target = [];
@@ -133,7 +144,8 @@ async function loadSEAMTelemetry(){
 
         for(const event of events){
 
-            const lock = Number(event.recursive_lock || 0);
+            const lock =
+                Number(event.recursive_lock || 0);
 
             if(lock >= 95){
                 full.push(renderEvent(event));
@@ -147,13 +159,16 @@ async function loadSEAMTelemetry(){
         }
 
         document.getElementById("full").innerHTML =
-            full.join("") || "<div class='small'>No active records in this phase.</div>";
+            full.join("") ||
+            "<div class='small'>No active records in this phase.</div>";
 
         document.getElementById("target").innerHTML =
-            target.join("") || "<div class='small'>No active records in this phase.</div>";
+            target.join("") ||
+            "<div class='small'>No active records in this phase.</div>";
 
         document.getElementById("follow").innerHTML =
-            follow.join("") || "<div class='small'>No active records in this phase.</div>";
+            follow.join("") ||
+            "<div class='small'>No active records in this phase.</div>";
 
     }catch(err){
 
@@ -169,7 +184,9 @@ setInterval(() => {
     countdown--;
 
     if(countdown <= 0){
+
         countdown = 10;
+
         loadSEAMTelemetry();
     }
 
