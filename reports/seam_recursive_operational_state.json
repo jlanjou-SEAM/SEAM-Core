@@ -1,7 +1,7 @@
 {
   "schema": "SEAM_RECURSIVE_OPERATIONAL_STATE",
   "version": "1.5",
-  "generated_utc": "2026-05-15T12:53:45.551972+00:00",
+  "generated_utc": "2026-05-15T12:55:00.461337+00:00",
   "source_field": "combined\\seam_unified_recursive_field_48h.json",
   "convergence": {
     "mode": "recursive_transitive_restored",
@@ -20,7 +20,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-15T12:53:14.483322+00:00",
+      "last_observation_utc": "2026-05-15T12:54:29.330629+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -48,19 +48,19 @@
         "street_cross": "7 km NW of The Geysers, CA",
         "display_follow": "Texas / New Mexico Region",
         "display_target": "The Geysers, CA, United States",
-        "display_lock": "The Geysers, CA | 35.5927, -97.6971",
-        "lat_long": "35.5927, -97.6971",
+        "display_lock": "The Geysers, CA | 35.6201, -97.6004",
+        "lat_long": "35.6201, -97.6004",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "7 km NW of The Geysers, CA",
       "display_location": "The Geysers, CA, United States",
-      "latitude": 35.5927,
-      "longitude": -97.6971,
-      "lat_long": "35.5927, -97.6971",
+      "latitude": 35.6201,
+      "longitude": -97.6004,
+      "lat_long": "35.6201, -97.6004",
       "course": "SW drift",
       "spatial_region": "Texas / New Mexico Region",
-      "observation_count": 600,
+      "observation_count": 599,
       "source_count": 6,
       "sources": [
         "EMSC",
@@ -81,7 +81,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59718348,
+        "active_duration_seconds": 59718423,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -266,7 +266,6 @@
         "OBS-00003453",
         "OBS-00008443",
         "OBS-00003061",
-        "OBS-00003287",
         "OBS-00003455",
         "OBS-00008445",
         "OBS-00003062",
@@ -279,7 +278,7 @@
         "OBS-00003458",
         "OBS-00008448",
         "OBS-00003065",
-        "OBS-00003288",
+        "OBS-00003287",
         "OBS-00003459",
         "OBS-00008449",
         "OBS-00008664",
@@ -365,11 +364,12 @@
         "OBS-00008493",
         "OBS-00003110",
         "OBS-00008494",
-        "OBS-00003111"
+        "OBS-00003111",
+        "OBS-00008495"
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T16:53:14.483322+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:29.330629+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -384,7 +384,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-15T12:53:14.308938+00:00",
+      "last_observation_utc": "2026-05-15T12:54:29.164698+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -402,7 +402,7 @@
       "signature_family": "RADIOLOGICAL",
       "signature_subclass": "Recursive Coupled Perturbation",
       "regime": "radiological",
-      "magnitude": "336.0",
+      "magnitude": "650.0",
       "location": {
         "country": "Asia",
         "state_region": "Asia",
@@ -412,16 +412,16 @@
         "street_cross": "Asia",
         "display_follow": "Asia",
         "display_target": "Asia",
-        "display_lock": "Asia | 37.3949, 141.0073",
-        "lat_long": "37.3949, 141.0073",
+        "display_lock": "Asia | 37.3989, 141.0292",
+        "lat_long": "37.3989, 141.0292",
         "location_precision": "area",
         "location_source": "coordinate_region"
       },
       "street_cross": "Asia",
       "display_location": "Asia",
-      "latitude": 37.3949,
-      "longitude": 141.0073,
-      "lat_long": "37.3949, 141.0073",
+      "latitude": 37.3989,
+      "longitude": 141.0292,
+      "lat_long": "37.3989, 141.0292",
       "course": "Static",
       "spatial_region": "Asia",
       "observation_count": 40,
@@ -443,7 +443,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163131517,
+        "active_duration_seconds": 163131592,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -521,7 +521,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T16:53:14.308938+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:29.164698+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
@@ -536,7 +536,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-15T12:53:15.362957+00:00",
+      "last_observation_utc": "2026-05-15T12:54:30.209966+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (44.5%)",
       "recursive_lock": 44.5,
@@ -598,7 +598,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223283602,
+        "active_duration_seconds": 223283676,
         "persistence_score": 1.0,
         "trajectory_stability": 0.45,
         "field_viability": "TRANSIENT"
@@ -886,7 +886,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T16:53:15.362957+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:30.209966+00:00",
         "forecast_confidence": 0.45
       },
       "dashboard_priority": 44.5,
@@ -901,7 +901,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-15T12:53:14.280765+00:00",
+      "last_observation_utc": "2026-05-15T12:54:29.132964+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (43.8%)",
       "recursive_lock": 43.8,
@@ -966,7 +966,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223283600,
+        "active_duration_seconds": 223283675,
         "persistence_score": 1.0,
         "trajectory_stability": 0.44,
         "field_viability": "TRANSIENT"
@@ -1030,7 +1030,7 @@
         "OBS-00003049",
         "OBS-00003050",
         "OBS-00003053",
-        "OBS-00003295",
+        "OBS-00003294",
         "OBS-00003473",
         "OBS-00003578",
         "OBS-00003596",
@@ -1254,7 +1254,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T16:53:14.280765+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:29.132964+00:00",
         "forecast_confidence": 0.44
       },
       "dashboard_priority": 43.8,
@@ -1269,7 +1269,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-22T08:22:29.502698+00:00",
       "first_observation_utc": "2019-04-22T08:22:29.502698+00:00",
-      "last_observation_utc": "2026-05-15T12:53:14.029526+00:00",
+      "last_observation_utc": "2026-05-15T12:54:28.789359+00:00",
       "pred_time_utc": "2019-04-22T08:43:29.502698+00:00",
       "lock_state": "IDLE/MONITOR (42.7%)",
       "recursive_lock": 42.7,
@@ -1331,7 +1331,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 222928244,
+        "active_duration_seconds": 222928319,
         "persistence_score": 1.0,
         "trajectory_stability": 0.43,
         "field_viability": "TRANSIENT"
@@ -1370,8 +1370,8 @@
         "OBS-00002928",
         "OBS-00002934",
         "OBS-00002935",
-        "OBS-00003294",
-        "OBS-00003296",
+        "OBS-00003293",
+        "OBS-00003295",
         "OBS-00003579",
         "OBS-00003581",
         "OBS-00003582",
@@ -1451,7 +1451,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T16:53:14.029526+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:28.789359+00:00",
         "forecast_confidence": 0.43
       },
       "dashboard_priority": 42.7,
@@ -1466,7 +1466,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2019-04-18T05:39:53.343316+00:00",
       "first_observation_utc": "2019-04-18T05:39:53.343316+00:00",
-      "last_observation_utc": "2026-05-15T12:53:14.290346+00:00",
+      "last_observation_utc": "2026-05-15T12:54:29.145546+00:00",
       "pred_time_utc": "2019-04-18T06:00:53.343316+00:00",
       "lock_state": "IDLE/MONITOR (33.5%)",
       "recursive_lock": 33.5,
@@ -1524,7 +1524,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 223283600,
+        "active_duration_seconds": 223283675,
         "persistence_score": 1.0,
         "trajectory_stability": 0.34,
         "field_viability": "TRANSIENT"
@@ -1561,7 +1561,7 @@
       "linked_observations": [
         "OBS-00000001",
         "OBS-00002937",
-        "OBS-00003297",
+        "OBS-00003296",
         "OBS-00003474",
         "OBS-00003735",
         "OBS-00003838",
@@ -1576,7 +1576,7 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T16:53:14.290346+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:29.145546+00:00",
         "forecast_confidence": 0.34
       },
       "dashboard_priority": 33.5,
@@ -1591,10 +1591,10 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2023-08-15T15:34:33.179219+00:00",
       "first_observation_utc": "2023-08-15T15:34:33.179219+00:00",
-      "last_observation_utc": "2026-05-15T12:53:15.316509+00:00",
+      "last_observation_utc": "2026-05-15T12:54:30.149000+00:00",
       "pred_time_utc": "2023-08-15T15:55:33.179219+00:00",
-      "lock_state": "IDLE/MONITOR (32.7%)",
-      "recursive_lock": 32.7,
+      "lock_state": "IDLE/MONITOR (33.1%)",
+      "recursive_lock": 33.1,
       "lock_thresholds": {
         "85_percent_utc": null,
         "90_percent_utc": null,
@@ -1631,9 +1631,10 @@
       "lat_long": "0.0000, 0.0000",
       "course": "Static",
       "spatial_region": "Africa",
-      "observation_count": 12,
-      "source_count": 6,
+      "observation_count": 13,
+      "source_count": 7,
       "sources": [
+        "Blitzortung",
         "CWOP",
         "KiwiSDR",
         "LightningMaps",
@@ -1652,7 +1653,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 86735922,
+        "active_duration_seconds": 86735996,
         "persistence_score": 1.0,
         "trajectory_stability": 0.33,
         "field_viability": "TRANSIENT"
@@ -1673,7 +1674,7 @@
         "topology_class": "Localized Recursive Compression",
         "field_density": 0.33,
         "cross_regime_density": 0.25,
-        "recursive_complexity": 0.0
+        "recursive_complexity": 0.01
       },
       "estimated_energy": {
         "value": null,
@@ -1695,6 +1696,7 @@
         "OBS-00003031",
         "OBS-00003035",
         "OBS-00003041",
+        "OBS-00003297",
         "OBS-00003575",
         "OBS-00008436",
         "OBS-00005815",
@@ -1702,10 +1704,10 @@
       ],
       "forecast_state": {
         "projection_state": "MONITOR",
-        "estimated_decay_utc": "2026-05-15T16:53:15.316509+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:30.149000+00:00",
         "forecast_confidence": 0.33
       },
-      "dashboard_priority": 32.7,
+      "dashboard_priority": 33.1,
       "operational_priority": "LOW",
       "operational_notes": [
         "Monitor recursive stabilization",
@@ -1719,7 +1721,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2024-06-23T08:27:25.722409+00:00",
       "first_observation_utc": "2024-06-23T08:27:25.722409+00:00",
-      "last_observation_utc": "2026-05-15T12:53:14.483322+00:00",
+      "last_observation_utc": "2026-05-15T12:54:29.330629+00:00",
       "pred_time_utc": "2024-06-23T08:48:25.722409+00:00",
       "lock_state": "FOLLOW PROTOCOL (68.8%)",
       "recursive_lock": 68.8,
@@ -1747,19 +1749,19 @@
         "street_cross": "7 km NW of The Geysers, CA",
         "display_follow": "Texas / New Mexico Region",
         "display_target": "The Geysers, CA, United States",
-        "display_lock": "The Geysers, CA | 35.5927, -97.6971",
-        "lat_long": "35.5927, -97.6971",
+        "display_lock": "The Geysers, CA | 35.6201, -97.6004",
+        "lat_long": "35.6201, -97.6004",
         "location_precision": "area",
         "location_source": "payload"
       },
       "street_cross": "7 km NW of The Geysers, CA",
       "display_location": "The Geysers, CA, United States",
-      "latitude": 35.5927,
-      "longitude": -97.6971,
-      "lat_long": "35.5927, -97.6971",
+      "latitude": 35.6201,
+      "longitude": -97.6004,
+      "lat_long": "35.6201, -97.6004",
       "course": "SW drift",
       "spatial_region": "Texas / New Mexico Region",
-      "observation_count": 600,
+      "observation_count": 599,
       "source_count": 6,
       "sources": [
         "EMSC",
@@ -1780,7 +1782,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 59718348,
+        "active_duration_seconds": 59718423,
         "persistence_score": 1.0,
         "trajectory_stability": 0.69,
         "field_viability": "TRANSIENT"
@@ -1965,7 +1967,6 @@
         "OBS-00003453",
         "OBS-00008443",
         "OBS-00003061",
-        "OBS-00003287",
         "OBS-00003455",
         "OBS-00008445",
         "OBS-00003062",
@@ -1978,7 +1979,7 @@
         "OBS-00003458",
         "OBS-00008448",
         "OBS-00003065",
-        "OBS-00003288",
+        "OBS-00003287",
         "OBS-00003459",
         "OBS-00008449",
         "OBS-00008664",
@@ -2064,11 +2065,12 @@
         "OBS-00008493",
         "OBS-00003110",
         "OBS-00008494",
-        "OBS-00003111"
+        "OBS-00003111",
+        "OBS-00008495"
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T16:53:14.483322+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:29.330629+00:00",
         "forecast_confidence": 0.69
       },
       "dashboard_priority": 68.8,
@@ -2083,7 +2085,7 @@
       "event_family": "SEAM_RECURSIVE_MANIFOLD",
       "acquisition_utc": "2021-03-14T10:34:37.119920+00:00",
       "first_observation_utc": "2021-03-14T10:34:37.119920+00:00",
-      "last_observation_utc": "2026-05-15T12:53:14.308938+00:00",
+      "last_observation_utc": "2026-05-15T12:54:29.164698+00:00",
       "pred_time_utc": "2021-03-14T10:55:37.119920+00:00",
       "lock_state": "FOLLOW PROTOCOL (51.4%)",
       "recursive_lock": 51.4,
@@ -2101,7 +2103,7 @@
       "signature_family": "RADIOLOGICAL",
       "signature_subclass": "Recursive Coupled Perturbation",
       "regime": "radiological",
-      "magnitude": "336.0",
+      "magnitude": "650.0",
       "location": {
         "country": "Asia",
         "state_region": "Asia",
@@ -2111,16 +2113,16 @@
         "street_cross": "Asia",
         "display_follow": "Asia",
         "display_target": "Asia",
-        "display_lock": "Asia | 37.3949, 141.0073",
-        "lat_long": "37.3949, 141.0073",
+        "display_lock": "Asia | 37.3989, 141.0292",
+        "lat_long": "37.3989, 141.0292",
         "location_precision": "area",
         "location_source": "coordinate_region"
       },
       "street_cross": "Asia",
       "display_location": "Asia",
-      "latitude": 37.3949,
-      "longitude": 141.0073,
-      "lat_long": "37.3949, 141.0073",
+      "latitude": 37.3989,
+      "longitude": 141.0292,
+      "lat_long": "37.3989, 141.0292",
       "course": "Static",
       "spatial_region": "Asia",
       "observation_count": 40,
@@ -2142,7 +2144,7 @@
       "lock_velocity_per_minute": null,
       "detector_count": null,
       "persistence_state": {
-        "active_duration_seconds": 163131517,
+        "active_duration_seconds": 163131592,
         "persistence_score": 1.0,
         "trajectory_stability": 0.51,
         "field_viability": "TRANSIENT"
@@ -2220,7 +2222,7 @@
       ],
       "forecast_state": {
         "projection_state": "ACTIVE",
-        "estimated_decay_utc": "2026-05-15T16:53:14.308938+00:00",
+        "estimated_decay_utc": "2026-05-15T16:54:29.164698+00:00",
         "forecast_confidence": 0.51
       },
       "dashboard_priority": 51.4,
