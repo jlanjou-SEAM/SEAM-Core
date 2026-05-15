@@ -1,393 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SEAM Operational Status</title>
-
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
+<title>SEAM Semantic Dashboard</title>
 
 <style>
-
 body{
-    margin:0;
-    padding:20px;
     background:#0b0f14;
     color:#dce6f2;
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Arial;
+    padding:20px;
 }
-
-h1,h2{
-    margin:0 0 12px 0;
-}
-
-.header{
-    margin-bottom:24px;
-}
-
-.hero-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:12px;
-    margin-bottom:24px;
-}
-
-.hero{
-    background:#141b22;
-    border:1px solid #243140;
-    border-radius:12px;
-    padding:14px;
-}
-
-.hero-title{
-    color:#8ea1b5;
-    font-size:13px;
-}
-
-.hero-value{
-    margin-top:6px;
-    font-size:28px;
-    font-weight:bold;
-}
-
-.section{
-    margin-top:28px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:14px;
-}
-
-@media(max-width:1100px){
-    .cards{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-    }
-}
-
-@media(max-width:700px){
-    .cards{
-        grid-template-columns:1fr;
-    }
-}
-
-.card{
-    border-radius:12px;
-    padding:14px;
-    border:1px solid #243140;
-    background:#141b22;
-}
-
-.full{
-    border-color:#ff6b3d;
-    box-shadow:0 0 14px rgba(255,107,61,0.2);
-}
-
-.target{
-    border-color:#f7c948;
-    box-shadow:0 0 14px rgba(247,201,72,0.18);
-}
-
-.follow{
-    border-color:#5eb6ff;
-    box-shadow:0 0 14px rgba(94,182,255,0.16);
-}
-
-.sig{
-    font-size:24px;
-    font-weight:bold;
-}
-
-.lock{
-    margin-top:8px;
-    font-size:26px;
-    font-weight:bold;
-}
-
-.small{
-    margin-top:6px;
-    color:#8ea1b5;
-    font-size:13px;
-}
-
-.phase-grid{
+.grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:8px;
+    gap:14px;
+}
+.card{
+    background:#141b22;
+    border:1px solid #243140;
+    border-radius:12px;
+    padding:14px;
+}
+.semantic{
     margin-top:12px;
-}
-
-.phase{
     background:#10161d;
+    padding:10px;
     border-radius:8px;
-    padding:8px;
-    text-align:center;
 }
-
-.phase-title{
+.small{
     color:#8ea1b5;
-    font-size:12px;
+    font-size:13px;
 }
-
-.phase-value{
-    margin-top:4px;
-    font-size:14px;
-    font-weight:bold;
-}
-
-a{
-    color:#7dc4ff;
-    text-decoration:none;
-}
-
 </style>
 </head>
+
 <body>
 
-<div class="header">
+<h1>SEAM Operational Status</h1>
 
-    <h1>SEAM Operational Status</h1>
-
-    <div class="small" id="generated">
-        Loading telemetry...
-    </div>
-
-    <div class="small" id="countdown">
-        Refresh In: 10s
-    </div>
-
-    <div style="margin-top:12px;">
-        <a href="ledger.html">LOG</a>
-    </div>
-
-</div>
-
-<div class="hero-grid">
-
-    <div class="hero">
-        <div class="hero-title">Total Predictions</div>
-        <div class="hero-value" id="totalPredictions">0</div>
-    </div>
-
-    <div class="hero">
-        <div class="hero-title">Verified</div>
-        <div class="hero-value" id="verified">0</div>
-    </div>
-
-    <div class="hero">
-        <div class="hero-title">Expired</div>
-        <div class="hero-value" id="expired">0</div>
-    </div>
-
-    <div class="hero">
-        <div class="hero-title">Hit Rate</div>
-        <div class="hero-value" id="hitRate">0%</div>
-    </div>
-
-    <div class="hero">
-        <div class="hero-title">Avg Lead</div>
-        <div class="hero-value" id="avgLead">--</div>
-    </div>
-
-</div>
-
-<div class="section">
-    <h2 style="color:#ff845f;">FULL DATA RECORDING</h2>
-    <div id="fullCards" class="cards"></div>
-</div>
-
-<div class="section">
-    <h2 style="color:#ffd761;">TARGET ACQUISITION</h2>
-    <div id="targetCards" class="cards"></div>
-</div>
-
-<div class="section">
-    <h2 style="color:#79c7ff;">FOLLOW PROTOCOL</h2>
-    <div id="followCards" class="cards"></div>
-</div>
+<div class="grid" id="grid"></div>
 
 <script>
 
-const TELEMETRY_URL =
-"https://jlanjou-seam.github.io/SEAM-Core/data/latest.json";
+async function loadData(){
 
-function safe(v,d="--"){
-    return v === undefined || v === null || v === "" ? d : v;
-}
+    const response = await fetch(
+        "https://jlanjou-seam.github.io/SEAM-Core/data/latest.json?t=" + Date.now(),
+        { cache: "no-store" }
+    );
 
-function renderCard(event, cls){
+    const data = await response.json();
 
-    return `
-    <div class="card ${cls}">
+    const html = (data.active_events || []).map(event => `
 
-        <div class="sig">
-            ${safe(event.signature,"Unknown")}
-        </div>
+        <div class="card">
 
-        <div class="lock">
-            ${safe(event.recursive_lock,0)}%
-            ${safe(event.lock_direction,"→")}
-            ${safe(event.lock_velocity_per_minute,"--")}/min
-        </div>
+            <h2>${event.signature}</h2>
 
-        <div class="small">
-            ${safe(event.location_resolved,
-                safe(event.street_cross,
-                safe(event.lat_long,"Unknown")))}
-        </div>
-
-        <div class="small">
-            ${safe(event.course,"Static")}
-            |
-            ${safe(event.regime,"unknown")}
-        </div>
-
-        <div class="small">
-            Obs ${safe(event.observation_count,0)}
-            |
-            Src ${safe(event.source_count,"-")}
-            |
-            Det ${safe(event.detection_count,"-")}
-        </div>
-
-        <div class="small">
-            Observed:
-            ${safe(event.observed_human,event.acquisition_utc)}
-        </div>
-
-        <div class="small">
-            Updated:
-            ${safe(event.updated_human,"--")}
-        </div>
-
-        <div class="phase-grid">
-
-            <div class="phase">
-                <div class="phase-title">85%</div>
-                <div class="phase-value">
-                    ${safe(event.phase_85_human,"-")}
-                </div>
+            <div>
+                ${event.recursive_lock}%
+                ${event.lock_direction}
+                ${event.lock_velocity_per_minute}/min
             </div>
 
-            <div class="phase">
-                <div class="phase-title">90%</div>
-                <div class="phase-value">
-                    ${safe(event.phase_90_human,"-")}
-                </div>
+            <div class="small">
+                ${event.classified_as || "Unclassified"}
             </div>
 
-            <div class="phase">
-                <div class="phase-title">95%</div>
-                <div class="phase-value">
-                    ${safe(event.phase_95_human,"-")}
-                </div>
+            <div class="semantic">
+
+                <strong>Semantic Evolution</strong>
+
+                ${(event.classification_history || []).map(h => `
+                    <div class="small">
+                        ${h.timestamp}
+                        →
+                        ${h.state}
+                        (${h.confidence})
+                    </div>
+                `).join("")}
+
             </div>
 
         </div>
 
-    </div>
-    `;
+    `).join("");
+
+    document.getElementById("grid").innerHTML = html;
 }
 
-async function loadSEAMTelemetry(){
-
-    try{
-
-        const response = await fetch(
-            TELEMETRY_URL + "?t=" + Date.now(),
-            {
-                cache:"no-store"
-            }
-        );
-
-        const data = await response.json();
-
-        document.getElementById("generated").innerText =
-            "Field Generated: " +
-            safe(data.generated_human,data.generated_utc);
-
-        const events =
-            data.active_events ||
-            data.events ||
-            [];
-
-        document.getElementById("totalPredictions").innerText =
-            safe(data.total_predictions,events.length);
-
-        document.getElementById("verified").innerText =
-            safe(data.verified_predictions,0);
-
-        document.getElementById("expired").innerText =
-            safe(data.expired_predictions,0);
-
-        document.getElementById("hitRate").innerText =
-            safe(data.hit_rate,"0%");
-
-        document.getElementById("avgLead").innerText =
-            safe(data.avg_lead,"--");
-
-        const full = [];
-        const target = [];
-        const follow = [];
-
-        for(const event of events){
-
-            const lock =
-                Number(event.recursive_lock || 0);
-
-            if(lock >= 95){
-                full.push(renderCard(event,"full"));
-            }
-            else if(lock >= 75){
-                target.push(renderCard(event,"target"));
-            }
-            else if(lock >= 50){
-                follow.push(renderCard(event,"follow"));
-            }
-        }
-
-        document.getElementById("fullCards").innerHTML =
-            full.join("") ||
-            "<div class='small'>No active records in this phase.</div>";
-
-        document.getElementById("targetCards").innerHTML =
-            target.join("") ||
-            "<div class='small'>No active records in this phase.</div>";
-
-        document.getElementById("followCards").innerHTML =
-            follow.join("") ||
-            "<div class='small'>No active records in this phase.</div>";
-
-    }catch(err){
-
-        document.getElementById("generated").innerText =
-            "Telemetry load failed";
-    }
-}
-
-let countdown = 10;
-
-setInterval(() => {
-
-    countdown--;
-
-    if(countdown <= 0){
-
-        countdown = 10;
-
-        loadSEAMTelemetry();
-    }
-
-    document.getElementById("countdown").innerText =
-        "Refresh In: " + countdown + "s";
-
-},1000);
-
-loadSEAMTelemetry();
+loadData();
+setInterval(loadData,10000);
 
 </script>
 
