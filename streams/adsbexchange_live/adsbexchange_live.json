@@ -2,7 +2,7 @@
   "source": "adsbexchange_live",
   "bucket": "streams",
   "acquisition_class": "image_stream",
-  "captured_utc": "2026-09-16T05:10:38.587941+00:00",
+  "captured_utc": "2026-09-16T10:01:54.454761+00:00",
   "config_file": "/home/runner/work/SEAM-Core/SEAM-Core/config/step1_raw_data_retrieval/collector_sources.json",
   "captures": [
     {
@@ -11,11 +11,11 @@
       "status": 200,
       "content_type": "text/html",
       "final_url": "https://globe.adsbexchange.com/",
-      "captured_utc": "2026-09-16T05:10:38.710093+00:00",
-      "elapsed_ms": 122.11,
+      "captured_utc": "2026-09-16T10:01:54.604690+00:00",
+      "elapsed_ms": 149.9,
       "bytes_read": 107737,
       "sha256": "6b6980baae75069c70b19b7bb751a408cfe9f5a94c82887ebee0757fd93aefad",
-      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/adsbexchange_live/20260916_051038_0.html",
+      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/adsbexchange_live/20260916_100154_0.html",
       "latest_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/adsbexchange_live/latest_0.html"
     }
   ]
