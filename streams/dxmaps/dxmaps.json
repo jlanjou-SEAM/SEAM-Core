@@ -2,7 +2,7 @@
   "source": "dxmaps",
   "bucket": "streams",
   "acquisition_class": "image_stream",
-  "captured_utc": "2026-09-15T22:16:58.931796+00:00",
+  "captured_utc": "2026-09-16T00:29:10.949129+00:00",
   "config_file": "/home/runner/work/SEAM-Core/SEAM-Core/config/step1_raw_data_retrieval/collector_sources.json",
   "captures": [
     {
@@ -11,11 +11,11 @@
       "status": 200,
       "content_type": "text/html",
       "final_url": "https://www.dxmaps.com/spots/mapg.php?Lan=E",
-      "captured_utc": "2026-09-15T22:16:59.606453+00:00",
-      "elapsed_ms": 674.61,
+      "captured_utc": "2026-09-16T00:29:11.609580+00:00",
+      "elapsed_ms": 660.41,
       "bytes_read": 51140,
       "sha256": "e2d075d9b8f333dbb9c67d27acabb154fee172549bffb8365630a8444c838fbb",
-      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/dxmaps/20260915_221659_0.html",
+      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/dxmaps/20260916_002911_0.html",
       "latest_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/dxmaps/latest_0.html"
     }
   ]
