@@ -2,14 +2,14 @@
   "source": "dxmaps",
   "bucket": "streams",
   "acquisition_class": "image_stream",
-  "captured_utc": "2026-09-16T21:46:48.158841+00:00",
+  "captured_utc": "2026-09-17T00:01:05.103720+00:00",
   "config_file": "/home/runner/work/SEAM-Core/SEAM-Core/config/step1_raw_data_retrieval/collector_sources.json",
   "captures": [
     {
       "url": "https://www.dxmaps.com/",
       "ok": false,
-      "captured_utc": "2026-09-16T21:46:50.210441+00:00",
-      "error": "<urlopen error timed out>"
+      "captured_utc": "2026-09-17T00:01:07.813820+00:00",
+      "error": "The read operation timed out"
     }
   ]
 }
