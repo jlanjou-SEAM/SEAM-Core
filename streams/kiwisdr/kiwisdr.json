@@ -2,7 +2,7 @@
   "source": "kiwisdr",
   "bucket": "streams",
   "acquisition_class": "image_stream",
-  "captured_utc": "2026-09-18T06:12:39.199058+00:00",
+  "captured_utc": "2026-09-18T11:17:15.004499+00:00",
   "config_file": "/home/runner/work/SEAM-Core/SEAM-Core/config/step1_raw_data_retrieval/collector_sources.json",
   "captures": [
     {
@@ -11,11 +11,11 @@
       "status": 200,
       "content_type": "text/html; charset=UTF-8",
       "final_url": "http://kiwisdr.com/public/",
-      "captured_utc": "2026-09-18T06:12:39.350796+00:00",
-      "elapsed_ms": 151.7,
+      "captured_utc": "2026-09-18T11:17:15.075229+00:00",
+      "elapsed_ms": 70.7,
       "bytes_read": 2294,
-      "sha256": "f0b21fff2ccf1430d98322fea51db73fd94b29e0441067f194bbce93c7d3029a",
-      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/kiwisdr/20260918_061239_0.html",
+      "sha256": "74effe8018744dc1f51b2da79306e19b1ca70341aef0e5d50eccb3c7864ce38e",
+      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/kiwisdr/20260918_111715_0.html",
       "latest_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/kiwisdr/latest_0.html"
     }
   ]
