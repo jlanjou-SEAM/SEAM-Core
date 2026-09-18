@@ -1,0 +1,901 @@
+<html>
+<head>
+<link href="../js/mctabs/generic-notForMcTabs.css" rel="stylesheet" type="text/css" />
+<link href="../js/mctabs/template_biel/mctabs_new.css" rel="stylesheet" type="text/css" />
+<script src="../js/mctabs/javascript-tabs.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="KeyWords" content="map,maps,list,listing,HF,VHF,UHF,SHF,DX,spot,spots,DX-Spot,DX-Spots,database,realtime,real,time,QSO,propagation">
+<script>
+// Paso valores por defecto a variables globales JS
+Lan = 'E';
+Frec = '50';
+ML = 'M';
+Mapa = 'W2LN';
+DXC = 'GRINPU';
+MOD = 'SSCWDIPR';
+PRO = 'AURAUEBACEMESPOMESFAIIONMETTEPTROFDOAIR';
+HF = 'N';
+GL = 'N';
+FIL = '';
+HID = '';
+
+console.log("param FIL recibido=" + FIL);
+
+
+/// Control por si hubiera una busqueda activa, que solo funciona en los mapas
+function TratBotonSearch()
+{  
+    if (document.getElementById("ImgFiltro").src.indexOf("filter.png") !== -1)
+    {	// Filtrado no activado
+	document.getElementById("ImgBusqueda").src = "../images/search20.png";
+	if (Lan == "S")
+		TFilter = "Buscar indicativo, locator, IOTA, ciudad...";
+	else
+		TFilter = "Search callsign, locator, IOTA, town...";
+	document.getElementById("ImgBusqueda").title = TFilter;
+	document.getElementById("TxtFiltro").disabled = false;
+	document.getElementById("TxtFiltro").style.color = "blue";
+	document.getElementById("TxtFiltro").value = "";
+	FIL = "";
+	if (document.getElementById("LiSelML_M").className == 'selected')
+		document.getElementById("ImgBusqueda").style.visibility = "visible";
+	else
+		document.getElementById("ImgBusqueda").style.visibility = "hidden";
+    }    
+}
+
+// Clic en el icono de ar a favoritos
+function AddFavorite()
+{
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&HF=' + HF;
+    if (Lan == "S")
+    	window.open("addfavorite_e.html?" + Parametros, "_blank");	
+    else
+    	window.open("addfavorite.html?" + Parametros, "_blank");	
+}
+
+// Clic en el icono de busqueda
+function ClicEnBusqueda(Lan)
+{
+    IconoBusqueda = document.getElementById("ImgBusqueda").src;
+    IconoFiltro = document.getElementById("ImgFiltro").src;
+    IconoOcultar = document.getElementById("ImgOcultar").src;
+    TextoFiltro = document.getElementById("TxtFiltro").value.trim();
+    FIL = "";
+    CambioEstado = false;
+         
+	  if (IconoBusqueda.indexOf("search20on.png") !== -1)
+		{	// Busqueda esta seleccionado, lo desmarco
+		    	document.getElementById("ImgBusqueda").src = "../images/search20.png";
+		    	document.getElementById("TxtFiltro").disabled = false;
+		    	document.getElementById("TxtFiltro").style.color = "blue";
+					if (Lan == "S")
+						TFilter = "Buscar indicativo, locator, IOTA, ciudad...";
+					else
+						TFilter = "Search callsign, locator, IOTA, town...";
+					document.getElementById("ImgBusqueda").title = TFilter;
+					CambioEstado = true;
+		}
+    else 
+    {
+    	if (TextoFiltro != "" && IconoFiltro.indexOf("filter.png") !== -1 && IconoOcultar.indexOf("ocultar.png") !== -1)
+	    {	// Hay texto a filtrar y no esta seleccionado ni filtrar ni ocultar, lo marco
+		    if (IconoBusqueda.indexOf("search20.png") !== -1 )
+		    { // No esta seleccionado buscar, lo selecciono
+			    	document.getElementById("ImgBusqueda").src = "../images/search20on.png";
+			    	document.getElementById("TxtFiltro").style.color = "red";
+			    	document.getElementById("TxtFiltro").disabled = true;
+		    		FIL = TextoFiltro;
+						if (Lan == "S")
+							TFilter = "Buscando " + TextoFiltro + ". Clic aqui para cancelar busqueda";
+						else
+							TFilter = "Searching " + TextoFiltro + ". Click here to cancel search";
+						document.getElementById("ImgBusqueda").title = TFilter;
+						CambioEstado = true;
+		   	}
+		 }
+   }
+   
+   if (CambioEstado)
+   {
+	    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO  + "&Search=" + FIL;
+	    window.open("mapfg.php?" + Parametros, "fdxs");
+	 }   
+}
+	
+// Clic en el icono de filtro
+function ClicEnFiltro(Lan)
+{
+    IconoBusqueda = document.getElementById("ImgBusqueda").src;
+    IconoFiltro = document.getElementById("ImgFiltro").src;
+    IconoOcultar = document.getElementById("ImgOcultar").src;
+    TextoFiltro = document.getElementById("TxtFiltro").value.trim();
+    FIL = "";
+    CambioEstado = false;
+         
+	  if (IconoFiltro.indexOf("filteron.png") !== -1)
+		{	// Filtro esta seleccionado, lo desmarco
+		    	document.getElementById("ImgFiltro").src = "../images/filter.png";
+		    	document.getElementById("TxtFiltro").disabled = false;
+		    	document.getElementById("TxtFiltro").style.color = "blue";
+					if (Lan == "S")
+						TFilter = "Filtrar indicativo";
+					else
+						TFilter = "Filter callsign";
+					document.getElementById("ImgFiltro").title = TFilter;
+					CambioEstado = true;
+		}
+    else 
+    {
+    	if (TextoFiltro != "" && IconoBusqueda.indexOf("search20.png") !== -1 && IconoOcultar.indexOf("ocultar.png") !== -1)
+	    {	// Hay texto a filtrar y no esta seleccionado ni buscar ni ocultar, lo marco
+		    if (IconoFiltro.indexOf("filter.png") !== -1 )
+		    { // No esta seleccionado filtrar, lo selecciono
+			    	document.getElementById("ImgFiltro").src = "../images/filteron.png";
+			    	document.getElementById("TxtFiltro").style.color = "red";
+			    	document.getElementById("TxtFiltro").disabled = true;
+		    		FIL = TextoFiltro.toUpperCase();
+						if (Lan == "S")
+							TFilter = "Filtrando por " + FIL + ". Clic aqui para quitar filtro";
+						else
+							TFilter = "Filtering by " + FIL + ". Click here to remove filter";
+						document.getElementById("ImgFiltro").title = TFilter;
+						CambioEstado = true;
+		   	}
+		 }
+   }
+   
+   if (CambioEstado)
+   {
+	   Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+	   console.log("**** ClicEnFiltro->mapfg.php?" + Parametros);
+	   window.open("mapfg.php?" + Parametros, "fdxs");    
+	 }
+}
+
+// Clic en el icono de ocultar
+function ClicEnOcultar(Lan)
+{
+    IconoBusqueda = document.getElementById("ImgBusqueda").src;
+    IconoFiltro = document.getElementById("ImgFiltro").src;
+    IconoOcultar = document.getElementById("ImgOcultar").src;
+    TextoFiltro = document.getElementById("TxtFiltro").value.trim();
+    FIL = "";
+    CambioEstado = false;
+    
+    console.log("Entra en ClicEnOcultar");
+         
+	  if (IconoOcultar.indexOf("ocultaron.png") !== -1)
+		{	// Ocultar esta seleccionado, lo desmarco
+				console.log("Ocultar esta seleccionado, lo desmarco");
+		    	document.getElementById("ImgOcultar").src = "../images/ocultar.png";
+		    	document.getElementById("TxtFiltro").disabled = false;
+		    	document.getElementById("TxtFiltro").style.color = "blue";
+					if (Lan == "S")
+						TFilter = "Ocultar indicativo";
+					else
+						TFilter = "Hide callsign";
+					document.getElementById("ImgOcultar").title = TFilter;
+					CambioEstado = true;
+		}
+    else 
+    {
+				console.log("Ocultar NO esta seleccionado, lo marco");
+    
+    	if (TextoFiltro != "" && IconoBusqueda.indexOf("search20.png") !== -1 && IconoFiltro.indexOf("filter.png") !== -1)
+	    {	// Hay texto a ocultar y no esta seleccionado ni buscar ni filtrar, lo marco
+	    	console.log("Hay texto a ocultar y no esta seleccionado ni buscar ni filtrar, lo marco");
+		    if (IconoOcultar.indexOf("ocultar.png") !== -1 )
+		    { // No esta seleccionado ocultar, lo selecciono
+			    	document.getElementById("ImgOcultar").src = "../images/ocultaron.png";
+			    	document.getElementById("TxtFiltro").style.color = "red";
+			    	document.getElementById("TxtFiltro").disabled = true;
+		    		FIL = TextoFiltro.toUpperCase();
+						if (Lan == "S")
+							TFilter = "Ocultando " + FIL + ". Clic aqui para quitar filtro";
+						else
+							TFilter = "Hiding " + FIL + ". Click here to remove filter";
+						document.getElementById("ImgOcultar").title = TFilter;
+						CambioEstado = true;
+		   	}
+		 }
+   }
+		    
+   if (CambioEstado)
+   {
+	    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&HID=' + FIL;
+	    console.log("**** ClicEnOcultar->mapfg.php?" + Parametros);
+	    window.open("mapfg.php?" + Parametros, "fdxs");
+	 }
+}
+
+// Seleccion del mapa
+function SelMapa(IdMapa,ValMapa)
+{
+    document.getElementById("LiMapaEU").className = '';
+    document.getElementById("LiMapaAF").className = '';
+    document.getElementById("LiMapaNA").className = '';
+    document.getElementById("LiMapaSA").className = '';
+    document.getElementById("LiMapaAS").className = '';
+    document.getElementById("LiMapaOC").className = '';
+    document.getElementById("LiMapaW2").className = '';
+    
+    document.getElementById(IdMapa).className = 'selected';
+    
+    Mapa = ValMapa;
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    window.open("mapfg.php?" + Parametros, "fdxs");
+}
+
+// Seleccion de una banda de VHF
+function SelBandaVHF(IdBanda,ValFrec)
+{
+    console.log("SelBandaVHF.Inicio Map="+Mapa);
+ 
+     TratBotonSearch();
+    
+    document.getElementById("LiQRG_14").className = '';
+    document.getElementById("LiQRG_15").className = '';
+    document.getElementById("LiQRG_16").className = '';
+    document.getElementById("LiQRG_17").className = '';
+    document.getElementById("LiQRG_18").className = '';
+    document.getElementById("LiQRG_19").className = '';
+    document.getElementById("LiQRG_20").className = '';
+    document.getElementById("LiQRG_21").className = '';
+    document.getElementById("LiQRG_22").className = '';
+    document.getElementById("LiQRG_23").className = '';
+    document.getElementById("LiQRG_24").className = '';
+    document.getElementById("LiQRG_25").className = '';
+    document.getElementById("LiQRG_26").className = '';
+    document.getElementById("LiQRG_27").className = '';
+    document.getElementById("LiQRG_28").className = '';
+    document.getElementById("LiQRG_29").className = '';
+    document.getElementById("LiQRG_31").className = '';
+   
+    if (ValFrec == "AL2")
+    {
+    	document.getElementById("LiQRG_14").innerHTML = document.getElementById("LiQRG_14").innerHTML.replace("#000000", "#008000");
+    	document.getElementById("LiQRG_15").innerHTML = document.getElementById("LiQRG_15").innerHTML.replace("#000000", "#FF0000");
+    	document.getElementById("LiQRG_16").innerHTML = document.getElementById("LiQRG_16").innerHTML.replace("#000000", "#FF00FF");
+    	document.getElementById("LiQRG_17").innerHTML = document.getElementById("LiQRG_17").innerHTML.replace("#000000", "#0000FF");
+    	document.getElementById("LiQRG_18").innerHTML = document.getElementById("LiQRG_18").innerHTML.replace("#000000", "#808080");
+    	document.getElementById("LiQRG_19").innerHTML = document.getElementById("LiQRG_19").innerHTML.replace("#000000", "#05C905");
+    	document.getElementById("LiQRG_20").innerHTML = document.getElementById("LiQRG_20").innerHTML.replace("#000000", "#F3A703");
+    }
+    else
+    {
+    	document.getElementById("LiQRG_14").innerHTML = document.getElementById("LiQRG_14").innerHTML.replace("#008000", "#000000");
+    	document.getElementById("LiQRG_15").innerHTML = document.getElementById("LiQRG_15").innerHTML.replace("#FF0000", "#000000");
+    	document.getElementById("LiQRG_16").innerHTML = document.getElementById("LiQRG_16").innerHTML.replace("#FF00FF", "#000000");
+    	document.getElementById("LiQRG_17").innerHTML = document.getElementById("LiQRG_17").innerHTML.replace("#0000FF", "#000000");
+    	document.getElementById("LiQRG_18").innerHTML = document.getElementById("LiQRG_18").innerHTML.replace("#808080", "#000000");
+    	document.getElementById("LiQRG_19").innerHTML = document.getElementById("LiQRG_19").innerHTML.replace("#05C905", "#000000");
+    	document.getElementById("LiQRG_20").innerHTML = document.getElementById("LiQRG_20").innerHTML.replace("#F3A703", "#000000");
+    }
+		   
+    document.getElementById(IdBanda).className = 'selected';
+    
+    Frec = ValFrec;    
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    console.log("SelBandaVHF.Parametros="+Parametros);
+    window.open("mapfg.php?" + Parametros, "fdxs");
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec;
+    window.open("maps.php?" + Parametros, "fdxsend");
+}
+
+// Seleccion de una banda de HF
+function SelBandaHF(IdBanda,ValFrec)
+{
+    TratBotonSearch();
+    
+    document.getElementById("LiQRG_1").className = '';
+    document.getElementById("LiQRG_2").className = '';
+    document.getElementById("LiQRG_3").className = '';
+    document.getElementById("LiQRG_4").className = '';
+    document.getElementById("LiQRG_5").className = '';
+    document.getElementById("LiQRG_6").className = '';
+    document.getElementById("LiQRG_7").className = '';
+    document.getElementById("LiQRG_8").className = '';
+    document.getElementById("LiQRG_9").className = '';
+    document.getElementById("LiQRG_10").className = '';
+    document.getElementById("LiQRG_11").className = '';
+    document.getElementById("LiQRG_12").className = '';
+    document.getElementById("LiQRG_13").className = '';
+    document.getElementById("LiQRG_30").className = '';
+   
+    document.getElementById(IdBanda).className = 'selected';
+    
+    if (ValFrec == "ALH")
+    {
+    	document.getElementById("LiQRG_1").innerHTML = document.getElementById("LiQRG_1").innerHTML.replace("#000000", "#8080FF");
+    	document.getElementById("LiQRG_2").innerHTML = document.getElementById("LiQRG_2").innerHTML.replace("#000000", "#FF8080");
+    	document.getElementById("LiQRG_3").innerHTML = document.getElementById("LiQRG_3").innerHTML.replace("#000000", "#808080");
+    	document.getElementById("LiQRG_5").innerHTML = document.getElementById("LiQRG_5").innerHTML.replace("#000000", "#CECC02");
+    	document.getElementById("LiQRG_6").innerHTML = document.getElementById("LiQRG_6").innerHTML.replace("#000000", "#008080");
+    	document.getElementById("LiQRG_7").innerHTML = document.getElementById("LiQRG_7").innerHTML.replace("#000000", "#F3A703");
+    	document.getElementById("LiQRG_8").innerHTML = document.getElementById("LiQRG_8").innerHTML.replace("#000000", "#05C905");
+    	document.getElementById("LiQRG_9").innerHTML = document.getElementById("LiQRG_9").innerHTML.replace("#000000", "#0000FF");
+    	document.getElementById("LiQRG_10").innerHTML = document.getElementById("LiQRG_10").innerHTML.replace("#000000", "#FF00FF");
+    	document.getElementById("LiQRG_11").innerHTML = document.getElementById("LiQRG_11").innerHTML.replace("#000000", "#FF0000");
+    	document.getElementById("LiQRG_12").innerHTML = document.getElementById("LiQRG_12").innerHTML.replace("#000000", "#008000");
+    }
+    else
+    {
+    	document.getElementById("LiQRG_1").innerHTML = document.getElementById("LiQRG_1").innerHTML.replace("#8080FF", "#000000");
+    	document.getElementById("LiQRG_2").innerHTML = document.getElementById("LiQRG_2").innerHTML.replace("#FF8080", "#000000");
+    	document.getElementById("LiQRG_3").innerHTML = document.getElementById("LiQRG_3").innerHTML.replace("#808080", "#000000");
+    	document.getElementById("LiQRG_5").innerHTML = document.getElementById("LiQRG_5").innerHTML.replace("#CECC02", "#000000");
+    	document.getElementById("LiQRG_6").innerHTML = document.getElementById("LiQRG_6").innerHTML.replace("#008080", "#000000");
+    	document.getElementById("LiQRG_7").innerHTML = document.getElementById("LiQRG_7").innerHTML.replace("#F3A703", "#000000");
+    	document.getElementById("LiQRG_8").innerHTML = document.getElementById("LiQRG_8").innerHTML.replace("#05C905", "#000000");
+    	document.getElementById("LiQRG_9").innerHTML = document.getElementById("LiQRG_9").innerHTML.replace("#0000FF", "#000000");
+    	document.getElementById("LiQRG_10").innerHTML = document.getElementById("LiQRG_10").innerHTML.replace("#FF00FF", "#000000");
+    	document.getElementById("LiQRG_11").innerHTML = document.getElementById("LiQRG_11").innerHTML.replace("#FF0000", "#000000");
+    	document.getElementById("LiQRG_12").innerHTML = document.getElementById("LiQRG_12").innerHTML.replace("#008000", "#000000");
+    }
+    
+    Frec = ValFrec;    
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    window.open("mapfg.php?" + Parametros, "fdxs");
+}
+
+// Seleccion de Mapa, Lista, etc
+function SelML(IdML,ValML)
+{
+    
+    document.getElementById("LiSelML_M").className = '';
+    document.getElementById("LiSelML_L").className = '';
+    document.getElementById("LiSelML_G").className = '';
+    document.getElementById("LiSelML_C").className = '';
+   
+    document.getElementById(IdML).className = 'selected';
+
+    TratBotonSearch();	
+    
+    var currentdate = new Date();
+    console.log (">>>>SelML to " + ValML + " at " + currentdate.getUTCHours() + ":" + currentdate.getUTCMinutes() + ":" + currentdate.getUTCSeconds() + ":" + currentdate.getUTCMilliseconds());
+    
+    ML = ValML;    
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    window.open("mapfg.php?" + Parametros, "fdxs");
+}
+
+// Seleccion de HF o VHF
+function SelHfVhf(IdHfVhf,ValHf)
+{
+    TratBotonSearch();
+    
+    console.log("SelHfVhf IdHfVhf=" + IdHfVhf + " / ValHf=" + ValHf);
+    document.getElementById("LiHF").className = '';
+    document.getElementById("LiVHF").className = '';
+   
+    document.getElementById(IdHfVhf).className = 'selected';
+    
+    HF = ValHf;
+    if (HF == 'S')     
+    {
+    	Frec = "28";
+    	document.getElementById("tabsHF").style.display = "inline";
+    	document.getElementById("tabsVHF").style.display = "none";
+    	SelBandaHF('LiQRG_12', '28');
+
+	$("#OpcSelMode option[value='AUR']").hide();
+	$("#OpcSelMode option[value='AUE']").hide();
+	$("#OpcSelMode option[value='BAC']").hide();
+	$("#OpcSelMode option[value='EME']").hide();
+	$("#OpcSelMode option[value='SPO']").hide();
+	$("#OpcSelMode option[value='MES']").hide();
+	$("#OpcSelMode option[value='FAI']").hide();
+	$("#OpcSelMode option[value='ION']").hide();
+	$("#OpcSelMode option[value='MET']").hide();
+	$("#OpcSelMode option[value='TEP']").hide();
+	$("#OpcSelMode option[value='TRO']").hide();
+	$("#OpcSelMode option[value='FDO']").hide();
+	$("#OpcSelMode option[value='AIR']").hide();
+	$("#OpcSelMode option[value='ALP']").hide();
+	if (Lan == "S")
+		$("#OpcSelMode option[value='NO']").html("Modos");
+	else
+		$("#OpcSelMode option[value='NO']").html("Modes");
+    }
+    else
+    {
+    	Frec = "50";    
+    	document.getElementById("tabsHF").style.display = "none";
+    	document.getElementById("tabsVHF").style.display = "inline";
+    	SelBandaVHF('LiQRG_15', '50');
+
+	$("#OpcSelMode option[value='AUR']").show();
+	$("#OpcSelMode option[value='AUE']").show();
+	$("#OpcSelMode option[value='BAC']").show();
+	$("#OpcSelMode option[value='EME']").show();
+	$("#OpcSelMode option[value='SPO']").show();
+	$("#OpcSelMode option[value='MES']").show();
+	$("#OpcSelMode option[value='FAI']").show();
+	$("#OpcSelMode option[value='ION']").show();
+	$("#OpcSelMode option[value='MET']").show();
+	$("#OpcSelMode option[value='TEP']").show();
+	$("#OpcSelMode option[value='TRO']").show();
+	$("#OpcSelMode option[value='FDO']").show();
+	$("#OpcSelMode option[value='AIR']").show();
+	$("#OpcSelMode option[value='ALP']").show();
+	if (Lan == "S")
+		$("#OpcSelMode option[value='NO']").html("Modos/Propas");
+	else
+		$("#OpcSelMode option[value='NO']").html("Modes/Props");
+	
+    }
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    window.open("mapfg.php?" + Parametros, "fdxs");
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec;
+    window.open("maps.php?" + Parametros, "fdxsend");    
+}
+
+// Seleccion de capa
+function CambioCapa(este)
+{
+    TratBotonSearch();
+	
+    e = document.getElementById("OpcSelGL");
+    GL = e.options[e.selectedIndex].value;
+    
+    // Borro caracter tick de todas las opciones
+    for (i = 1; i < e.length; i++)
+    {
+    	if (e.options[i].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    		e.options[i].innerHTML = e.options[i].innerHTML.substr(1, e.options[i].innerHTML.length - 1);
+    }
+    // A caracter tick a la opcion seleccionada
+    if (e.selectedIndex != 0)
+    	e.options[e.selectedIndex].innerHTML = "&#10003;" + e.options[e.selectedIndex].innerHTML;
+    
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    window.open("mapfg.php?" + Parametros, "fdxs");
+}
+
+// Seleccion de opciones
+function CambioOpcion(este)
+{
+    TratBotonSearch();
+
+    e = document.getElementById("OpcSelDXC");
+       
+    // A/quito caracter tick a la opcion seleccionada
+    if (e.selectedIndex != 0)
+    {
+    	if (e.options[e.selectedIndex].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    		// Quitar tick
+    		e.options[e.selectedIndex].innerHTML = "&nbsp;&nbsp;&nbsp;" + e.options[e.selectedIndex].innerHTML.substr(1, e.options[e.selectedIndex].innerHTML.length - 1);
+	else    
+	{	// Poner tick		
+    		e.options[e.selectedIndex].innerHTML = "&#10003;" + e.options[e.selectedIndex].innerHTML.substr(18,e.options[e.selectedIndex].innerHTML.length - 18);
+    		if (e.selectedIndex == 3 && e.options[4].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    			// Opcion GR. Desmarco opcion G2 ya que son excluyentes
+    			e.options[4].innerHTML = "&nbsp;&nbsp;&nbsp;" + e.options[4].innerHTML.substr(1, e.options[4].innerHTML.length - 1);
+    		if (e.selectedIndex == 4 && e.options[3].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    			// Opcion G2. Desmarco opcion GR ya que son excluyentes
+    			e.options[3].innerHTML = "&nbsp;&nbsp;&nbsp;" + e.options[3].innerHTML.substr(1, e.options[3].innerHTML.length - 1);    		
+
+
+    		if (e.selectedIndex == 1 && e.options[2].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    			// Opcion DC. Desmarco opcion PR ya que son excluyentes
+    			e.options[2].innerHTML = "&nbsp;&nbsp;&nbsp;" + e.options[2].innerHTML.substr(1, e.options[2].innerHTML.length - 1);
+    		if (e.selectedIndex == 2 && e.options[1].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    			// Opcion PR. Desmarco opcion DC ya que son excluyentes
+    			e.options[1].innerHTML = "&nbsp;&nbsp;&nbsp;" + e.options[1].innerHTML.substr(1, e.options[1].innerHTML.length - 1);
+    	}
+    }
+    
+    // Cargo variable DXC con las opciones marcadas (con el caracter tick)
+    DXC = "";
+    for (i = 1; i < e.length; i++)
+    {
+    	if (e.options[i].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    	{
+    		DXC = DXC + e.options[i].value;
+    	}
+    }
+    
+    // Para forzar que siempre se muestra la primera opcion
+    e.value = "NO";
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    window.open("mapfg.php?" + Parametros, "fdxs");
+}
+
+// Seleccion de Modos
+function CambioModo(este)
+{
+    TratBotonSearch();
+
+    e = document.getElementById("OpcSelMode");
+       
+    // A/quito caracter tick a la opcion seleccionada
+    if (e.selectedIndex != 0)
+    {	// Alguna opcion seleccionada
+    	if (e.selectedIndex < 5 || (e.selectedIndex > 5 && e.selectedIndex < 19))
+    	{	// Opciones seleccion de modos indiviuales
+		    	if (e.options[e.selectedIndex].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+		    	{	// Quitar tick
+		    		e.options[e.selectedIndex].innerHTML = "&nbsp;&nbsp;&nbsp;" + e.options[e.selectedIndex].innerHTML.substr(1, e.options[e.selectedIndex].innerHTML.length - 1);
+		    		if (e.selectedIndex == 3 && e.options[4].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+		    			// Si desactivan digi tambien desactivar WSPR, en caso de que estuviera activo
+			    		e.options[4].innerHTML = "&nbsp;&nbsp;&nbsp;" + e.options[4].innerHTML.substr(1, e.options[4].innerHTML.length - 1);
+		    	}
+			else    
+			{	// Poner tick		
+		    		e.options[e.selectedIndex].innerHTML = "&#10003;" + e.options[e.selectedIndex].innerHTML.substr(18, e.options[e.selectedIndex].innerHTML.length - 18);
+		    		if (e.selectedIndex == 4 && e.options[3].innerHTML.substr(0, 1).charCodeAt(0) != 10003)
+		    			// Si activan WSPR tambien activar Digi, en caso de no lo estuviera
+		    			e.options[3].innerHTML = "&#10003;" + e.options[3].innerHTML.substr(18, e.options[3].innerHTML.length - 18);
+		    	}
+	}
+	else
+	{
+		if (e.selectedIndex == 5)
+		{	// Opcion de seleccionar todos los modos
+			for (i = 1; i < 5; i++)
+			{
+			    	if (e.options[i].innerHTML.substr(0, 1).charCodeAt(0) != 10003)
+					// Poner tick		
+			    		e.options[i].innerHTML = "&#10003;" + e.options[i].innerHTML.substr(18, e.options[i].innerHTML.length - 18);
+			}
+		}
+		else
+			if (e.selectedIndex == 19)
+			{	// Opcion de seleccionar todos los modos de propagacion
+				for (i = 6; i < 19; i++)
+				{
+				    	if (e.options[i].innerHTML.substr(0, 1).charCodeAt(0) != 10003)
+						// Poner tick		
+				    		e.options[i].innerHTML = "&#10003;" + e.options[i].innerHTML.substr(18, e.options[i].innerHTML.length - 18);
+				}
+			}
+	}
+    }
+    
+    // Cargo variable MOD con las opciones marcadas (con el caracter tick)
+    MOD = "";
+    for (i = 1; i < 5; i++)
+    {
+    	if (e.options[i].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    	{
+    		MOD = MOD + e.options[i].value;
+    	}
+    }
+    
+    if (MOD == "")
+    {	// Todos los modos desmarcados. Los marco todos
+	    for (i = 1; i < 5; i++)
+	    {
+	    	e.options[i].innerHTML = "&#10003;" + e.options[i].innerHTML;
+    		MOD = MOD + e.options[i].value;
+	    }
+    }
+
+    // Cargo variable PRO con las opciones marcadas (con el caracter tick)
+    PRO = "";
+    for (i = 6; i < 19; i++)
+    {
+    	if (e.options[i].innerHTML.substr(0, 1).charCodeAt(0) == 10003)
+    	{
+    		PRO = PRO + e.options[i].value;
+    	}
+    }
+    
+    if (PRO == "")
+    {	// Todos los modos de propa desmarcados. Los marco todos
+	    for (i = 6; i < 19; i++)
+	    {
+	    	e.options[i].innerHTML = "&#10003;" + e.options[i].innerHTML;
+    		PRO = PRO + e.options[i].value;
+	    }
+    }
+
+    // Para forzar que simpre se muestra la primera opcion
+    e.value = "NO";
+    
+    Parametros = 'Lan=' + Lan + '&Frec=' + Frec + '&ML=' + ML + '&Map=' + Mapa + '&DXC=' + DXC + '&HF=' + HF + '&GL=' + GL + '&MOD=' + MOD + '&PRO=' + PRO + '&FIL=' + FIL;
+    window.open("mapfg.php?" + Parametros, "fdxs");
+}
+
+// Ajusto tamaFrame a su contenido
+function resizeIframe(obj)
+{
+    obj.style.height = 0;
+    NuevoAlto = obj.contentWindow.document.body.scrollHeight +20;
+    obj.style.width = 0;
+    NuevoAncho = obj.contentWindow.document.body.scrollWidth +20;
+    
+    var currentdate = new Date();
+    console.log (">>>>resizeIframe(" + obj.name + ") NuevoAlto=" + NuevoAlto + "px / NuevoAncho=" + NuevoAncho + " at " + currentdate.getUTCHours() + ":" + currentdate.getUTCMinutes() + ":" + currentdate.getUTCSeconds() + ":" + currentdate.getUTCMilliseconds());
+    
+    obj.style.height = NuevoAlto + 'px';
+    obj.style.width = NuevoAncho + 'px';
+}
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="DXMAPS.COM News and updates" href="/feed.xml"><meta name="Description" content="QSO/SWL real time maps and lists">
+<title>QSO/SWL real time maps and lists</title>
+<script language='JavaScript'>
+function GoToURL(myUrl)
+{
+    window.location.href = myUrl;
+    return false;
+}
+</script>
+
+<LINK title="Article Style" href="/base.css" type=text/css rel=StyleSheet>
+<!-- <STYLE type=text/css>@import url( ../js/mctabs/template_biel/mctabs_new.css );
+</STYLE> -->
+
+<LINK REL="SHORTCUT ICON" HREF="/dxs.ico">
+
+<script language="JavaScript" src="/menu_files/menu.js"></script>
+<script language='JavaScript'>var Login = "Login";var Login1 = "Login";var Login2 = "Register";var Login3 = "";var Login4 = "";var Enlace1 = "/login.html";var Enlace2 = "/register.html";var Enlace3 = "";var Enlace4 = "";var AltoLogin3 = 0;var LinkBanner = "/spots/mapg.php";var GifBanner = "<IMG border=\'0\' SRC=\'/menu_files/dxmaps.png\'>";</script><script language='JavaScript' src='/menu_files/items.js'></script><script language='JavaScript' src='/menu_files/template.js'></script>
+<link rel='stylesheet' href='/menu_files/menu.css'>
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+	<script>
+	Texto = "This website uses cookies to personalise content and our partners will collect data and use cookies to offer you ads and analyse our traffic. <a href=\"/privacy.html\"><font color=\"#FFFFFF\">Read DXMAPS privacy policy</font></a> and <a href=\"https://policies.google.com/technologies/partner-sites\"><font color=\"#FFFFFF\">Discover how Google collect and use your data</font></a>. You can change the cookie settings and revoke your cookies consent at any time in our <a href=\"/cookies_change.html\"><font color=\"#FFFFFF\">cookies change page</font></a>. If you click \"Continue\" it will be assumed that you agree to receive all cookies on the DXMAPS website and that your data can be used to offer you personalized ads. Othewise you will be offered non-personalized ads.";
+	window.addEventListener("load", function(){
+	window.cookieconsent.initialise({
+	  "palette": {
+	    "popup": {
+	      "background": "#000"
+	    },
+	    "button": {
+	      "background": "#f1d600"
+	    }
+	  },
+	  "content": {
+	    "message": Texto + " <a href=\"/cookies_change.html\" style=\"color: #ffffff\">Change settings</a>",
+	    "dismiss": "Continue",
+	    "href": "/cookies_about.html"
+	  },
+	  "location": {
+	  },
+	  onStatusChange: function(status, chosenBefore) 
+	  {
+	  	console.log ("status=" + status);
+	  	if (status == "dismiss")
+		{  		
+			var parametros = 
+			{
+			        "CC" : status,
+			        "Text" : Texto
+			};
+			$.ajax(
+			{
+			        data:  parametros,
+			        url:   '/php/cookie_record.php',
+			        type:  'post',
+			        success:  function (response) 
+			        {
+			        	console.log ("Cookie consent recorded");
+			        }
+			}); 
+		}		
+	  } 
+	})});
+	</script>
+</head>
+<BODY>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1628990-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1628990-5');
+</script>
+<noscript><b><font color="#FF0000">
+You are missing the navigation menus and other features of this site because you have Javascript disabled in your browser. <a href="/enable_javascript.html">Please enable it.</a></font></b></noscript>
+<SCRIPT language=JavaScript1.2 type=text/javascript>
+<!--
+new menu (MENU_ITEMS, MENU_TPL);
+//-->
+</SCRIPT>
+<div style="position: absolute; top: 13px; bottom: 0; height:20px; left:595px">
+<form action="../callbook/info.php" id="frmcb" method="POST">
+	<input type="hidden" name="Lan" value="E">
+	<input type="text" STYLE="background-color: #c0d8ea; border-width:1px;border-radius: 5px;" name="Callsign" size="6" title="Enter callsign, IOTA, etc. to search" placeholder="Search...">
+</form>
+</div>
+<div align="left" style="margin-left: 170px"><font color="#0080FF" size="5">DXMAPS 4.2  - QSO/SWL real time information</font>&nbsp;&nbsp;&nbsp;&nbsp;<img onclick="AddFavorite()" border="0" src="../images/addfav.png" title="Create a shortcut to this page" align="absmiddle"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='manual.html'><img border='0' src='../images/help.png' width='24' height='24' title='Manual and FAQ' align='absmiddle'></a></div><table border="0" width="1125"><tr><td width="165">	
+            <ul id="tabs1" class="mctabs">
+                <li style = "display: none"><a href="#view1"></a></li>
+                <li id="LiSelML_M"  class="selected"><a HREF="javascript:SelML('LiSelML_M','M');" title="Show a map">Map</a></li>
+                <li id="LiSelML_L" ><a href="javascript:SelML('LiSelML_L','L');" title="Show a list">List</a></li>
+                <li id="LiSelML_G" ><a href="javascript:SelML('LiSelML_G','G');" title="Show a band scope graph">Graph</a></li>
+                <li id="LiSelML_C" ><a href="javascript:SelML('LiSelML_C','C');" title="Go to the chat">Chat</a></li>
+            </ul>
+        </div>
+</td><td>	
+            <ul id="tabs2" class="mctabs">
+                <li style = "display: none"><a href="#view1"></a></li>
+                <li id="LiMapaEU" ><a HREF="javascript:SelMapa('LiMapaEU','EU');" title="Map of Europe">Europe</a></li>
+                <li id="LiMapaAF" ><a HREF="javascript:SelMapa('LiMapaAF','AF');" title="Map of Africa">Africa</a></li>
+                <li id="LiMapaNA" ><a HREF="javascript:SelMapa('LiMapaNA','NA');" title="Map of North America">N.America</a></li>
+                <li id="LiMapaSA" ><a HREF="javascript:SelMapa('LiMapaSA','SA');" title="Map of South America">S.America</a></li>
+                <li id="LiMapaAS" ><a HREF="javascript:SelMapa('LiMapaAS','AS');" title="Map of Asia">Asia</a></li>
+                <li id="LiMapaOC" ><a HREF="javascript:SelMapa('LiMapaOC','OC');" title="Map of Oceania">Oceania</a></li>
+                <li id="LiMapaW2"  class="selected"><a HREF="javascript:SelMapa('LiMapaW2','W2LN');" title="World map">World</a></li>
+		<img border="0" src="../images/separador.gif" width="15" height="1">
+
+"> >?
+		<select id="OpcSelGL" onchange="javascript:CambioCapa(this); "size="1" name="D1" style="height:22px;background:linear-gradient(to bottom, #d2ebf9 0%,#feffff 100%);border-radius:5px;" title="Selected the layer to be shown">>
+		<option selected value="N">No layer</option>
+		<option  value="E">Magnetic equator</option>
+		<option  value="S">Gray line</option>
+		<option  value="M">Moon footprint</option>
+		<option  value="V">VOACAP prop (SP)</option>
+		<option  value="L">VOACAP prop (LP)</option>
+		<option  value="A">Aurora forecast</option>
+		<option  value="T">Time zones</option>
+		<option  value="Z">CQ zones</option>
+		<option  value="I">ITU zones</option>		
+</select>
+		<select id="OpcSelDXC" onchange="javascript:CambioOpcion(this); "size="1" name="D1" style="height:22px;background:linear-gradient(to bottom, #d2ebf9 0%,#feffff 100%);border-radius:5px;" title="Select the options to show">>
+		<option selected value="NO">Select options</option>
+		<option value="DC">&nbsp;&nbsp;&nbsp;Only DX-Cluster</option>
+		<option value="PR">&nbsp;&nbsp;&nbsp;PSK Reporter</option>
+		<option value="GR">&#10003;Grid squares</option>
+		<option value="G2">&nbsp;&nbsp;&nbsp;Grid squares thin</option>
+		<option value="PX">&nbsp;&nbsp;&nbsp;Prefixes</option>
+		<option value="CO">&nbsp;&nbsp;&nbsp;Continents</option>
+		<option value="LA">&nbsp;&nbsp;&nbsp;Labels/roads</option>
+		<option value="IN">&#10003;Callsigns</option>
+		<option value="SM">&nbsp;&nbsp;&nbsp;Small map</option>
+		<option value="15">&nbsp;&nbsp;&nbsp;Only last 15 min.</option>
+		<option value="DI">&nbsp;&nbsp;&nbsp;Only > 2600 km</option>
+		<option value="MW">&nbsp;&nbsp;&nbsp;Mouse wheel zoom</option>
+		<option value="MM">&nbsp;&nbsp;&nbsp;MUF indep.of mode</option>
+		<option value="PU">&#10003;Hide callsign info</option>
+		<option value="BO">&nbsp;&nbsp;&nbsp;Callsigns in bold</option>
+		</select>
+      
+		<select id="OpcSelMode" onchange="javascript:CambioModo(this); "size="1" name="D3" style="height:22px;background:linear-gradient(to bottom, #d2ebf9 0%,#feffff 100%);border-radius:5px;" title="Select mode(s)/propagation to show">>
+		<option selected value="NO">Modes/Props</option>
+		<option value="SS">&#10003Phone</option>
+		<option value="CW">&#10003;CW</option>
+		<option value="DI">&#10003;Digital</option>
+		<option value="PR">&#10003;WSPR</option>
+		<option value="AL" STYLE="background-color: #c0d8ea;">Selec.all modes</option>
+		
+		<option value="AUR">&#10003;Aurora</option>
+		<option value="AUE">&#10003;Aurora-E</option>
+		<option value="BAC">&#10003;Back sc.</option>
+		<option value="EME">&#10003;EME</option>
+		<option value="SPO">&#10003;Sporadic-E</option>
+		<option value="MES">&#10003;Multihop Sp-E</option>
+		<option value="FAI">&#10003;FAI</option>
+		<option value="ION">&#10003;Iono sc.</option>
+		<option value="MET">&#10003;MS</option>
+		<option value="TEP">&#10003;TEP</option>
+		<option value="TRO">&#10003;Tropo</option>
+		<option value="FDO">&#10003;F2</option>
+		<option value="AIR">&#10003;Aircraft sc.</option>
+		<option value="ALP" STYLE="background-color: #c0d8ea;">Selec.all props</option>
+		</select>
+
+
+<img border="0" src="../images/separador.gif" width="8" height="1"><input id="TxtFiltro" type="text" name="Indicativo"  value="" size="6" style="font-weight:normal;color:blue;height:22px;background:linear-gradient(to bottom, #d2ebf9 0%,#feffff 100%);border-radius:5px;" title="Callsign to filter or search (also possible to search locators, IOTA, towns..)"><a href="#" onclick="ClicEnFiltro('E')"><img id="ImgFiltro" border="0" src="../images/filter.png" align="absbottom" title="Filter callsign"></a><a href="#" onclick="ClicEnBusqueda('E')"><img id="ImgBusqueda" border="0" src="../images/search20.png" align="absbottom" title="Search callsign, locator, IOTA, town..."></a><a href="#" onclick="ClicEnOcultar('E')"><img id="ImgOcultar" border="0" src="../images/ocultar.png" align="absbottom" title="Hide callsign"></a></ul></td></tr><tr><td width="165">	
+            <ul id="tabs4" class="mctabs">
+                <li style = "display: none"><a href="#view1"></a></li>
+                <li id="LiHF" ><a HREF="javascript:SelHfVhf('LiHF', 'S');" title="HF bands (<30 MHz)">&nbsp;&nbsp;LF - HF&nbsp;</a></li>
+                <li id="LiVHF"  class="selected"><a HREF="javascript:SelHfVhf('LiVHF', 'N');" title="VHF & up bands (>28 MHz)">&nbsp;&nbsp;VHF & up&nbsp;</a></li>
+            </ul>
+</td><td>	            <ul style = "display: none" id="tabsHF" class="mctabs">
+	                <li style = "display: none"><a href="#view1"></a></li>
+	                <li id="LiQRG_1" ><a HREF="javascript:SelBandaHF('LiQRG_1', '01');" title="2200 m band"><font color="#000000">2200 m</font></a></li>
+	                <li id="LiQRG_2" ><a HREF="javascript:SelBandaHF('LiQRG_2', '06');" title="630 m. band"><font color="#000000">630 m</font></a></li>
+	                <li id="LiQRG_3"><a HREF="javascript:SelBandaHF('LiQRG_3', '1');" title="160 m. band"><font color="#000000">160 m</font></a></li>
+	                <li id="LiQRG_4"><a HREF="javascript:SelBandaHF('LiQRG_4', '3');" title="80 m. band"><font color="#000000">80 m</font></a></li>
+	                <li id="LiQRG_5"><a HREF="javascript:SelBandaHF('LiQRG_5', '5');" title="60 m. band"><font color="#000000">60 m</font></a></li>
+	                <li id="LiQRG_6"><a HREF="javascript:SelBandaHF('LiQRG_6', '7');" title="40 m. band"><font color="#000000">40 m</font></a></li>
+	                <li id="LiQRG_7"><a HREF="javascript:SelBandaHF('LiQRG_7', '10');" title="30 m. band"><font color="#000000">30 m</font></a></li>
+	                <li id="LiQRG_8"><a HREF="javascript:SelBandaHF('LiQRG_8', '14');" title="20 m. band"><font color="#000000">20 m</font></a></li>
+	                <li id="LiQRG_9"><a HREF="javascript:SelBandaHF('LiQRG_9', '18');" title="17 m. band"><font color="#000000">17 m</font></a></li>
+	                <li id="LiQRG_10"><a HREF="javascript:SelBandaHF('LiQRG_10', '21');" title="15 m. band"><font color="#000000">15 m</font></a></li>
+	                <li id="LiQRG_11"><a HREF="javascript:SelBandaHF('LiQRG_11', '24');" title="12 m. band"><font color="#000000">12 m</font></a></li>
+	                <li id="LiQRG_12"><a HREF="javascript:SelBandaHF('LiQRG_12', '28');" title="10 m. band"><font color="#000000">10 m</font></a></li>
+	                <li id="LiQRG_13"><a HREF="javascript:SelBandaHF('LiQRG_13', 'ALH');" title="All HF bands">All bands</a></li>
+	                <li id="LiQRG_30"><a HREF="javascript:SelBandaHF('LiQRG_30', 'TI2');" title="DX news ticker">Ticker</a></li>
+	            </ul>
+	            <ul style = "display: inline" id="tabsVHF" class="mctabs" align="right">
+	                <li style = "display: none"><a href="#view1"></a></li>
+	                <li id="LiQRG_14" ><a HREF="javascript:SelBandaVHF('LiQRG_14', '28');" title="10 m. band"><font color="#000000">28 MHz</font></a></li>
+	                <li id="LiQRG_31" ><a HREF="javascript:SelBandaVHF('LiQRG_31', '40');" title="8 m. band">40 MHz</a></li>
+	                <li id="LiQRG_15"  class="selected"><a HREF="javascript:SelBandaVHF('LiQRG_15', '50');" title="6 m. band"><font color="#000000">50 MHz</font></a></li>
+	                <li id="LiQRG_16" ><a HREF="javascript:SelBandaVHF('LiQRG_16', '70');" title="4 m. band"><font color="#000000">70 MHz</font></a></li>
+	                <li id="LiQRG_17" ><a HREF="javascript:SelBandaVHF('LiQRG_17', '144');" title="2 m. band"><font color="#000000">144 MHz</font></a></li>
+	                <li id="LiQRG_18" ><a HREF="javascript:SelBandaVHF('LiQRG_18', '220');" title="1.25 m. band"><font color="#000000">222 MHz</font></a></li>
+	                <li id="LiQRG_19" ><a HREF="javascript:SelBandaVHF('LiQRG_19', '430');" title="70 cm. band"><font color="#000000">432 MHz</font></a></li>
+	                <li id="LiQRG_20" ><a HREF="javascript:SelBandaVHF('LiQRG_20', 'SHF');" title="Bands above 450 MHz"><font color="#000000">>450 MHz</font></a></li>
+	                <li id="LiQRG_21" ><a HREF="javascript:SelBandaVHF('LiQRG_21', 'AL2');" title="All VHF & up bands">All bands</a></li>
+	                <li id="LiQRG_22" ><a HREF="javascript:SelBandaVHF('LiQRG_22', 'SAT');" title="Satellites">Satellite</a></li>
+	                <li id="LiQRG_23" ><a HREF="javascript:SelBandaVHF('LiQRG_23', 'FM');" title="FM DX band">FM DX</a></li>
+	                <li id="LiQRG_24" ><a HREF="javascript:SelBandaVHF('LiQRG_24', 'DAB');" title="DAB band">DAB</a></li>
+	                <li id="LiQRG_25" ><a HREF="javascript:SelBandaVHF('LiQRG_25', 'VOR');" title="VOR band">VOR</a></li>
+	                <li id="LiQRG_26" ><a HREF="javascript:SelBandaVHF('LiQRG_26', 'AIS');" title="AIS band">AIS</a></li>
+	                <li id="LiQRG_27" ><a HREF="javascript:SelBandaVHF('LiQRG_27', 'APRS');" title="APRS stations">APRS</a></li>
+	                <li id="LiQRG_28" ><a HREF="javascript:SelBandaVHF('LiQRG_28', 'TIC');" title="VHF propagation ticker">Ticker</a></li>
+	                <li id="LiQRG_29" ><a HREF="javascript:SelBandaVHF('LiQRG_29', 'MUF');" title="Estimated sporadic-E MUF">MUF Sp-E</a></li>
+	            </ul>
+</MAP></td></tr></table><iframe name="fdxs" onload="resizeIframe(this)" width="100%" height="890" src="mapfg.php?Lan=E&Frec=50&ML=M&Map=W2LN&DXC=GRINPU&HF=N&GL=N&MOD=SSCWDIPR&PRO=AURAUEBACEMESPOMESFAIIONMETTEPTROFDOAIR&FIL=&HID=" align="left" marginwidth="1" marginheight="1" border="0" frameborder="0" scrolling="no">Your Internet browser does not admit floating frames or it's not configured to show them.</iframe><br clear="left"><iframe name="fdxsend" width="1120" height="120" src="maps.php?Lan=E&Frec=50" align="left" marginwidth="1" marginheight="1" border="0" frameborder="0" scrolling="no">Your Internet browser does not admit floating frames or it's not configured to show them.</iframe><br clear="left"><font color="#800000">This page will update automatically every minute. There is <b> no need</b> you click the &quot;refresh&quot; button of your browser. If automatic refresh doesn't work for you then <a href="configexplorer.html">look here.</a> </font><br>&nbsp;<br><font color="#FF0000"><b>IMPORTANT</b>: </font><font color="#800000">YOU MAY NOT use this map/list in your own WEB pages. I will appreciate links to this WEB page, but you are not allowed to show the map/list in your site !</font><br><br><span style="font-weight: 400"><font size="3">Now you can also receive <a href="warnings.php">customized propagation alerts by E-Mail</a> !!</font></span><h3><b><u>You can help generate this page !</u></b></h3><ul><li><p align="left"><a href="../sendspots">Send formated DX spots</a>  indicating clearly both locators and the type or propagation! The rest of information is useless and it doesn't interest anybody.</li><li><p align="left">Make sure your locator is OK in the <a href="../callbook" target="_blank">callbook</a></li><li><p align="left">Do not chat in the DX-Cluster. It's for spotting DX stations, not for chatting! Use <a href="chats.html">DXMAPS chats</a> or <a href="https://www.on4kst.info" target="_blank">ON4KST's chat</a> instead.</li></ul><div align="left"><tr><td><a href="index.php?Lan=E"><img src="/images/search.png"title="Query page" align="absmiddle" border="0" hspace="5"><font size="3"> Query the DXMAPS database</font></a>&nbsp;&nbsp;<a href="faq.html"><img src="/images/help.png" width="22" height="25" title="FAQ" align="absmiddle" border="0" hspace="5"><font size="3"> Frequently asked questions</font></a>&nbsp;&nbsp;<a href="manual.html"><img src="/images/manual.png" width="32" height="32" title="User manual" align="absmiddle" border="0" hspace="5"><font size="3"> User manual</font></a></td></tr></table></center></div><div align="center"><center><br>
+<div align="left" style="margin-left: 180px">
+	<table border="0" id="table1">
+		<tr>
+		<td valign="top"><div><IFRAME style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 400px; HEIGHT: 70px; OVERFLOW: hidden; BORDER-TOP: medium none; BORDER-RIGHT: medium none" src="https://www.facebook.com/plugins/like.php?href=https://www.dxmaps.com/spots/mapg.php?Lan=E&amp;layout=standard&amp;show-faces=true&amp;width=500&amp;action=like&amp;colorscheme=light" frameBorder="0" scrolling="no"></IFRAME></div></td>
+<td valign="top"><div><a href="https://twitter.com/share" class="twitter-share-button" data-via="DXMAPS" data-hashtags="DXMAPS">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></td>		</tr>
+	</table>
+</div>
+
+<script>
+// Funcion para leer un cookie-----------------------------
+function readCookie2(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+</script>
+  <div align="left">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6626710419848531" crossorigin="anonymous"></script>
+  <!-- BAN_INF -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-6626710419848531"
+       data-ad-slot="1114323044"
+       data-ad-format="auto"></ins>
+  <script>
+  var ValorCookie = readCookie2('ckns_policy');
+  if (typeof ValorCookie == 'undefined' || ValorCookie === null)
+  	ValorCookie = "111";
+  if (ValorCookie.substr(2,1) == "1")
+  	(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=0;
+  else
+  	(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1;
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
+
+&nbsp;
+<div align="left" style="margin-left: 90px"><left>
+<table border="1" width="1000" bordercolorlight="#008080" bordercolordark="#008080" bordercolor="#008080" style="border-radius: 10px;" bgcolor="#FFFFE0">
+  <tr>
+    
+<td style="border: 0px"><font color="#FB5200"><b>Share:</b></font>
+<a href="http://twitter.com/home?status=https://www.dxmaps.com/spots/mapg.php?Lan=E" target="_blank"><img src="/images/twitter.gif" alt="Twitter" width="16" height="16" title="Share on Twitter" border="0" align="bottom"></a>&nbsp;&nbsp;
+<a href="http://www.facebook.com/share.php?u=https://www.dxmaps.com/spots/mapg.php?Lan=E" target="_blank"><img src="/images/fb.gif" alt="Facebook" width="16" height="16" title="Share on Facebook" border="0" align="bottom"></a>&nbsp;&nbsp;
+</td>
+<td style="border: 0px"><a href="/index_i.html"><img src="/images/home.png"     title="Go to the Home-page" border="0" width="38" height="35" align="absmiddle" hspace="10">Home page</a></td>
+    <td style="border: 0px">
+<a href="/sitemap.html"><img src="/images/indice.png"     title="Site map" border="0" width="25" height="23" align="absmiddle" hspace="10">Site map</a></td>
+    <td style="border: 0px">
+<a href="/search.html"><img src="/images/search.png"    title="Radio Sherlock" border="0" src="images/search.png" width="29" height="31" align="absmiddle" hspace="10">Radio Sherlock search engine</a></td>
+    <td style="border: 0px">
+<a href="/tos.html"><img src="/images/tos.png"     title="Terms of service" width="32" height="32" title="Terms of service" border="0" hspace="12" align="absmiddle">Terms of service</a>&nbsp; </td>
+    <td style="border: 0px">
+<a href="/privacy.html"><img src="/images/privacy.png"     title="Privacy policy" width="32" height="32" title="Privacy policy" border="0" hspace="12" align="absmiddle">Privacy</a>&nbsp; </td>
+    <td style="border: 0px">
+<a href="/cookies.html"><img src="/images/cookies.png"     title="Cookies" width="32" height="32" title="Cookies" border="0" hspace="12" align="absmiddle">Cookies</a>&nbsp; </td>
+  </tr>
+</table>
+</left></div>
+<br>
+<!-- NO BORRAR el siguiente DIV. Es es necesario para que el control McTab no de errores -->
+<div id="view1"></div>
+
+</body>
+
+</html>
