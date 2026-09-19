@@ -2,13 +2,13 @@
   "source": "iss_hls",
   "bucket": "streams",
   "acquisition_class": "image_stream",
-  "captured_utc": "2026-09-19T11:01:21.962259+00:00",
+  "captured_utc": "2026-09-19T14:18:44.750238+00:00",
   "config_file": "/home/runner/work/SEAM-Core/SEAM-Core/config/step1_raw_data_retrieval/collector_sources.json",
   "captures": [
     {
       "url": "https://video.nasa.gov/hls/live/2037218/NTV-Public-IPS.m3u8",
       "ok": false,
-      "captured_utc": "2026-09-19T11:01:22.009337+00:00",
+      "captured_utc": "2026-09-19T14:18:44.809089+00:00",
       "error": "<urlopen error [Errno -5] No address associated with hostname>"
     },
     {
@@ -17,11 +17,11 @@
       "status": 200,
       "content_type": "text/html; charset=UTF-8",
       "final_url": "https://www.nasa.gov/live/",
-      "captured_utc": "2026-09-19T11:01:22.084708+00:00",
-      "elapsed_ms": 75.34,
+      "captured_utc": "2026-09-19T14:18:44.881894+00:00",
+      "elapsed_ms": 72.76,
       "bytes_read": 262144,
-      "sha256": "2602640a6eb9febc0cc7c40a1b206a014a1ec44915edc8bfbeab25cd6d496871",
-      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/iss_hls/20260919_110122_1.html",
+      "sha256": "f0fa0a3e67887948432f4a48e2a9d47b2acbbdcbbe6412e20575e424a37ff0e3",
+      "saved_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/iss_hls/20260919_141844_1.html",
       "latest_file": "/home/runner/work/SEAM-Core/SEAM-Core/streams/iss_hls/latest_1.html"
     }
   ]
